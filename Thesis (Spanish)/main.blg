@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: unsrtnat.bst
+Database file #1: Bibliography.bib
+Warning--entry type for "FrancisOnCsakaWeb2012" isn't style-file defined
+--line 289 of file Bibliography.bib
+Warning--empty journal in Witten:2012bg
+Warning--empty journal in Cartier:2002zp
+Warning--empty journal in Cachazo:2014fwa
+You've used 62 entries,
+            2481 wiz_defined-function locations,
+            1000 strings with 14392 characters,
+and the built_in function-call counts, 21602 in all, are:
+= -- 1986
+> -- 746
+< -- 51
++ -- 340
+- -- 210
+* -- 1502
+:= -- 3493
+add.period$ -- 263
+call.type$ -- 62
+change.case$ -- 113
+chr.to.int$ -- 56
+cite$ -- 65
+duplicate$ -- 1173
+empty$ -- 2129
+format.name$ -- 302
+if$ -- 4667
+int.to.chr$ -- 7
+int.to.str$ -- 63
+missing$ -- 72
+newline$ -- 388
+num.names$ -- 186
+pop$ -- 440
+preamble$ -- 1
+purify$ -- 62
+quote$ -- 0
+skip$ -- 654
+stack$ -- 0
+substring$ -- 920
+swap$ -- 139
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 401
+warning$ -- 3
+while$ -- 170
+width$ -- 0
+write$ -- 937
+(There were 4 warnings)

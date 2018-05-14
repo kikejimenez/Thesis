@@ -1,0 +1,393 @@
+%\part{Aplicaciones.}
+\chapter{Aplicaciones.}
+\label{chap:8}
+Uno de los objetivos de esta sección es el de  poner a prueba el formalismo para el caso más sencillo, la interacción cúbica  de un  supercampo escalar. Para este caso tenemos, la contraparte canónica bien establecida: El modelo de Wess-Zumino. Toca demostrar la equivalencia entre este modelo y nuestro enfoque nocanónico. 
+   
+   Damos un paso adelante y proponemos un nuevo modelo canónico para la superparticula de superespin $ 1/2 $ usando supercampos de Dirac. Como demostraremos, la característica particular de estos supercampos es que en el esquema de interacción satisfacen todos los criterios de los supercampos encontrados con los métodos nocanónicos. Ademas los propagadores, encontrados  con ambos métodos, coinciden.
+Por otro lado, usamos las directrices que nos a dejado el formalismo, para ir en busca de
+\section{El supercampo escalar.}\label{Sec_ScalarSuperPotential}
+Esta sección tiene como objetivo poner a prueba el formalismo para el caso mas sencillo: El supercampo escalar. Consideramos a detalle el potencial cubico, esto es, el modelo de Wess-Zumino.
+
+Para el caso es escalar, las transformaciones $ C $, $ P $,  $ T$ and $ \mathcal{R} $ se ven como 
+      \begin{IEEEeqnarray}{rl}
+            \mathsf{C}\,\Phi_{\pm }\left( x,\vartheta\right) \mathsf{C}^{-1}   & \, = \, +{\varsigma}^{\,*} {\Phi}^{\dagger}_{\pm }\left( x,\vartheta\right) \  \nonumber \\
+                \mathsf{P} \,\Phi_{\pm}\left( x,\vartheta\right)   \mathsf{P}^{-1}    &\, = \, \pm{\eta}^{*}\,{\Phi}_{\mp}\left(\mathcal{P} x,i\beta\vartheta\right) \ , \nonumber\\
+                            \mathsf{T} \,\Phi_{\pm}\left( x,\vartheta\right)   \mathsf{T}^{-1}     & \, = \, \pm {\xi}^{*} \Phi_{\pm  }\left(\mathcal{T} x,\epsilon\gamma_{5}\vartheta^{*}\right) \ , \nonumber \\
+                             \mathsf{R}\,\Phi_{\pm }\left( x,\vartheta\right) \mathsf{R}^{-1}    & \, = \, +{r}^{*}\,\Phi_{\pm }\left( x,D_{\mathcal{R}}\vartheta\right)  \ . \nonumber \\
+    \label{8-01-01}
+\end{IEEEeqnarray}
+Cuando la spartícula es la misma que su antispartícula, 
+\begin{IEEEeqnarray}{rl}
+         \Phi_{\pm}(x,\vartheta) & \, = \,  \Phi^{\dagger}_{\pm}(x,\vartheta)  \ ,   
+    \label{8-01-02}
+\end{IEEEeqnarray}     
+ademas  $ \varsigma $, $ \eta $, $ \zeta $ y $ r $ iguales a $ \pm 1 $.  La interacción de orden m\'as bajo, el superpotencial cúbico, posee cuatro términos:
+\begin{IEEEeqnarray}{rl}
+            \Phi_{\pm}\Phi_{\pm}\Phi_{\pm}, \quad \Phi_{\pm}\Phi_{\pm}\Phi^{\dagger}_{\pm}, \quad\Phi_{\pm}\Phi^{\dagger}_{\pm}\Phi^{\dagger}_{\pm},\quad \Phi^{\dagger}_{\pm}\Phi^{\dagger}_{\pm}\Phi^{\dagger}_{\pm} \ .
+    \label{8-01-03}
+\end{IEEEeqnarray}
+  Bajo una transformación  $ \mathcal{R} $, usando el hecho de que
+\begin{IEEEeqnarray}{rl}
+                \delta^{2}\left( \mathcal{R}^{-1}\vartheta_{\pm} \right)  \, = \, \exp\left[ \pm 2i q_{0} \right]\delta^{2}\left(\vartheta_{\pm} \right)   \ ,
+    \label{08-01-03-01}
+\end{IEEEeqnarray}
+ estos términos generan las siguientes fases en el superpotencial:
+\begin{IEEEeqnarray}{rl}
+            -3q\pm q_{0}, \quad -q\pm q_{0},\quad  +q\pm q_{0}, \quad 3q\pm q_{0} \ .
+    \label{8-01-04}
+\end{IEEEeqnarray}
+Entonces para superpotenciales cúbicos que son $ \mathcal{R} $-simétricos, solo uno de ellos (de los cuatro posibles) sobrevive. Para una spartícula que es su propia antispartícula \eqref{8-01-02}, las cuatro posibilidades \eqref{8-01-03} se vuelven una.
+Para ver en acción el formalismo, consideremos el siguiente superpotencial cúbico
+\begin{IEEEeqnarray}{rl}
+             \mathcal{W}_{+}\left( x, \vartheta \right)   \, = \,  \frac{g_{+}}{3!}  \left( \Phi_{+}\left( x, \vartheta \right)\right)  ^{3}  \, + \, \frac{ g^{*}_{-}}{3!} \left( \Phi^{\dagger}_{+}\left( x, \vartheta \right) \right) ^{3}\ ,  \nonumber \\
+              \mathcal{W}^{\dagger}_{-}\left( x, \vartheta \right)   \, = \,  \frac{g_{-}}{3!} \left( \Phi_{-}\left( x, \vartheta \right)\right)  ^{3}  \, + \, \frac{g^{*}_{+}}{3!} \left( \Phi^{\dagger}_{-}\left( x, \vartheta \right) \right) ^{3}  \ .
+     \label{8-01-05}
+ \end{IEEEeqnarray} 
+Restringiéndonos más aun para los casos cuando $ g_{+} =0 $ o $ g_{-}=0 $, calculamos la superamplitud de un proceso spartícula-antispartícula . A orden más bajo, tenemos solo un superdiagrama para este proceso (Figura \ref{Figure 1}). Para las patas externas  escogemos las siguientes proyecciones derechas e izquierdas para los cuatro espinores fermiónicos [ver la regla de súper Feynman para las superpatas externas, Ecs. \eqref{6-4-04}-\eqref{6-4-11}]:
+\begin{figure}[h!]
+\begin{center}
+    \includegraphics{Figures/Figure_1}
+    \caption{ Superdiagrama de menor orden en una colisión spartícula-antispartícula.}
+ \label{Figure 1}
+ \end{center}
+\end{figure}
+\begin{IEEEeqnarray}{rl}
+            1\rightarrow\pm, \quad 1^{c}\rightarrow\mp,  \quad 2\rightarrow\mp, \quad 2^{c}\rightarrow\pm \ .
+    \label{8-01-06}
+\end{IEEEeqnarray}
+Los signos de arriba(abajo) corresponden a los casos $ g_{-} = 0$($ g_{+} = 0$). La función de onda en el espacio de momentos en el caso del supercampo escalar es simplemente [ver las Ecs. \eqref{5-3-29} and \eqref{5-3-29}] 
+\begin{IEEEeqnarray}{rl}
+            u\left(\mathbf{p} \right)   \, = \,    v\left(\mathbf{p} \right)    \, = \,\frac{1}{\sqrt{2p^{0}}},\quad p^{0} \, = \, \sqrt{\mathbf{p}^{2}  \, + \, m^{2}} \ .
+    \label{8-01-07}
+\end{IEEEeqnarray}
+La contribución de las patas externas al superdiagrama  es 
+\begin{IEEEeqnarray}{rl}
+     (2\pi)^{-6}\, u(\textbf{p}_{_{2}}) u(\textbf{p}^{c}_{_{1}}) u(\textbf{p}^{c}_{_{2}}) u(\textbf{p}_{_{1}})\,  \times \,       e^{+i x_{_{1}}\cdot\left(  p_{_{1}} -p^{c}_{_{2}}  \right) }   \,   e^{+i x_{_{2}}\cdot \left( p^{c}_{_{1}}  \, - \, p_{_{2}}\right)   }  \nonumber \\
+    \times \,\, e^{ 2\left[ {s}_{_{1}}\cdot(+i\slashed{p}_{_{1}})     \, - \, s_{_{2}}^{c}\cdot\, (+i\slashed{p}^{c}_{_{2}})\, \right]{\vartheta}_{_{1}\mp} }\times        e^{  2\left[ {s}_{_{1}} ^{c} \cdot\, (+i\slashed{p}^{c}_{_{1}}) \, - \,{s}_{_{2}} \cdot \, (+i\slashed{p}_{_{2}})\right] \,\vartheta_{_{2}\pm}}\ . \nonumber \\
+    \label{8-01-08}
+\end{IEEEeqnarray}
+Al escribir las exponenciales fermiónicas  hemos usado el hecho de que el  superpotencial $ \mathcal{W}_{\pm} $ esta evaluado en $ (x,\vartheta_{\pm}) $. La contribución de los vértices y la linea interna es
+\begin{IEEEeqnarray}{rl}
+           \left( 9\times 4\right)  \times \left[ \left( +i\right)^{2} \left( -i\right)^{2}  \left(3! \right)^{-2}  \vert g_{\pm}\vert^{2}\right] \times \left[  \left(-i\right) \left(2\pi \right)^{-4}  \int d^{4}q   \frac{ e^{i\left( x_{_{1}}-x_{_{2}}\right)  \cdot q \, - \, 2\vartheta_{_{1}}^{\intercal}\epsilon\gamma_{5}i\slashed{q}\vartheta_{_{2}\pm}}}{m^{2}+q^{2}-i\varepsilon}\right] \ . \nonumber \\
+    \label{8-01-09}
+\end{IEEEeqnarray} 
+El factor  $ \left( 9\times 4\right)  $,  surge de las posibles combinaciones de formar las lineas internas y externas. Para obtener la superamplitud debemos integrar con 
+\begin{IEEEeqnarray}{rl}
+            \int d^{4}x_{_{1}}d^{4}x_{_{2}}\,d^{2}\vartheta_{_{1}\mp}\, d^{2}\vartheta_{_{2}\pm}
+    \label{8-01-10}
+\end{IEEEeqnarray}
+Notamos que las integrales de las variables bosónicas nos dan
+\begin{IEEEeqnarray}{rl}
+              \int d^{4}x_{_{1}} e^{+i x_{_{1}}\cdot\left(  p_{_{1}} -p^{c}_{_{2}}  \, + \, q  \right) }   & \, = \, \left( 2\pi\right)^{4}\delta^{4}\left(  p_{_{1}} -p^{c}_{_{2}}  \, + \, q  \right) \  , \nonumber \\
+               \int d^{4}x_{_{2}}   \,   e^{+i x_{_{2}}\cdot \left( p^{c}_{_{1}}  \, - \, p_{_{2}}  \, - \,q\right)   }    &           \, = \, \left( 2\pi\right)^{4}\delta^{4}\left(  p^{c}_{_{1}} -p_{_{2}}  \, - \, q  \right)\ ,
+    \label{8-01-11}
+\end{IEEEeqnarray}
+después de integrar con $ d^{4}q $, obtenemos la expresión siguiente para el superdiagrama \textit{sin} las variables fermiónicas $ \vartheta_{_{1}\mp}$ y  $\vartheta_{_{2}\pm} $ integradas:
+\begin{IEEEeqnarray}{rl}
+\,\tfrac{1}{4} f_{\text{scalar}} \left( \textbf{p}_{_{1}},\textbf{p}^{c}_{_{1}},\textbf{p}_{_{2}},\textbf{p}^{c}_{_{2}}\right) \, e^{ - 2i {\vartheta}_{{1}\mp}\cdot\left(\slashed{p}_{{1}} {s}_{{1}}   \, - \, \, \slashed{p}^{c}_{2}s_{2}^{c}\, \right)  }      e^{ - 2i\vartheta_{_{2}\pm}\cdot\left(  \, \slashed{p}^{c}_{1}{s}_{1} ^{c}\, - \,  \slashed{p}_{_{2}}{s}_{2}\right) \,}     e^{ \, - \, 2i \vartheta_{_{1}}\cdot \left( \slashed{p}^{c}_{{1}} - \slashed{p}_{{2}}  \right) \vartheta_{_{2}\pm} } \ . \nonumber \\
+    \label{8-01-12}
+\end{IEEEeqnarray}
+con 
+\begin{IEEEeqnarray}{rl}
+              f_{\text{scalar}} \left( \textbf{p}_{_{1}},\textbf{p}^{c}_{_{1}},\textbf{p}_{_{2}},\textbf{p}^{c}_{_{2}}\right)  &  \, = \,  \left(-4i\right) \vert g_{\pm}\vert^{2}  (2\pi)^{-2}  \,    \delta^{4}\left(  p_{{1}} \, + \,  p^{c}_{{1}} -p^{c}_{{2}}  -p_{{2}}   \right)           \nonumber \\
+            & \qquad \times  u(\textbf{p}_{_{2}}) u(\textbf{p}^{c}_{_{1}}) u(\textbf{p}^{c}_{_{2}}) u(\textbf{p}_{_{1}})\,    \times  \left[ {m^{2}+\left( p^{c}_{{1}} -p_{{2}}  \right) ^{2}-i\varepsilon}\right]^{-1}\ ,\nonumber \\
+    \label{8-01-13}
+\end{IEEEeqnarray}
+esta ultima cantidad, es la expresión para el mismo diagrama pero en el espacio. Aislamos la dependencia en $ \vartheta_{_{1}\mp} $  e integramos sobre esa variable:
+\begin{IEEEeqnarray}{rl}
+ \int d^{2}\vartheta_{_{1}\mp}\, e^{ - 2i {\vartheta}_{{1}\mp}\cdot\left[\slashed{p}_{{1}} {s}_{{1}}   \, - \, \, \slashed{p}^{c}_{{2}}s_{{2}}^{c}\, \, + \,  \left( \slashed{p}^{c}_{{1}} - \slashed{p}_{{2}}  \right)\vartheta_{{2}}\right]}    & \, = \, -4\, \delta^{2}\left[\slashed{p}_{{1}} {s}_{{1}}   \, - \, \, \slashed{p}^{c}_{{2}}s_{{2}}^{c}\, \, + \,  \left( \slashed{p}^{c}_{{1}} - \slashed{p}_{{2}}  \right)\vartheta_{{2}}\right]_{\mp}    \nonumber \\
+   \, = \,4\left( {p}^{c}_{{1}} - {p}_{{2}}  \right) ^{2} &\delta^{2}\left[ \left( \slashed{p}^{c}_{{1}} - \slashed{p}_{{2}}  \right)^{-1}\left( \slashed{p}_{{1}} {s}_{{1}}   \, - \, \, \slashed{p}^{c}_{{2}}s_{{2}}^{c}\right)\, \, + \,  \vartheta_{{2}}\right]_{\mp}    \ .   \nonumber \\
+    \label{8-01-14}
+\end{IEEEeqnarray}
+Después de integrar con esta función delta  en la variable $ \vartheta_{_{2}\pm}  $, obtenemos la forma final de la superamplitud para la colisión spartícula-antispartícula:
+\begin{IEEEeqnarray}{rl}
+S^{\mp}\left( \cdots\right)  \, = \, f_{\text{scalar}}\, \times \, \left( {p}^{c}_{{1}} - {p}_{{2}}  \right) ^{2}\times \exp{\left[-2i \, h^{\mp}\left( \cdots\right) \right]} \ ,  \nonumber \\           
+    \label{8-01-15}
+\end{IEEEeqnarray}
+los puntos $ \left( \cdots\right)  $ denotan al superespacio de momentos $  \left(\textbf{p}_{_{1}},s_{_{1}\pm},\textbf{p}^{c}_{_{1}}, s^{c}_{_{1}\mp},\textbf{p}_{_{2}},s_{_{2}\mp},\textbf{p}^{c}_{_{2}}, s^{c}_{_{2}\pm}\right)  $, mientras que la funciones $ h^{\mp} $ vienen dadas por 
+\begin{IEEEeqnarray}{rl}
+            h^{\mp}\left( \cdots\right)  \, = \, \frac{1}{\left( {p}^{c}_{{1}}  \, - \,{p}_{{2}}  \right)^{2}}\left( \slashed{p}_{{1}} {s}_{{1}}   \, - \, \, \slashed{p}^{c}_{{2}}s_{{2}}^{c}\right) \cdot \left( \slashed{p}^{c}_{{1}} - \slashed{p}_{{2}}  \right)\left(  \, \slashed{p}^{c}_{1}{s}_{1} ^{c}\, - \,  \slashed{p}_{_{2}}{s}_{2}\right)\ .\nonumber \\
+    \label{8-01-16}
+\end{IEEEeqnarray} 
+
+ La posibilidad de escoger  tres partículas  y tres antipartículas  para la dispersión partícula-antipartícula  nos da un total de $ 3^{4} $ combinaciones de estados iniciales y finales. Desde luego que muchos de estos son cero, por ejemplo todos los procesos que provienen expansión impar en las variables fermiónicas en la Ec. \eqref{8-01-16} (esto no es otra cosa que una consecuencia que la conservación de momento angular). Vemos de manera explicita la conveniencia de trabajar en una formulación completamente en el superespacio; la  ecuación \eqref{8-01-16} representa una expresión económica para el conjunto de todos los procesos de estas partículas  orden cuadrado en la constante de acoplamiento $ \vert  g_{\pm}\vert $.\\
+
+\section{Equivalencia con el modelo de Wess-Zumino.}\label{Sec_TimeOrderedSuperpropagators}
+\label{sec:08-02}
+Para establecer una equivalencia entre las formulacion no-canonica (aqui desarrollada) y la formulacion canonica, escribimo el superpropagador no corregido para el supercampo escalar como aparece en superpotenciales quirales  (por ahora, hemos omitido un factor de $ -i $)
+\begin{IEEEeqnarray}{rl}
+  \delta^{2}(\vartheta_{_{1}\mp})\delta^{2}  (\vartheta_{_{2}\pm}) &\tilde{\Delta}^{\pm \mp}\left( x_{_{1}},\vartheta_{_{1}},x_{_{2}},\vartheta_{_{2}}\right)  \nonumber\\
+       \, = \,  \delta^{2} & (\vartheta_{_{1}\mp})\delta^{2}  (\vartheta_{_{2}\pm}) \left[1  \, +\, 2 \vartheta_{_{1}}\cdot(-\slashed{\partial}_{_{1}})\vartheta_{_{2}\mp}  \, - \,4 m^{2}\,\delta^{2}(\vartheta_{_{1}\pm})\delta^{2}  (\vartheta_{_{2}\mp})  \right] \Delta_{F}(x_{_{1}}-x_{_{2}}) \ ,\nonumber \\  
+    \label{08-02-01}
+\end{IEEEeqnarray}
+Haciendo uso de $ \left( \square - m^{2}\right)\Delta_{F}(x)  \, = \, -\delta^{4}(x) $, escribimos
+\begin{IEEEeqnarray}{ll}
+  \delta^{2}(\vartheta_{_{1}\mp})\delta^{2}  (\vartheta_{_{2}\pm}) &\tilde{\Delta}^{\pm \mp}\left( x_{_{1}},\vartheta_{_{1}},x_{_{2}},\vartheta_{_{2}}\right)   \nonumber\\
+  &  \, = \,\delta^{2}(\vartheta_{_{1}\mp})\delta^{2}  (\vartheta_{_{2}\pm}) \,  \Delta_{F}\left( x^{\pm}_{_{12}}\right)  \, - \, 4  \,\delta^{4}(\vartheta_{_{1}})\,\delta^{4}  (\vartheta_{_{2}})\delta^{4}(x_{_{1}}-x_{_{2}}) \ .  \nonumber \\
+    \label{08-02-02}
+\end{IEEEeqnarray}
+El termino $ \, +\, 4 i\,\delta^{4}(\vartheta_{_{1}})\delta^{4}  (\vartheta_{_{2}})\delta^{4}(x_{_{1}}-x_{_{2}}) $ es invariante de Lorentz pero no invariante supersimetrico. Puesto que esta expresion es local en el superespacio, la parte no-covariante del superpropagador  induce terminos no covariantes en las interacciones. Para el caso de superpotenciales de supercampos aribitrarios, para darnos una idea de su forma, recordamos que aunque la funcion paso es invariante de Lorentz (excepto en separacion espacialodies donde para lograr la invariancia de eLorent los conmutadores deben de hacerse cero, no es invariante supersimetrico.  La funcion paso $ \omega $ seria invariante de Lorentz, si estuviese evaluada en  $   x^{\pm\,0}_{_{12}} $ o incluso en  $  x^{0}_{_{12}}-\vartheta_{_{1}}\cdot\gamma^{0}\vartheta_{_{2}} $. Tomando en cuenta que las funciones  $ \Delta_{+} $ en \eqref{08-02-02} estan evaluadas en  $   x^{\pm\,0}_{_{12}} $, escribimos 
+\begin{IEEEeqnarray}{rl}
+              \omega\left( x^{0}_{_{12}}\right) \, = \,  \omega\left(  x^{\pm\,0}_{_{12}} \right) \, + \, \varsigma_{\pm} \left( z_{_{1}},z_{_{2}}\right) , \quad z=(x,\vartheta) \ ,
+      \label{08-02-03}
+  \end{IEEEeqnarray}
+con 
+  $ \varsigma_{\pm }  \left( z_{_{1}},z_{_{2}}\right) $  dado en terminos del negativo de los coeficientes en la  de orden mayor que cero  en la expansion en serie de taylor de las variables fermionicas  en  $ \omega\left(  x^{\pm\,0}_{_{12}} \right)$. El operador unitario a segundo orden en la serie de Dyson viene dado por 
+  \begin{IEEEeqnarray}{rl}
+                U^{(2)}  & \, = \,{{(-i)^{2}}}\int d^{8}z_{_{1}}d^{8}z_{_{2}}\, \omega\left( x^{0}_{_{12}}\right) \mathcal{H}(z_{_{1}}) \mathcal{H}(z_{_{2}})   \ , 
+    \label{08-02-04}
+\end{IEEEeqnarray} 
+y para el caso superpotenciales este puede ser escrito como  
+\begin{IEEEeqnarray}{rl}
+                U^{(2)}                 
+                   & \, = \,{{(-i)^{2}}}\int d^{8}z_{_{1}}d^{8}z_{_{2}}\,       \left[ \omega\left( x^{0}_{_{12}}\right) \mathcal{H}_{\pm}(z_{_{1}})\mathcal{H}^{*}_{\mp }(z_{_{2}})   \, + \,           \omega\left( x^{0}_{_{12}}\right)\mathcal{H}^{*}_{\mp }(z_{_{1}})\mathcal{H}_{\pm}(z_{_{1}})   \, + \, \dots\right]    \nonumber \\   
+              & \, = \,    U_{\text{i}}^{(2)}   \, + \, U_{\text{n.i}}^{(2)}   \, + \, \dots \ ,
+    \label{08-02-05}
+\end{IEEEeqnarray} 
+con el termino covariante de super Poincar\'e 
+\begin{IEEEeqnarray}{rl}
+               U_{\text{i}}^{(2)}    & \, = \,  {{(-i)^{2}}}\int d^{8}z_{_{1}}d^{8}z_{_{2}}\,\left(   \omega\left(  x^{\pm\,0}_{_{12}} \right)   \mathcal{H}_{\pm}(z_{_{1}}) \mathcal{H}^{*}_{\mp}(z_{_{2}})   \, + \,   \omega\left( x^{\mp\,0}_{_{21}} \right) \mathcal{H}^{*}_{\mp}(z_{_{2}}) \mathcal{H}_{\pm}(z_{_{1}})  \right)  \nonumber 
+               \\ 
+       \label{08-02-06}
+   \end{IEEEeqnarray} 
+y el termino no covariante
+   \begin{IEEEeqnarray}{rl}
+               U_{\text{n.i}}^{(2)}    & \, = \,  {{(-i)^{2}}}\int d^{8}z_{_{1}}d^{8}z_{_{2}}\left( \,\varsigma_{\pm} \left( z_{_{1}},z_{_{2}}\right)   \mathcal{H}_{\pm}(z_{_{1}}) \mathcal{H}^{*}_{\mp}(z_{_{2}})   \, + \,  \varsigma_{\mp} \left( z_{_{2}},z_{_{1}}\right) \mathcal{H}^{*}_{\mp}(z_{_{2}}) \mathcal{H}_{\pm}(z_{_{1}})  \right)    \ .  \nonumber \\
+       \label{08-02-07}
+   \end{IEEEeqnarray}    
+   Debido a las funciones delta fermionicas en los superpotenciales, podemos evaluar las funciones paso en   $ \left( x^{0}_{_{12}} \, - \, 2 \vartheta_{_{1}\pm}\cdot\gamma^{0}\vartheta_{_{2}\mp}\right)  $, permitiendos escribir la parte no covariante de las funciones paso como 
+\begin{IEEEeqnarray}{rl}
+                           \varsigma_{\pm}\left(z_{_{1}},z_{_{2}}  \right)            &  \,=\, 2  \vartheta_{_{1}\pm }\cdot\gamma^{0}\vartheta_{_{2}\mp }\,\delta\left( x^{0}_{_{12}}    \right) \, - \, 4\,\delta^{2}(\vartheta_{_{1}\pm }) \,\delta^{2}(\vartheta_{_{2}\mp }) \, \frac{\partial}{\partial x_{_{1}}^{0}}\,\delta\left( x_{_{12}}^{0}  \right)     \ .    \nonumber \\
+                 \label{08-02-08}
+             \end{IEEEeqnarray}   
+             Podemos ver de esta expresion que los otros terminos [expresados como $ \dots$ en \eqref{08-02-05}] no necesitan ser corregidos. Notando  que  $    \varsigma_{-}\left(z_{_{1}},z_{_{2}}  \right)  \, = \,    -\varsigma_{+}\left(z_{_{2}},z_{_{1}}  \right)     $, escribimo
+\begin{IEEEeqnarray}{rl}
+       U_{\text{n.i}}^{(2)} & \, = \,      {{(-i)^{2}}}\int d^{8}z_{_{1}}d^{8}z_{_{2}}\,  \varsigma_{\pm}\left( z_{_{1}},z_{_{2}}\right)    \left[  \mathcal{V}_{\pm}(z_{_{1}}),  \mathcal{V}^{*}_{\mp}(z_{_{2}})   \right] \ .
+    \label{08-02-09}
+\end{IEEEeqnarray}  
+Escribiendo el superpotencial en su forma general en componentes como 
+\begin{IEEEeqnarray}{l}
+            \mathcal{W}_{\pm}(x,\vartheta)   \, = \, \mathcal{C}\left(x_{\pm} \right)   \, + \, \sqrt{2}\,\vartheta_{\pm}\cdot\gamma_{5} \,\Omega\left(x_{\pm} \right)   \, +  \, \delta^{2}(\vartheta_{\pm}){\color{red}\vartheta\cdot \vartheta_{\pm}}\,\mathcal{F}\left(x_{\pm} \right)  \ , \nonumber \\
+    \label{08-02-10}
+\end{IEEEeqnarray} 
+ integramos en las variables fermionicas en  \eqref{08-02-09} para obtener
+\begin{IEEEeqnarray}{rl}
+       U_{\text{n.i}}^{(2)} & \, = \,     +4\int d^{4}x_{_{1}}d^{4}x_{_{2}}\, \left(  i \delta\left( x^{0}_{_{12}} \right) \sum_{\alpha}\left\lbrace \left[ \Omega\left(x_{{_{1}}} \right)\right] _{\pm\alpha} ,    \left[\Omega^{*}\left(x_{{_{2}}} \right)\right]_{\pm\alpha}\right\rbrace \right.  \nonumber \\
+      &\qquad  \qquad    \qquad \qquad\qquad \left.  \, + \,  \, \delta\left( x_{_{12}}^{0}  \right) \frac{\partial}{\partial x_{_{1}}^{0}}\, \left[  \mathcal{C}\left(x_{_{1}} \right)  ,   \mathcal{C}^{*}\left(x_{_{2}}\right) \right] \right)  \ .
+    \label{08-02-11}
+\end{IEEEeqnarray} 
+Cualquier (anti)conmutador generara productos de campos multiplicados por las funciones  $ \Delta(x) = \Delta_{+}(x) \, - \, \Delta_{+}(-x) $ y sus derivadas.  Debido a  las funciones en el tiempo y a  $ \left( \square\Delta(x)= m^{2}\Delta(x) \right) $, los unicos terminos que sobreviven en el anticonmutador(conmutador) de la Ec.  \eqref{08-02-11} son aquellos  en los que un numero (impar)par de derivadas temporales actuan sobre  $  \Delta(x) $, generando funciones delta cuatro-dimensionales  $\delta(x^{0}_{_{12}})\frac{\partial}{\partial x_{_{1}}^{0}}\Delta\left(x_{_{1}}- x_{_{2}}\right) = -i\delta^{4}(x_{_{1}}-x_{_{2}})  $. Esto nos permite escribir 
+\begin{IEEEeqnarray}{rl}
+       U_{\text{n.i}}^{(2)} %& \, = \,   -i   
+        & \, = \,  i  \int d^{4}x_{_{1}}d^{4}x_{_{2}}  \,\delta^{4}(x_{_{1}}-x_{_{2}}) F\left(x_{_{1}}\right)  \ ,
+    \label{08-02-12}
+\end{IEEEeqnarray} 
+con $  F\left(x_{_{1}}\right)    $ dada explicitamente por el termino del factor integral en  $ d ^{4}x_{_{1}} $ en \eqref{08-02-11}.  Entonces, debemos reemplazar
+\begin{IEEEeqnarray}{rl}
+               \mathcal{V}\left( x,\vartheta\right) \, \rightarrow  \,  \mathcal{V}\left( x,\vartheta\right)  \, + \, \delta^{4}\left(\vartheta \right) F\left( x\right) \ ,
+    \label{08-02-13}
+\end{IEEEeqnarray}
+de manera que cancelemos el termino no covariante a menor orden \eqref{08-02-11}. Es evidente que este resultado se extiende a el caso de potenciales generales, puesto que el efecto de considerar la expansion completa en las variables fermionicas en , es generar derivadas de mayor orden en el tiempo a la Ec. El punto importante es que siempre es que siempre tenemos una funcion delta $\delta(x_{_{1}}^{0}-x_{_{2}}^{0})$, asegurandonos contraterminos locales en el tiempo, nuestra suposicion principal. La  funcion $   F\left(x_{_{1}}\right)     $  es en general no solo supersimetricamente no covariante sino tambien Lorentz no covariante. Para el caso del supercampo escalar no tenemos terminos no covariantes supersimetricos
+De las Ecs. \eqref{8-01-05} y \eqref{08-02-10}, podemos ver que 
+ \begin{IEEEeqnarray}{rl}
+             \mathcal{C}\left(x \right)  &\, = \, \frac{g_{+}}{3!}  \left( \phi_{+}\right)^{3}  \, + \, \frac{g_{-}}{3!}\left( \phi^{*}_{-}\right)^{3} \nonumber \\
+ \Omega\left(x\right)   &\, = \ -\frac{g_{+}}{2}  \left(  \phi_{+} \right) ^{2}\psi  \, + \, \frac{g_{-}}{2} \left(  \phi^{*}_{-} \right) ^{2}\left[ \epsilon\gamma_{5}\beta  \psi^{*}\right]  \nonumber \\
+ \mathcal{F}\left(x \right)    &\, = \,{g_{+}} \left( -  \phi_{+} \psi ^{\intercal}    \epsilon\psi_{+}    \, + \,   m\left( \phi_{+}\right)^{2} \phi_{-}\right) \nonumber \\
+ &\qquad    \, + \, {g_{-}}\left(-  \phi^{*}_{-} \psi ^{\dagger}    \epsilon\psi^{*}_{-}    \, + \,  m \left( \phi^{*}_{-}\right)^{2} \phi^{*}_{+} \right)  \ .  
+    \label{08-02-15}
+\end{IEEEeqnarray}
+Para este superpotencial, las correcciones a orden menor en  \eqref{08-02-11} son~\footnote{Para prepararnos  para la teoria del campo, hemos ignorado los terminos bilineales  cuando trajimos el termiono $   \left[  \mathcal{C}\left(x_{_{1}}\right) , \mathcal{C}^{*}\left(x_{_{2}}\right)\right]   $ a la forma  \eqref{08-02-15}.}
+\begin{IEEEeqnarray}{rl}
+    i\delta\left(x^{0}_{_{12}} \right)  \sum_{\alpha}\left\lbrace \left[ \Omega\left(x_{{_{1}}} \right)\right] _{\pm\alpha} ,    \left[\Omega^{*}\left(x_{{_{2}}} \right)\right]_{\pm\alpha}\right\rbrace  & \, = \,      -2 \delta\left( {x_{_{12}}^{0}} \right) \tfrac{\partial}{\partial x^{0}_{_{1}}}    \left[  \mathcal{C}\left(x_{_{1}}\right) , \mathcal{C}^{*}\left(x_{_{2}}\right)\right]    \nonumber \\    
+           &   \, = \,     
+              \tfrac{1}{2} \left[ i\delta^{4}\left(x_{_{1}}-x_{_{2}}\right)  \right] \, F\left( x_{_{2}}\right)  \  , \label{CommutatorCorrections}
+\end{IEEEeqnarray}
+donde $  F\left( x_{_{2}}\right) $  es la funcion que aparece en  \eqref{08-02-12} y esta dada por 
+\begin{IEEEeqnarray}{rl}
+             F\left(  x_{_{2}}\right)  \, = \,  \vert g_{+} \vert^{2}\left( \phi_{+}\left(x_{_{2}}\right) \right)^{2} \left( \phi^{*}_{+}\left(x_{_{2}}\right) \right)^{2}   \, + \,  \vert g_{-} \vert^{2}\left( \phi_{-}\left(x_{_{2}}\right) \right)^{2} \left( \phi^{*}_{-}\left(x_{_{2}}\right) \right)^{2}  \ .
+     \label{FirstCorrectionToThePotentials}
+ \end{IEEEeqnarray}
+El potencial covariante en el espacio, 
+\begin{IEEEeqnarray}{rl}
+           -i V\left(x\right)    &  \, = \,   \mathcal{F}\left(x \right)  \, - \, \, \mathcal{F}\left(x \right) ^{*} \ ,
+    \label{08-02-16}
+\end{IEEEeqnarray}
+adquiere la forma 
+\begin{IEEEeqnarray}{rl}
+           -i V\left(x\right)    
+             & \, = \,  {g_{+}} \left( -  \phi_{+}\psi ^{\intercal}    \epsilon\psi_{+}   + \, m \ \left( \phi_{+}\right)^{2} \phi_{-}\right)  \, + \, 
+  {g_{-}}\left( - \phi_{-} \psi ^{\intercal}    \epsilon\psi_{-}    \, - \,   m\left( \phi_{-}\right)^{2} \phi_{+}\right) \nonumber \\
+ & \qquad  \, + \, {g^{*}_{-}}\left(- \phi^{*}_{-} \psi ^{\dagger}    \epsilon\psi^{*}_{-}    \, + \, m  \left( \phi^{*}_{-}\right)^{2} \phi^{*}_{+} \right)  \, + \, {g^{*}_{+}}\left(-\phi^{*}_{+} \psi ^{\dagger}    \epsilon\psi^{*}_{+}    \, -\, m \left( \phi^{*}_{+}\right)^{2} \phi^{*}_{-} \right) \ .\nonumber \\
+    \label{08-02-17}
+\end{IEEEeqnarray}
+ Finalmente, despues de integrar las variables  en la Ec.  \eqref{08-02-13}, el potencial resultante corregido es
+\begin{IEEEeqnarray}{rl}
+             -\mathcal{H}_{\text{int}} \left(x\right)  & \, = \,  - F\left( x\right)   \, - \,V\left(x\right)    \nonumber \\ 
+   &\, = \,    -i{g_{+}} \left( -  \phi_{+}\psi ^{\intercal}    \epsilon\psi_{+}   + \, m \ \left( \phi_{+}\right)^{2} \phi_{-}\right)  \, - \, i{g_{-}}\left( - \phi_{-} \psi ^{\intercal}    \epsilon\psi_{-}    \, - \,   m\left( \phi_{-}\right)^{2} \phi_{+}\right) \nonumber \\
+ & \qquad  \, - \, i{g^{*}_{-}}\left(- \phi^{*}_{-}  \psi  ^{\dagger}    \epsilon\psi^{*} _{-}    \, + \, m  \left( \phi^{*}_{-} \right)^{2} \phi ^{*}_{+} \right)   \, - \, i{g^{*}_{+}}\left(-\phi^{*}_{+}  \psi  ^{\dagger}    \epsilon\psi^{*}  _{+}    \, -\, m \left( \phi^{*}_{+}\right)^{2} \phi^{*}_{-}   \right)  \nonumber \\
+   &\qquad -\left( \vert g_{+} \vert^{2}\left( \phi_{+}\right) ^{2}\left( \phi^{*}_{+}  \right) ^{2}  \, + \, \vert g_{-}  \vert^{2}\left( \phi_{-}\right) ^{2}\left( \phi^{*}_{-}  \right) ^{2}\right) \ .
+    \label{08-02-18}
+\end{IEEEeqnarray}
+
+\textit{\textbf{El formalismo canónico.}}  Antes de hacer el comparativo explicito de los resultados obtenidos con el  modelo de Wess-Zumino,  es necesario primero  exponer los rudimentos del formalismo canónico. Comenzamos escribiendo la acción en términos de la Lagrangiana, esta a su vez es escrita en términos de la densidad Lagrangiana en el superespacio,
+\begin{IEEEeqnarray}{rl}
+            \mathcal{A}  & \, = \, \int dt L\ , \nonumber \\
+          L  & \, = \,    \int d^{3}x d^{4}\vartheta \, \mathcal{L} \left(\Phi, \partial_{\mu}\Phi \right) \ .
+    \label{08-02-a01}
+\end{IEEEeqnarray}
+Debido a la condición de quiralidad de los supercampos, hacemos
+\begin{IEEEeqnarray}{rl}
+            \Phi_{\pm N}  \, = \, \mathcal{D}^{2}_{\mp} S_{\pm N}, \quad  \Phi^{\dagger}_{\pm}  \, = \,- \mathcal{D}^{2}_{\mp} S^{\dagger}_{\pm N}\ , 
+    \label{08-02-a02}
+\end{IEEEeqnarray}
+con $  \mathcal{D}^{2}_{\mp}   \, = \, \frac{1}{2}\mathcal{D}^{\intercal}\epsilon \mathcal{D}_{\pm} $ y 
+donde  $ S_{\pm N} $ son campos generales sin restricciones (los cuales podemos variar arbitrariamente), el indice  $ N $ representa el tipo de supercampo (escalar, espinorial,  vectorial, etc.). Variamos la acción con respecto a estos supercampos,
+\begin{IEEEeqnarray}{rl}
+          \delta  \mathcal{A}  \, = \, \sum_{\varepsilon,N}\int d^{4}x d^{4}\vartheta  \, \left\lbrace \mathcal{D}^{2}_{-\varepsilon}\left[ \frac{\delta {L} }{\delta \Phi_{\varepsilon N}}  \, - \,\frac{d}{dt}  \frac{\delta {L} }{\delta \dot{\Phi}_{\varepsilon N}} \right]\right\rbrace \,\delta S_{\varepsilon N} \ .
+    \label{08-02-a03}
+\end{IEEEeqnarray}
+No hemos realizado las variaciones con respecto a los supercampos  conjugados  $ S^{\dagger}_{\pm N} $ porque estamos suponiendo que la Lagrangiana es real; las ecuaciones del movimiento que surgen de las variaciones de los supercampos conjugados serán simplemente el conjugado de las ecuaciones del  movimiento de los supercampos (sin conjugar). Puesto que 
+\begin{IEEEeqnarray}{rl}
+             \frac{\delta  \mathcal{L} }{\delta \Phi_{\varepsilon N}} &\, = \,  \frac{\partial \mathcal{L} }{\partial  \Phi_{\varepsilon N}}  \, - \, \nabla \cdot \frac{\partial \mathcal{L} }{\partial \nabla  \Phi_{\varepsilon N}}\ , \nonumber   \\
+             \frac{\delta  \mathcal{L} }{\delta \dot{\Phi}_{\varepsilon N}} &\, = \,  \frac{\partial \mathcal{L} }{\partial  \dot{\Phi}_{\varepsilon N}}  \ ,
+    \label{08-02-a04}
+\end{IEEEeqnarray}
+tenemos que 
+\begin{IEEEeqnarray}{rl}
+          \delta  \mathcal{A}  \, = \, \sum_{\varepsilon,N}\int d^{4}x d^{4}\vartheta  \, \left\lbrace \mathcal{D}^{2}_{-\varepsilon}\left[ \frac{\partial}{\partial x^{\mu}}\frac{\partial \mathcal{L}}{\partial \left(\partial \Phi_{\varepsilon N}/\partial x^{\mu} \right) }   \, - \,\frac{\partial\mathcal{L}}{\partial \Phi_{\varepsilon N} }\right]\right\rbrace \,\delta S_{\varepsilon N}   \ .\nonumber \\
+    \label{08-02-a05}
+\end{IEEEeqnarray}
+Hacemos la partición de la densidad Lagrangiana en  términos del potencial de Kahler y el superpotencial $ \mathcal{W}_{\pm} $,
+\begin{IEEEeqnarray}{rl}
+            \mathcal{L} \left(\Phi, \partial_{\mu}\Phi \right)    \, = \, -\tfrac{1}{4}\mathcal{K} \, + \, \sum_{\varepsilon}^{+,-}\delta^{2}\left(\vartheta_{-\varepsilon} \right) \mathcal{W}_{\varepsilon}\ ,
+    \label{08-02-a06}
+\end{IEEEeqnarray}
+donde 
+\begin{IEEEeqnarray}{rl}
+            \mathcal{D}_{-\varepsilon}\mathcal{W}_{\varepsilon}  \, = \,  0, \quad  \mathcal{W}^{*}_{-\varepsilon}    \, = \,  -\mathcal{W}_{\varepsilon} \, \quad \mathcal{K}   \, = \,  \mathcal{K}^{*} \ .
+    \label{08-02-a07}
+\end{IEEEeqnarray}
+Puesto 
+\begin{IEEEeqnarray}{rl}
+             \sum_{\varepsilon',\varepsilon}^{+,-}    \mathcal{D}^{2}_{-\varepsilon} \left\lbrace \,\delta^{2}\left(\vartheta_{-\varepsilon'} \right) \left[ \frac{\partial}{\partial x^{\mu}}\frac{\partial }{\partial \left(\partial \Phi_{\varepsilon N}/\partial x^{\mu} \right) }   \, - \,\frac{\partial}{\partial \Phi_{\varepsilon N} }\right]  \mathcal{W}_{\varepsilon'}   \right\rbrace  \nonumber \\ 
+        \, = \,    - \sum_{\varepsilon}^{+,-}   \left[ \frac{\partial}{\partial x^{\mu}}\frac{\partial }{\partial \left(\partial \Phi_{\varepsilon N}/\partial x^{\mu} \right) }   \, - \,\frac{\partial}{\partial \Phi_{\varepsilon N} }\right]   \mathcal{W}_{\varepsilon}  \ ,
+    \label{08-02-a08}
+\end{IEEEeqnarray}
+escribimos la Ec. \eqref{08-02-a05}  como 
+\begin{IEEEeqnarray}{rl}
+          \delta  \mathcal{A}  \, = \, \sum_{\varepsilon}\int d^{4}x d^{4}\vartheta  \, \left\lbrace  \left[ \frac{\partial}{\partial x^{\mu}}\frac{\partial }{\partial \left(\partial \Phi_{\varepsilon}/\partial x^{\mu} \right) }   \, - \,\frac{\partial}{\partial \Phi^{n}_{\varepsilon} }\right] \left( -\frac{1}{4}\mathcal{D}^{2}_{-\varepsilon}\mathcal{K} \, - \, \mathcal{W}_{\varepsilon}\right) \right\rbrace \,\delta S_{\varepsilon N}    \ . \nonumber \\
+    \label{08-02-a09}
+\end{IEEEeqnarray}
+Cuando se cumple que  $ \delta  \mathcal{A}  \, = \,0 $ para  variaciones arbitrarias  $ \delta S_{\varepsilon N}   $, tenemos que el término entre llaves en la Ec. \eqref{08-02-a09} tiene que ser cero, esto es, 
+\begin{IEEEeqnarray}{rl}
+            \left[ \frac{\partial}{\partial x^{\mu}}\frac{\partial }{\partial \left(\partial \Phi^{n}_{\varepsilon}/\partial x^{\mu} \right) }   \, - \,\frac{\partial}{\partial \Phi^{n}_{\varepsilon} }\right] \left(\tfrac{1}{4} \mathcal{D}^{2}_{-\varepsilon}\mathcal{K} \, +\, \mathcal{W}_{\varepsilon}\right)   \, = \,  0\ ,\quad 
+    \label{08-02-a10}
+\end{IEEEeqnarray}
+Nos restringimos a potenciales de Kahler renormalizables y superpotenciales que no dependen de las derivadas ordinarias (covariantes), esto es, 
+\begin{IEEEeqnarray}{rl}
+            \mathcal{K}  &\, = \,  \Phi^{\dagger}_{-}\Phi_{+}  \, + \, \Phi^{\dagger}_{+}\Phi_{-}, \nonumber \\
+    \label{08-02-a11}
+\end{IEEEeqnarray}
+y
+\begin{IEEEeqnarray}{rl}
+            \frac{\partial\, \mathcal{W}_{\pm}}{\partial  \left(\partial \Phi_{\pm N}/\partial x^{\mu} \right) }    \, = \, 0\ ,
+    \label{08-02-12}
+\end{IEEEeqnarray}
+En este caso, las ecuaciones del movimiento se ven como 
+\begin{IEEEeqnarray}{rl}
+            \tfrac{1}{4} \mathcal{D}^{2}_{\mp}\Phi^{*}_{\mp N} \, = \,   - \frac{\partial \mathcal{W}_{\pm}}{\partial  \Phi_{\pm N} }\quad  \tfrac{1}{4} \mathcal{D}^{2}_{\mp}\Phi_{\mp N} \, = \,   - \frac{\partial \mathcal{W}_{\pm}}{\partial  \Phi^{\dagger}_{\pm N} } \ .
+    \label{08-02-13}
+\end{IEEEeqnarray}
+Expandiendo los supercampos $ {\Phi}_{\pm N} $ de la siguiente manera:
+\begin{IEEEeqnarray}{rl}
+             {\Phi}_{\pm N} & \, = \, \phi_{\pm N}   \, - \,  \sqrt{2}\vartheta_{\pm}^{\intercal}\epsilon\, \psi_{\pm N}\, \pm \, \vartheta^{\intercal}_{\pm}\epsilon \vartheta_{\pm}\, \mathcal{F}_{\pm N} \nonumber \\
+               {\Phi}^{*}_{\pm N}      & \, =\, \phi^{*}_{\mp N}   \, - \,  \sqrt{2} \vartheta_{\pm}^{\intercal} \epsilon\left[(-)^{\Phi+1} \epsilon\gamma_{5}\beta\psi^{*}_{\mp N}\right] \, \pm \, \vartheta^{\intercal}_{\pm}\epsilon \vartheta_{\pm}\, \mathcal{F}^{*}_{\mp N} \ ,\nonumber \\
+     \label{08-02-14}
+ \end{IEEEeqnarray}
+tenemos que
+\begin{IEEEeqnarray}{rl}
+             \mathcal{D}^{2}_{\mp}        {\Phi}_{\mp N}\left(x,\vartheta \right)   &  \, = \, \pm 2  \left\lbrace \mathcal{F}_{\mp N}\left(x_{\pm} \right)  \, - \,  \sqrt{2}\vartheta_{\pm}^{\intercal}\epsilon \left[ -\slashed{\partial}\psi_{N} \left(x_{\pm} \right) \right] \, \pm \, \,  \vartheta^{\intercal}\epsilon\vartheta_{\mp}  \,\square\phi_{\mp N}\left(x_{\pm}\right) \right\rbrace \ ,\nonumber \\
+              \mathcal{D}^{2}_{\mp}        {\Phi}^{\dagger}_{\mp N}\left(x,\vartheta \right)   &  \, = \, \pm 2  \left\lbrace \mathcal{F}^{*}_{\pm N}\left(x_{\pm} \right)  \, - \,  \sqrt{2}\vartheta_{\pm}^{\intercal}\epsilon \left[ -\slashed{\partial}(-)^{\Phi_{N}+1} \epsilon\gamma_{5}\beta\psi^{*}_{N}\left(x_{\pm} \right) \right] \, \pm \, \,  \vartheta^{\intercal}\epsilon\vartheta_{\mp}  \,\square\phi^{*}_{\pm N}\left(x_{\pm}\right) \right\rbrace \ .\nonumber \\
+    \label{08-02-15}
+\end{IEEEeqnarray} 
+
+El término de orden cero de cualquier función $ F(\Phi_{\pm},\Phi^{\dagger}_{\pm}) $ es simplemente  $ F(\phi_{\pm},\phi^{*}_{\pm}) $, entonces las ecuaciones del movimiento para las supercampos  auxiliares son 
+\begin{IEEEeqnarray}{rl}
+            \pm \frac{1}{2}\mathcal{F}^{*}_{\pm N}  \, = \,   -\frac{\partial \mathcal{W}_{\pm}(\phi_{\pm},\phi^{*}_{\mp})  }{\partial \phi_{\pm N}}, \quad \pm \frac{1}{2}\mathcal{F}_{\mp N}  \, = \,   -\frac{\partial \mathcal{W}_{\mp}(\phi_{\mp},\phi^{*}_{\pm})  }{\partial \phi^{* }_{\mp N}}\, 
+    \label{08-02-16}
+\end{IEEEeqnarray}
+O bien, haciendo 
+\begin{IEEEeqnarray}{rl}
+            \mathcal{W}_{\pm}   \, = \, \pm\frac{1}{2} f\left( \Phi_{\pm},\Phi^{\dagger}_{\pm}\right) \ ,  
+    \label{08-02-17}
+\end{IEEEeqnarray}
+podemos escribir equivalentemente,
+\begin{IEEEeqnarray}{rl}
+             \mathcal{F}_{\pm N}  \, = \,   -\left( \frac{\partial f(\phi_{\pm},\phi^{*}_{\mp})  }{\partial \phi_{\pm N}}\right)^{*} ,  \qquad            \mathcal{F}^{*}_{\mp N}  \, = \,   - \left( \frac{\partial f(\phi_{\pm},\phi^{*}_{\mp})  }{\partial \phi^{* }_{\mp N}}\right)^{*} 
+    \label{08-02-18}
+\end{IEEEeqnarray}
+En las convenciones que estamos usando, los términos D y $ \mathcal{F}_{\pm} $ del potencial de Kahler y del superpotencial vienen dados  por
+\begin{IEEEeqnarray}{rl}
+                \int d^{4}x[\cdots]_{D}  &\, = \, -\frac{1}{2}\int d^{4}x d^{4}\vartheta [\cdots] \ , \\
+                 \int d^{4}x[\cdots]_{\mathcal{F}_{\pm}}    &\, = \,  \pm \frac{1}{2}\int d^{4}x d^{4}\vartheta \delta(\vartheta_{\mp})[\cdots ] \ , 
+     \label{08-02-20}
+ \end{IEEEeqnarray}
+ respectivamente, con esto, al integrar en las variables fermiónicas obtenemos la acción en el espacio
+\begin{IEEEeqnarray}{rl}
+   \mathcal{A}^{\text{espacio}}  \, = \,       \int d^{4}\vartheta \left[  -\tfrac{1}{4}\mathcal{K} \, + \, \delta^{2}\left(\vartheta_{-} \right) \mathcal{W}_{+} \, + \,  \delta^{2}\left(\vartheta_{+} \right) \mathcal{W}_{-}\right]     \nonumber \\
+         \, = \,        \frac{1}{2} \int d^{4}x   \left[  \sum_{N}\left( \Phi^{*}_{- N}\Phi_{+ N}  \, + \, \Phi^{*}_{+ N}\Phi_{- N}\right) \right]_{\mathcal{D}}   \, + \, \int d^{4}x \left(  \left[  f_{+} \right]_{\mathcal{F}_{+}}  \, + \,    \left[  f_{-} \right]_{\mathcal{F}_{-}}   \right)\ , \nonumber\\
+    \label{08-02-21}
+\end{IEEEeqnarray}
+Entonces, la Lagrangiana en el espacio viene dada por 
+\begin{IEEEeqnarray}{rl}
+            \mathcal{L}^{\text{espacio}}  & \, = \,  -\frac{1}{2}\left[  \sum_{N}\left( \Phi^{*}_{- N}\Phi_{+ N}  \, + \, \Phi^{*}_{+ N}\Phi_{- N}\right) \right]_{\mathcal{D}}    \, + \,  \left[  f_{+} \right]_{\mathcal{F}_{+}}  \, + \,    \left[  f_{-} \right]_{\mathcal{F}_{-}}  \ . \nonumber \\           
+    \label{08-02-22}
+\end{IEEEeqnarray}
+ Al evaluar los campos auxiliares \eqref{08-02-18} para obtener la Lagrangiana exclusivamente como función de los campos que se propagan, tenemos
+\begin{IEEEeqnarray}{rl}
+            \mathcal{L}^{\text{espacio}}         & \, = \, \mathcal{L}^{\text{libre}}  \, + \, \mathcal{L}^{\text{int.}}\ , \nonumber \\
+    \label{08-02-23}
+\end{IEEEeqnarray}
+ donde 
+\begin{IEEEeqnarray}{rl}
+            \mathcal{L}^{\text{libre}}  &  \, = \,  -\sum_{N}\left(\partial_{\mu}\phi^{\dagger}_{+ N} \partial^{\mu}\phi_{+ N}   \, + \, \partial_{\mu}\phi^{\dagger}_{- N} \partial^{\mu}\phi_{- N}   \, + \,\bar{\psi}_{N}\slashed{\partial} \psi_{N}\right)  \nonumber \\
+%     \mathcal{L}^{\text{int.}}       & \, = \,   \, + \,  \sum_{N}\left(\left|\mathcal{F}_{+ N}\right|^{2}\, + \,\left|\mathcal{F}_{-N}\right|^{2} \right)   \, + \,  \left[ f_{+} \right]_{\mathcal{F}_{+}}  \, + \,    \left[  f_{-} \right]_{\mathcal{F}_{-}}  \ ,
+    \label{08-02-24}
+\end{IEEEeqnarray}
+y
+ \begin{IEEEeqnarray}{rl}
+          (-) \mathcal{L}^{\text{int}}      & \, = \,   \sum_{N} \left| \frac{\partial f\left(\phi_{+},\phi^{*}_{-}\right)  }{\partial \phi_{+ N} }\right| ^{2} \, + \,    \sum_{N}  \left|  \frac{\partial f\left(\phi_{+},\phi^{*}_{-}\right)  }{\partial \phi^{*}_{-N} }\right| ^{2} 
+ \, +\, {\left( -\right)^{\Phi_{M}}}\text{Re}\left\lbrace \left( \psi_{- N}^{\dagger}\epsilon\psi^{*}_{- M} \right) \left(  \frac{\partial f\left(\phi_{+},\phi^{*}_{-}\right)   }{ \partial\phi^{*}_{- M} \partial \phi^{*}_{- N}}\right)  \right\rbrace   \nonumber \\
+   &\quad  \, + \, \text{Re}\left\lbrace\frac{\left( -\right)^{\Phi_{N}}}{2}\left( \psi_{+ N}^{\intercal}\epsilon\psi_{+ M} \right)     \frac{\partial f\left(\phi_{+},\phi^{*}_{-}\right)  }{\partial \phi_{+ M} \partial \phi_{+ N} } \right\rbrace    \, - \, 2\text{Re}\left\lbrace \left( \bar{\psi}_{N}\psi_{+ M} \right) \frac{\partial f\left(\phi_{+},\phi^{*}_{-}\right)  }{\partial \phi_{+ M} \partial \phi^{*}_{- N}} \right\rbrace       \nonumber\\
+    \label{08-02-25}
+\end{IEEEeqnarray}
+Para el caso del superpotencial trilinear escalar, escribimos
+\begin{IEEEeqnarray}{rl}
+        \left( -2\right)     f\left( \Phi_{+},\Phi^{\dagger}_{+}\right)  \, = \,  2m\Phi^{\dagger}_{+} \Phi_{+}   \, + \,  \frac{i g}{3!}\Phi^{3}_{+}  \, + \,   \frac{i g'}{3!}\Phi^{\dagger 3}_{+} \ ,
+    \label{08-02-26}
+\end{IEEEeqnarray}
+de aqui podemos ver que 
+\begin{IEEEeqnarray}{rl}
+            \frac{\partial f\left(\phi_{+},\phi^{*}_{-}\right)  }{\partial \phi_{+ } }  &\, = \,-m\phi^{*}_{-}  \, - \,{i g}\phi^{2}_{+} \ , \quad          \frac{\partial f\left(\phi_{+},\phi^{*}_{-}\right)  }{\partial \phi^{*}_{- } }  \, = \,-m\phi_{+}  \, - \,  {i g'}\phi^{*2}_{-} \ , \nonumber \\ 
+                  \frac{\partial f\left(\phi^{*}_{-},\phi^{*}_{-}\right)   }{ \partial\phi^{*}_{- } \partial \phi^{*}_{- }}&\, = \,- 2ig' \phi^{*}_{-}, \quad                       \frac{\partial f\left(\phi_{+},\phi_{+}\right)   }{ \partial\phi_{+} \partial \phi_{+ }}\, = \, -2ig \phi_{+}\nonumber \\
+                      \frac{\partial f\left(\phi_{+},\phi_{+}\right)   }{ \partial\phi_{+} \partial \phi^{*}_{- }}&\, = \, -m\nonumber \\
+    \label{08-02-27}
+\end{IEEEeqnarray}
+Por lo que para este caso, las Ecs. \eqref{08-02-24} y \eqref{08-02-25} se reducen a
+\begin{IEEEeqnarray}{rl}
+            \mathcal{L}^{\text{libre}}   & \, = \, -\partial_{\mu}\phi^{*}_{+ } \partial^{\mu}\phi_{+ }   \, - \, \partial_{\mu}\phi^{\dagger}_{- } \partial^{\mu}\phi_{- }   \, -\,\bar{\psi}\slashed{\partial} \psi\, - \,m^{2}\left(\phi^{*}_{-}\phi_{-}   \, - \, \phi^{*}_{+}\phi_{+}\right)    \, - \, m  \bar{\psi}\psi \nonumber \\
+             \mathcal{L}^{\text{int.}}   & \, = \,  i m\,\left(  g'^{*}\phi_{+}\phi^{2}_{-}  \, - \,g'\phi^{*}_{+}\phi^{2 *}_{-}  \right)   \, +\,i\left( g'  \psi^{\dagger}\epsilon\psi^{*}_{- }\phi^{*}_{-}   \, + \, g'^{*}\psi^{\intercal}\epsilon\psi_{-}\phi_{-}  \right)     \nonumber \\
+          &\quad  \, +\,i\left(g   \psi^{\intercal}\epsilon\psi_{+ }\phi_{+}   \, + \, g^{*}\psi^{\dagger}\epsilon\psi^{*}_{+ }\phi^{*}_{+}  \right)  \, + \,   i m\, \left(g^{*} \phi^{*}_{-}\phi^{*2}_{+}  \, - \, g\phi_{-}\phi^{2}_{+} \right)  \nonumber \\
+             &\qquad    \, - \, \vert g \vert^{2}\left( \phi^{*}_{+}\phi_{+}\right)^{2}   \, - \,\vert g' \vert^{2}\left( \phi^{*}_{-}\phi_{-}\right)^{2}\ .  \nonumber \\
+    \label{08-02-29}
+\end{IEEEeqnarray}
+Haciendo la identificación  $ g = g_{+} $ y $ g = g^{*}_{-} $, podemos notar que 
+\begin{IEEEeqnarray}{rl}
+            \mathcal{L}^{\text{int.}}   \, = \, - \mathcal{H}^{\text{int.}}\ .
+    \label{08-02-30}
+\end{IEEEeqnarray}
+Como hemos demostrado de manera explicita en el caso del supercampo escalar, \textit{la corrección a orden mas bajo de los términos no covariantes que surgen del orden temporal en formalismo nocanónico, corresponde en el formalismo canónico,  a los términos de interacción  que surgen después de evaluar los campos auxiliares en las ecuaciones del movimiento.}
+\section{Supercampos espinoriales.}
+En esta seccion avanzamos 
+Para probar de manera más completa el formalismo, nos hemos dado a la tarea de formular una nueva teoria 
+

@@ -1,0 +1,44 @@
+\contentsline {chapter}{Resumen}{iii}{dummy.2}
+\vspace {1em}
+\contentsline {chapter}{Abstract}{iv}{dummy.3}
+\vspace {1em}
+\contentsline {chapter}{Agradecimientos}{v}{dummy.4}
+\vspace {1em}
+\contentsline {chapter}{\'Indice General}{vi}{dummy.5}
+\contentsline {chapter}{Lista de Figuras}{viii}{dummy.7}
+\vspace {2em}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.9}
+\contentsline {chapter}{\numberline {2}Estados de Superpart\IeC {\'\i }cula}{7}{chapter.13}
+\contentsline {section}{\numberline {2.1}Super Mec\IeC {\'a}nica Cu\IeC {\'a}ntica}{8}{section.14}
+\contentsline {section}{\numberline {2.2}Transformaciones Cu\IeC {\'a}nticas de Super Poincar\IeC {\'e}}{21}{section.22}
+\contentsline {section}{\numberline {2.3}Las Superpart\IeC {\'\i }culas-$ (\pm ) $}{27}{section.27}
+\contentsline {section}{\numberline {2.4}Los Estados de Part\IeC {\'\i }cula}{32}{section.30}
+\contentsline {chapter}{\numberline {3}La Supermatriz $ \mathcal {S} $}{49}{chapter.43}
+\contentsline {section}{\numberline {3.1}Estados In y Out}{50}{section.44}
+\contentsline {section}{\numberline {3.2}Covariancia de la Supermatriz $ \mathcal {S} $}{52}{section.51}
+\contentsline {section}{\numberline {3.3}Teor\IeC {\'\i }a de Perturbaciones}{55}{section.53}
+\contentsline {section}{\numberline {3.4}Superpart\IeC {\'\i }culas Id\IeC {\'e}nticas}{57}{section.54}
+\contentsline {section}{\numberline {3.5}El Principio de Descomposici\IeC {\'o}n en C\IeC {\'u}mulos}{64}{section.56}
+\contentsline {chapter}{\numberline {4}Supercampos Cu\IeC {\'a}nticos}{69}{chapter.58}
+\contentsline {section}{\numberline {4.1}Los Supercampos Libres}{69}{section.59}
+\contentsline {section}{\numberline {4.2}Supercampos Quirales Irreducibles}{78}{section.65}
+\contentsline {section}{\numberline {4.3}Supercampos Quirales Generales}{85}{section.67}
+\contentsline {section}{\numberline {4.4}Supercampos M\IeC {\'\i }nimos y el Polinomio General de Weinberg}{95}{section.73}
+\contentsline {section}{\numberline {4.5}Interacciones Generales}{101}{section.75}
+\contentsline {chapter}{\numberline {5}Las Reglas de Super Feynman}{105}{chapter.76}
+\contentsline {section}{\numberline {5.1}Reglas de Apareamiento}{106}{section.77}
+\contentsline {section}{\numberline {5.2}El Superpropagador No-covariante}{111}{section.78}
+\contentsline {section}{\numberline {5.3}La Supermatriz $ \mathcal {S} $ Covariante}{115}{section.79}
+\contentsline {section}{\numberline {5.4}Formulaci\IeC {\'o}n de las Reglas}{122}{section.80}
+\contentsline {chapter}{\numberline {6}Las Simetr\IeC {\'\i }as $ \mathit {P} $, $ \mathit {T} $, $ \mathit {C} $ y $ \mathcal {R} $}{127}{chapter.81}
+\contentsline {section}{\numberline {6.1}Superestados Sim\'etricos}{127}{section.82}
+\contentsline {section}{\numberline {6.2}Supercampos Cu\IeC {\'a}nticos}{137}{section.85}
+\contentsline {chapter}{\numberline {7}Aplicaciones}{145}{chapter.86}
+\contentsline {section}{\numberline {7.1}El Supercampo Escalar}{145}{section.87}
+\contentsline {section}{\numberline {7.2}Equivalencia con el Modelo de Wess-Zumino}{149}{section.89}
+\contentsline {chapter}{\numberline {8}Conclusiones}{159}{chapter.91}
+\vspace {2em}
+\contentsline {chapter}{\numberline {A}Notaci\IeC {\'o}n y Convenciones}{163}{appendix.92}
+\contentsline {chapter}{\numberline {B}Superfunciones, Derivadas e Integrales Fermi\IeC {\'o}nicas}{165}{appendix.95}
+\vspace {2em}
+\contentsline {chapter}{Bibliography}{175}{dummy.97}

@@ -1,0 +1,1061 @@
+\chapter{Supercampos Cuánticos}
+\label{Chap5}
+\epigraph{\textit{``So here’s another answer to the question of what quantum field theory is: it
+is S-matrix theory, made practical."}}{S. Weinberg~\cite{Weinberg:1996kw}}
+\lhead{Cap\'itulo 4. \emph{Supercampos cuánticos}}
+ La necesidad de conjuntar la invariancia de Lorentz, los principios de la mecánica cuántica y el principio de descomposición en cúmulos,  es lo que da origen a los supercampos cuánticos, esta es la esencia del \emph{enfoque de Weinberg para la teoría del campo}~\cite{Weinberg:1964cn,Weinberg:1969di}, el cual extendemos aquí para el caso del superespacio~\cite{Jimenez:2014gfa}.  Tenemos los elementos necesarios para hacerlo, ya que hemos desarrollado la teoría de representaciones del grupo de super Poincar\'e en el superespacio y hemos visto que es lo que entendemos por una supermatriz $ \mathcal{S} $ completamente covariante.  
+
+\section{Los Supercampos Libres}
+\label{chap5:1}
+
+Con el calificativo de que aún no hemos lidiado con la  no-invariancia del orden temporal, hemos visto que las densidades escalares Hamiltonianas en el superespacio  nos permiten  escribir  potenciales que nos dan una supermatriz $ \mathcal{S} $ covariante:
+\begin{IEEEeqnarray}{rl}
+            \mathsf{V}\left( t\right)   \, = \,  \int d^{3}x d^{4}\vartheta \,\mathcal{H}\left( x,\vartheta\right)  \ ,
+    \label{5-1-01}
+\end{IEEEeqnarray}
+donde  $ \mathcal{H}  $ satisface la condición de causalidad:
+\begin{IEEEeqnarray}{rl}
+             \left[ \mathcal{H}\left(x, \vartheta \right) ,\mathcal{H}\left(x', \vartheta' \right)\right]   \, = \, 0, \quad \left(x -x' \right)^{2} > 0 \  .
+    \label{5-1-01-1}
+\end{IEEEeqnarray}
+ Por otro lado, hemos visto que para satisfacer el  principio de descomposición en cúmulos, tenemos que escribir el Hamiltoniano en términos de  operadores de creación y de aniquilación.  Con el fin de cumplir con estos dos requerimientos, introducimos los  supercampos de aniquilación    $ \Xi^{\dagger}_{\pm n}( x,\vartheta)  $ y los supercampos de creación $ \Xi_{\pm {n}}( x,\vartheta)  $ definidos por las relaciones
+\begin{IEEEeqnarray}{l}             
+                \Xi^{\dagger}_{\pm \ell}( x,\vartheta)  \, \equiv \,    \sum_{\sigma\, n}\int  \,  d\left( \mathbf{p} \, s \right)   \,  {a}^{\dagger}_{\pm}\left( \textbf{p}\,s \,\sigma\, n\right)  v_{\pm \ell}\left( x,\vartheta; \mathbf{p} \, s \,\sigma\, n\right)   \ ,  
+    \label{5-1-02}
+ \\
+                 \Xi_{\pm \ell}( x,\vartheta)  \, \equiv \, \sum_{\sigma\, n} \int   \, d\left( \mathbf{p} \, s \right) \, {a}_{\pm}\left( \textbf{p}\,s \,\sigma\, n\right)u_{\pm {n}}\left( x,\vartheta; \mathbf{p} \, s \,\sigma\, n\right)\ ,  
+    \label{5-1-03}
+\end{IEEEeqnarray}
+ respectivamente. Esto nos da  un total de cuatro tipos de supercampos.  Los operadores de creación y aniquilación que aparecen en estas definiciones, son los presentados en las Ecs. \eqref{3-3-19} y \eqref{3-3-21}, respectivamente. %{\color{Green}Estamos considerando representaciones de los superestados completamente irreducibles donde  el operador $ {a}^{\dagger}_{-} $ esta relacionado con  $ \tilde{a}^{\dagger}_{-} $ mediante la integral fermiónica \eqref{3-3-17}, con \eqref{3-3-29}. }
+Recordamos que los símbolos $ \sigma $ y $ n $ representan las proyecciones de los superspines y  las especies de superpartículas, respectivamente. El elemento de volumen  $  d\left( \mathbf{p}\,  s\right)  $ en las Ecs. \eqref{5-1-02} y   \eqref{5-1-03}, depende de si la especie de superpartícula en cuestión, es masiva o no. Para el caso masivo, tenemos la medida invariante fermiónica
+\begin{IEEEeqnarray}{rl}
+            d\left( \mathbf{p}\,  s\right)  &  \, = \, d^{3}\textbf{p}\, d^{2}s_{+} \,d^{2}s_{-}\ , 
+    \label{5-1-04}
+\end{IEEEeqnarray}
+mientras que para el caso sin masa,
+\begin{IEEEeqnarray}{rl}        
+            d\left( \mathbf{p}\,  s \right)   &  \, = \, d^{3}\textbf{p}\, \left[ d\left( u(p)\cdot \gamma _{5}s_{+}\right)\right]  \, \left[  d\left( u(p)\cdot\gamma _{5} s_{-}\right)\right] \ . 
+    \label{5-1-05}
+\end{IEEEeqnarray}
+  Las \emph{superfunciones de onda},
+\begin{IEEEeqnarray}{rl}
+            u_{\pm \ell}\left( x,\vartheta;\textbf{p},s,\sigma\right), \quad  v_{\pm \ell}\left( x,\vartheta;\textbf{p},s,\sigma\right)   \ ,
+    \label{5-1-06}
+\end{IEEEeqnarray}
+se escogen de manera que los supercampos bajo transformaciones:
+\begin{itemize}
+  \item de  Lorentz:
+     \begin{IEEEeqnarray}{rl}
+                              \mathsf{U}(\Lambda,a) \Xi^{\dagger}_{\pm \ell}(x,\vartheta) \mathsf{U}(\Lambda,a) ^{-1}  &\, = \, \sum_{  \pm\bar{\ell}}\left[ {S}(\Lambda^{-1})\right] _{ \pm{\ell},\pm\bar{\ell}}{\Xi}^{\dagger}_{\pm \bar{\ell}}\left( \Lambda x+a ,D(\Lambda)\vartheta\right) \ , \nonumber \\ 
+                              \\
+                              \mathsf{U}(\Lambda,a) \Xi_{\pm \ell}(x,\vartheta) \mathsf{U}(\Lambda,a) ^{-1}  &\, = \, \sum_{  \pm\bar{\ell}}\left[ {S}(\Lambda^{-1})\right] _{ \pm{\ell},\pm\bar{\ell}}{\Xi}^{*}_{\pm \bar{\ell}}\left( \Lambda x+a ,D(\Lambda)\vartheta\right) \ . \nonumber \\                            
+       \label{5-1-07}
+                  \end{IEEEeqnarray} 
+  \item de supersimetría:                
+   \begin{IEEEeqnarray}{rl}                                              
+                                   \mathsf{U}(\zeta)\, {\Xi}^{\dagger}_{\pm \ell}(x,\vartheta)\, \mathsf{U}(\zeta) ^{-1}  &\, = \, {\Xi}^{\dagger}_{\pm \ell}\left(  x^{\mu}+\vartheta\cdot\gamma^{\mu}\zeta,\vartheta \, + \, \zeta\right)  \ ,    \nonumber \\
+                                    \label{5-1-08}
+                                   \\               
+                                    \mathsf{U}(\zeta) \,{\Xi}_{\pm \ell}(x,\vartheta)\, \mathsf{U}(\zeta) ^{-1}  &\, = \, {\Xi}_{\pm \ell}\left(  x^{\mu}+\vartheta\cdot\gamma^{\mu}\zeta,\vartheta \, + \, \zeta\right)  \ .                          
+                                    \nonumber \\
+       \label{5-1-09}
+                  \end{IEEEeqnarray}            
+\end{itemize}
+Las matrices $ \left[ {S}(\Lambda^{-1})\right] _{ \pm\bar{\ell},\pm\bar{\ell}} $ forman una representación del grupo de Lorentz:
+\begin{IEEEeqnarray}{rl}
+              {S}\left( \Lambda_{1}\right)  {S}\left( \Lambda_{2}\right)   \, = \,  {S}\left( \Lambda_{1} \Lambda_{2}\right)   \ .
+    \label{5-1-10}
+\end{IEEEeqnarray}
+Notemos que $ \left[ {S}(\Lambda^{-1})\right] _{ \pm\bar{\ell},\pm\bar{\ell}} $ puede ser en principio diferente para cada tipo de supercampo, esto es, tenemos cuatro representaciones del grupo de Lorentz que pueden ser diferentes. Al igual que en todo el texto, hemos usado 
+\begin{IEEEeqnarray}{rl}
+            \vartheta\cdot\gamma^{\mu}\zeta  \, = \, \vartheta^{\intercal}\epsilon\gamma_{5}\gamma^{\mu}\zeta \  .
+    \label{5-1-11}
+\end{IEEEeqnarray}
+Una vez construidos estos campos, formamos interacciones invariantes tomando combinaciones
+\begin{IEEEeqnarray}{rl}
+            \mathcal{H}\left(x,\vartheta \right)  & \, = \,\sum_{NM} \sum _{\varepsilon_{1} \ell_{1}\cdots\varepsilon_{N} \ell_{N}}\sum _{\tilde{\varepsilon}_{1} \tilde{\ell}_{1}\cdots\tilde{\varepsilon}_{N} \tilde{\ell}_{N}} g_{\varepsilon_{1} \ell_{1}\cdots\varepsilon_{N} \ell_{N},\tilde{\varepsilon}_{1} \tilde{\ell}_{1}\cdots\tilde{\varepsilon}_{N} \tilde{\ell}_{M}} \nonumber\\
+       &  \qquad\times   \Xi^{\dagger}_{\varepsilon_{1} \ell_{1}}(x,\vartheta) \cdots\Xi^{\dagger}_{\varepsilon_{N} \ell_{1}}(x,\vartheta)  \Xi_{\tilde{\varepsilon}_{1} \tilde{\ell}_{1}}(x,\vartheta) \cdots\Xi_{\tilde{\varepsilon}_{M} \tilde{\ell}_{1}}(x,\vartheta) \ , \nonumber \\
+    \label{5-1-12}
+\end{IEEEeqnarray}
+donde la suma en $ \varepsilon_{1},\cdots,\varepsilon_{N}, \tilde{\varepsilon}_{1},\cdots, \tilde{\varepsilon}_{M}$ toma los valores de $ + $ y $ - $. Los índices con barra nos recuerdan que todos los índices pueden pertenecer a diferentes representaciones del grupo de Lorentz. Tendremos una densidad invariante de Lorentz si escogemos a los coeficientes  $ g_{L_{1}\cdots L_{N}} $ como tensores invariantes, esto es, para cualquier $ \Lambda $:
+\begin{IEEEeqnarray}{rl}
+           g_{\varepsilon_{1} \ell_{1}\cdots\varepsilon_{N} \ell_{N},\tilde{\varepsilon}_{1} \tilde{\ell}_{1}\cdots\tilde{\varepsilon}_{N} \tilde{\ell}_{M}}  &\, = \,  \sum _{\varepsilon'_{1} \ell'_{1}\cdots\varepsilon'_{N} \ell'_{N}}\sum _{\tilde{\varepsilon}'_{1} \tilde{\ell}'_{1}\cdots\tilde{\varepsilon}'_{N} \tilde{\ell}'_{N}}  D\left( \Lambda^{-1}\right)_{\varepsilon_{1} \ell_{1},\varepsilon'_{1} \ell'_{1}}\cdots  D\left( \Lambda^{-1}\right)_{\varepsilon_{N} \ell_{N},\varepsilon'_{N} \ell'_{N}}\nonumber \\
+       \times \quad  &    D\left( \Lambda^{-1}\right)_{\tilde{\varepsilon}_{1} \tilde{\ell}_{1},\tilde{\varepsilon}'_{1} \ell'_{1}}  \cdots   D\left( \Lambda^{-1}\right)_{\tilde{\varepsilon}_{M} \tilde{\ell}_{M},\tilde{\varepsilon}'_{M} \ell'_{M}} g_{\varepsilon'_{1} \ell_{1}\cdots\varepsilon'_{N} \ell'_{N},\tilde{\varepsilon}'_{1} \tilde{\ell}'_{1}\cdots\tilde{\varepsilon}'_{N} \tilde{\ell}'_{M}} \ . \nonumber \\
+    \label{5-1-14}
+\end{IEEEeqnarray}
+Estos tensores no pueden depender de las coordenadas $ x^{\mu} $, ya que esto haría que la densidad Hamiltoniana $ \mathcal{H} $ no fuese invariante ante el subgrupo de traslaciones. En el próximo capítulo, veremos  que bajo ciertas condiciones sobre los supercampos  (condiciones de quiralidad), los tensores $ g_{\varepsilon_{1} \ell_{1}\cdots,\tilde{\varepsilon}_{1} \tilde{\ell}_{1}\cdots} $ pueden  incluir términos locales en las coordenadas fermiónicas $ \vartheta $ de tal forma que la integral  $ \int d^{4}x d^{4}\vartheta\,\mathcal{H} $  siga siendo invariante supersimétrica.
+
+El siguiente paso, es el de establecer la forma  de las superfunciones de onda $ u_{\pm\ell}$  y $ v_{\pm \ell}$. Primero desarrollamos las consecuencias de la simetría de Lorentz. Los operadores de creación y aniquilación, bajo la acción del grupo de Lorentz transforman como [ver Ecs. \eqref{3-3-22} y \eqref{3-3-23}]
+\begin{IEEEeqnarray}{rl}
+               \mathsf{U}(\Lambda,b) a^{\dagger}_{\pm}\left( \mathbf{p}\, s\,\sigma\, n\right) & \mathsf{U}(\Lambda,b)^{-1}  \nonumber    \\
+               &\, = \, e^{-i\Lambda p\cdot b} \ \sqrt{\tfrac{(\Lambda p)^{0}}{p^{0}}}\sum_{\sigma'}U^{(j_{n})}_{\sigma'\sigma}[W(\Lambda,\textbf{p})^{-1}]  a^{\dagger}_{\pm}\left( \mathbf{p}_{\Lambda}\,D(\Lambda) s\,\sigma'\, n\right) \ , 
+               \nonumber    \\  
+               \label{5-1-16} \\                
+                   \mathsf{U}(\Lambda,b) a_{\pm}\left( \textbf{p}\, s\,\sigma\, n\right) &  \mathsf{U}(\Lambda,b)^{-1}
+\nonumber \\
+               &    \, = \, e^{+ i\Lambda p\cdot b}  \sqrt{\tfrac{(\Lambda p)^{0}}{p^{0}}}\sum_{\sigma'}U^{(j_{n}) }_{\sigma'\sigma}[W(\Lambda,\textbf{p})] ^{*} a_{\pm}\left( \mathbf{p}_{\Lambda}\,D(\Lambda) s\,\sigma'\, n\right)\ .       \nonumber \\     
+               \label{5-1-17}                                            
+\end{IEEEeqnarray}
+
+  El elemento de volumen de momento bosónico, satisface la relación   ${d^{3}\mathbf{p}}/{p ^{0}}    \, = \, {d^{3}\mathbf{p}_{\Lambda}}/{\left(  \Lambda p \right) ^{0}}$, mientras que la parte fermiónica del elemento de volumen en el espacio de momentos es invariante de Lorentz,  por lo que la condición de invariancia de Lorentz del elemento de volumen en el superespacio resulta ser
+\begin{IEEEeqnarray}{rl}
+            \frac{1}{p ^{0}} \,  d\left( \mathbf{p}\,  s\right)   \, = \, \frac{1}{\left(  \Lambda p \right) ^{0}}\,   d\left( \mathbf{p}_{\Lambda}\,  D(\Lambda)s\right) \ .
+    \label{5-1-18}
+\end{IEEEeqnarray}
+Con este resultado,  llegamos a que
+	\begin{IEEEeqnarray}{rl}
+               \sum_{ \pm\bar{\ell}}    \left[ {S}\left( \Lambda^{-1} \right)\right] _{ \pm \ell ,\pm\bar{\ell}}   \, v_{\pm \bar{\ell}}\left( \Lambda x+b,D(\Lambda)\vartheta;\mathbf{p}_{\Lambda}\,  D(\Lambda)s\,\sigma\,n\right)   &   \nonumber 
+                 \\ 
+            \, = \, e^{-  i \left( \Lambda b\right) \cdot p} \sqrt{\frac{p^{0} }{ \left( \Lambda p\right)^{0}}}\, \sum_{\sigma'}          U^{(j_{n})}_{\sigma'\sigma } &\left[W\left(  \Lambda,p \right) \right]  v_{\pm {\ell}}\left( x,\vartheta;\mathbf{p}\,s\,\sigma'\,  n\right) \ , \nonumber   \\  
+             \label{5-1-19} \\
+            \sum_{ \pm\bar{\ell}}    \left[ {S}\left( \Lambda^{-1} \right)\right] _{ \pm \ell ,\pm\bar{\ell}}   \, u_{\pm \bar{\ell}}\left( \Lambda x+b,D(\Lambda)\vartheta;\mathbf{p}_{\Lambda}\,D(\Lambda)s\,\sigma\,n\right)   &    \nonumber                    \\
+            \, = \, e^{+  i \left( \Lambda b\right) \cdot p}  \sqrt{\frac{p^{0} }{ \left( \Lambda p\right)^{0}}}\, \sum_{\sigma'}           U^{(j_{n})*}_{\sigma'\sigma } & \left[W\left(  \Lambda,p \right) \right]  u_{\pm {\ell}}\left( x,\vartheta;\mathbf{p}\,s\,\sigma'\,  n\right)\ .\nonumber \\             
+             \label{5-1-20}
+    	\end{IEEEeqnarray} 
+Las matrices  $ U^{(j_{n})}_{\sigma'\sigma }$ son unitarias, por lo que estas últimas expresiones pueden ser reescritas como 
+\begin{IEEEeqnarray}{rl}
+     \sum_{\sigma'}  U^{(j_{n})*}_{\sigma' \sigma} \left[W\left(  \Lambda,p \right) \right]     \, v_{\pm {\ell}}\left( \Lambda x+b,D(\Lambda)\vartheta;\mathbf{p}_{\Lambda}\,D(\Lambda)s\,\sigma'\,n\right)   &    \nonumber \\
+            \, = \,e^{-  i \left( \Lambda b\right) \cdot p}  \sqrt{\frac{ p^{0} }{\left( \Lambda p\right)^{0}}}             \sum_{\pm \bar{\ell}}   \left[ {S}\left( \Lambda \right)\right] _{ \pm \ell ,\pm\bar{\ell}}  &  v_{\pm \bar{\ell}}\left( x,\vartheta;\mathbf{p}\,s\,\sigma\,  n\right)\ ,\nonumber \\ 
+             \label{5-1-21} \\
+     \sum_{\sigma'}       U^{(j_{n})}_{\sigma' \sigma}\left[W\left(  \Lambda,p \right) \right] \, u_{\pm {\ell}}\left( \Lambda x+b,D(\Lambda)\vartheta;\mathbf{p}_{\Lambda}\,D(\Lambda)s\,\sigma'\,n\right)   &    \nonumber \\
+            \, = \, e^{+  i \left( \Lambda b\right) \cdot p}     \sqrt{\frac{ p^{0} }{\left( \Lambda p\right)^{0}}} \sum_{ \pm\bar{\ell}}         \left[ {S}\left( \Lambda \right)\right] _{ \pm \ell ,\pm\bar{\ell}}   &  u_{\pm \bar{\ell}}\left( x,\vartheta;\mathbf{p}\,s\,\sigma\,  n\right) \ .\nonumber \\             
+             \label{5-1-22}
+    	\end{IEEEeqnarray} 
+	Restringimos este último conjunto de relaciones a valores específicos  de las transformaciones de Lorentz  $ \left(  \Lambda,b\right) $, del espacio de configuración $ x $  y del espacio de momentos  $ p $. 
+ \begin{center}
+\subsubsection*{Traslaciones en el origen espacial} 
+\end{center}
+Haciendo
+	\begin{equation}
+             x=0, \quad  \Lambda^{\mu}_{\,\, \nu } = \delta^{\mu}_{\,\,\nu}\ , \quad   
+           \label{5-1-23}
+  	\end{equation}
+ se sigue que
+	\begin{equation}
+             W(\Lambda, p)^{\mu}_{\,\, \nu} = \delta^{\mu}_{\,\,\nu}  \quad U_{\sigma\sigma'}\left( I\right) =\delta_{\sigma\sigma'}, \quad S_{ {n} {m}}(I)\, = \, \delta_{ {n} {m}}\ .
+           \label{5-1-24}
+  	\end{equation}
+Llamamos a las superfunciones de onda en el origen como:
+\begin{IEEEeqnarray}{rl}
+             v_{\pm {\ell}}\left(  \vartheta;\mathbf{p}\,s\,\sigma'\,n\right)     &  \, \equiv \,  v_{\pm {\ell}}\left( 0, \vartheta;\mathbf{p}\,s\,\sigma'\,n\right)  	\ ,     \label{5-1-25}\\
+                v_{\pm {\ell}}\left(  \vartheta;\mathbf{p}\,s\,\sigma'\,n\right)   &    \, \equiv \,  v_{\pm {\ell}}\left( 0,\vartheta;\mathbf{p}\,s\,\sigma'\,n\right)  \ .
+    \label{5-1-26}
+\end{IEEEeqnarray}
+
+La primera condición para las superfunciones de onda $ {v}_{\pm \ell} $	y $ {u}_{\pm \ell} $ , que se desprende de  restringir a los valores $ x=0 $ y $ \Lambda =I$, nos dice  que la dependencia  en la coordenada $ x $ viene dada por el mapeo exponencial y los coeficientes en el origen:
+\begin{IEEEeqnarray}{rl}       
+              v_{\pm {\ell}}\left(  x,\vartheta;\mathbf{p}\,s\,\sigma'\,n\right)    
+         &  \, = \,      \,e^{-  i x \cdot p}  v_{\pm {\ell}}\left( \vartheta;\mathbf{p}\,s\,\sigma'\,n\right)\ , \label{5-1-27}\\
+                u_{\pm {\ell}}\left(  x,\vartheta;\mathbf{p}\,s\,\sigma'\,n\right)    
+         &  \, = \,        \,e^{+  i x \cdot p}  u_{\pm {\ell}}\left( \vartheta;\mathbf{p}\,s\,\sigma'\,n\right) \ . \label{5-1-28}                    
+    	\end{IEEEeqnarray} 
+Con este último resultado, las condiciones generales \eqref{5-1-21} se reducen a     	
+    	 		\begin{IEEEeqnarray}{rl}
+     \sum_{\sigma'}  U^{(j_{n})*}_{\sigma' \sigma } \left[W\left(  \Lambda,p \right) \right]     \, v_{\pm {\ell}}\left( D(\Lambda)\vartheta;\mathbf{p}_{\Lambda}\,D(\Lambda)s\,\sigma'\,n\right)   &    \nonumber \\
+            \, = \, \sqrt{\frac{ p^{0}}{ \left( \Lambda p\right)^{0}}}\,     \sum_{\pm \bar{\ell}}    &  \left[ {S}\left( \Lambda \right)\right] _{ \pm \ell ,\pm\bar{\ell}}   v_{\pm \bar{\ell}}\left(\vartheta;\mathbf{p}\,s\,\sigma\,  n\right)\ , \nonumber \\
+             \label{5-1-29} \\   
+     \sum_{\sigma'}       U^{(j_{n})}_{\sigma' \sigma}\left[W\left(  \Lambda,p \right) \right] \, u_{\pm {\ell}}\left( D(\Lambda)\vartheta;\mathbf{p}_{\Lambda}\,D(\Lambda)s\,\sigma'\,n\right)   &    \nonumber \\
+            \, = \,\sqrt{\frac{ p^{0}}{ \left( \Lambda p\right)^{0}}}\, \sum_{\pm \bar{\ell}}    &       \left[ {S}\left( \Lambda \right)\right] _{ \pm \ell ,\pm\bar{\ell}}    u_{\pm \bar{\ell}}\left( \vartheta;\mathbf{p}\,s\,\sigma\,  n\right)\ .\nonumber \\             
+             \label{5-1-30}
+    	\end{IEEEeqnarray} 
+    	
+  \begin{center}        		
+\textbf{Transformaciones desde el vector estándar}
+\end{center}  
+Escogemos el valor del momento en el vector  estándar $ k  $ y la transformación de Lorentz como la transformación del vector estándar al valor general del momento $ q $: 
+	\begin{equation}
+       p =k, \quad     \Lambda^{\mu}_{\,\, \nu } = L(q)^{\mu}_{\,\,\nu},  
+           \label{5-1-31}
+  	\end{equation}
+  	en este caso tenemos que
+\begin{equation}
+   W\left( L(q), k\right)^{\mu}_{\,\, \nu }  \, = \,  \delta ^{\mu}_{\,\, \nu },   \quad U^{(j_{n})}_{\sigma\sigma'}\left[ I\right] =\delta_{\sigma\sigma'} \ .
+           \label{5-1-32}
+  	\end{equation}  	
+  	
+ Obtenemos las superfunciones de onda generales en términos de estas mismas pero evaluadas en el vector estándar:
+  	 	\begin{IEEEeqnarray}{rl}   
+                 v_{\pm \ell}\left( \vartheta;\mathbf{q}\, s\, \sigma\,  n\right)         &\, = \,   \sqrt{\tfrac{k^{0}}{q^{0}}}  \sum_{ \pm\bar{\ell}}    \left[ {S}\left( L(q) \right)\right] _{ \pm \ell ,\pm\bar{\ell}}  v_{\pm \bar{\ell}}\left(\mathbf{k}\,D^{-1}_{q}\vartheta;\,D^{-1}_{q}s\,\sigma\,  n\right)\ ,\nonumber \\ 
+                   \label{5-1-33} \\
+                   u_{\pm \ell}\left( \vartheta;\mathbf{q}\, s\, \sigma\,  n\right)         &\, = \,   \sqrt{\tfrac{k^{0}}{q^{0}}}  \sum_{\pm \bar{\ell}}    \left[ {S}\left( L(q) \right)\right] _{ \pm \ell ,\pm\bar{\ell}}  u_{\pm \bar{\ell}}\left(\mathbf{k}\,D^{-1}_{q}\vartheta;\,D^{-1}_{q}s\,\sigma\,  n\right)\ .\nonumber \\                        
+             \label{5-1-34}
+    	\end{IEEEeqnarray}
+   donde 	$ D_{q} $ es la representación de Dirac evaluada en $ L(q) $.
+   
+\begin{center}
+\textbf{Grupos Peque\~ nos}
+\end{center}
+Restringimos el cuatro-momento al vector estándar  y las transformaciones de Lorentz  a elementos del  grupo peque\~no  que se generan de las transformaciones que dejan invariante a este vector estándar,
+	\begin{IEEEeqnarray}{l}
+                 \quad  p^{\mu} =k^{\mu}, \quad     \Lambda^{\mu}_{\,\, \nu } = W^{\mu}_{\,\,\nu}\ ,   \quad 
+             \label{5-1-36}
+    	\end{IEEEeqnarray}	  
+    	donde  $ 	 Wk=k $.  La transformación de Wigner $ W( \Lambda, p) $ es simplemente $ W $:
+\begin{IEEEeqnarray}{rl}
+            W(  W,k ) 	  \, = \, 	W, \quad 
+    \label{5-1-37}
+\end{IEEEeqnarray}
+Estas restricciones nos arrojan el siguiente conjunto de ecuaciones:
+ 		   	 		\begin{IEEEeqnarray}{rl}
+     \sum_{\sigma'}  U^{(j_{n})*}_{\sigma \sigma' } \left[W \right]     \, v_{\pm {\ell}}\left( \vartheta;\,s\,\sigma'\,n\right)   &    \nonumber \\
+            \, = \,            \sum_{ \bar{\ell}}    \left[ {S}\left( W \right)\right] _{ \pm \ell ,\pm\bar{\ell}}  & \,\,v_{\pm \bar{\ell}}\left(D^{-1}\left( W\right)\vartheta; D^{-1}\left( W\right) s\,\sigma\,  n\right)\ , \nonumber \\  
+            \label{5-1-40} \\
+             \sum_{\sigma'}  U^{(j_{n})}_{\sigma \sigma' } \left[W \right]     \, u_{\pm {\ell}}\left( \vartheta;\,s\,\sigma'\,n\right)   &    \nonumber \\
+            \, = \,            \sum_{ \bar{\ell}}    \left[ {S}\left( W \right)\right] _{ \pm \ell ,\pm\bar{\ell}}  & \,\,u_{\pm \bar{\ell}}\left(D^{-1}\left( W\right)\vartheta; D^{-1}\left( W\right) s\,\sigma\,  n\right) \ .\nonumber \\       
+             \label{5-1-41}
+    	\end{IEEEeqnarray} 
+\begin{center}
+\textbf{Transformaciones supersimétricas.}
+\end{center}
+Llego el momento de desarrollar las consecuencias de la supersimetría para la forma de las superfunciones de onda. Bajo la acción de supersimetría, los operadores de creación y aniquilación transforman como [ver las Ecs. \eqref{3-3-24} y \eqref{3-3-25}]
+\begin{IEEEeqnarray}{rl}                
+                   \mathsf{U}(\zeta) \,a^{\dagger}_{\pm}\left( \mathbf{p}\, s\,\sigma\, n\right)  \mathsf{U}(\zeta)^{-1}  &  \, = \,    \exp{\left[+i\zeta\cdot\slashed{p} s  \right]  } a^{\dagger}_{\pm}\left( \mathbf{p}\, s  \, + \, \zeta\,\sigma\, n\right)   \ ,                         \label{5-1-42} \\
+         \mathsf{U}(\zeta)\,  a_{\pm}\left( \mathbf{p}\, s \,\sigma\, n\right)  \mathsf{U}(\zeta)^{-1}  &  \, = \,    \exp{\left[-i \zeta\cdot \slashed{p} s  \right]  }  a_{\pm}\left( \mathbf{p}\, s  \, + \, \zeta\,\sigma\, n\right)    \ .
+     \label{5-1-43}
+\end{IEEEeqnarray}
+Esto implica que las superfunciones de onda obedecen las siguientes relaciones
+\begin{IEEEeqnarray}{rl}
+            e^{\left[ -i \left( \vartheta -s\right)\cdot \slashed{p}\zeta  \right] }v_{\pm {\ell}}\left( \vartheta \, + \, \zeta;\mathbf{p}\,s  \, + \, \zeta\,\sigma'\,n\right) &  \, = \, v_{\pm {\ell}}\left( \vartheta;\mathbf{p}\,s\,\sigma\,n\right)  \ ,     \label{5-1-44} \\
+              e^{\left[ +i \left( \vartheta -s\right)\cdot \slashed{p}\zeta  \right] }u_{\pm {\ell}}\left( \vartheta \, + \, \zeta;\mathbf{p}\,s  \, + \, \zeta\,\sigma'\,n\right) &  \, = \, u_{\pm {\ell}}\left( \vartheta;\mathbf{p}\,s\,\sigma\,n\right) \ .
+    \label{5-1-45}
+\end{IEEEeqnarray}
+Al hacer $ (   \zeta   \, = \, -s )$ en estas últimas expresiones obtenemos que las superfunciones de onda vienen dadas por el mapeo exponencial fermiónico multiplicado por una función que depende de la diferencias entre los 4-espinores fermiónicos de configuración y de momentos:
+\begin{IEEEeqnarray}{rl}
+       v_{\pm {\ell}}\left( \vartheta;\mathbf{p}\,s\,\sigma\,n\right)  & \, = \,       e^{ i  \vartheta \cdot \slashed{p} s  }\, v_{\pm {\ell}}\left(\mathbf{p} \,\left( \vartheta - s\right) \,\sigma'\,n\right)    \ , \label{5-1-46} \\
+          u_{\pm {\ell}}\left( \vartheta;\mathbf{p}\,s\,\sigma\,n\right)  & \, = \,       e^{ i  \vartheta \cdot \slashed{p} s  }\, u_{\pm {\ell}}\left(\mathbf{p} \,\left( \vartheta - s\right) \,\sigma'\,n\right)  \ .   
+    \label{5-1-47}
+\end{IEEEeqnarray}
+  Resumimos todo lo obtenido, escribiendo la forma  general de los supercampos       
+                  \begin{IEEEeqnarray}{rl}             
+                \Xi^{\dagger}_{\pm \ell}( x,\vartheta)   \, = \,  &   \sum_{\sigma n} \int\,  d\left( \mathbf{p} \, s \right)   \, e^{-i x\cdot p}    e^{ i  \vartheta \cdot \slashed{p} s  }\,{a}^{\dagger}_{\pm}\left( \textbf{p}\,s \,\sigma\, n\right)   \, v_{\pm {\ell}}\left( \mathbf{p}, \left( -i \slashed{p}\right) \left(\vartheta \, - \, s\right)  , \sigma, n \right)\ ,   \nonumber \\
+    \label{5-1-48}
+ \\
+                 \Xi_{\pm \ell}( x,\vartheta)  \, = \,  & \sum_{\sigma n} \int  \,  d\left( \mathbf{p} \, s \right)   \, e^{i x\cdot p}    e^{- i  \vartheta \cdot \slashed{p} s  }\,{a}_{\pm}\left( \textbf{p}\,s \,\sigma\, n\right)  \, u_{\pm {\ell}}\left( \mathbf{p}, \left( -i \slashed{p}\right) \left(\vartheta \, - \, s\right)  , \sigma, n\right)\ .
+          \nonumber \\
+           \label{5-1-49}
+\end{IEEEeqnarray}
+Hemos hecho $ \left( \vartheta -s \right)  \rightarrow   \left( -i \slashed{p}\right) \left( \vartheta -s \right) $  en el argumento fermiónico de las superfunciones de onda.  Con esta identificación obtendremos las superderivadas covariantes (introducidas más adelante) en la forma de la literatura estándar. %La matrix $ \slashed{p} $ es nilpotente para el caso de masa cero, con esto reconocemosy por lo tanto no es invertible.Para el caso de masa cero, resta redefinición causa que el cambio $s \rightarrow \slashed{p} s $ nos de cero en toda la dependencia de $ s $ en los supercampos,  haciendo explícito que este cambio de variable no es bueno, ya que  $ \slashed{p} $ es nilpotente y por lo tanto no es invertible. 
+
+Cualquier conjunto de coeficientes de la forma:
+\begin{IEEEeqnarray}{rl}
+              v_{\pm {\ell}}\left( \mathbf{p}, \left( -i \slashed{p}\right) \left(\vartheta \, - \, s\right)  , \sigma, n\right)   , \quad  u_{\pm {\ell}}\left( \mathbf{p}, \left( -i \slashed{p}\right) \left(\vartheta \, - \, s,n\right)  , \sigma'\right) \ ,
+    \label{5-1-49-a}
+\end{IEEEeqnarray}
+automáticamente satisfará las condiciones supersimétricas \eqref{5-1-44} y \eqref{5-1-45}. Si estos coeficientes vienen dados en términos de  sus valores en el vector estándar $ k $ a través de las relaciones  \eqref{5-1-33} y  \eqref{5-1-34} y si además,  son soluciones a las ecuaciones   \eqref{5-1-40} y \eqref{5-1-41}, también satisfarán la condiciones más generales    \eqref{5-1-29} y  \eqref{5-1-30}.  Esto es, hemos encontrado las condiciones necesarias y suficientes de las superfunciones de onda para garantizar la covariancia de los supercampos bajo transformaciones del grupo de super Poincaré.
+
+Las relaciones que obtenemos de las condiciones impuestas en el grupo peque\~no   \eqref{5-1-29} y  \eqref{5-1-30}, tienen que satisfacerse para todos los valores de $\left(  \vartheta -s\right)  $.  Entonces lo supercampos encontrados representan \emph{una realización reducible del grupo de super Poincaré.} Cada coeficiente de la expansión Taylor en la variable $\left(  \vartheta -s\right)  $ es independiente del resto. 
+
+En la notación \eqref{5-1-49-a}, las condiciones  \eqref{5-1-33}  y \eqref{5-1-34}  se ven como 
+ 		   	 		\begin{IEEEeqnarray}{rl}
+     \sum_{\sigma'}  U^{(j_{n})*}_{\sigma' \sigma } \left[W \right]     \, v_{\pm {\ell}}\left( \mathbf{k}, \left( -i \slashed{k}\right) \left(\vartheta \, - \, s\right)  , \sigma',n\right)   &    \nonumber \\
+            \, = \,            \sum_{ \pm\bar{\ell}}    \left[ {S}\left( W \right)\right] _{ \pm \ell ,\pm\bar{\ell}}  & \,\,v_{\pm {\ell}}\left( \mathbf{k}, \left( -i \slashed{k}\right) D^{-1}\left( W\right)\left(\vartheta \, - \, s\right)  , \sigma',n\right) \ , \nonumber \\  
+            \label{5-1-50} \\
+             \sum_{\sigma'}  U^{(j_{n})}_{\sigma' \sigma } \left[W \right]       \, u_{\pm {\ell}}\left( \mathbf{k}, \left( -i \slashed{k}\right) \left(\vartheta \, - \, s\right)  , \sigma',n\right)   &    \nonumber \\
+            \, = \,            \sum_{ \pm\bar{\ell}}    \left[ {S}\left( W \right)\right] _{ \pm \ell ,\pm\bar{\ell}}  & \,\,u_{\pm {\ell}}\left( \mathbf{k}, \left( -i \slashed{k}\right) D^{-1}\left( W\right)\left(\vartheta \, - \, s\right)  , \sigma',n\right) \ .  \nonumber \\      
+             \label{5-1-51}
+    	\end{IEEEeqnarray} 	  
+
+\emph{Descomposición en cúmulos.} Insertando la forma general de la densidad Hamiltoniana \eqref{5-1-12} en  \eqref{5-1-01}, después de integrar en la parte espacial  $ \mathbf{x} $, obtenemos 
+\begin{IEEEeqnarray}{rl}
+            \mathsf{V}(t)   &\, = \, \sum^{\infty}_{N=0}\sum^{\infty}_{N=0}\int d\xi_{1}'\cdots d\xi_{N}'\,d\xi_{1}\cdots d\xi_{M}\nonumber \\
+        &   \qquad  \times \, a^{\dagger}_{\xi_{1}'}\cdots a^{\dagger}_{\xi_{N}'} \, a_{\xi_{1}}\cdots a_{\xi_{M}} \,\times   \, \mathcal{V}_{NM}\left(\xi_{1}'\cdots \xi_{N}'\,\xi_{1}\cdots \xi_{M} \right)  \ ,
+    \label{5-1-52}
+\end{IEEEeqnarray}
+donde el índice $ \xi $  lleva el tres momento bosónico $ \mathbf{p} $,  el momento fermiónico $ s $, la proyección $ \sigma $ del superespín y la especie de superpartícula $ n $. Los signos  $ \varepsilon=+,- $ provienen de los dos tipos de supercampos introducidos. Cada símbolo de integral $ \int d\xi $ representa la suma y la integración de estas variables,
+\begin{IEEEeqnarray}{rl}
+            \int d\xi \left(\cdots \right)   \, = \, \int d\left(\mathbf{p}\, s \right)\sum_{\sigma}\sum^{+,-}_{\varepsilon}\sum_{n}\left(\cdots \right)  \ ,
+    \label{5-1-53}
+\end{IEEEeqnarray}
+con
+ \begin{IEEEeqnarray}{rl}
+         \mathcal{V}_{NM}\left(\xi_{1}'\cdots \xi_{N}'\,\xi_{1}\cdots \xi_{M} \right)  &  \nonumber \\
+     \, = \, &        \delta^{4} \left( \mathbf{p}'_{1}   \cdots   \, + \, \mathbf{p}'_{N}    \, - \,  \mathbf{p}_{1}   \cdots  \, - \, \mathbf{p}_{M}  \right) \, \tilde{\mathcal{V}}_{NM}\left(\xi_{1}'\cdots \xi_{N}'\,\xi_{1}\cdots \xi_{M} \right) \nonumber \\
+    \label{5-1-54}
+\end{IEEEeqnarray}
+y
+ \begin{IEEEeqnarray}{rl}
+             \tilde{\mathcal{V}}_{NM}\left(\xi_{1}'\cdots \xi_{N}'\,\xi_{1}\cdots \xi_{M} \right)   &\, = \, (\pm)\left( 2\pi\right) ^{3-\frac{3N}{2}-\frac{3M}{2}}    \int d^{4}\vartheta \,e^{\left\lbrace i \vartheta\cdot\left[ \slashed{p}'_{1}\slashed{s}'_{1} \cdots \, + \,\slashed{p}'_{N}\slashed{s}'_{N}  \, - \, \slashed{p}_{1}\slashed{s}_{1} \cdots \, -\,\slashed{p}_{M}\slashed{s}_{M}  \right] \right\rbrace } \nonumber \\
+      &  \sum_{\varepsilon'_{1}{\ell}'_{1}, \cdots, \varepsilon'_{N}{\ell}'_{N}}\sum_{\varepsilon_{1}{\ell}_{1}, \cdots, \varepsilon'_{M}{\ell}_{M}}\,g_{\varepsilon'_{1}{\ell}'_{1},\cdots,\varepsilon'_{N}{\ell}'_{N},\varepsilon_{1}{\ell}_{1},\cdots,\varepsilon_{M}{\ell}_{M}}\nonumber \\       
+     & \, \times v_{\varepsilon'_{1}{\ell}'_{1}}\left( \mathbf{p}_{1}'\, \left(\vartheta - s'_{1}\right)  \, \sigma'_{1} \, n'_{1}\right) \cdots v_{\varepsilon'_{N}{\ell}'_{N}}\left( \mathbf{p}_{N}'\, \left(\vartheta - s'_{N}\right)  \, \sigma'_{N} \, n'_{N}\right) \nonumber \\
+  &   \times u_{\varepsilon_{1}{\ell}_{1}}\left( \mathbf{p}_{1}\, \left(\vartheta - s_{1}\right)  \, \sigma_{1} \, n_{1}\right) \cdots u_{\varepsilon_{M}{\ell}_{1}}\left( \mathbf{p}_{M}\, \left(\vartheta - s_{M}\right)  \, \sigma_{M} \, n_{M}\right)\ .\nonumber \\
+     \label{5-1-55}
+ \end{IEEEeqnarray}
+
+ El signo menos en esta última ecuación, surge dependiendo de si movimos un número impar de superfunciones de onda que son fermiónicas (del tipo-$ a $).  La forma \eqref{5-1-56}, es precisamente la forma que garantiza  que el principio de descomposición en cúmulos se satisface. 
+ 
+ Cerramos esta sección notando que para formar una densidad Hamiltoniana que sea Hermítica, no necesitamos tomar en cuenta explícitamente los adjuntos 
+ \begin{IEEEeqnarray}{rl}
+             \left[  \Xi^{\dagger}_{\pm \ell}\left(  x,\epsilon\gamma_{5}\beta\vartheta^{*}\right) \right]^{\dagger}, \quad   \left[  \Xi_{\pm \ell}\left(  x,\epsilon\gamma_{5}\beta\vartheta^{*}\right) \right]^{\dagger}\ ,
+     \label{5-1-56}
+ \end{IEEEeqnarray}
+ ya que estos supercampos ya están considerados en   $  \Xi^{\dagger}_{\mp\ell}( x,\vartheta)   $ y  $  \Xi_{\mp \ell}( x,\vartheta)   $, respectivamente.
+
+
+\section{Supercampos Quirales Irreducibles}
+\label{chap5:2}
+ Antes de continuar con nuestras investigaciones sobre los supercampos cuánticos, introducimos  la derivación fermiónica. 
+\begin{center}
+\textbf{\textit{Diferenciación fermiónica}}
+\end{center}
+Considérese una función $ f(\vartheta) $ en el espacio fermiónico $ \vartheta $, de dimensión arbitraria. Dada una componente $ \vartheta_{\alpha} $, debido a que $ \vartheta^{2}_{\alpha} =0 $, podemos escribir de manera única $ f(\vartheta) $ como 
+\begin{IEEEeqnarray}{rl}
+             f(\vartheta)      \, = \,  f_{\alpha, 0}  \, + \,  \vartheta_{\alpha}  \,f_{\alpha,1}\ , 
+    \label{5-2-01}
+\end{IEEEeqnarray}
+donde   $  f_{\alpha,0}  $ y $ f_{\alpha, 1} $  no dependen de $ \vartheta_{\alpha} $. La operación de diferenciación por la izquierda  $ \frac{\partial}{\partial \vartheta_{\alpha}} $, de la variable $ \vartheta_{\alpha} $ aplicada a la función $ f(\vartheta) $, se define como la función $ \,f_{\alpha,1} $, esto es,
+\begin{IEEEeqnarray}{rl}
+            \frac{\partial   f(\vartheta)}{\partial \vartheta_{\alpha}}   \, = \, f_{\alpha,1} \ .
+    \label{5-2-02}
+\end{IEEEeqnarray}
+
+Para dos componentes $ \vartheta_{\alpha} $ y $ \vartheta_{\beta} $, también tenemos  una expansión única de la forma
+\begin{IEEEeqnarray}{rl}
+              f(\vartheta)      \, = \,  g_{\alpha\beta, 0}   \, + \,   \vartheta_{\alpha}  \,g_{\alpha,0}  \, + \,  \vartheta_{\beta}  \,g_{\beta,1}  \, + \,    \vartheta_{\alpha} \vartheta_{\beta}    \,g_{\alpha\beta,1} \ ,
+    \label{5-2-03}
+\end{IEEEeqnarray}
+donde ninguna de las funciones $  g_{\alpha\beta, 0} \dots$, depende  de $ \vartheta_{\alpha} $ ni de  $ \vartheta_{\beta} $. De aquí se sigue que 
+\begin{IEEEeqnarray}{rl}
+            \frac{\partial}{\partial \vartheta_{\alpha}}       \frac{\partial}{\partial  \vartheta_{\beta}}   \, = \, -    \frac{\partial}{\partial  \vartheta_{\beta}}  \frac{\partial}{\partial \vartheta_{\alpha}}   \ .  
+    \label{5-2-04}
+\end{IEEEeqnarray}
+De la ecuación definitoria  \eqref{5-2-02}, tenemos también que para el producto de una  función  $ f(\vartheta) $ pura  y otra función $ g(\vartheta) $ impura,
+ \begin{IEEEeqnarray}{rl}
+            \left[ f(\vartheta)g(\vartheta)\right] _{\alpha,1}  & \, = \,   f_{\alpha,1}\, g_{\alpha, 0}  \, + \,   (-)^{\epsilon_{f}} f_{\alpha, 0} \,g_{\alpha,1}  \, = \,   f_{\alpha,1}\, g(\vartheta)  \, + \,   (-)^{\epsilon_{f}} f(\vartheta)\,g_{\alpha,1}  \ , \nonumber\\
+                \label{5-2-05}
+\end{IEEEeqnarray}
+esto es, la derivación fermiónica obedece  la \emph{Regla de Leibniz  generalizada}:
+\begin{IEEEeqnarray}{rl}
+             \frac{\partial\left[ f\left( \vartheta\right) g(\vartheta)\right] }{\partial \vartheta_{\alpha}}  \, = \, \frac{\partial f(\vartheta)}{\partial \vartheta_{\alpha}} \,g(\vartheta)  \, + \,  (-)^{\epsilon_{f}}f(\vartheta)\frac{\partial g(\vartheta)}{\partial \vartheta_{\alpha}}  \ .
+    \label{5-2-06}
+\end{IEEEeqnarray}
+Podemos notar que la diferenciación  e integración fermiónicas son equivalentes. Para nosotros, 
+la utilidad de la diferenciación fermiónica es la de permitirnos  expresar a los supercampos reducibles  de creación \eqref{5-1-48}, como  una mezcla de derivadas fermiónicas y bosónicas de supercampo de un solo tipo (lo mismo para los supercampos de aniquilación \eqref{5-1-49}). Para ver esto, notamos que generamos el término lineal $ \left[ \left(\pm i \slashed{p} \right) \left(\vartheta  \, - \, s \right) \right] _{\alpha}  $ en los supercampos \eqref{5-1-48}  y \eqref{5-1-49}  aplicando  la \emph{superderivada covariante} definida por:
+\begin{IEEEeqnarray}{l}
+     	 \mathcal{D}   \, \equiv \,    \left(\epsilon\gamma_{5} \right)\frac{\partial}{\partial{\vartheta} } \, - \,  \gamma^{\mu}\vartheta\frac{\partial}{\partial x^{\mu}} \ ,
+    \label{5-2-07}
+\end{IEEEeqnarray}  
+esto es,  
+\begin{IEEEeqnarray}{rl}
+            \mathcal{D}_{\alpha} & \exp{\left[ \mp i \left( x^{\mu}  \, - \,  \vartheta \cdot \gamma^{\mu} s\right)\, p_{\mu}\right]  }   \nonumber \\
+           &\qquad    \, = \, \left[ \left(\pm i \slashed{p} \right) \left(\vartheta  \, - \, s \right) \right] _{\alpha} \exp{\left[ \mp i \left( x^{\mu}  \, - \,  \vartheta \cdot \gamma^{\mu} s\right)\, p_{\mu}\right]  }  \ .
+    \label{5-2-08}
+\end{IEEEeqnarray}
+Tomando la parte antisimétrica del resultado de aplicar dos veces la superderivada a esta exponencial, obtenemos\footnote{El resultado   de aplicar $ \mathcal{D}_{\beta}   \mathcal{D}_{\alpha}  $ a $  e^{\left[ \mp i \left( x^{\mu}  \, - \,  \vartheta \cdot \gamma^{\mu} s\right)\, p_{\mu}\right]  }$ nos arroja un factor simétrico extra $  \, \mp \,  i\left( \epsilon\gamma_{5}\slashed{p}\right)_{\beta\alpha}   $  con respecto al resultado del caso antisimétrico.}
+\begin{IEEEeqnarray}{rl}
+        \frac{1}{2}  \left[ \mathcal{D}_{\beta},   \mathcal{D}_{\alpha}\right]  \,& e^{\left[ \mp i \left( x^{\mu}  \, - \,  \vartheta \cdot \gamma^{\mu} s\right)\, p_{\mu}\right]  }  \, = \,     \left[ \left(\pm i \slashed{p} \right) \left(\vartheta  \, - \, s \right) \right] _{\beta} \left[ \left(\pm i \slashed{p} \right) \left(\vartheta  \, - \, s \right) \right] _{\alpha} e^{\left[ \mp i \left( x^{\mu}  \, - \,  \vartheta \cdot \gamma^{\mu} s\right)\, p_{\mu}\right]  }\ ,   \nonumber \\
+    \label{5-2-09}
+\end{IEEEeqnarray}
+Y en general, cualquier potencia de $   \left[ \left(\pm i \slashed{p} \right) \left(\vartheta  \, - \, s \right) \right]_{\alpha}  $ se genera por la aplicación  antisimétrica  de productos de $ \mathcal{D}_{\alpha} $ sobre $ e^{\left[ \mp i \left( x^{\mu}  \, - \,  \vartheta \cdot \gamma^{\mu} s\right)\, p_{\mu}\right]  } $. Esto nos dice  que cualesquiera términos de la expansión fermiónica en las superfunciones de onda de los supercampo reducibles \eqref{5-1-48} y \eqref{5-1-49} se pueden escribir como 
+\begin{IEEEeqnarray}{rl}
+   \sum_{\alpha_{1}\alpha_{2}\cdots \alpha_{N}} \left\lbrace   \frac{1}{N}\sum_{\mathcal{P}}\delta_{\mathcal{P}} \left( \mathcal{D}_{\alpha_{\mathcal{P}1}}\mathcal{D}_{\alpha_{\mathcal{P}2}}\cdots  \mathcal{D}_{\alpha_{\mathcal{P}N}}   \right)\right\rbrace \left[  \chi _{\pm \ell}^{\dagger}\left(  x,\vartheta\right) \right]_{\alpha_{1}\alpha_{2}\cdots \alpha_{N}}\ ,\nonumber  \\
+    \label{5-2-10}\\
+    \sum_{\alpha_{1}\alpha_{2}\cdots \alpha_{N}} \left\lbrace   \frac{1}{N}\sum_{\mathcal{P}}\delta_{\mathcal{P}} \left( \mathcal{D}_{\alpha_{\mathcal{P}1}}\mathcal{D}_{\alpha_{\mathcal{P}2}}\cdots  \mathcal{D}_{\alpha_{\mathcal{P}N}}   \right)\right\rbrace \left[  \chi_{\pm \ell}\left(  x,\vartheta\right) \right]_{\alpha_{1}\alpha_{2}\cdots \alpha_{N}}\ , 
+  \nonumber  \\
+    \label{5-2-11}
+\end{IEEEeqnarray}
+respectivamente. Aquí, la suma sobre $ \mathcal{P} $ corre sobre todas las permutaciones de $ 1,\cdots, N $ y $ \delta_{\mathcal{P}} $ es $ +1(-1)  $ si la permutación es par(impar) y donde   $ \left[  \chi _{\pm \ell}^{\dagger}\left(  x,\vartheta\right) \right]_{\alpha_{1}\alpha_{2}\cdots \alpha_{N}} $  y $ \left[  \chi _{\pm \ell}\left(  x,\vartheta\right) \right]_{\alpha_{1}\alpha_{2}\cdots \alpha_{N}} $  son supercampos cuyas superfunciones  de onda  no dependen de las coordenadas fermiónicas:
+  \begin{IEEEeqnarray}{rl}             
+    \left[  \chi _{\pm \ell}^{\dagger}\left(  x,\vartheta\right) \right]_{\alpha_{1}\alpha_{2}\cdots \alpha_{N}}     &\,=\, \nonumber \\
+         \sum_{\sigma n} \int & \,  d\left( \mathbf{p} \, s \right)   \, e^{-i x\cdot p}    e^{ i  \vartheta \cdot \slashed{p} s  }\,{a}^{\dagger}_{\pm}\left( \textbf{p}\,s \,\sigma \, n\right)   \, \left[ v_{\pm {\ell}}\left( \mathbf{p} , \sigma,n\right)\right] _{\alpha_{1}\alpha_{2}\cdots \alpha_{N}}   \ ,   \nonumber \\
+    \label{5-2-12}
+ \\
+            \left[  \chi _{\pm \ell}\left(  x,\vartheta\right) \right]_{\alpha_{1}\alpha_{2}\cdots \alpha_{N}}  &\,=\, \nonumber \\
+             \sum_{\sigma n} \int  &  d\left( \mathbf{p} \, s \right)   \, e^{i x\cdot p}    e^{- i  \vartheta \cdot \slashed{p} s  }\,{a}_{\pm}\left( \textbf{p}\,s \,\sigma\, n \right)  \left[  u_{\pm {\ell}}\left( \mathbf{p}  , \sigma, n\right)\right]_{\alpha_{1}\alpha_{2}\cdots \alpha_{N}}    \ .
+          \nonumber \\
+           \label{5-2-13}
+\end{IEEEeqnarray}
+
+Podemos también eliminar los índices $ {\alpha_{1}\alpha_{2}\cdots \alpha_{N}} $ absorbiéndolos en $ \ell $, o bien considerar la representación $ S(\Lambda)_{\pm \ell, \pm \bar{\ell}} $ multiplicada tensorialmente por la representación antisimétrica de $ N $ matrices de Dirac. En cualquier caso, consideramos  los supercampos quirales   $    \chi^{\dagger}_{\pm \ell}( x,\vartheta)  $ y $ \chi_{\pm \ell}( x,\vartheta)  $:
+ \begin{IEEEeqnarray}{rl}             
+                \chi^{\dagger}_{\pm \ell}( x,\vartheta)   \,\equiv \,  & \frac{1}{ m_{\pm}^{\sharp} } \sum_{\sigma n} \int \,  d\left( \mathbf{p} \, s \right)   \, e^{-i x\cdot p}    e^{ i  \vartheta \cdot \slashed{p} s  }\,{a}^{\dagger}_{\pm}\left( \textbf{p}\,s \,\sigma\, n\right)  \, v_{\pm {\ell}}\left( \mathbf{p} , \sigma,n\right)\ ,   \nonumber \\
+    \label{5-2-14}
+ \\
+                 \chi_{\pm \ell}( x,\vartheta)  \, \equiv \,  &  \frac{1}{ m_{\pm}}  \sum_{\sigma n} \int  \,  d\left( \mathbf{p} \, s \right)   \, e^{i x\cdot p}    e^{- i  \vartheta \cdot \slashed{p} s  }\,{a}_{\pm}\left( \textbf{p}\,s \,\sigma\, n\right)   u_{\pm {\ell}}\left( \mathbf{p}  , \sigma, n\right)\ .
+          \nonumber \\ 
+           \label{5-2-15}
+\end{IEEEeqnarray}
+Las cantidades $ m_{\pm}^{\sharp} $ y $ m_{\pm} $ son constantes  de proporcionalidad que escogemos convenientemente como 
+\begin{IEEEeqnarray}{rl}
+            m^{\sharp}_{\pm}  \, = \, - m^{2}\times(2\pi)^{2/3}, \quad m_{\pm}  \, = \, - m^{2} \times(2\pi)^{2/3}\ ,           
+    \label{5-2-16}
+\end{IEEEeqnarray}
+para el caso masivo. Mientras que
+\begin{IEEEeqnarray}{rl}
+            m^{\sharp}_{\pm}  \, = \, (+2)\times(2\pi)^{2/3}, \quad m_{\pm}  \, = \, (-2)\times(2\pi)^{2/3} \ ,
+    \label{5-2-17}
+\end{IEEEeqnarray}
+para el caso sin masa. Ya que la dependencia de    $ a^{\dagger}_{\pm}\left( \mathbf{p}\, s\,\sigma\, n\right) $ y  $ a_{\pm}\left( \textbf{p}\, s\,\sigma\, n\right)  $ en $ s_{\mp} $ viene dada a través de un factor de fase:
+\begin{IEEEeqnarray}{rl}
+            a^{\dagger}_{\pm}\left( \mathbf{p}\, s\,\sigma\, n\right)    &   \,= \, \exp{\left[- i \,s\cdot \slashed{p}s_{\mp}\right] } a^{\dagger}_{\pm}\left( \mathbf{p}\, s_{\pm}\,\sigma\, n\right) \ , 
+    \label{5-2-18}\\
+                a_{\pm}\left( \textbf{p}\, s\,\sigma\, n\right)   &    \, = \, \exp{\left[+ i \,s\cdot \slashed{p}s_{\pm}\right] } a_{\mp}\left( \mathbf{p}\, s_{\pm}\,\sigma\, n\right) \ ,
+    \label{5-2-19}
+\end{IEEEeqnarray}
+podemos integrar la parte que depende de $ s_{\mp} $, vemos que 
+\begin{IEEEeqnarray}{rll}
+   \int d^{2}s_{\mp}  e^{  \varepsilon  i \left(  \vartheta - s\right)  \cdot \slashed{p} s_{\mp}  }  & \, = \,   - m^{2} \delta^{2}\left[ \left(\vartheta -s \right)_{\pm}\right]  \ ,   & \quad  m\, > 0 \ , \nonumber \\
+    \label{5-2-20}\\     
+ \int d\left( u(p)\cdot\gamma _{5} s_{\mp}\right) e^{  \varepsilon i \left(  \vartheta - s\right)  \cdot \slashed{p} s_{\mp}  }  & \, = \,  \tfrac{\varepsilon}{2} \left[ u\left( p\right) \cdot \gamma_{5}\left( s \, - \, \vartheta\right)_{\pm}\right] , & \quad m =0 \ . \nonumber \\
+    \label{5-2-21} 
+\end{IEEEeqnarray} 
+Lo que significa que en ambos casos la integración fermiónica  nos esta dando la delta de Dirac fermiónica, por lo que las Ecs. \eqref{5-2-14} y \eqref{5-2-14} adquieren la forma 
+ \begin{IEEEeqnarray}{rl}             
+                \chi^{\dagger}_{\pm \ell}( x,\vartheta)   \,= \,  & \frac{1}{(2\pi)^{3/2}}  \sum_{\sigma} \int d^{3}\textbf{p}  \, e^{-i x_{\pm}\cdot p }\,{a}^{\dagger}_{\pm}\left( \textbf{p}\,\vartheta_{\pm} \,\sigma\, n\right)  \, v_{\pm {\ell}}\left( \mathbf{p} , \sigma,n\right)\ ,   \nonumber \\
+    \label{5-2-22}
+ \\
+                \chi_{\pm \ell}( x,\vartheta)  \, = \,  &  \frac{1}{(2\pi)^{3/2}}  \sum_{\sigma\, n} \int d^{3}\textbf{p}  \, e^{i x_{\pm}\cdot p} \,{a}_{\pm}\left( \textbf{p}\,\vartheta_{\pm} \,\sigma\, n \right)   u_{\pm {\ell}}\left( \mathbf{p}  , \sigma, n\right)\ ,
+          \nonumber \\
+           \label{5-2-23}
+\end{IEEEeqnarray}
+donde hemos introducido  la variable de espaciotiempo bosónica:
+\begin{IEEEeqnarray}{rl}
+            x^{\mu}_{\pm}   \, = \,  x^{\mu}  \, - \, \vartheta\cdot \gamma^{\mu}\vartheta_{\pm}\ .
+    \label{5-2-24}
+\end{IEEEeqnarray}
+De aquí en adelante, tomaremos como  bosónicos los coeficientes $ v_{\pm {\ell}}\left( \mathbf{p} , \sigma, n\right) $ y $ u_{\pm {\ell}}\left( \mathbf{p}  , \sigma, n\right) $.
+
+\emph{Condiciones de Causalidad.}
+Aún no  nos hemos ocupado de la condición \eqref{5-1-01-1}. Usamos la relación de (anti)conmutación de los operadores de creación y aniquilación, 
+\begin{IEEEeqnarray}{rl}
+       \left[        a_{\mp}\left( \mathbf{p}\,\vartheta_{\mp}\, \sigma\, n\right)   ,   a^{\dagger}_{\pm}\left( \mathbf{p}'\,\vartheta'_{\pm}\, \sigma'\, n'\right)\right\rbrace   &\, = \,  e^{   2 \vartheta\cdot   \, (-i\slashed{p})\, {\vartheta'}_{\pm}} \delta^{3}(\mathbf{p}-\mathbf{p}')\,
+       \delta_{n n'}\delta_{\sigma\sigma'}\ , \nonumber \\   
+    \label{5-2-25}
+\end{IEEEeqnarray} 
+ para escribir la condición \eqref{5-1-01-1} en términos de los supercampos quirales:
+\begin{IEEEeqnarray}{ll}
+        \left[  \chi_{\mp \ell}\left(x, \vartheta \right)   \chi^{\dagger}_{\pm \ell'}\left(x', \vartheta' \right)\right\rbrace    \, = \, \nonumber \\
+           \quad  \sum_{\sigma n}\frac{1}{\left(2\pi \right)^{3} }\,\int d^{3}\mathbf{p}\, v_{\pm {\ell}}\left( \mathbf{p} , \sigma\, n\right)  u_{\pm {\ell}}\left( \mathbf{p}  , \sigma\, n\right)  \,  e^{i \left( x \, - \, x'\right)\cdot p }e^{ -i\left(\vartheta-\vartheta' \right)\cdot  \gamma^{\mu}\left( \vartheta_{\mp}  \, + \, \vartheta'_{\pm}\right)p_{\mu} } \nonumber \\
+    \label{5-2-26}
+\end{IEEEeqnarray}
+
+Esta relación no es cero  para separaciones $ x-x' $  del tipo-espacial. No podemos evitar este obstáculo usando solo supercampos de creación o de aniquilación de superpartículas por que  el Hamiltoniano de interacción no sera Hermitiano. La única opción es buscar formar combinaciones lineales de supercampos de creación y aniquilación:
+\begin{IEEEeqnarray}{rl}
+            \Phi_{\pm\ell}\left(x,\vartheta \right)   \, \equiv \, \kappa_{\pm\ell}\, \chi^{\dagger}_{\pm\ell}\left(x,\vartheta \right)  \, + \, \lambda_{\pm\ell}\, \chi_{\pm\ell}\left(x,\vartheta \right)\ ,
+    \label{5-2-27}
+\end{IEEEeqnarray}
+de tal manera que al ajustar las constantes  $  \kappa_{\pm\ell} $ y $  \lambda_{\pm\ell} $ logremos  que
+\begin{IEEEeqnarray}{rl}
+            \left[ \Phi_{\pm\ell}\left(x,\vartheta \right) , \Phi_{\pm\ell}\left(x',\vartheta' \right)\right]   \, = \, 0\ ,
+    \label{5-2-28}
+\end{IEEEeqnarray}
+para separaciones $( x-x') $ del tipo-espaciales. Veremos más adelante que esto siempre es posible y se implementa esencialmente de manera única.\\
+
+\textit{\textbf{Antisuperpartículas (antispartículas).}} Desde el punto de vista de este formalismo, la razón de ser de las antispartículas, tienen que ver con la necesidad de establecer cantidades conservadas. Si los estados de superpartícula de especie $ n $ llevan las etiquetas $ q(n) $ que provienen del observable $ \mathsf{Q} $, tenemos que $  \mathsf{Q}\Psi_{\xi} \, = \, q(n)\Psi_{\xi} $. Provisto de que el vacío lleve ``carga'' cero,  esta última  igualdad se satisface si y solo s\'i
+\begin{IEEEeqnarray}{rl}
+            \left[ \mathsf{Q}, a_{\xi}\right]  \, = \,  - q(n)a_{\xi} , \quad    \left[ \mathsf{Q}, a^{\dagger}_{\xi}\right]  \, = \,  + q(n)a^{\dagger}_{\xi} \ .
+    \label{5-2-29}
+\end{IEEEeqnarray}
+Aquí $ \mathsf{Q} $, es el generador de una simetría interna, esto es,  $ \left[ \mathsf{Q}, \mathsf{S}\right] =0 $, donde $ \mathsf{S} $ es el operador introducido en las Ecs. \eqref{3-1-12} y \eqref{3-1-13}. Esto a su vez implica que  $  \mathsf{Q} $ debe conmutar con la densidad Hamiltoniana~\cite{Weinberg:1995mt}, para que esto sea posible, son necesarias dos cosas. Primero, que las relaciónes de conmutación de $ \mathsf{Q} $ con   $ \Phi_{\pm \ell}( x,\vartheta) $ y su adjunto  sean de la forma
+\begin{IEEEeqnarray}{rl}
+            \left[ \mathsf{Q},  \Phi^{\dagger}_{\pm \ell}( x,\vartheta) \right]  \, = \,   q_{\pm\ell} \Phi^{\dagger}_{\pm \ell}( x,\vartheta) , \quad    \left[ \mathsf{Q}, \Phi_{\pm \ell}( x,\vartheta)\right]  \, = \,  - q_{\pm\ell} \Phi_{\pm \ell}( x,\vartheta)\ ,\nonumber \\
+    \label{5-2-30}
+\end{IEEEeqnarray}
+donde
+\begin{IEEEeqnarray}{rl}
+            \Phi_{\mp \ell}^{\dagger}\left( x,\vartheta\right)   \, \equiv\, \left[   \Phi_{\pm \ell}\left( x,\epsilon\gamma_{5}\beta\vartheta^{*}\right) \right]^{\dagger}  .
+    \label{5-2-31}
+\end{IEEEeqnarray}
+Segundo, que para cada término de la  serie   \eqref{5-1-12} (con los supercampos $ \Xi_{\pm \ell} $ y $ \Xi^{\dagger}_{\pm \ell} $ reemplazados por los supercampos causales  $ \Phi_{\pm \ell} $  y $ \Phi^{\dagger}_{\pm \ell} $, respectivamente):
+\begin{IEEEeqnarray}{rl}
+       \left( q_{\epsilon_{1}\ell_{1}}  \, + \, \cdots  \, + \,  \bar{q}_{\epsilon_{N}\ell_{N}}-  \bar{q}_{\epsilon_{1}\ell_{1}}  \, - \, \cdots  \,- \,  \bar{q}_{\epsilon_{M}\ell_{M}} \right)  \, = \, 0\  .
+    \label{5-2-32}
+\end{IEEEeqnarray}
+Reconciliamos las propiedades de transformación   \eqref{5-2-29} y \eqref{5-2-30} si  $ q(n)= q_{\pm\ell} $. La propiedad \eqref{5-2-32} se satisface si para cada especie $ n $ existe  otra  especie $ \tilde{n} $ con la misma masa y superespín, pero con los  números cuánticos asociados a cualquier simetría interna, invertidos: $ q(\tilde{n})=-q(n)$. El supercampo causal \eqref{5-2-27} queda formado por supercampos de aniquilación de superpartícula y supercampos  de creación de santipartícula~\cite{Weinberg:1964cn}.\\
+
+
+Las representaciones $ S(\Lambda)_{\pm \ell, \pm \bar{\ell}} $ son, en general, reducibles. En vez de considerar un solo supercampo gigante donde se encuentran todos los operadores de superpartícula, podemos llevar $ S(\Lambda)_{\pm \ell, \pm \bar{\ell}} $  a su forma diagonal por bloques, de tal forma que en cada bloque solo haya solo supercampos de una misma especia de partícula (y su respectiva antispartícula). De aquí en adelante trabajaremos con estos bloques de especie de superpartícula fija, de tal forma que omitiremos el índice $ n $. \\
+
+\textbf{\textit{Ecuaciones libres del movimiento.}} Notamos que la dependencia de  $ \chi^{\dagger}_{\pm \ell}( x,\vartheta) $ y $ \chi_{\pm \ell}( x,\vartheta) $  en la variable fermiónica $ \vartheta_{\mp} $, viene dada solamente a través de la coordenada $ x^{\mu}_{\pm} $. Además notamos que la  parte derecha(izquierda) de la superderivada covariante, actuando sobre   $  x^{\mu}_{+}(x^{\mu}_{-}) $ nos da cero,
+\begin{IEEEeqnarray}{rl}
+            \mathcal{D}_{\mp \alpha}\, x^{\mu}_{\pm}   \, = \, 0\ ,
+    \label{5-2-33}
+\end{IEEEeqnarray}
+con  $ \mathcal{D}_{\mp}  \, = \, \frac{1}{2}\left(  I \pm \gamma_{5}\right)\mathcal{D}  $. Por lo que llegamos a la conclusión   de que los supercampos causales  $ \Phi_{\pm \ell}( x,\vartheta)   $ son aniquilados por la superderivada $ \mathcal{D}_{\mp \alpha}    $:
+ \begin{IEEEeqnarray}{rl}             
+      %    \mathcal{D}_{\mp \alpha}     \,   \Phi^{\dagger}_{\pm \ell}( x,\vartheta)   \,= \,  0\ ,  \quad 
+               \mathcal{D}_{\mp \alpha} \,  \Phi_{\pm \ell}( x,\vartheta)  \, = \,  0\ .
+           \label{5-2-34}
+\end{IEEEeqnarray}
+A este conjunto de ecuaciones, se les conoce como las \emph{condiciones de quiralidad}. Además, también por inspección directa, vemos que los supercampos satisfacen la ecuación de Klein-Gordon:
+\begin{IEEEeqnarray}{rl}
+            \left(\square - m^{2} \right) \Phi_{\pm \ell}( x,\vartheta)   \, = \, 0\ .
+    \label{5-2-35}
+\end{IEEEeqnarray}
+
+ Los supercampos quirales representan la transformada de Fourier de los operadores de creación y aniquilación, los cuales están definidos en el superespacio de momentos $ \left( \mathbf{p}, s_{\pm}\right)  $ de dimensión $ (3 + 2(2) )$. Mientras que la dimensión del superespacio de configuración $ \left( x,\vartheta\right) $ es $ (4 + 4(2) )$. Por cada grado de libertad extra en el superespacio de configuración tendremos una ecuación del movimiento que la compensa. 
+Existen más ecuaciones del movimiento que los supercampos pueden satisfacer: Si los supercampos tienen más componentes que las componentes independientes de los estados de superpartícula, habrá más ecuaciones del movimiento, esto ocurre  cuando asociamos a la  superpartícula   un supercampo en  la representación $ S(\Lambda) $ que es de mayor dimensión que la representación unitaria $ U^{(j)} $ del superestado en cuestión.
+\section{Supercampos  Quirales Generales}
+\label{chap5:3}
+Los términos de orden cero de la expansión $ \vartheta-s $ en las Ecs. \eqref{5-1-50} y \eqref{5-1-51}, nos dan  el siguiente conjunto de ecuaciones:
+ 		   	 		\begin{IEEEeqnarray}{rl}
+     \sum_{\sigma'}      \, v_{\pm {\ell}}\left( \mathbf{k} , \sigma'\right)\, U^{(j)*}_{\sigma' \sigma } \left[W \right]             \, = \,            \sum_{ \pm\bar{\ell}}    \left[ {S}\left( W \right)\right] _{ \pm \ell ,\pm\bar{\ell}}  & \,\,v_{\pm \bar{\ell}}\left( \mathbf{k} , \sigma\right)  \ ,       \nonumber \\
+                \label{5-3-01}
+            \\
+             \sum_{\sigma'}    \, u_{\pm {\ell}}\left( \mathbf{k} , \sigma'\right)      \, U^{(j)}_{\sigma' \sigma }   \left[W \right]          \, = \,            \sum_{ \pm\bar{\ell}}    \left[ {S}\left( W \right)\right] _{ \pm \ell ,\pm\bar{\ell}}  & \,\,u_{\pm \bar{\ell}}\left( \mathbf{k} , \sigma\right)   \ .\nonumber \\
+             \label{5-3-02}
+    	\end{IEEEeqnarray} 
+Lo que nos dice la Ec. \eqref{5-3-02}, es que   $ u_{\pm {\ell}}\left( \mathbf{k} , \sigma\right) $ es la matriz (en los índices  $ \pm \ell $ y $ \sigma'$) que conecta las dos representaciones $ U^{(j)}_{\sigma' \sigma }   \left[W \right]  $   y  $  \left[ {S}\left( W \right)\right] _{ \pm \ell ,\pm\bar{\ell}}   $.  La representación $ U^{(j)}_{\sigma' \sigma }   \left[W \right]  $   es irreducible. Si la presentaci\'on  $  \left[ {S}\left( W \right)\right] _{ \pm \ell ,\pm\bar{\ell}}   $ es irreducible, por el lema de Schur,  tenemos una solución única no trivial para  $ u_{\pm {\ell}}\left( \mathbf{k} , \sigma\right)   $  si y solo s\'i las representaciones $ U^{(j)}_{\sigma' \sigma }   \left[W \right]  $   y  $  \left[ {S}\left( W \right)\right] _{ \pm \ell ,\pm\bar{\ell}}   $ son equivalentes~\cite{hamermesh1962group,ballentine1998quantum}.   La restricción de la representación  irreducible del grupo de Lorentz, a elementos del subgrupos peque\~nos $ W $ es, en general, reducible. 
+ Hasta donde sabemos, la única raz\'on para excluir  índices $ \pm\ell $ infinitos,  reside en el principio de renormalizabilidad de las interacciones\footnote{Una interacción es renormalizable  si su grado de divergencia es menor a cierta cantidad, fijada por la dimensión del espaciotiempo. Genéricamente, el grado de divergencia de cualquier Lagrangiana de interacción, es proporcional a la dimensión de los índices $ \pm\ell $ de los campos en cuestión~\cite{Weinberg:1995mt}.}. Aquí no  indagaremos m\'as en esta cuestión y simplemente buscaremos soluciones para  $   u_{\pm {\ell}}\left( \mathbf{k} , \sigma\right)  $ en representaciones finitas del grupo homogéneo de Lorentz [observaciones similares aplican para $   v_{\pm {\ell}}\left( \mathbf{k} , \sigma\right)  $]. 
+\begin{center}
+\textbf{\textit{Representaciones finitas del grupo de Lorentz}}
+\end{center}
+Para encontrar las presentaciones finitas del grupo propio ortócrono homogéneo de Lorentz, escribimos el álgebra que satisfacen las matrices $  \mathbb{J}^{\mu \nu}$ que provienen del conjunto de transformaciones  infinitesimales  de $ S(\Lambda) $:
+ \begin{IEEEeqnarray}{rl}
+ \,	i\left[ \mathbb{J}^{\mu \nu},\mathbb{J}^{\rho \sigma}\right] & \, = \, \eta^{\mu \rho}\mathbb{J}^{\sigma \nu}-\eta^{\mu \sigma}\mathbb{J}^{\rho \nu} + \eta^{\rho \nu}\mathbb{J}^{\mu \sigma} - \eta^{\sigma \nu}\mathbb{J}^{\mu \rho} \ .\nonumber \\
+ \label{5-3-03}
+	\end{IEEEeqnarray}
+	Hacemos la partición de  estos generadores $ \mathbb{J}^{\mu \nu} $ en términos de los generadores de las rotaciones y los boosts:
+\begin{IEEEeqnarray}{rl}
+            \mathbb{J}_{i}	 \, = \, \epsilon_{ijk}\,  \mathbb{J}^{jk},\quad  \mathbb{K}_{i}  \, = \, \mathbb{J}_{i0}, \quad i,j,k  \, = \, 1,2,3 \ , 
+    \label{5-3-04}
+\end{IEEEeqnarray}
+donde $ \epsilon_{ijk}  $ es el tensor totalmente antisimétrico de dimensión tres, con $ \epsilon_{123}=1  $. Estas matrices satisfacen las siguientes relaciones de conmutación:
+\begin{IEEEeqnarray}{rl}
+            \left[ \mathbb{J}_{i}	, \mathbb{J}_{j}\right]  \, = \, i\,\epsilon_{ijk}\mathbb{J}_{k}, \quad    \left[ \mathbb{J}_{i}	, \mathbb{K}_{j}\right]  \, = \, i\,\epsilon_{ijk}\mathbb{K}_{k}, \quad  \left[ \mathbb{K}_{i}	, \mathbb{K}_{j}\right]  \, = \, -i\,\epsilon_{ijk}\mathbb{J}_{k} \ . \nonumber \\
+    \label{5-3-05}
+\end{IEEEeqnarray}
+Las relaciones de conmutación entre los $ \mathbb{J}_{i} $, nos dicen que estas matrices generan una representación del grupo de rotaciones, la relación de conmutación entre   $ \mathbb{J}_{i} $ y $ \mathbb{K}_{i} $, significa que   $  \mathbb{K}_{i}  $ es un tres-vector. A su vez, es conveniente introducir un nuevo conjunto de matrices mediante las relaciones:
+\begin{IEEEeqnarray}{rl}
+            \mathbb{A}\, \equiv \,\frac{1}{2}\left( \mathbb{J}  \, + \, i \mathbb{K}\right) , \quad  \mathbb{B}\, \equiv \,\frac{1}{2}\left( \mathbb{J}  \, - \, i \mathbb{K}\right) \ . 
+    \label{5-3-06}
+\end{IEEEeqnarray}
+Las relaciones de conmutación para estos generadores son 
+\begin{IEEEeqnarray}{rl}
+            \left[ \mathbb{A}_{i}	, \mathbb{A}_{j}\right]  \, = \, i\,\epsilon_{ijk}\mathbb{A}_{k}, \quad    \left[ \mathbb{B}_{i}	, \mathbb{B}_{j}\right]  \, = \, i\,\epsilon_{ijk}\mathbb{B}_{k}, \quad  \left[ \mathbb{A}_{i}	, \mathbb{B}_{j}\right]  \, = \,0 \ .\nonumber \\
+    \label{5-3-07}
+\end{IEEEeqnarray}
+Vemos de aqu\'i, que el álgebra de las matrices  $ \mathbb{A}_{i} $ y   $ \mathbb{B}_{i} $, es el álgebra de la  suma directa de las dos representaciones del grupo de rotación, esto es, las relaciones de conmutación de estas matrices es la misma que la de dos partículas  masivas  desacopladas con espines arbitrarios~\cite{weinberg2012lectures}.  Las representaciones  irreducibles de esta álgebra de matrices, vienen clasificadas  por la pareja de números
+$ \left( \mathcal{A},\mathcal{B}\right)  $, donde  $ \mathcal{A} $ y  $ \mathcal{B} $ pueden tomar todos los valores semi-enteros no negativos.  Los elementos de estas  representaciones vienen dadas por las matrices $ \mathbb{J}^{(\mathcal{A})} $ y $ \mathbb{J}^{(\mathcal{B})} $:
+\begin{IEEEeqnarray}{rl}
+ \left( \mathbb{A}_{i}\right)_{a'b', ab}  & \, = \, \delta_{b'b}\, \left( \mathbb{J}^{(\mathcal{A})}_{i}\right)_{a'a} \ , 
+    \label{5-3-08} \\
+             \left( \mathbb{B}_{i}\right)_{a'b', ab}  &\, = \, \delta_{a'a} \, \left( \mathbb{J}^{(\mathcal{B})}_{i}\right)_{b'b}\ , 
+    \label{5-3-09}
+\end{IEEEeqnarray}
+con los índices $ (a,b) $  corriendo  sobre los valores
+\begin{IEEEeqnarray}{rl}
+             a  & \, = \, -\mathcal{A} , -\mathcal{A} +1, \dots, \mathcal{A} -1, \mathcal{A}\ , 
+  \label{5-3-10}\\
+ b  &\, = \, -\mathcal{B} , -\mathcal{B} +1, \dots, \mathcal{B} -1,\mathcal{B} \ , 
+    \label{5-3-11}
+\end{IEEEeqnarray}
+y  donde  $ \left( \mathbb{J}^{(\mathcal{A})}_{i}\right)_{a'a} $ y $ \left( \mathbb{J}^{(\mathcal{B})}_{i}\right)_{b'b} $ son las matrices estándares de espín $ \mathcal{C}$, igual a $ \mathcal{A} $ o $ \mathcal{B}$, dadas por
+\begin{IEEEeqnarray}{rl}
+             \left( \mathbb{J}^{(\mathcal{C})}_{3}\right)_{c'c}  &\, = \,  c\, \delta_{c'c} \ ,   \label{5-3-16} \\
+              \left(\mathbb{J}^{(\mathcal{C})}_{1} \, \pm \, i\mathbb{J}^{(\mathcal{C})}_{2}\right)_{c'c}   & \, = \, \delta_{c',c\pm 1} \sqrt{\left(\mathcal{C} \mp c \right)\left( \mathcal{C}\pm c +1\right)  }\ .
+    \label{5-3-12}
+\end{IEEEeqnarray}
+La dimensión de esta representación, como cualquier otra representación tensorial, viene dada por el producto de las dimensiones de las representaciones $ \mathcal{A} $ y $ \mathcal{B} $: $ \left( 2\mathcal{A}+ 1\right)  \left( 2\mathcal{B}+ 1\right) $.
+
+Ya que $ \mathbb{A} $ y $ \mathbb{B} $ son Hermíticas, $ \mathbb{J} $ es Hermítica y   $ \mathbb{K} $ anti-Hermítica. Entonces las representaciones $ S(\Lambda) $ nos son unitarias\footnote{  Esta característica de no contar con representaciones unitarias finitas para el grupo de Lorentz, se debe a que este grupo es \emph{no-compacto}. Existen representaciones unitarias del grupo de Lorentz que corren sobre índices que toman un número infinito de valores. }, lo cual no representa ningún problema, puesto que los supercampos  son operadores de campo y no funciones de onda, por lo que no necesitan tener normas positivas. Invirtiendo las relaciones \eqref{5-3-06} en favor de  $   \mathbb{J} $ y $ \mathbb{K} $:
+\begin{IEEEeqnarray}{rl}
+            \mathbb{J}_{i}  \, = \, \mathbb{A}_{i}  \, + \, \mathbb{B}_{i}, \quad       i\mathbb{K}_{i}  \, = \, \mathbb{A}_{i}  \, - \, \mathbb{B}_{i} \ .
+    \label{5-3-13}
+\end{IEEEeqnarray} 
+Los índices $ \pm\ell $ de la representación arbitraria del grupo de Lorentz, para el caso de las representaciones irreducible $ \left( \mathcal{A},\mathcal{B}\right)  $, toman la forma  $ \pm\ell =ab $. Ya que las matrices $ \mathbb{A} $ y  $ \mathbb{B} $  conmutan, la representación irreducible de Lorentz
+\begin{IEEEeqnarray}{rl}
+             \left[  S^{\mathcal{A}\mathcal{B}}\left( \Lambda\right)\right] _{ab,a'b'}   \ , \quad 
+    \label{5-3-14}
+\end{IEEEeqnarray}
+ queda expresada por el producto  de las representaciones $\left(  \mathcal{A},0 \right)$ y $ \left(0, \mathcal{B}\right)  $:
+\begin{IEEEeqnarray}{rl}
+             S^{\mathcal{A}\mathcal{B}}\left( \Lambda\right)_{ab,a'b'}   \, = \, S_{aa'}^{\mathcal{A}0}\left( \Lambda\right)S^{0\mathcal{B}}_{bb'}\left( \Lambda\right)\ .
+    \label{5-3-15}
+\end{IEEEeqnarray}
+Aunque los generadores de $ S^{\mathcal{A} 0} $ y $  S^{0\mathcal{B}}$ son  los mismos  generadores del grupo de rotaciones,  estas transformaciones son generalizadas para parámetros de rotación complejos, el vector de rotación en $ S^{0\mathcal{B}} $, siendo el complejo conjugado del vector en $ S^{\mathcal{A} 0} $.   El subgrupo de rotaciones esta siendo generado por representaciones unitarias, esto es, para cualquier matriz de rotación $ \mathcal{R} $, se tiene que $ S_{aa'}^{\mathcal{A}0}\left( \mathcal{R}\right)  \, = \, U_{aa'}^{(\mathcal{A})}\left(\mathcal{R} \right)  $.  De igual forma para la representación $ \mathcal{B} $.
+ 
+\begin{center}
+ *\quad *\quad *
+\end{center}
+Habiendo caracterizado las representaciones irreducibles del grupo homogéneo de Lorentz, la forma explícita  del supercampo causal quiral se escribe como 
+\begin{IEEEeqnarray}{rl}           
+                \Phi_{\pm ab}(x,\vartheta)        \, = \,       (2\pi)^{-3/2}\sum_{\sigma}  \int d^{3}\textbf{p}\, &\left\lbrace \kappa\,e^{ +i\left(  x_{\pm}\cdot p \right) }  {a}_{\pm}(\mathbf{p}\, {\vartheta}_{\pm}\,\sigma)  {u}_{ab}(\textbf{p} ,\sigma) \right.  \nonumber \\
+  &  \left.          \qquad   \, + \,\lambda\, e^{ -i\left(  x_{\pm}\cdot p \right) } \,{a}^{c\,\dagger}_{\pm}\left( \mathbf{p}\,{\vartheta}_{\pm}\,\sigma\right)     {v}_{ab }(\textbf{p} ,\sigma)  \right\rbrace \ , \nonumber \\
+   \label{5-3-16} \\
+   \Phi^{\dagger}_{\pm ab}(x,\vartheta)        \, = \,       (2\pi)^{-3/2}\sum_{\sigma}  \int d^{3}\textbf{p}\, &\left\lbrace \,\lambda^{*} e^{ +i\left(  x_{\pm}\cdot p \right) }  {a}^{c}_{\pm}(\mathbf{p},{\vartheta}_{\pm},\sigma) \left( {v}_{ab}(\textbf{p} ,\sigma) \right)^{*}  \right.  \nonumber \\
+  &  \left.          \qquad   \, + \,\kappa^{*}\, e^{ -i\left(  x_{\pm}\cdot p \right) } \,{a}^{\dagger}_{\pm}\left( \mathbf{p}\,{\vartheta}_{\pm}\,\sigma\right)     \left( {u}_{ab}(\textbf{p} ,\sigma)\right)^{*}   \right\rbrace \ . \nonumber \\
+    \label{5-3-17}
+\end{IEEEeqnarray} 
+Las interacciones invariantes de Lorentz, con las que construimos la densidad Hamiltoniana, se ven como
+\begin{IEEEeqnarray}{rl}
+           \sum_{n} \sum_{a_{1}a_{2}\cdots }g_{a_{1}a_{2}\cdots a_{n} b_{1}b_{2}\cdots b_{n}}\Phi^{(1)}_{a_{1}b_{1}}\left(x, \theta \right) \Phi^{(2)}_{a_{2}b_{2}}\left(x, \theta \right)\cdots \Phi^{(n)}_{a_{n}b_{n}}\left(x, \theta \right) \ . \nonumber \\
+    \label{5-3-18}
+\end{IEEEeqnarray}
+El tensor invariante $ g_{a_{1}a_{2}\cdots a_{n} b_{1}b_{2}\cdots b_{n}} $ se obtiene usando las  reglas usuales de adición de momento angular. Es el mismo coeficiente que se origina de construir un estado cuántico escalar bajo dos conjuntos de rotaciones  independientes,  a partir del producto tensorial de dos estados, uno  en la representación  $ \mathcal{A}_{1}\otimes\mathcal{A}_{2}\cdots \otimes\mathcal{A}_{n} $ de la primera rotación e  inerte en la segunda y el otro estado en la presentación   $\mathcal{B}_{1}\otimes\mathcal{B}_{2}\cdots\otimes \mathcal{B}_{n}  $ de la segunda rotación e inerte en la primera~\cite{Weinberg:1969di}. 
+
+Ahora, estamos en condiciones de determinar la forma explícita de los coeficientes  $ {v}_{ab }(\textbf{p} ,\sigma) $  y $ {u}_{ab}(\textbf{p} ,\sigma) $. Después de esto, debemos ver los posibles valores que pueden tomar las constantes $ \lambda $ y $ \kappa $, de tal forma que aseguremos que los supercampos (anti)conmutan para separaciones del tipo espacial.
+
+ \begin{center}
+\textbf{\textit{Supercampos masivos}}
+\end{center}
+
+ Para el caso masivo, todo elemento del grupo peque\~no viene dado por una rotación $  \mathcal{R}  $ en el espacio de  3 dimensiones.  Analizamos la relación \eqref{5-3-02} para este grupo peque\~no y para la representación general irreducible \eqref{5-3-15}:
+\begin{IEEEeqnarray}{rl}      
+       \sum_{\sigma'}  \,  u_{ab}\left( \mathbf{k} , \sigma'\right)    U^{(j) }_{\sigma'\sigma} \left( \mathcal{R}\right)    \, = \, \sum_{a'b'}U^{(\mathcal{A})}_{aa'}\left( \mathcal{R}\right) \, U^{(\mathcal{B})}_{bb'}\left( \mathcal{R}\right)\, u_{a'b'}\left( \mathbf{k} , \sigma\right) \ . \nonumber \\ 
+    \label{5-3-19}
+\end{IEEEeqnarray}
+ Esta relación nos demuestra que $ u_{ab}\left( \mathbf{k} , \sigma\right)  $ es proporcional a los coeficientes de Clebsh-Gordan $ C_{\mathcal{A}\mathcal{B}}\left( j\sigma;ab\right)  $. Para ver  esto, notemos que si un estado $ \Psi^{(j)}_{\sigma} $, bajo el operador unitario $ \mathsf{U}\left(\mathcal{R} \right)  $, transforma como 
+\begin{IEEEeqnarray}{rl}
+             \mathsf{U}\left(\mathcal{R} \right) \Psi^{(j)}_{\sigma}  \, = \,        U^{(j)}_{\sigma\sigma'} \left( \mathcal{R}^{-1}\right) \Psi^{(j)}_{\sigma} \ ,
+    \label{5-3-20}
+\end{IEEEeqnarray}
+entonces, de acuerdo con \eqref{5-3-19}, el estado  $ \Psi_{ab} $ definido por
+\begin{IEEEeqnarray}{rl}
+            \Psi_{ab}  \, \equiv\,  \sum_{\sigma'}u_{ab}\left( \mathbf{k} , \sigma'\right)  \Psi^{(j)}_{\sigma'}  \ , 
+    \label{5-3-21}
+\end{IEEEeqnarray}
+transforma, bajo la misma rotación, como la representación tensorial $ U^{(\mathcal{A})} U^{(\mathcal{B})} $:
+\begin{IEEEeqnarray}{rl}
+             \mathsf{U}\left(\mathcal{R} \right) \Psi_{ab}  \, = \,       \sum_{a'b'}U^{(\mathcal{A})}_{aa'}\left( \mathcal{R}^{-1}\right) \, U^{(\mathcal{B})}_{bb'}\left( \mathcal{R}^{-1}\right)\Psi_{a'b'} \ .
+    \label{5-3-22}
+\end{IEEEeqnarray}
+Los coeficientes que conectan  a las bases $ \Psi^{(j)}_{\sigma} $ y $   \Psi_{ab}  $ son, por definición,  precisamente los coeficientes de Clebsh-Gordan\footnote{Para ver todo la relativo a la teoría del momento angular, consúltese la Ref.  \cite{weinberg2012lectures}.}. Sabemos que los posibles valores que $ j $ puede tomar son
+\begin{IEEEeqnarray}{rl}
+             j  \, = \, \mathcal{A}  \, + \, \mathcal{B}, \mathcal{A}  \, + \, \mathcal{B}-1,\dots  , \vert\mathcal{A}  \, + \, \mathcal{B}\vert  \ .
+    \label{5-3-23}
+\end{IEEEeqnarray}
+Esto se sigue de las reglas de adición del momento angular, de hecho basta tomar la tercera componente de los generadores de las representación del grupo de rotación \eqref{5-3-16}, para ver que la relación \eqref{5-3-21} se debe de cumplir. Entonces, un supercampo quiral en la representación irreducible  $ \left(\mathcal{A},\mathcal{B} \right)  $, puede acarrear a la superpartícula de superespín $ j $ \emph{una sola vez} si y solo sí la representación es tal que $ j $ coincide con uno de los valores  $ \vert \mathcal{A} - \mathcal{B}\vert < j<\mathcal{A}+\mathcal{B} $. Los coeficientes de Clebsh-Gordan son únicos hasta una constante de proporcionalidad. Escogiendo   como constante de proporcionalidad el valor $ (2m)^{-1} $, tenemos la solución para $ u_{ab}\left( \mathbf{k} , \sigma\right) $:
+\begin{IEEEeqnarray}{rl}
+            u_{ab}\left( \mathbf{k} , \sigma\right)  \, = \,    (2m)^{-1/2} C_{\mathcal{A}\mathcal{B}}\left( j\sigma;ab\right)  \ ,
+    \label{5-3-24}
+\end{IEEEeqnarray}
+donde $  C_{\mathcal{A}\mathcal{B}}\left( j\sigma;ab\right)   $ representa a los coeficientes de Clebsh-Gordan normalizados de la manera estándar~\cite{weinberg2012lectures}. Para encontrar las soluciones a \eqref{5-3-01}:
+\begin{IEEEeqnarray}{rl}
+       \sum_{\sigma'}  \,  v_{ab}\left( \mathbf{k} , \sigma'\right)    U^{(j) *}_{\sigma'\sigma} \left( \mathcal{R}^{-1}\right)    \, = \, \sum_{a'b'}U^{(\mathcal{A})}_{aa'}\left( \mathcal{R}^{-1}\right) \, U^{(\mathcal{B})}_{bb'}\left( \mathcal{R}^{-1}\right)\, v_{a'b'}\left( \mathbf{k} , \sigma\right) \ ,\nonumber \\
+    \label{5-3-25}
+\end{IEEEeqnarray}
+s\'olo basta notar que~\cite{Weinberg:1964cn}\footnote{Esta expresión, en el lenguaje de teoría de representaciones,  quiere decir que las representación  $   U^{(j) }\left( \mathcal{R}\right) $ y su compleja conjugada, son equivalentes.}
+\begin{IEEEeqnarray}{rl}
+           U^{(j) *}_{\sigma\sigma'} \, = \, \left[ C \, U^{(j) }\,C^{-1}\right]_{\sigma\sigma'}\ ,
+    \label{5-3-26}
+\end{IEEEeqnarray}
+donde
+\begin{IEEEeqnarray}{rl}
+            C_{\sigma\sigma'}  \, = \, (-)^{j+\sigma}\delta_{\sigma,-\sigma'} \ .
+    \label{5-3-27}
+\end{IEEEeqnarray}
+De aquí se sigue que  los coeficientes $\sum_{\sigma'} v_{ab}\left( \mathbf{k} , \sigma'\right)  C_{\sigma'\sigma} $  transforman  igual que los coeficientes  $ u_{ab}\left( \mathbf{k} , \sigma'\right)  $  y por lo tanto ambos deben de ser proporcionales.  Redefiniendo la constante $ \lambda $  en la Ec. \eqref{5-3-16}, podemos siempre escoger
+\begin{IEEEeqnarray}{rl}
+            v_{ab}\left( \mathbf{k} ,\sigma\right)    \, = \,  (-)^{j+\sigma} u_{ab}\left( \mathbf{k} , -\sigma\right) \ . 
+    \label{5-3-28}
+\end{IEEEeqnarray}
+Las funciones de onda    $  v_{ab}\left( \mathbf{p}, \sigma  \right)  $  y  $  u_{ab}\left( \mathbf{p}, \sigma  \right)   $ para valores arbitrarios de momento $ \mathbf{p} $, vienen  dadas en términos de las funciones de onda en el vector estándar por las ecuaciones \eqref{5-1-33}  y \eqref{5-1-34}, 
+ 	\begin{IEEEeqnarray}{rl}   
+                 v_{ab}\left( \mathbf{p}, \sigma  \right)         &\, = \,   \sqrt{\tfrac{k^{0}}{p^{0}}}  \sum_{ \pm\bar{\ell}}    \left[ {S}\left( L(p) \right)\right] _{ ab  ,a'b'}  v_{a'b'}\left(\mathbf{k},\sigma \right)\ ,\nonumber \\ 
+                   \label{5-3-29} \\
+                       u_{ab}\left( \mathbf{p}, \sigma  \right)         &\, = \,   \sqrt{\tfrac{k^{0}}{p^{0}}}  \sum_{ \pm\bar{\ell}}    \left[ {S}\left( L(p) \right)\right] _{ ab  ,a'b'}  u_{a'b'}\left(\mathbf{k},\sigma \right)\ .\nonumber \\ 
+             \label{5-3-30}
+    	\end{IEEEeqnarray} 
+Hemos escogido $L(p) ^{\mu}_{\,\,\nu}  $  como 
+\begin{IEEEeqnarray}{rl}
+            L^{i}_{\,\,k}\left(\theta, \hat{\mathbf{p}} \right)  &  \, = \, \delta_{ik}  \, + \, \left( \cosh\theta-1\right) \hat{p}_{i}\hat{p}_{k}\ , \quad \nonumber \\
+          L^{i}_{\,\,0}\left(\theta, \hat{\mathbf{p}} \right)      &  \, = \,    L^{0}_{\,\,i}\left(\theta, \hat{\mathbf{p}} \right)  \, = \,  \hat{p}_{i}\sinh\theta   \ , \quad \nonumber \\
+           L^{0}_{\,\,0}\left(\theta, \hat{\mathbf{p}} \right)     &  \, = \,  \cosh\theta\  \ ,
+    \label{5-3-31}
+\end{IEEEeqnarray}
+donde
+\begin{IEEEeqnarray}{rl}
+            \cosh\theta  \, = \, \sqrt{\mathbf{p}^{2}  \, + \, m^{2}}\,/m, \quad \sinh\theta  \, = \, \vert \mathbf{p}\vert / m,  \ .
+    \label{5-3-32}
+\end{IEEEeqnarray}
+Para una dirección fija $ \hat{\mathbf{p}}$ y dos parámetros $ \theta $ y $ \bar{\theta} $  arbitrarios,  es fácil ver que $      L\left(\theta, \hat{\mathbf{p}} \right) $ satisface la regla de composición de un grupo abeliano:
+ \begin{IEEEeqnarray}{rl}
+              L\left(\theta, \hat{\mathbf{p}} \right)   L\left(\bar\theta, \hat{\mathbf{p}} \right)   \, = \,   L\left(\bar{\theta}  \, + \, \theta, \hat{\mathbf{p}} \right) \ .
+     \label{5-3-33}
+ \end{IEEEeqnarray}
+ Notemos que  $   L\left(0, \hat{\mathbf{p}} \right)^{\mu}_{\,\,\nu}   \, = \, \delta^{\mu}_{\,\,\nu} $, por lo que al desarrollar  $ L(p) $ en serie de Taylor alrededor de $ \theta $, tenemos   $      L\left(0, \hat{\mathbf{p}} \right)^{\mu}_{\,\,\nu}   \, = \, \delta^{\mu}_{\,\,\nu}  \, + \, \left[ \omega\left( \theta\right) \right] ^{\mu}_{\,\,\nu}  \, + \, \dots  $, con 
+ \begin{IEEEeqnarray}{rl}
+                           \left[ \omega\left( \theta\right) \right]_ {ij}  \, = \,  \left[ \omega\left( \theta\right) \right]_ {00}  \, = \,  0, \quad     \left[ \omega\left( \theta\right) \right]_ {i0}  \, = \,  \hat{p}_{i}\theta \ .
+    \label{5-3-34}
+\end{IEEEeqnarray}
+Esto también nos dice que para $ \theta  $  suficientemente peque\~no, la representación $ S^{\mathcal{A}\mathcal{B}}\left( L(p)\right)  $  viene expresada por
+\footnote{Hay  que recordar que la expansión general de $ S^{\mathcal{A}\mathcal{B}} $ alrededor de la unidad es \begin{IEEEeqnarray}{rl}
+       S^{\mathcal{A}\mathcal{B}}   \, = \, \mathbb{I} \, + \, \frac{i}{2}\,\omega_{\mu\nu}\,\mathbb{J}^{\mu\nu}  \, + \, \dots \nonumber
+\end{IEEEeqnarray}}
+\begin{IEEEeqnarray}{rl}
+       S^{\mathcal{A}\mathcal{B}}\left( L(p)\right)   \, = \, \mathbb{I} \, - \,i\left(\hat{\mathbf{p}}\cdot \mathbb{K} \right)\theta  \, + \, \dots \ .
+    \label{5-3-35}
+\end{IEEEeqnarray} 
+Puesto que  $ S^{\mathcal{A}\mathcal{B}}\left(\bar{\theta}+\theta\right)=S^{\mathcal{A}\mathcal{B}}\left(\bar{\theta}\right)S^{\mathcal{A}\mathcal{B}}\left(\theta\right) $, podemos sumar la serie  para  obtener
+\begin{IEEEeqnarray}{rl}
+               S^{\mathcal{A}0}_{aa'}\left( L(p)\right)   \, = \, \left[ \exp \left(-\hat{\mathbf{p}}\cdot \mathbb{J}^{(\mathcal{A})} \theta\right) \right]_{a a'} , \quad   S^{0\mathcal{B}}_{bb'}\left( L(p)\right)   \, = \,  \left[ \exp \left(+\hat{\mathbf{p}}\cdot \mathbb{J}^{(\mathcal{B})}\theta\right) \right]_{bb'}  , \nonumber \\
+    \label{5-3-36}
+\end{IEEEeqnarray}
+donde hemos usado $ i\mathbb{K} = \mathbb{J}^{\mathcal{A}} -\mathbb{J}^{\mathcal{B}} $ y $ S^{\mathcal{A}\mathcal{B}}  \, = \, S^{\mathcal{A}0}  S^{0\mathcal{B}}   $. 
+
+  Finalmente, escribimos de forma explícita  los coeficientes $  u_{ab}\left( \mathbf{b} ,\sigma\right)$ y $  v_{ab}\left( \mathbf{p} ,\sigma\right) $, en términos de los coeficientes de Clebsh-Gordan y de los generadores de las representaciones del grupo de rotación:
+\begin{IEEEeqnarray}{rl}
+             u_{ab}\left( \mathbf{p} ,\sigma\right)  \, = \, \sqrt{\frac{1}{2 p^{0}} } \sum_{a'b'}\left[ \exp \left(-\hat{\mathbf{p}}\cdot \mathbb{J}^{(\mathcal{A})}  \theta\right) \right]_{a a'} \left[ \exp \left(+\hat{\mathbf{p}}\cdot \mathbb{J}^{(\mathcal{B})} \theta\right) \right]_{bb'}C_{\mathcal{A}\mathcal{B}}\left( j\sigma;a'b'\right)  \ .\nonumber\\
+    \label{5-3-37}
+\end{IEEEeqnarray}
+y
+\begin{IEEEeqnarray}{rl}
+            v_{ab}\left( \mathbf{p} ,\sigma\right)   \, = \, (-)^{j+\sigma}  u_{ab}\left( \mathbf{p} ,-\sigma\right)\ .
+    \label{5-3-38}
+\end{IEEEeqnarray}
+
+Para analizar las relaciones de causalidad, las cuales son necesarias para tener una supermatriz $ \mathcal{S} $ invariante de Lorentz, consideramos  dos supercampos  $ \Phi_{\pm {a}{b}} $ y $ \Phi_{\pm \tilde{a}\tilde{b}} $ en las representaciones  $ \left({A},{B} \right)  $ y  $ \left(\tilde{A},\tilde{B} \right)  $ del grupo de Lorentz, respectivamente. Tenemos pues, cuatro constantes $ \lambda $, $ \kappa $, $ \tilde{\lambda} $ y $ \tilde{\kappa} $ que intentaremos ajustar para cumplir con las relaciones de causalidad. Tomando el (anti)conmutador de    $ \Phi_{\pm {a}{b}} $ con $ \Phi^{\dagger}_{\mp \tilde{a}\tilde{b}}  $, obtenemos
+\begin{IEEEeqnarray}{rl}
+    \left[\Phi_{\pm ab}(x_{_{1}},\vartheta_{_{1}}) , {\Phi}^{\dagger}_{\mp\tilde{a}\tilde{b}}(x_{_{2}},\vartheta_{_{2}})  \right]_{\varepsilon}         &\, = \,  (2\pi)^{-3}\int d^{3}\textbf{p}\,(2p^{0})^{-1}\, \pi_{ab,\tilde{a}\tilde{b}}\left( \mathbf{p}\right)  \,\,  \nonumber \\
+   \times &  \left(  \kappa\tilde{\kappa}^{*}\exp{\left[ +i x^{\pm}_{_{12}}\cdot p\right] }   \, + \, \varepsilon   \lambda\tilde{\lambda}^{*}\exp{\left[ -i x^{\pm}_{_{12}}\cdot p\right] } \right)  \ ,  \nonumber \\
+    \label{5-3-39}
+\end{IEEEeqnarray}
+donde
+\begin{IEEEeqnarray}{rl}
+            \left(  x^{\pm }_{_{12}}\right)^{\mu}   \, = \, x^{\mu}_{_{1}}-x^{\mu}_{_{2}}  \, + \, (\vartheta_{_{2}}-\vartheta_{_{1}})\cdot\gamma^{\mu}(\vartheta_{_{2}\mp} +\vartheta_{_{1}\pm})   \, = \, -\left(  x^{\mp }_{_{21}}\right)^{\mu} \ . \nonumber \\
+    \label{5-3-40}
+\end{IEEEeqnarray}
+Aquí,  $  \pi_{ab,\tilde{a}\tilde{b}}\left( \mathbf{p}\right) $ representa el bilineal formado por la suma de los espines de las funciones onda:
+\begin{IEEEeqnarray}{rl}
+            (2p^{0})^{-1} \pi_{ab,\tilde{a}\tilde{b}}\left( \mathbf{p}\right) &\, = \,  \sum_{\sigma} {u}_{ab}(\textbf{p},\sigma)\,\tilde{u}^{*}_{\tilde{a}\tilde{b}}(\textbf{p},\sigma)  \, = \, \sum_{\sigma} {v}_{ab}(\textbf{p},\sigma)\,\tilde{v}^{*}_{\tilde{a}\tilde{b}}(\textbf{p},\sigma) \ .\nonumber \\
+    \label{5-3-41}
+\end{IEEEeqnarray} 
+ El símbolo $ \varepsilon $  en \eqref{5-3-39} vale $ + $ o $ - $, dependiendo de si las superpartículas son fermiones o bosones,  respectivamente.  De acuerdo con las Ecs. \eqref{5-3-37} y \eqref{5-3-37}, tenemos que
+\begin{IEEEeqnarray}{rl}
+             \pi_{ab,\tilde{a}\tilde{b}}\left( \mathbf{p}\right)  & \, = \, \sum_{a'b'}\sum_{\tilde{a}'\tilde{b}'}\sum_{\sigma}\,C_{\mathcal{A}\mathcal{B}}\left(j\sigma;a'b' \right)C_{\tilde{\mathcal{A}}\tilde{\mathcal{B}}}\left(j\sigma;\tilde{a}'\tilde{b}' \right) \nonumber \\
+           &   \times  \left[ e^ { -(\theta\hat{\mathbf{p}})\cdot \mathbb{J}^{(\mathcal{A})} } \right]_{a a'} \left[ e^ {  (\theta\hat{\mathbf{p}})\cdot \mathbb{J}^{(\mathcal{B})} } \right]_{b b'} \left[ e^ { - (\theta\hat{\mathbf{p}})\cdot \mathbb{J}^{(\tilde{\mathcal{A}})} } \right]^{*}_{\tilde{a}\tilde{a}'} \left[ e^ {  (\theta\hat{\mathbf{p}})\cdot \mathbb{J}^{(\tilde{\mathcal{B}})} } \right]^{*}_{\tilde{b}\tilde{b}'} \ .\nonumber \\
+    \label{5-3-42}
+\end{IEEEeqnarray}
+ Enunciamos dos propiedades  $ \pi_{ab,\tilde{a}\tilde{b}}\left( \mathbf{p}\right)  $ que son de nuestro interés inmediato, dejando para después su demostración.  Escribimos a $ \pi_{ab,\tilde{a}\tilde{b}} $ como función de $ \left(\mathbf{p}, p^{0} \right)  $:
+\begin{IEEEeqnarray}{rl}
+            P_{ab,\tilde{a}\tilde{b}}\left( \mathbf{p},p^{0}\right)   \, \equiv \, \pi_{ab,\tilde{a}\tilde{b}}\left( \mathbf{p}\right) \ ,
+    \label{5-3-43}
+\end{IEEEeqnarray}
+con $ p^{0} = \sqrt{\vert \mathbf{p}\vert ^{2}+m^{2}} $.   El primer resultado que usamos~\cite{Weinberg:1969di}, es el que nos dice que la función   $ \pi_{ab,\tilde{a}\tilde{b}} $  es polinomial en la variable $ \mathbf{p} $. Entonces, separando la potencias pares de las impares en la variable $ \vert \mathbf{p} \vert $,  siempre podemos escribir a  $ P_{ab,\tilde{a}\tilde{b}} $   como lineal en $ p^{0} $,
+\begin{IEEEeqnarray}{rl}
+              {P}_{ a\tilde{a},b\tilde{b}}  \left(  \textbf{p},p^{0}\right)   \, = \,   {P}_{ a\tilde{a},b\tilde{b}}   \left(  \textbf{p}\right)   \, + \,  p^{0}\,{Q}_{ a\tilde{a},b\tilde{b}}  \left(  \textbf{p}\right) \ .
+    \label{5-3-44}
+\end{IEEEeqnarray}
+ El segundo resultado fundamental, nos dice que bajo el cambio $ p \rightarrow  -p $ tenemos que 
+ \begin{IEEEeqnarray}{rl}
+              {P}_{ a\tilde{a},b\tilde{b}}  \left( - \textbf{p},-p^{0}\right)   \, = \, (-)^{2(\mathcal{A}+\tilde{\mathcal{B}})}  {P}_{ a\tilde{a},b\tilde{b}}  \left(  \textbf{p},p^{0}\right)   \ .
+    \label{5-3-45}
+\end{IEEEeqnarray}
+Con esto, podemos escribir 
+\begin{IEEEeqnarray}{ll}
+   \left[\Phi_{\pm ab}(x_{_{1}},\vartheta_{_{1}}) , {\Phi}^{\dagger}_{\mp\tilde{a}\tilde{b}}(x_{_{2}},\vartheta_{_{2}})  \right]_{\varepsilon}       \, = \,\nonumber \\
+   \qquad  {P}_{a\tilde{a},b\tilde{b}}    \left(-i\partial_{_{1}}\right)
+    \left[ \Delta_{+}(x^{\pm}_{_{12}})\, \kappa\tilde{\kappa}^{*} \, + \,  \epsilon (-)^{2(\mathcal{A}\, + \, \tilde{\mathcal{B}})} \,   \Delta_{+}(-x^{\pm}_{_{12}})\,\lambda\tilde{\lambda}^{*} \right]\ . \nonumber \\
+    \label{5-3-46}
+\end{IEEEeqnarray} 
+Para $x^{2}>0  $, tenemos que  $ \Delta_{+}\left(x \right)  \, = \,\Delta_{+}\left(-x \right)    $, esto es, la función  $ \Delta_{+}\left(x \right) $ es par. Entonces, para $(x_{_{1}}-x_{_{2}}) ^{2}>0  $:
+\begin{IEEEeqnarray}{rl}
+   \left[\Phi_{\pm ab}(x_{_{1}},\vartheta_{_{1}}) , {\Phi}^{\dagger}_{\mp\tilde{a}\tilde{b}}(x_{_{2}},\vartheta_{_{2}})  \right]_{\varepsilon}       \, = \,  
+    &\left( \kappa\tilde{\kappa}^{*} \, + \,  \epsilon (-)^{2(\mathcal{A}\, + \, \tilde{\mathcal{B}})}\lambda\tilde{\lambda}^{*} \,   \right)  {P}_{n,\tilde{n}}    \left(-i\partial_{_{1}}\right) \Delta_{+}(x^{\pm}_{_{12}})\ , \nonumber \\
+    \label{5-3-47}
+\end{IEEEeqnarray}  
+con 
+\begin{IEEEeqnarray}{rl}
+              \Delta_{+}(x)   \, \equiv \, (2\pi)^{-3}\int d^{3}\mathbf{p}\left(2 p^{0} \right)^{-1}e^{i p\cdot x}\  .
+     \label{5-3-48}
+ \end{IEEEeqnarray} 
+La función $   {P}_{n,\tilde{n}}    \left(-i\partial_{_{1}}\right) \Delta_{+}(x^{\pm}_{_{12}}) $ definitivamente no es cero, por lo que la condición necesaria para que anti(conmutador) sea cero es
+\begin{IEEEeqnarray}{rl}
+           \kappa\tilde{\kappa}^{*} \, + \,  \epsilon (-)^{2(\mathcal{A}\, + \, \tilde{\mathcal{B}})}\lambda\tilde{\lambda}^{*} \,    \, = \, 0 \ .
+    \label{5-3-49}
+\end{IEEEeqnarray}
+Esta relación se debe cumplir para el caso particular en que el campo $ \Phi_{\pm ab} $ es el mismo $  \Phi_{\pm \tilde{a}\tilde{b}}  $. El adjunto de $ \Phi_{\pm ab} $ tiene que aparecer en la densidad Hamiltoniana, de otro modo modo perdemos Hermiticidad en el Hamiltoniano, así que  es necesario imponer
+\begin{IEEEeqnarray}{rl}
+          \vert \kappa\vert^{2}\, + \,  \epsilon (-)^{2(\mathcal{A}\, + \, {\mathcal{B}})}\vert\lambda \vert^{2}\,    \, = \, 0 \ .
+    \label{5-3-50}
+\end{IEEEeqnarray}
+De aquí se desprenden dos cosas:
+\begin{IEEEeqnarray}{rl}
+               \vert \kappa\vert = \vert\lambda\vert, \quad (-)^{2(\mathcal{A}\, + \, {\mathcal{B}})}  \, = \, - \varepsilon  \ .
+    \label{5-3-50-1}
+\end{IEEEeqnarray}
+   Ya que $ (-)^{2(\mathcal{A}\, + \, {\mathcal{B}})}= (-)^{2j} $. Concluimos que las  superpartículas de superespín $ j $ impar son fermiones mientras que las partículas de superespín $ j $ par son bosones, este resultado, es el famoso \emph{teorema de espín-estadística}. Redefiniendo $   \lambda \rightarrow (-)^{2\mathcal{B}}\lambda   $,  la condición general \eqref{5-3-49} se reduce a
+\begin{IEEEeqnarray}{rl}
+               \kappa\tilde{\kappa}^{*}  \, = \, \lambda\tilde{\lambda}^{*} \ .
+     \label{5-3-51}
+ \end{IEEEeqnarray} 
+   Ya sabemos que las magnitudes coinciden, por lo que esta es una relación entre las fases. Explotamos la libertad que tenemos de redefinir los operadores de creación y aniquilación de tal forma que para \emph{un} supercampo conseguimos que  $ \kappa =\lambda $, con esto, y de la Ec. \eqref{5-3-51}, obtenemos  que  $ \kappa =\lambda $  se debe de cumplir \emph{para todo} supercampo. La constante global que resulta de esto, la podemos reabsorber en los coeficientes de acoplamiento. Llegamos finalmente a la fórmula general de los supercampos quirales para una superpartícula (únicos hasta una constante): 
+\begin{IEEEeqnarray}{rl}           
+                \Phi_{\pm ab}(x,\vartheta)        \, = \,       (2\pi)^{-3/2}\sum_{\sigma}  \int d^{3}\textbf{p}\, &\left\lbrace \,e^{ +i\left(  x_{\pm}\cdot p \right) }  {a}_{\pm}\left( \mathbf{p}\,{\vartheta}_{\pm}\,\sigma\right)   {u}_{ab}(\textbf{p} ,\sigma) \right.  \nonumber \\
+  &  \left.          \qquad   \, + \,\left( -\right)^{2\mathcal{B}} \, e^{ -i\left(  x_{\pm}\cdot p \right) } \,{a}^{c\,\dagger}_{\pm}\left( \mathbf{p}\,{\vartheta}_{\pm}\,\sigma\right)    {v}_{ab }\left( \mathbf{p} ,\sigma\right)   \right\rbrace \ , \nonumber \\
+  \label{5-3-52-a} \\
+   \Phi^{\dagger}_{\pm ab}(x,\vartheta)        \, = \,       (2\pi)^{-3/2}\sum_{\sigma}  \int d^{3}\textbf{p}\, &\left\lbrace \, \left( -\right)^{2\mathcal{B}}  e^{ +i\left(  x_{\pm}\cdot p \right) }  {a}^{c}_{\pm}\left( \mathbf{p}\,{\vartheta}_{\pm}\,\sigma \right)  \left( {v}_{ab}(\textbf{p} ,\sigma) \right)^{*}  \right.  \nonumber \\
+  &  \left.          \qquad   \, + \,\, e^{ -i\left(  x_{\pm}\cdot p \right) } \,{a}^{\dagger}_{\pm}\left( \mathbf{p}\,{\vartheta}_{\pm}\, \sigma\right)     \left( {u}_{ab}(\textbf{p} ,\sigma)\right)^{*}   \right\rbrace \ . \nonumber \\
+    \label{5-3-52-b}
+\end{IEEEeqnarray}
+
+
+\section{Supercampos Mínimos y el Polinomio General de Weinberg}
+\label{chap5:4}
+\textbf{\textit{Los supercampos de $ (2j+1) $ componentes}}~\cite{Weinberg:1964cn,joos1962darstellungstheorie}\textbf{.} Cuando $ \mathcal{B} = 0$ en la representación $ \left(\mathcal{A},\mathcal{B} \right)  $, los coeficientes  $  u_{a0}\left( \mathbf{k} , \sigma\right)  $ en \eqref{5-3-19} están conectando dos representaciones  irreducibles del grupo de rotación. Por el lema de Schur, se sigue que $ \mathcal{A} = j$ y que la correspondiente solución no trivial  para los coeficientes  $  u_{a0}\left( \mathbf{k} , \sigma\right)  $ es un múltiplo de la matriz unidad. Similarmente, cuando $ \mathcal{A} = 0$, tenemos que $ \mathcal{B} = j$. De hecho, de las propiedades de los Clebsh-Gordan
+\begin{IEEEeqnarray}{rl}
+            C_{j0}\left( j\sigma;\tilde{\sigma}0\right)   \, = \, \delta_{\sigma\tilde{\sigma}}, \quad             C_{0j}\left( j\sigma;0\tilde{\sigma}\right)   \, = \, \delta_{\sigma\tilde{\sigma}}
+    \label{5-3-53}
+\end{IEEEeqnarray}
+ y de la Ec. \eqref{5-3-24} vemos directamente que este es el caso. Escribimos los coeficientes $  u_{\tilde{\sigma} 0}\left( \mathbf{p} ,\sigma\right)  $  y $ u_{0\tilde{\sigma}}\left( \mathbf{p} ,\sigma\right) $, correspondientes a las representaciones $ (j,0) $ y $ (0,j) $, de la siguiente manera:
+ \begin{IEEEeqnarray}{rl}
+       u^{-}_{\tilde{\sigma}}\left( \mathbf{p} ,\sigma\right) \, \equiv \,       u_{\tilde{\sigma} 0}\left( \mathbf{p} ,\sigma\right)   , \quad      u^{+}_{\tilde{\sigma}}\left( \mathbf{p} ,\sigma\right)   \, \equiv \, u_{0\tilde{\sigma}}\left( \mathbf{p} ,\sigma\right)\ .
+    \label{5-3-54}
+\end{IEEEeqnarray}
+  Con la ayuda de \eqref{5-3-37}, observamos que 
+\begin{IEEEeqnarray}{rl}
+            u^{\varepsilon}_{\tilde{\sigma}}\left( \mathbf{p} ,\sigma\right) \, = \, \sqrt{\frac{1}{2 p^{0}} } \left[ \exp\left(+\varepsilon\hat{\mathbf{p}}\cdot \mathbb{J}^{({j})}  \theta\right) \right]_{\tilde{\sigma} {\sigma}}  \ .\nonumber\\
+    \label{5-3-55}
+\end{IEEEeqnarray}
+y de la Ec. \eqref{5-3-38} obtenemos la forma explícita de los coeficientes    $ v^{+}_{\tilde{\sigma} 0}\left( \mathbf{p} ,\sigma\right) $  y    $  v^{-}_{\tilde{\sigma} 0}\left( \mathbf{p} ,\sigma\right)  $
+\begin{IEEEeqnarray}{rl}
+            v^{\varepsilon}_{\tilde{\sigma}}\left( \mathbf{p} ,\sigma\right)  \, = \,\frac{ (-)^{j+\sigma}}{\sqrt{2 p^{0}} }   \left[ \exp\left(+\varepsilon\hat{\mathbf{p}}\cdot \mathbb{J}^{({j})}  \theta\right)  \right]_{\tilde{\sigma},- {\sigma}} \ ,
+    \label{5-3-56}
+\end{IEEEeqnarray}
+donde    los coeficientes  $  v^{\varepsilon}_{\tilde{\sigma}}\left( \mathbf{p} ,\sigma\right)    $ están definidos como en las Ecs. \eqref{5-3-54}. Los correspondientes supercampos para estos casos se ven como 
+\begin{IEEEeqnarray}{rl}  
+                \Phi^{\varepsilon}_{\pm \sigma}(x,\vartheta)        \, = \,       (2\pi)^{-3/2}\sum_{\sigma'} & \int \frac{d^{3}\textbf{p}}{\sqrt{2 p^{0}} }  \, \left[ \exp\left(+\epsilon\hat{\mathbf{p}}\cdot \mathbb{J}^{({j})}  \theta\right) \right]_{{\sigma} {\sigma}'}   \nonumber \\
+  & \times \left\lbrace      
+  \,e^{ +i\left(  x_{\pm}\cdot p \right) }  {a}_{\pm}(\mathbf{p},{\vartheta}_{\pm},\sigma')   \, + \, \left( -\right)^{j+\sigma'} \, e^{ -i\left(  x_{\pm}\cdot p \right) } \,{a}^{c\,\dagger}_{\pm}(\mathbf{p},{\vartheta}_{\pm},-\sigma')  \right\rbrace \ , \nonumber \\
+     \Phi^{\varepsilon\dagger}_{\pm \sigma}(x,\vartheta)        \, = \,       (2\pi)^{-3/2}\sum_{\sigma'} & \int \frac{d^{3}\textbf{p}}{\sqrt{2 p^{0}} }  \, \left[ \exp\left(+\epsilon\hat{\mathbf{p}}\cdot \mathbb{J}^{({j})}  \theta\right) \right]_{ {\sigma}'{\sigma}}   \nonumber \\
+  & \times \left\lbrace      
+  \,\left( -\right)^{j+\sigma'} e^{ +i\left(  x_{\pm}\cdot p \right) }  {a}^{c}_{\pm}(\mathbf{p},{\vartheta}_{\pm},-\sigma')   \, + \, \, e^{ -i\left(  x_{\pm}\cdot p \right) } \,{a}^{\dagger}_{\pm}(\mathbf{p},{\vartheta}_{\pm},\sigma')  \right\rbrace \ . \nonumber \\   
+    \label{5-3-57}
+\end{IEEEeqnarray}
+El polinomio de Weinberg \eqref{5-3-41} en este caso, toma una forma muy compacta:
+\begin{IEEEeqnarray}{rl}
+             \pi^{\varepsilon}_{\sigma,\tilde{\sigma}}\left( \mathbf{p}\right)  & \, = \, \left[ \exp\left( 2 { \varepsilon\hat{\mathbf{p}}\cdot \mathbb{J}^{({j})}\theta }\right) \right]_{\sigma \tilde{\sigma}} \ .\nonumber \\
+    \label{5-3-58}
+\end{IEEEeqnarray}
+La cantidad $  \pi^{-}_{\sigma,\tilde{\sigma}} $ transforma como un tensor de Lorentz en la representación $ \left(j, j \right)$. Esta  representación consiste en  los tensores de Lorentz totalmente simétricos de dimensión $ 2j $. Entonces, debe existir un tensor $ t_{\sigma\sigma'}^{\,\mu_{1}\mu_{2}\cdots \mu_{2j}} $  que convierta los índices  $ \sigma,\sigma' $  a los índices $ {\,\mu_{1}\mu_{2}\cdots \mu_{2j}} $ (totalmente simetrizados): 
+\begin{IEEEeqnarray}{rl}
+            \pi^{-}_{\sigma\sigma'}\left(\mathbf{p} \right)   \, = \, (-)^{2j}t_{\sigma\sigma'}^{\,\mu_{1}\mu_{2}\cdots \mu_{2j}}\pi_{\,\mu_{1}\mu_{2}\cdots \mu_{2j}}\left(\mathbf{p} \right)\ .
+    \label{5-3-59}
+\end{IEEEeqnarray}
+Además,  $ t_{\sigma\sigma'}^{\,\mu_{1}\mu_{2}\cdots \mu_{2j}} $ es cero para cualquier contracción de índices~\cite{Weinberg:1964cn}. Ya que
+\begin{IEEEeqnarray}{rl}
+            \pi^{\,\nu_{1}\nu_{2}\cdots \nu_{2j}}\left(\mathbf{p}_{\Lambda} \right)  \, = \, \Lambda_{\mu_{1}}^{\,\,\nu_{1}} \Lambda_{\mu_{2}}^{\,\,\nu_{2}} \cdots \Lambda_{\mu_{2j}}^{\,\,\nu_{2j}} \pi^{\,\mu_{1}\mu_{2}\cdots \mu_{2j}}\left(\mathbf{p}_{\Lambda} \right) \ ,
+    \label{5-3-60}
+\end{IEEEeqnarray}
+el polinomio  $    \pi^{\,\nu_{1}\nu_{2}\cdots \nu_{2j}} $ tiene que estar formado por productos tensoriales de $ p^{\mu} $ y $ \eta^{\mu\nu}$, pero cualquier dependencia en   $ \eta^{\mu\nu}$  no contribuye,  por lo que la única contribución es la que se forma del producto totalmente simétrico de los vectores $ p^{\mu} $, esto es 
+\begin{IEEEeqnarray}{rl}
+            \pi^{-}_{\sigma\sigma'}\left(\mathbf{p} \right)   \, = \, (-)^{2j}t_{\sigma\sigma'}^{\,\mu_{1}\mu_{2}\cdots \mu_{2j}}p_{\mu_{1}}p_{\mu_{2}}\cdots p_{\mu_{2j}}.
+    \label{5-3-61}
+\end{IEEEeqnarray}
+con $ p^{0}  \, = \, \sqrt{\vert \mathbf{p} \vert^{2}  \, + \, m^{2}} $ y
+donde hemos reabsorbido cualquier constante de proporcionalidad en  $ t_{\sigma\sigma'}^{\,\mu_{1}\mu_{2}\cdots \mu_{2j}} $. Podemos obtener $ \pi^{+}_{\sigma\sigma'}\left(\mathbf{p} \right)  $ en términos de  $ \pi^{+}_{\sigma\sigma'}\left(\mathbf{p} \right)  $:
+\begin{IEEEeqnarray}{rl}
+        \pi^{+}_{\sigma\sigma'}\left(\mathbf{p} \right)   \, = \,(-)^{2j-\sigma-\sigma'}t_{-\sigma',-\sigma}^{\,\mu_{1}\mu_{2}\cdots \mu_{2j}}p_{\mu_{1}}p_{\mu_{2}}\cdots p_{\mu_{2j}} \ ,
+    \label{5-3-62}
+\end{IEEEeqnarray}
+donde hemos usado
+\begin{IEEEeqnarray}{rl}    
+      \left[ \exp \left(-\hat{\mathbf{p}}\cdot \mathbb{J}^{(j)}  \theta\right) \right]_{-\sigma ,-\sigma'}   \, = \, \left(- \right)^{\sigma-\sigma'}    \left[ \exp \left(+\hat{\mathbf{p}}\cdot \mathbb{J}^{(j)}  \theta\right) \right]_{\sigma',\sigma} \  .
+    \label{5-3-63}
+\end{IEEEeqnarray}
+Cuando $ j=1/2 $, las cantidades $ t_{\sigma\sigma'}^{\mu} $ son proporcionales a $ \sigma^{\mu} $, con $ \sigma^{i} $ siendo las matrices de Pauli y  $ \sigma^{0} $ la matriz identidad de $ 2\times 2 $. Entonces el caso $ j $ arbitrario representa la generalización del 
+ \emph{cálculo con espinores}~\footnote{Para lo referente a las matrices de Dirac para cualquier espín consúltese y las referencias~\cite{Weinberg:1964cn,PhysRev.130.442} (una versión de libre acceso de la referencia , se encuentra en  el sitio web  \textit{www-personal.umich.edu/~williams/papers/diracalg.pdf}).}. Además de las condiciones de quiralidad y la ecuación de Klein-Gordon, los supercampos \eqref{5-3-57} no satisfacen ninguna ``ecuación del movimiento''. Por esto último, a veces a estos supercampos se les conoce como supercampos ``mínimos''. \\
+
+
+
+\textbf{\textit{El polinomio de Weinberg en la capa de masa.}}
+La introducción de los polinomios \eqref{5-3-58}, que construimos a partir  de los supercampos mínimos, nos pone en una posición en la cual podemos demostrar que la cantidad \eqref{5-3-41} es un polinomio y que la propiedad de reflexión \eqref{5-3-45} es cierta.\\
+Para ahorrarnos notación, en lugar de considerar el anti(conmutador) de $ \Phi_{\pm a_{1}b_{1}} $ con  $ \Phi^{\dagger}_{\mp a_{2}b_{2}} $, consideramos el supercampo ``invertido conjugado'' $ \Phi^{(c)}_{\mp ab} $, definido  por el intercambio de $ a_{\mp}  \longleftrightarrow a^{(c)}_{\mp} $ en la Ec. \eqref{5-3-52-a}. Con la ayuda de las relaciones 
+\begin{IEEEeqnarray}{rl}
+            C_{\mathcal{A}\mathcal{B}}\left(j\sigma ; ab \right)   \, = \,  C_{\mathcal{B}\mathcal{A}}\left(j, -\sigma ; -b ,\,-a \right)   
+    \label{5-3-64}
+\end{IEEEeqnarray}
+y 
+\begin{IEEEeqnarray}{rl}
+     \left[ \exp \left(-\hat{\mathbf{p}}\cdot \mathbb{J}^{(\mathcal{A})}  \theta\right) \right]^{*}_{a a'}   & \, = \, \left(- \right)^{a-a'}    \left[ \exp \left(+\hat{\mathbf{p}}\cdot \mathbb{J}^{(\mathcal{A})}  \theta\right) \right]_{-a ,-a'}\ ,\nonumber \\
+     \label{5-3-65} \\
+      \left[ \exp \left(-\hat{\mathbf{p}}\cdot \mathbb{J}^{(\mathcal{A})}  \theta\right) \right]_{-a ,-a'}   & \, = \, \left(- \right)^{a-a'}    \left[ \exp \left(+\hat{\mathbf{p}}\cdot \mathbb{J}^{(\mathcal{A})}  \theta\right) \right]_{a',a} \ , \nonumber \\      
+    \label{5-3-66}
+\end{IEEEeqnarray}
+podemos escribir  los coeficientes conjugados $ v^{\mathcal{A}\mathcal{B} }_{ab} $ y $ u^{\mathcal{A}\mathcal{B}}_{ab} $ en términos de los coeficientes  $ u^{\mathcal{B}\mathcal{A} * }_{ba} $ y $ v^{\mathcal{B}\mathcal{A} *}_{ba} $, respectivamente, 
+\begin{IEEEeqnarray}{rl}
+u^{\mathcal{A}\mathcal{B}}_{ab}\left( \mathbf{p} ,\sigma\right)  &   \, = \, (-)^{-j-a-b}v^{\mathcal{B}\mathcal{A}*}_{-b -a}\left( \mathbf{p} , \sigma\right)\ ,  \\
+v^{\mathcal{A}\mathcal{B}}_{ab}\left( \mathbf{p} ,\sigma\right)   &\, = \, (-)^{j-a-b}u^{\mathcal{B}\mathcal{A}*}_{-b -a}\left( \mathbf{p} , \sigma\right) \ .
+    \label{5-3-67}
+\end{IEEEeqnarray}
+De aquí vemos que las relaciones entre los supercampos invertidos conjugados y los supercampos adjuntos son:
+\begin{IEEEeqnarray}{rl}
+            \Phi^{\mathcal{A}\mathcal{B},(c)}_{\mp ab}  \, = \, (-)^{2\mathcal{B}+j-a-b}\Phi^{\mathcal{B}\mathcal{A}\dagger}_{\mp -b-a} \ .
+    \label{5-3-68}
+\end{IEEEeqnarray}
+El polinomio de Weinberg que proviene del conmutador
+\begin{IEEEeqnarray}{rl}
+              \left[ \Phi^{\mathcal{A}_{1}\mathcal{B}_{1}}_{\pm a_{1}b_{1}}\left(z_{1} \right) ,\Phi^{\mathcal{A}_{2}\mathcal{B}_{2},(c)}_{\mp a_{2}b_{2}}\left(z_{2} \right) \right\rbrace  \ ,
+    \label{5-3-69}
+\end{IEEEeqnarray}
+se ve como 
+\begin{IEEEeqnarray}{rl}
+             \pi^{\mathcal{A}_{1}\mathcal{B}_{1}\mathcal{A}_{2}\mathcal{B}_{2}}_{a_{1}b_{1}a_{2}b_{2}}\left( \mathbf{p}\right)  & \, = \,  \sum_{\sigma, a_{1}'b_{1}'a_{2}'b_{2}'}\,(-)^{j+\sigma}C_{\mathcal{A}_{1}\mathcal{B}_{1}}\left(j\sigma; a_{1}'b_{1}' \right)C_{\mathcal{A}_{2}\mathcal{B}_{2}}\left(j-\sigma;{a}_{2}'{b}_{2}' \right) \nonumber \\
+             \times   &\left[ \mathcal{S}^{(\mathcal{A}_{1})}({+\theta})\right]_{a_{1} a_{1}'} \left[ \mathcal{S}^{(\mathcal{B}_{1})}({-\theta})\right]_{b_{1} b_{1}'}  \left[ \mathcal{S}^{(\mathcal{A}_{2})}({+\theta})\right]_{a_{2} a_{2}'} \left[ \mathcal{S}^{(\mathcal{B}_{2})}({-\theta})\right]_{b_{2} b_{2}'}\ ,   \nonumber \\
+    \label{5-3-70}
+\end{IEEEeqnarray}
+donde  $ \mathcal{S}^{(\mathcal{A})}({+\theta})  \, = \, \exp \left(-\hat{\mathbf{p}}\cdot \mathbb{J}^{\mathcal{A}}  \theta\right) $. El siguiente paso consiste en buscar  escribir \eqref{5-3-70} de una manera más iluminadora, para ello buscamos expresiones equivalentes a \eqref{5-3-70}, %pero que no nos efectúen un cambio $ \mathcal{A}_{1}\leftrightarrow  \mathcal{B}_{2}$ en los coeficientes,
+ y en particular buscamos una expresión que nos factorize las representaciones con el mismo signo de $ \theta $.  En la teoría del momento angular, productos de coeficientes de Clebsh-Gordan de la forma $ C_{\mathcal{A}_{1}\mathcal{B}_{1}}\left(\cdots \right)C_{\mathcal{A}_{2}\mathcal{B}_{2}}\left(\cdots \right)  $ aparecen cuando formamos un estado de momento angular  $ \mathcal{A}_{2} $ a partir de la suma angular de $ \mathcal{B}_{2} $ con algún otro estado que proviene a su vez, de la suma  de los momentos angulares  $ \mathcal{A}_{1}$ y $\mathcal{B}_{1} $. Aunque la base de los estados de estos acoplamientos es diferente al estado con el mismo  momento angular $ \mathcal{A}_{2} $ que se forma primero de acoplar  $ \mathcal{B}_{1}  $ y  $ \mathcal{B}_{2}$ para después sumar con $\mathcal{A}_{1} $, son unitariamente equivalentes.  Entonces existe una cantidad $ W\left( \mathcal{A}_{1}\mathcal{B}_{1} \mathcal{A}_{2}\mathcal{B}_{2};jn\right) $, llamada el \emph{coeficiente-W de Racah}, que liga ambas bases. La expresión formal, en términos de los coeficientes de Clebsh-Gordan viene dada por~\citep{Weinberg:1969di}
+\begin{IEEEeqnarray}{rl}
+           \sum_{\sigma}\, (-)^{j+\sigma} \,C_{\mathcal{A}_{1}\mathcal{B}_{1}}\left(j\sigma; a_{1}'b_{1}' \right)  & C_{\mathcal{A}_{2}\mathcal{B}_{2}}\left(j-\sigma;{a}_{2}'{b}_{2}' \right)    \nonumber \\
+          &  \, = \, \left( 2j \, + \, 1\right) \sum_{n\lambda} (-)^{\mathcal{A}_{1}+\mathcal{B}_{1}+j-\lambda} W\left( \mathcal{A}_{1}\mathcal{B}_{1} \mathcal{A}_{2}\mathcal{B}_{2};jn\right)\nonumber \\
+           &\qquad \times \, C_{\mathcal{A}_{1}\mathcal{A}_{2}}\left(n\lambda; a_{1}'a_{2}' \right)C_{\mathcal{B}_{1}\mathcal{B}_{2}}\left(n-\lambda;{b}_{1}'{b}_{2}' \right) \ .\nonumber \\
+    \label{5-3-71}
+\end{IEEEeqnarray}
+Insertando esta expresión en \eqref{5-3-70}, vemos que en efecto, las representaciones con el mismo signo en $ \theta $ factorizan:
+\begin{IEEEeqnarray}{rl}
+             \pi^{\mathcal{A}_{1}\mathcal{B}_{1}\mathcal{A}_{2}\mathcal{B}_{2}}_{a_{1}b_{1}a_{2}b_{2}}\left( \mathbf{p}\right)  & \, = \, \left( 2j \, + \, 1\right)  \sum_{n\lambda}(-)^{\mathcal{A}_{1}+\mathcal{B}_{1}+j-\lambda} W\left( \mathcal{A}_{1}\mathcal{B}_{1} \mathcal{A}_{2}\mathcal{B}_{2};jn\right)  \nonumber \\
+           &   \times \left( \sum_{a_{1}'a_{2}'}C_{\mathcal{A}_{1}\mathcal{A}_{2}}\left(n\lambda; a_{1}'a_{2}' \right)   \left[ \mathcal{S}^{(\mathcal{A}_{1})}_{+\theta}\right]_{a_{1} a_{1}'}  \left[ \mathcal{S}^{(\mathcal{A}_{2})}_{+\theta}\right]_{a_{2} a_{2}'} \right) \nonumber\\
+         &   \times\left(\sum_{b_{1}'b_{2}'}  C_{\mathcal{B}_{1}\mathcal{B}_{2}}\left(n-\lambda;{b}_{2}'{b}_{2}' \right)  \left[ \mathcal{S}^{(\mathcal{B}_{1})}_{-\theta}\right]_{b_{1} b_{1}'} \left[ \mathcal{S}^{(\mathcal{B}_{2})}_{-\theta}\right]_{b_{2} b_{2}'} \right)   \ .\nonumber \\
+    \label{5-3-72}
+\end{IEEEeqnarray}
+Continuando analíticamente para valores imaginarios del vector de rotación en  la Ec. \eqref{5-3-19}, tenemos que
+\begin{IEEEeqnarray}{rl}      
+       \sum_{\sigma'}  \,   C_{\mathcal{A}\mathcal{B}}\left( j\sigma';ab\right)    S^{(j) }_{\sigma'\sigma} \left( \theta\right)    \, = \, \sum_{a'b'}S^{(\mathcal{A})}_{aa'}\left( \theta\right) \, S^{(\mathcal{B})}_{bb'}\left( \theta\right)\, C_{\mathcal{A}\mathcal{B}}\left( j\sigma;a'b'\right) \ ,\nonumber \\ 
+    \label{5-3-73}
+\end{IEEEeqnarray}
+con esto último, la Ec. \eqref{5-3-72} nos queda  como
+\begin{IEEEeqnarray}{rl}
+             \pi^{\mathcal{A}_{1}\mathcal{B}_{1}\mathcal{A}_{2}\mathcal{B}_{2}}_{a_{1}b_{1}a_{2}b_{2}}\left( \mathbf{p}\right)  & \, = \, \left( 2j \, + \, 1\right)\sum_{n\lambda} (-)^{\mathcal{A}_{1}+\mathcal{B}_{2}+j-\lambda}W\left( \mathcal{A}_{1}\mathcal{B}_{1} \mathcal{A}_{2}\mathcal{B}_{2};jn\right)  \nonumber \\
+           &   \times \left( \sum_{\lambda_{1}}C_{\mathcal{A}_{1}\mathcal{A}_{2}}\left(n\lambda_{1}; a_{1}a_{2} \right)   \left[ \mathcal{S}^{(n)}_{+\theta}\right]_{\lambda_{1}\lambda} \right) \nonumber\\
+         &   \times\left( \sum_{\lambda_{2}}(-)^{\lambda-\lambda_{2}}C_{\mathcal{B}_{1}\mathcal{B}_{2}}\left(n\lambda_{2}; b_{1}b_{2} \right)   \left[ \mathcal{S}^{(n)}_{-\theta}\right]_{-\lambda_{2},-\lambda} \right) \ .\nonumber \\
+    \label{5-3-75}
+\end{IEEEeqnarray}
+Pero además [ver Ec.\eqref{5-3-63}]
+\begin{IEEEeqnarray}{rl}
+            \left[ S\left( -\theta\right) \right]_{-b ,-a}    \, = \, \left(- \right) ^{a-b}
+\left[ S\left( +\theta\right)\right]_{+a,+b}  \ .
+    \label{5-3-74}
+\end{IEEEeqnarray}
+Entonces, llegamos a nuestra forma final  del polinomio general de Weinberg (en la capa de masa)~\citep{Weinberg:1969di}:
+\begin{IEEEeqnarray}{rl}
+             \pi^{\mathcal{A}_{1}\mathcal{B}_{1}\mathcal{A}_{2}\mathcal{B}_{2}}_{a_{1}b_{1}a_{2}b_{2}}\left( \mathbf{p}\right)  & \, = \, \sum_{n}\sum_{\lambda_{1}\lambda_{2}}F\left( _{\,a_{1} \,\,b_{1}\,\,a_{2} \,\,b_{2}}^{\mathcal{A}_{1}\,\mathcal{B}_{1}\, \mathcal{A}_{2}\,\mathcal{B}_{2}}\,\, ;\, ^{\,\lambda_{1}\,\lambda_{2}}_{\,\, j\,\, \,n}\right)\pi^{(n)}_{\lambda_{1}\lambda_{2}}\left( \mathbf{p}\right)\ ,\nonumber \\
+    \label{5-3-76}
+\end{IEEEeqnarray}
+donde
+\begin{IEEEeqnarray}{rl}
+    F\left( _{\,a_{1} \,\,b_{1}\,\,a_{2} \,\,b_{2}}^{\mathcal{A}_{1}\,\mathcal{B}_{1}\, \mathcal{A}_{2}\,\mathcal{B}_{2}}\,\, ;\, ^{\,\lambda_{1}\,\lambda_{2}}_{\,\, j\,\, \,n}\right)    &  \, = \,  \left( 2j \, + \, 1\right)(-)^{\mathcal{A}_{1}+\mathcal{B}_{2}+j}W\left( \mathcal{A}_{1}\mathcal{B}_{1} \mathcal{A}_{2}\mathcal{B}_{2};jn\right)\nonumber \\
+   & \qquad \times  C_{\mathcal{A}_{1}\mathcal{A}_{2}}\left(n\lambda_{1}; a_{1}a_{2} \right) \times C_{\mathcal{B}_{1}\mathcal{B}_{2}}\left(n\lambda_{2}; b_{1}b_{2} \right) \nonumber \\
+    \label{5-3-77}
+\end{IEEEeqnarray}
+ 
+\indent De la Ec. \eqref{5-3-61} es evidente que  $ \pi_{ab,\tilde{a}\tilde{b}}\left( \mathbf{p}\right)  $ es un polinomio, por lo que, de la Ec. \eqref{5-3-76}, se sigue que   $ \pi^{\mathcal{A}_{1}\mathcal{B}_{1}\mathcal{A}_{2}\mathcal{B}_{2}}_{a_{1}b_{1}a_{2}b_{2}}\left( \mathbf{p}\right) $  también lo es. Más aún,  de la misma ecuaci\'on \eqref{5-3-77}, vemos que [ver la Ec. \eqref{5-3-43}]
+\begin{IEEEeqnarray}{rl}
+            P_{\lambda \lambda'}^{(n)}\left(-p^{0}, -\mathbf{p} \right)   \, = \, (-)^{2n}P^{(n)}_{\lambda \lambda'}\left(p^{0}, \mathbf{p} \right) \ .
+    \label{5-3-}
+\end{IEEEeqnarray}
+El coeficiente $ C_{\mathcal{A}_{1}\mathcal{A}_{2}}\left(n\lambda_{1}; a_{1}a_{2} \right) $ es cero a menos que $ \vert \mathcal{A}_{1}-\mathcal{A}_{2}\vert  < n < \mathcal{A}_{1}+\mathcal{A}_{2}$, por lo que en la Ec. \eqref{5-3-76}, $ (-)^{2n} \,  = \,(-)^{2\mathcal{A}_{1}+2\mathcal{A}_{2}} $. Esto último demuestra la propiedad de reflexi\'on \eqref{5-3-45}, como habíamos prometido. \\
+
+
+%\begin{comment}
+
+\section{Interacciones Generales}
+\label{chap5:5}
+En esta sección investigamos los tipos de interacciones más generales, las cuales se forman mediante la aplicación de derivadas covariantes y superderivadas actuando sobre los supercampos quirales.\\
+
+\textbf{\textit{Derivadas covariantes.}} Recordemos que la derivada covariante $ \partial_{\mu} $ transforma como la representación $ \left(\frac{1}{2},\frac{1}{2} \right)  $, entonces el supercampo 
+\begin{IEEEeqnarray}{rl}
+            \partial_{\mu}\Phi^{\mathcal{A}\mathcal{B}}_{\pm}\ ,
+    \label{5-5-01}
+\end{IEEEeqnarray}
+(donde  hemos escrito explícitamente la representación a la que pertenece el supercampo y omitido sus componentes)  
+transforma como la representación tensorial $  \left(\frac{1}{2},\frac{1}{2} \right) \otimes \left(\mathcal{A},\mathcal{B} \right)  $.  Puesto que los supercampos  \eqref{5-3-52-a} son únicos hasta una constante de proporcionalidad, el supercampo \eqref{5-5-01} puede ser expresado como una combinación lineal de los supercampos:
+\begin{IEEEeqnarray}{rl}
+            \Phi^{\left( \mathcal{A}  \, + \, \frac{1}{2}\right) \left( \mathcal{B} +\frac{1}{2}\right)  }_{\pm}, \quad \Phi^{\left( \mathcal{A}  \, -\, \frac{1}{2}\right) \left( \mathcal{B} +\frac{1}{2}\right)  }_{\pm}, \quad \Phi^{\left( \mathcal{A}  \, + \, \frac{1}{2}\right) \left( \mathcal{B} -\frac{1}{2}\right)  }_{\pm}, \quad \Phi^{\left( \mathcal{A}  \, -\, \frac{1}{2}\right) \left( \mathcal{B} -\frac{1}{2}\right)  }_{\pm}\ .\nonumber \\
+    \label{5-5-02}
+\end{IEEEeqnarray}
+Por supuesto, si $ \mathcal{A} $ vale cero solo los supercampos  que llevan $ \mathcal{A}+1/2 $ son posibles,  de igual forma para cuando  $ \mathcal{B} $ vale cero. Aplicando un procedimiento recursivo, vemos que cualquier potencia de $ N $ derivadas de la forma
+\begin{IEEEeqnarray}{rl}	
+            \partial_{\mu_{1}}\cdots \partial_{\mu_{N}}\Phi^{\mathcal{A}\mathcal{B}}_{\pm} \ ,
+    \label{5-5-03}
+\end{IEEEeqnarray}   
+ya esta incluida en los supercampos generales. En otro lado de la moneda,  el tensor de derivadas totalmente simétrico  sin traza, de dimensión $ N $, denotado por
+\begin{IEEEeqnarray}{rl}
+            \left\lbrace \partial_{\mu_{1}}\cdots \partial_{\mu_{N}} \right\rbrace  \ ,
+    \label{5-5-04}
+\end{IEEEeqnarray}
+transforma como la representación $ \left(\frac{N}{2} ,\frac{N}{2}\right)  $ del grupo de Lorentz. Entonces, los supercampos de la forma 
+\begin{IEEEeqnarray}{rl}
+                \left\lbrace \partial_{\mu_{1}}\cdots \partial_{\mu_{2B}} \right\rbrace \Phi^{j{0}}_{\pm}\ ,
+    \label{5-5-05}
+\end{IEEEeqnarray}
+transforman bajo la representación  $  \left( \mathcal{A},\mathcal{B}\right)   \, = \, \left(\mathcal{B},\mathcal{B}\right) \otimes \left(j,0 \right)  $. Debido  a las reglas de adición de momento angular $ \vert j -\mathcal{B}\vert < \mathcal{A} < j+\mathcal{B} $, pero esto es equivalente a $ \vert \mathcal{A}-\mathcal{B}\vert \leq j \leq \mathcal{A}  \, + \, \mathcal{B} $. De nuevo, invocando a la unicidad de los supercampos quirales, este supercampo  es proporcional a $ \left( \mathcal{A},\mathcal{B}\right)  $. Entonces, \emph{perturbativamente, los supercampos  $ \left(j,0 \right)  $ y sus derivadas, son igualmente de generales que los supercampos \eqref{5-3-52-a}.} Lo mismo aplica para los supercampos  $   \left(0,j\right)   $.\\
+
+\textbf{\textit{Interacciones con superderivadas.}} Hemos  visto con anterioridad que el supercampo general se puede expresar como la suma de términos con supercampos quirales y superderivadas   $ \mathcal{D}_{\alpha} $ [ver Ecs. \eqref{5-2-12} y \eqref{5-2-13}]:
+\begin{IEEEeqnarray}{rl}
+            \mathcal{D}_{\epsilon_{1}\alpha_{1}}\mathcal{D}_{\epsilon_{2}\alpha_{2}}\cdots \mathcal{D}_{\epsilon_{N}\alpha_{N}}\Phi^{\mathcal{A}\mathcal{B}}_{\pm}\ .
+    \label{5-5-06}
+\end{IEEEeqnarray}
+Aquí, $ \epsilon_{1},\cdots  \epsilon_{N}$ representan los signos $ + $ o $ - $ de las quiralidades izquierda y derecha, respectivamente. Puesto que las superderivadas satisfacen las relaciones de anticonmutación
+\begin{IEEEeqnarray}{rl}
+            \left\lbrace \mathcal{D}_{\alpha},\mathcal{D}_{\beta}\right\rbrace   \, = \, +2 \left(\gamma^{\mu}\epsilon\gamma_{5} \right)_{\alpha\beta} \partial_{\mu}
+    \label{5-5-07}
+\end{IEEEeqnarray}
+y  a la condición de quiralidad $ \mathcal{D}_{\mp\alpha}\Phi^{\mathcal{A}\mathcal{B}}_{\pm}=0 $, al mover todas las superderivadas  $ \mathcal{D}_{\mp\alpha} $  a la derecha, el supercampo \eqref{5-5-06} quedar\'a expresado como una suma de productos  de derivadas covariantes ordinarias y superderivadas $ \mathcal{D}_{\pm\alpha} $, actuando sobre $ \Phi^{\mathcal{A}\mathcal{B}}_{\pm} $. Hemos visto que las  derivadas ordinarias, se escriben en términos de supercampos quirales. Debido a la Ec.  \eqref{5-5-07}, productos de derivadas $ \mathcal{D}_{\pm\alpha} $ anticonmutan, por lo que el polinomio más general en estas superderivadas termina a orden dos. Además
+\begin{IEEEeqnarray}{rl}
+              \mathcal{D}_{\pm\alpha}  \mathcal{D}_{\pm\beta}  \, = \, \frac{1}{2}\left[ \left(I \pm \gamma_{5} \right)\epsilon \right]_{\alpha\beta}  \mathcal{D}_{\pm}^{2}\ ,
+    \label{5-5-08}
+\end{IEEEeqnarray}
+donde 
+\begin{IEEEeqnarray}{rl}
+        \mathcal{D}^{2}  \, \equiv \, \tfrac{1}{2}\mathcal{D}\cdot \gamma_{5}\mathcal{D}_{\pm} \ . 
+    \label{5-5-09}
+\end{IEEEeqnarray}
+
+En suma, con completa generalidad, el conjunto supercampos  y sus superderivadas se reduce al conjunto:
+\begin{IEEEeqnarray}{rl}
+            {\Phi}_{\pm ab},\quad  \mathcal{D}_{\alpha}{\Phi}_{\pm ab} , \quad \mathcal{D}_{\pm}^{2}{\Phi} _{\pm ab} \ .
+    \label{5-5-10}
+\end{IEEEeqnarray}
+
+Vemos  que a diferencia  de $  {\Phi}_{\pm ab} $, los supercampos  $  \mathcal{D}_{\alpha}{\Phi}_{\pm ab}$ y $\quad \mathcal{D}^{2}{\Phi} _{\pm ab} $ no son aniquilados por $ \mathcal{D}_{\mp\alpha} $. Pero con respecto a  $  {\Phi}_{\pm ab}  $, el supercampo $ \mathcal{D}_{\pm}^{2}{\Phi} _{\pm ab}  $ tiene la condición de quiralidad invertida,  $ \mathcal{D}_{\pm\alpha}\mathcal{D}_{\pm}^{2}{\Phi} _{\pm ab}=0 $. \\
+
+
+Hasta este punto, no ha sido necesario suponer  que existe ninguna relación entre los supercampos $ \Phi_{+} $ y los supercampos $ \Phi_{-} $, cada uno de estos supercampos puede llevar una superparticula del mismo superspín pero diferente. Hemos visto  que para cada estado de superparticula-$ \pm $ podemos definir otro superestado  que tiene las propiedades de los superestados $ \mp $ , en términos de los operadores de creación estos nuevos estados tilde se ven como  [ver Ec. \eqref{3-3-17}]
+\begin{IEEEeqnarray}{l}
+       \tilde{a}^{\dagger}_{\pm}\left( \textbf{p}\,s_{\pm}\, \sigma \,  n\right) =   \int    \exp{\left[  2i \,s_{\pm} \cdot \slashed{p}s'\right] }\,a^{\dagger}_{\mp}\left( \textbf{p}\,s'_{\mp}\, \sigma \,  n\right)\, d\left[p, s'_{\mp}\right] \ .
+    \label{5-5-10}
+\end{IEEEeqnarray} 
+Similarmente para los operadores de aniquilación. Los supercampos quirales con tilde  $ \tilde{\Phi}_{\pm} $, se definen de manera análoga que los supercampos sin tilde $ \Phi_{\pm} $. Veamos que relación existe entre ellos, para ello, notemos que para cualquier función  $ f\left(  x  \, - \, \vartheta \cdot \gamma s  \right) $ se sigue que
+\begin{IEEEeqnarray}{rl}
+             \frac{\partial}{\partial \vartheta_{\alpha}}  f\left(  x  \, - \, \vartheta \cdot \gamma s  \right) 
+             % &\, = \,   \frac{\partial \vartheta \cdot \gamma^{\mu} s }{\partial \vartheta_{\alpha}}   \frac{\partial}{\partial\vartheta \cdot \gamma^{\mu} s }   f\left(  x  \, - \, \vartheta \cdot \gamma s  \right)  \nonumber \\
+             &\, = \,  (-) \left( \epsilon\gamma_{5} \gamma^{\mu} s\right)_{\alpha} \frac{\partial}{\partial x^{\mu}}   f\left(  x  \, - \, \vartheta \cdot \gamma s  \right) \ ,  \nonumber \\
+    \label{5-5-11}
+\end{IEEEeqnarray}
+y por lo tanto
+\begin{IEEEeqnarray}{rl}
+             \mathcal{D}_{\alpha} f\left(  x  \, - \, \vartheta \cdot \gamma s  \right)    \, = \,\left[ \gamma^{\mu}  \left( s  \, - \,\vartheta\right)\right]_{\alpha} \partial_{\mu}\ . 
+    \label{5-5-12}
+\end{IEEEeqnarray}
+A su vez,  esto último implica que 
+\begin{IEEEeqnarray}{rl}
+            \mathcal{D}^{\intercal} \epsilon \mathcal{D}_{\pm}\, f\left(  x  \, - \, \vartheta \cdot \gamma s  \right)  % &   \, = \, \left( s  \, - \,\vartheta\right)^{\intercal}\epsilon\left( s  \, - \,\vartheta\right)_{\mp}\square f\left(  x  \, - \, \vartheta \cdot \gamma s  \right) \nonumber \\
+             &   \, = \, 2\delta^{2}\left( s  \, - \,\vartheta\right)_{\mp}\square f\left(  x  \, - \, \vartheta \cdot \gamma s  \right) \ .\nonumber \\
+    \label{5-5-13}
+\end{IEEEeqnarray}
+Este último resultado nos compete, porque el operador de creación $  \chi^{\dagger}_{\pm \ell}( x,\vartheta)  $ es una función de $ \left(  x^{\mu}  \, - \, \vartheta \cdot \gamma^{\mu} s  \right) $:
+ \begin{IEEEeqnarray}{rl}             
+                \chi^{\dagger}_{\pm \ell}( x,\vartheta)   \,= \,  & \frac{1}{ m_{\pm}^{\sharp} } \sum_{\sigma n} \int  \,  d\left( \mathbf{p} \, s \right)   \, \exp {\left[-i\left(  x^{\mu}  \, - \, \vartheta \cdot \gamma^{\mu} s  \right) p_{\mu}\right] }   \,{a}^{\dagger}_{\pm}\left( \textbf{p}\,s \,\sigma\, n\right)  \, v_{\pm {\ell}}\left( \mathbf{p} , \sigma,n\right)\ .   \nonumber \\
+    \label{5-5-14}
+\end{IEEEeqnarray}
+Entonces, usando \eqref{5-5-13} en esta última relaci\'on, para después integrar con la función delta fermiónica, obtenemos
+\begin{IEEEeqnarray}{rl}             
+        \left(  \mathcal{D}^{\intercal} \epsilon \mathcal{D}_{\pm}\right) \,         \chi^{\dagger}_{\pm \ell}( x,\vartheta)                 &  \,= \,   \frac{2 m^{2}}{ m_{\pm}^{\sharp} } \sum_{\sigma n} \int d^{3}\textbf{p}\,   e^{-i x_{\mp}\cdot p } \,\left\lbrace \int d^{2}s_{\pm}\, e^{\left[+i 2\vartheta_{\mp} \cdot \slashed{p} s_{\pm} \right]  } a^{\dagger}_{\pm}\left( \mathbf{p}\, s_{\pm}\,\sigma\, n\right)\right\rbrace   \, v_{\pm {\ell}}\left( \mathbf{p} , \sigma,n\right)\ ,   \nonumber \\
+                &  \,= \,   \frac{\mp 4 m }{ (2\pi)^{2/3} } \sum_{\sigma n} \int d^{3}\textbf{p}\,   e^{-i x_{\mp}\cdot p } \, \tilde{a}^{\dagger}_{\mp}\left( \textbf{p}\,\vartheta_{\mp}\, \sigma \,  n\right)  \, v_{\pm {\ell}}\left( \mathbf{p} , \sigma,n\right)\ .  \nonumber \\
+    \label{5-5-15}
+\end{IEEEeqnarray}
+esto es,
+     \begin{IEEEeqnarray}{rl}
+                  \left( \mathcal{D}\cdot \mathcal{D}_{\pm}  \right)    \chi^{\dagger}_{\pm \ell}( x,\vartheta) \, = \,\left( - 4m \right) \, \tilde{\chi}^{\dagger}_{\mp \ell}( x,\vartheta) \ .
+         \label{5-5-16}
+     \end{IEEEeqnarray}
+Lo mismo para los supercampos  de aniquilación, por  lo tanto para los supercampos causales tenemos que
+\begin{IEEEeqnarray}{rl}
+         \left( \mathcal{D}\cdot \mathcal{D}_{\pm}  \right)      \Phi^{\dagger}_{\pm}  \, = \, \left( - 4m \right) \tilde{\Phi}^{\dagger}_{\mp}\, \ , \quad    \left( \mathcal{D}\cdot \mathcal{D}_{\pm}  \right)      \Phi_{\pm}  \, = \, \left( - 4m \right) \tilde{\Phi}_{\mp},\quad  \ .
+    \label{5-5-17}
+\end{IEEEeqnarray} 
+ En una representación completamente irreducible de supersimetría (donde podemos trabajar solo con los supercampos del tipo  $ \Psi_{+} $ o del tipo $ \Psi_{-} $), podemos hacer las identificaciones
+\begin{IEEEeqnarray}{rl}
+          \Phi^{\dagger}_{\pm}  \, = \, \tilde{\Phi}^{\dagger}_{\pm}\, \ , \quad    \     \Phi_{\pm}  \, = \,\tilde{\Phi}_{\pm} \quad  \ .
+    \label{5-5-18}
+\end{IEEEeqnarray} 
+por lo que las relaciones \eqref{5-5-16}, para este caso son
+\begin{IEEEeqnarray}{rl}
+         \left( \mathcal{D}\cdot \mathcal{D}_{\pm}  \right)      \Phi^{\dagger}_{\pm}  \, = \, \left( - 4m \right) {\Phi}^{\dagger}_{\mp}\, \ , \quad    \left( \mathcal{D}\cdot \mathcal{D}_{\pm}  \right)      \Phi_{\pm}  \, = \, \left( - 4m \right){\Phi}_{\mp}\quad  \ .
+    \label{5-5-19}
+\end{IEEEeqnarray} 
+En el formalismo canónico (como veremos  adelante), al menos para el caso escalar, estas ecuaciones aparecen como las ecuaciones del movimiento. Ya que $ \left( \mathcal{D}\cdot \mathcal{D}_{\mp}  \right) \left( \mathcal{D}\cdot \mathcal{D}_{\pm}  \right)   \, = \, - 4 \square $, las ecuaciones \eqref{5-5-19}, implican la ecuación de Klein-Gordon. Desde el punto de vista aqui expuesto, significa que en una representación completamente reducible de supersimetría, podemos trabajar con completa generalidad, solamente con un supercampo quiral, digamos el positivo  $ \Phi_{+} $ y todas sus superderivadas.  O bien, con los dos supercampos quirales $  \Phi_{+}  $ y $ \Phi_{-}  $ y sus superderivadas lineales  $  \mathcal{D}_{+\alpha}\Phi_{+}  $ y $  \mathcal{D}_{-\alpha}\Phi_{-}  $. Aquí nos iremos por la segunda ruta.
+
+
+

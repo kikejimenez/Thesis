@@ -1,0 +1,598 @@
+
+\chapter{La Supermatriz $ \mathcal{S} $}
+\label{chap 3}
+\epigraph{``\textit{Although at times this attains mathematical levels of obscurity, we
+make no claim for corresponding standards of rigor.}"}{S. Coleman and J. Mandula~\cite{Coleman:1967ad}}
+
+\lhead{Cap\'itulo 3. \emph{La supermatriz $ \mathcal{S} $}}
+En este capítulo, introducimos uno de los elementos fundamentales de este trabajo, la supermatriz $ \mathcal{S} $. Las sutilezas de intentar definir una supermatriz $ \mathcal{S} $ covariante de Lorentz y de supersimetría son investigadas. Aquí vemos la conveniencia de haber podido  introducir  productos escalares ortogonales en el superespacio de Hilbert.  Empezamos definiendo los superestados asintóticos in y out, para después decir que es lo que entendemos por una supermatriz $ \mathcal{S} $ covariante. Al  arribar a la fórmula de Dyson, nos damos cuenta que la introducción de la densidad local Hamiltoniana, no es suficiente para establecer una supermatriz $ \mathcal{S} $ completamente  covariante supersimétrica. Debemos de posponer hasta secciones futuras, la exposición de las condiciones  que nos permiten obtener la supermatriz $ \mathcal{S} $ correcta.  Al igual que el caso del espacio, introducimos a los operadores de creación y aniquilación de superpartículas como medio para satisfacer el principio de descomposición en cúmulos.
+\section{Estados In y Out}
+\label{3:1}
+Escogemos \emph{la forma  de la Dinámica}~\cite{RevModPhys.21.392} en que la interacción es llevada por la componente temporal del operador del cuatro-momento, esto es, el Hamiltoniano de interacción viene dado por 
+\begin{equation}
+            \mathsf{H} \, = \,\mathsf{H}_{0}  \, + \, \mathsf{V} \ ,
+    \label{3-1-01}
+\end{equation}
+donde  $ \mathsf{H}_{0}  $ es el Hamiltoniano libre y $ \mathsf{V}  $ es el potencial de interacción. Llamamos $ \Psi_{A} $  a los estados   que son eigenvalores del operador $ \mathsf{H} $,
+\begin{IEEEeqnarray}{rl}
+             \Psi_{A}\, \mathsf{H}\, = \, E_{A}\Psi_{A} \ .
+    \label{3-1-02}
+\end{IEEEeqnarray}
+Las letras $ {A},B,\cdots $, representan al conjunto de etiquetas posibles que puedan definir al superestado, incluyendo las de su energía. A partir de estos superestados, formamos  otros estados $   \Psi_{g} $ con energía 'difusa',
+\begin{equation}
+              \Psi_{g} \, \equiv \, \int \,  g_{A}\Psi_{A}\, dA, 
+     \label{3-1-03}
+ \end{equation}
+ donde  $ g_{A} $ representa  una función bien comportada del conjunto de variables $ A $.  Notamos que aunque  $ \Psi_{A}$ es independiente del tiempo, depende del marco de referencia. Un observador en el pasado, a un tiempo $ \tau $ anterior con respecto al presente, ve el estado como $e^{iH\tau}\Psi_{A} $, si el observador en el presente lo ve como $ \Psi_{A}$. De la misma manera, el  observador en el futuro en el tiempo $\tau$  con respecto al observador en el presente, ve al mismo estado  como $ e^{-i\tau H}\Psi_{A} $. Consideramos la situación cuando el observador del pasado, anterior al tiempo $ \tau  $ ve  que el sistema a dejado de interaccionar,  entonces esperamos que antes de este tiempo, el sistema pueda describirse como en una evolución libre. Esto es, el operador de traslación temporal  se ve como $ \mathsf{H}_{0} $. Si esta situación es de hecho posible, quiere decir que hemos identificado un conjunto de estados $ \Psi^{\text{in}}_{A} $, que satisfacen  la relación
+	\begin{equation}
+         e^{+i\mathsf{H}t}\Psi^{\text{in}}_{g}\, \xrightarrow{\scriptscriptstyle t \to \tau} \, e^{+ i\mathsf{H}_{0}t}\Psi^{0}_{g}\ ,
+            \label{3-1-04}
+   	\end{equation} 
+  donde  $   \Psi^{0}_{g} $ es el paquete de ondas construido con la misma función peso $ g_{A} $ pero con los estados  $   \Psi^{0}_{A} $, los cuales son eigenestados del operador Hamiltoniano libre,
+\begin{IEEEeqnarray}{rl}
+            \mathsf{H}_{0}\Psi^{0}_{A}  \, = \,     E_{A}\Psi^{0}_{A} \ .
+    \label{3-1-05}
+\end{IEEEeqnarray}
+    De la misma forma, si  el observador del futuro  después de un tiempo $ \tau $ ve al sistema como libre,  quiere decir que hemos podido identificar un conjunto de estados $ \Psi^{\text{out}}_{A} $ tal que
+  \begin{equation}
+         e^{-i\mathsf{H}t}\Psi^{\text{out}}_{g}\, \xrightarrow{\scriptscriptstyle t \to \tau} \, e^{-i\mathsf{H}_{0}t}\Psi^{0}_{g}\ .
+            \label{3-1-06}
+   	\end{equation} 
+  
+No esperamos que cualquier Hamiltoniano $ \mathsf{H} $  tenga este comportamiento, de ahí que hayamos definido las etiquetas ``in'' y ``out''. No nos interesa el tiempo en que el sistema deja de interaccionar,  solamente que esto suceda. La apuesta más conservadora  es siempre  mirar en el pasado y futuro lejanos, esto es, matemáticamente lo que  hacemos  es tomar el limite  $ t \rightarrow \mp \infty $ en las Ecs. \eqref{3-1-04} y \eqref{3-1-06}. En particular
+\begin{IEEEeqnarray}{ll}
+     \lim _{t -\infty / +\infty}    \int \left( dA\right)^{*}  \left( g_{A}\right) ^{*}\,&e^{-i\tau(E_{B}-E_{A})}\left( \tilde{\Psi}^{\text{in/out}}_{A}\right)^{\dagger} \left( \Psi^{\text{in/out}}_{B}\right)g'_{B} \, dB  \, = \, \nonumber \\
+          &  \lim _{t -\infty / +\infty}    \int \left( dA\right)^{*}  \left( g_{A}\right) ^{*}\,e^{-i\tau(E_{B}-E_{A})}\left( \tilde{\Psi}^{0}_{A}\right)^{\dagger} \left( \Psi^{0}_{B}\right)g'_{B} \, dB  \ ,\nonumber \\
+         \label{3-1-07}
+	\end{IEEEeqnarray}	
+donde  los estados que llevan una tilde son aquellos que se obtienen de tomar la transformada de Fourier de  $ \Psi^{\text{in/out}}_{B} $ en las variables fermiónicas, además, $ g'_{A}  $ no tiene por que ser igual a $ g_{A} $. Puesto que esta relación es válida para cualquier $ g_{A} $, se sigue que los superestados in/out normalizan de la misma manera que los superestados libres.  El producto interior $ \left( \tilde{\Psi}^{0}_{A}\right)^{\dagger} \left( \Psi^{0}_{B}\right) $,  normaliza como una suma de productos de funciones delta de Kronecker y de Dirac, incluyendo a la delta fermiónica. Denotando a esta normalización como $ \delta\left(B  \, - \,A\right)  $,  para cualquier cantidad $ f_{A} $, función de las variables $ A $, la propiedad definitoria de esta delta es
+\begin{IEEEeqnarray}{rl}
+             f_{A}  \, = \,  \int  dB\,\delta\left(B \, - \,A\right) f_{B}\ .
+    \label{3-1-07-a}
+\end{IEEEeqnarray}
+Entonces, la normalización de los estados in/out nos queda como 
+\begin{IEEEeqnarray}{rl}
+            \left( \tilde{\Psi}^{\text{in/out}}_{A^{*}}\right)^{\dagger} \left( \Psi^{\text{in/out}}_{B}\right)  \, = \, \delta\left(B  \, - \,A\right)  \ .
+    \label{3-1-07-a}
+\end{IEEEeqnarray}
+
+
+\emph{La supermatriz $  \mathcal{S} $}    se define como la superamplitud de probabilidad de que un estado preparado con los números cuánticos $ A $, después de un evento de dispersión, la medición del estado nos arroje los números cuánticos $ B $:
+\begin{IEEEeqnarray}{rl}
+            \mathcal{S}_{AB}   \, \equiv \,     \left( \tilde{\Psi}^{\text{out}}_{B^{*}}\right)^{\dagger} \left( \Psi^{\text{in}}_{A}\right) \ .
+    \label{3-1-07-b}
+\end{IEEEeqnarray}
+
+Suponemos que los conjuntos  $\left\lbrace  \Psi^{\text{in}}_{A} \right\rbrace $ y $\left\lbrace  \Psi^{\text{out}}_{A} \right\rbrace $ son completos, por lo que podemos expresar un superestado de un conjunto  en términos de los superestados del otro conjunto. Escribimos a los superestados (in) en términos de los estados (out),
+\begin{IEEEeqnarray}{rl}
+           {\Psi}^{\text{in}}_{A}  \, = \, \int {\Psi}^{\text{out}}_{B}\,\mathcal{R}_{B,A}\, dB\ ,
+    \label{3-1-09}
+\end{IEEEeqnarray}
+la relación entre la supermatriz $ \mathcal{S}_{AB} $ y la supermatriz $ \mathcal{R}_{AB} $, es una posible diferencia signo entre las partes fermiónicas de estas matrices,
+ 	\begin{IEEEeqnarray}{rl}
+            \mathcal{S}_{AB}  \, = \, \int\delta\left(B'-B\right)  \mathcal{R}_{B',A}\, dB'   \ . 
+    \label{3-1-10}
+\end{IEEEeqnarray}
+ Definiendo 
+  \begin{equation}
+          \Omega(t)   \, = \,  e^{-iHt}e^{iH_{0}t}\ , 
+             \label{3-1-11}
+    	\end{equation}   
+de manera equivalente, podemos reescribir las Ecs. \eqref{3-1-04} y \eqref{3-1-06}  como
+\begin{IEEEeqnarray}{rl}
+                \Psi^{\text{(in/out)}}_{A}   \, \rightarrow \, 	 \lim_{t \rightarrow \infty}   \Omega(+t/-t)\Psi^{0}_{A}\ .
+      \label{3-1-12}
+  \end{IEEEeqnarray}  
+  Entonces,  	podemos escribir a la supermatriz $ \mathcal{S}_{AB} $ como el elemento de matriz del operador $ \mathsf{S} $, definido por
+  \begin{equation}
+           \mathsf{S} \, \equiv\, \lim_{t \rightarrow\infty}\Omega(+t)^{\dagger}\,\Omega(-t) \ ,
+     \label{3-1-12}
+ \end{equation}
+    entre los  estados de las bases libres $ \Psi^{0}_{A} $, esto es, 
+\begin{IEEEeqnarray}{rl}
+            \mathcal{S}_{AB}   \, = \,   ( \tilde{\Psi}^{0}_{B^{*}} )^{\dagger}\,\mathsf{S}\,\Psi^{0}_{A} \ .
+    \label{3-1-13}
+\end{IEEEeqnarray}
+	\section{Covariancia de la Supermatriz $ \mathcal{S} $}
+\label{chap3:2}
+
+Hasta ahora hemos hablado de estados de superpartículas  sin especificar sus propiedades de transformación.
+El estado de varias superpartículas,  es considerado  el estado que transforma bajo el grupo de super Poincaré, como el producto directo de estados una superpartícula sin interacción. Etiquetamos estados de una superpartícula con el cuatro-momento $ p^{\mu} $, y el cuatro-espinor izquierdo o derecho  $ s_{\pm} $, la componente $ z $ del espín (o la helicidad para partículas sin masa) $ \sigma $ y la etiqueta discreta $ n $ para identificar las diferentes especies de partículas, la cual incluye su masa, espín, carga, etc.  Hemos identificado dos tipos de superestados etiquetados con un espinor derecho (superpartícula $ - $) o con un 4-espinor izquierdo (superpartícula $ + $). Puesto que para cada  superestado $ + $($ - $) podemos formar, mediante una transformada fermiónica de Fourier, otro superestado superestado  $ -$($ +$). Sin perdida de generalidad, podemos considerar dos tipos de superestados de varias partículas, donde los 4-espinores  son todos derechos o todos izquierdos. La  regla general de transformación bajo el grupo inhomogéneo de Lorentz es
+\begin{IEEEeqnarray}{rl}
+           \mathsf{U}\left( \Lambda , a\right) \Psi^{\pm}_{\left\lbrace 
+^{{p}_{1}}_{s_{1}} \, ^{\sigma_{1}}_{n_{1}}\right\rbrace , \left\lbrace 
+^{{p}_{2}}_{s_{2}} \, ^{\sigma_{2}}_{n_{2}}\right\rbrace , \cdots}  
+  & \, = \,\exp{\left[   -i a_{\mu} \Lambda^{\mu} _{\,\,\nu}\left( p_{1}  \, + \,p_{2}  \, + \, \cdots \right)^{\nu}\right]   } \nonumber \\  
+\times &  \,\,\sqrt{\tfrac{(\Lambda p_{1})^{0}(\Lambda p_{2})^{0}\cdots }{p_{1}^{0} p_{2}^{0}\cdots}} \sum_{\sigma'_{1}\sigma'_{2}\cdots}   U_{\sigma_{1}\sigma'_{1}}^{(j_{1})}\left[W\left(\Lambda,p_{1} \right)  \right] U_{\sigma_{2}\sigma'_{2}}^{(j_{2})}\left[W\left(\Lambda,p_{2} \right)  \right] \cdots \nonumber \\  
+\times & \,\,\Psi^{\pm}_{  \left\lbrace  ^{\Lambda{p}_{1}}_{D(\Lambda)s_{1}} \, ^{\sigma_{1}}_{n_{1}}\right\rbrace , \left\lbrace  ^{\Lambda{p}_{2}}_{D(\Lambda)s_{2}} \, ^{\sigma_{2}}_{n_{2}}\right\rbrace , \cdots} \ ,
+    \label{3-2-01}
+\end{IEEEeqnarray}
+mientras que bajo una transformación supersimétrica,
+\begin{IEEEeqnarray}{rl}
+           \mathsf{U}\left( \zeta\right) \Psi^{\pm}_{\left\lbrace 
+^{{p}_{1}}_{s_{1}} \, ^{\sigma_{1}}_{n_{1}}\right\rbrace } &_{ , \left\lbrace 
+^{{p}_{2}}_{s_{2}} \,^{\sigma_{2}}_{n_{2}}\right\rbrace , \cdots}   \nonumber \\
+ \, = \, & e^{ \left[ i \zeta_{\mp} \cdot \left( \slashed{p}_{1} \left( s_{1}   \, + \, \zeta\right)  \, + \, \slashed{p}_{2} \left( s_{2}   \, + \, \zeta\right)   \, + \,  \cdots  \right)  \right] }    \,\Psi^{\pm}_{ \left\lbrace 
+^{{p}_{1}}_{s_{1}+\zeta} \, ^{\sigma_{1}}_{n_{1}}\right\rbrace , \left\lbrace 
+^{{p}_{2}}_{s_{2}+\zeta} \, ^{\sigma_{2}}_{n_{2}}\right\rbrace , \cdots}  \nonumber \\ 
+    \label{3-2-02}
+\end{IEEEeqnarray}
+ La suposición fundamental sobre las interacciones es que estas son tales que las transformaciones unitarias del grupo de super Poincaré son las mismas para  los estados in y out,  de tal forma que\footnote{Notemos como la etiqueta $ B $ aparece en el lado derecho como $ B^{*} $, esto  porque en el superespacio las etiquetas fermiónicas son, en general, complejas. }
+\begin{IEEEeqnarray}{rl}
+             \mathcal{S}_{BA}  \, = \, \left[\mathsf{U}\left(\Lambda, a, \zeta \right)  \tilde{\Psi}^{\text{out}}_{B^{*}} \right]^{\dagger} \, \mathsf{U}\left(\Lambda, a, \zeta \right) {\Psi}^{\text{in}}_{A} \ .
+     \label{3-2-03}
+ \end{IEEEeqnarray} 
+ Implícitamente, en nuestros indices $ A,B  \cdots $, hemos también incluido los signos $ \pm $. 
+ Debido a las propiedades de transformación de los estados de varias superpartículas, obtenemos en una notación explícita,  las propiedades de covariancia  de la supermatriz $ \mathcal{S} $:
+ \begin{itemize}
+ \item Para una traslación $ a^{\mu} $, tenemos que 
+\begin{IEEEeqnarray}{rl}
+            \mathcal{S}_{ \,\left\lbrace 
+^{\tilde{{p}}_{1}}_{\tilde{s}_{1}} \, ^{\tilde{\sigma}_{1}}_{\tilde{n}_{1}}\right\rbrace , \left\lbrace 
+^{\tilde{{p}}_{2}}_{\tilde{s}_{2}} \, ^{\tilde{\sigma}_{2}}_{\tilde{n}_{2}}\right\rbrace, \dots , }&_{ \left\lbrace 
+^{{p}_{1}}_{s_{1}} \, ^{\sigma_{1}}_{n_{1}}\right\rbrace , \left\lbrace 
+^{{p}_{2}}_{s_{2}} \, ^{\sigma_{2}}_{n_{2}}\right\rbrace , \cdots}  \nonumber \\
+  & \, = \,e^{ \left[ i a_{\mu} \left( p_{1}^{\,\,\mu}  \, + \,p_{2}^{\,\,\mu}   \, + \,  \cdots   \, - \, \tilde{p}_{1}^{\,\,\mu}  \, - \,\tilde{p}_{2}^{\,\,\mu}  \, - \,\cdots\right) \right] } \nonumber \\  
+&\qquad\times \, \mathcal{S}_{ \,\left\lbrace 
+^{\tilde{{p}}_{1}}_{\tilde{s}_{1}} \, ^{\tilde{\sigma}_{1}}_{\tilde{n}_{1}}\right\rbrace , \left\lbrace 
+^{\tilde{{p}}_{2}}_{\tilde{s}_{2}} \, ^{\tilde{\sigma}_{2}}_{\tilde{n}_{2}}\right\rbrace, \dots , \left\lbrace 
+^{{p}_{1}}_{s_{1}} \, ^{\sigma_{1}}_{n_{1}}\right\rbrace , \left\lbrace 
+^{{p}_{2}}_{s_{2}} \, ^{\sigma_{2}}_{n_{2}}\right\rbrace , \cdots} \nonumber \\
+    \label{3-2-04}
+\end{IEEEeqnarray}
+\item Para una transformación (homogénea) de Lorentz  $ \Lambda $, tenemos que
+\begin{IEEEeqnarray}{rl}
+            \mathcal{S}_{ \,\left\lbrace 
+^{\tilde{{p}}_{1}}_{\tilde{s}_{1}} \, ^{\tilde{\sigma}_{1}}_{\tilde{n}_{1}}\right\rbrace , \left\lbrace 
+^{\tilde{{p}}_{2}}_{\tilde{s}_{2}} \, ^{\tilde{\sigma}_{2}}_{\tilde{n}_{2}}\right\rbrace, \dots , }&_{ \left\lbrace 
+^{{p}_{1}}_{s_{1}} \, ^{\sigma_{1}}_{n_{1}}\right\rbrace , \left\lbrace 
+^{{p}_{2}}_{s_{2}} \, ^{\sigma_{2}}_{n_{2}}\right\rbrace , \cdots}  \nonumber \\
+  & \, = \, \sqrt{\tfrac{(\Lambda p_{1})^{0}(\Lambda p_{2})^{0}\cdots (\Lambda \tilde{p}_{1})^{0}(\Lambda \tilde{p}_{2})^{0}\cdots }{{p}_{1}^{0} {p}_{2}^{0}\cdots\tilde{p}_{1}^{0} \tilde{p}_{2}^{0}\cdots}}  \nonumber \\
+   &\qquad\times \sum_{\sigma'_{1}\sigma'_{2}\cdots}   U_{\sigma_{1}\sigma'_{1}}^{(j_{1})}\left[W\left(\Lambda,p_{1} \right)  \right] U_{\sigma_{2}\sigma'_{2}}^{(j_{2})}\left[W\left(\Lambda,p_{2} \right)  \right] \cdots \nonumber \\
+      &\qquad\times \sum_{\tilde{\sigma}'_{1}\tilde{\sigma}'_{2}\cdots}   U_{\tilde{\sigma}_{1}\tilde{\sigma}'_{1}}^{(\tilde{j}_{1})}\left[W\left(\Lambda,p_{1} \right)  \right] U_{\tilde{\sigma}_{2}\tilde{\sigma}'_{2}}^{(\tilde{j}_{2})}\left[W\left(\Lambda,p_{2} \right)  \right] \cdots \nonumber \\
+&\qquad\times \mathcal{S}_{ \,\left\lbrace 
+^{\Lambda\tilde{{p}}_{1}}_{D(\Lambda)\tilde{s}_{1}} \, ^{\tilde{\sigma}_{1}}_{\tilde{n}_{1}}\right\rbrace , \left\lbrace 
+^{\Lambda\tilde{{p}}_{2}}_{D(\Lambda)\tilde{s}_{2}} \, ^{\tilde{\sigma}_{2}}_{\tilde{n}_{2}}\right\rbrace, \dots , \left\lbrace 
+^{\Lambda{p}_{1}}_{D(\Lambda)s_{1}} \, ^{\sigma_{1}}_{n_{1}}\right\rbrace , \left\lbrace 
+^{\Lambda{p}_{2}}_{D(\Lambda)s_{2}} \, ^{\sigma_{2}}_{n_{2}}\right\rbrace , \cdots} \nonumber \\
+    \label{3-2-05}
+\end{IEEEeqnarray}
+\item Para una transformación supersimétrica $ \zeta $,  tenemos que
+\begin{IEEEeqnarray}{rl}
+            \mathcal{S}^{\pm}_{ \,\left\lbrace 
+^{\tilde{{p}}_{1}}_{\tilde{s}_{1}} \, ^{\tilde{\sigma}_{1}}_{\tilde{n}_{1}}\right\rbrace , \left\lbrace 
+^{\tilde{{p}}_{2}}_{\tilde{s}_{2}} \, ^{\tilde{\sigma}_{2}}_{\tilde{n}_{2}}\right\rbrace, \dots , }&_{ \left\lbrace 
+^{{p}_{1}}_{s_{1}} \, ^{\sigma_{1}}_{n_{1}}\right\rbrace , \left\lbrace 
+^{{p}_{2}}_{s_{2}} \, ^{\sigma_{2}}_{n_{2}}\right\rbrace , \cdots}  \nonumber \\
+  & \, = \,e^{ \left[ i \zeta_{\mp} \cdot \left( \slashed{p}_{1} \left( s_{1}   \, + \, \zeta\right)  \, + \, \slashed{p}_{2} \left( s_{2}   \, + \, \zeta\right)   \, + \,  \cdots   \, - \,  \slashed{\tilde{p}}_{1}\left(  \tilde{s}_{1}  \, + \, \zeta\right)  \, - \,\slashed{\tilde{p}}_{2} \left(  \tilde{s}_{2}  \, + \, \zeta\right)\, - \,\cdots\right) \right] } \nonumber \\
+   &\qquad\times  \mathcal{S}_{ \,\left\lbrace 
+^{\tilde{{p}}_{1}}_{\tilde{s}_{1}+\zeta} \, ^{\tilde{\sigma}_{1}}_{\tilde{n}_{1}}\right\rbrace , \left\lbrace 
+^{\tilde{{p}}_{2}}_{\tilde{s}_{2}+\zeta} \, ^{\tilde{\sigma}_{2}}_{\tilde{n}_{2}}\right\rbrace, \dots ,\left\lbrace 
+^{{p}_{1}}_{s_{1}+\zeta} \, ^{\sigma_{1}}_{n_{1}}\right\rbrace , \left\lbrace 
+^{{p}_{2}}_{s_{2}+\zeta} \, ^{\sigma_{2}}_{n_{2}}\right\rbrace , \cdots} \ .  \nonumber \\ 
+    \label{3-2-06}
+\end{IEEEeqnarray}
+ \end{itemize}
+ Hemos tomado la conjugación en las etiquetas fermiónicas como $ \epsilon \gamma_{5}\beta s^{*} $,  en vez de $ s^{*} $.
+La propiedad de invariancia bajo traslaciones, nos dice que la supermatriz $ \mathcal{S} $ debe incluir  la función delta que garantice la conservación del 4-momento total
+\begin{IEEEeqnarray}{rl}
+            \delta^{4} \left( p_{1}  \, + \,p_{2}   \, + \,  \cdots   \, - \, \tilde{p}_{1} \, - \,\tilde{p}_{2}  \, - \,\cdots\right)  \ .
+    \label{3-2-07}
+\end{IEEEeqnarray}
+Con esto, la expresión de  covariancia supersimétrica se simplifica a 
+\begin{IEEEeqnarray}{rl}
+            \mathcal{S}^{\pm}_{ \,\left\lbrace 
+^{\tilde{{p}}_{1}}_{\tilde{s}_{1}} \, ^{\tilde{\sigma}_{1}}_{\tilde{n}_{1}}\right\rbrace , \left\lbrace 
+^{\tilde{{p}}_{2}}_{\tilde{s}_{2}} \, ^{\tilde{\sigma}_{2}}_{\tilde{n}_{2}}\right\rbrace, \dots , }&_{ \left\lbrace 
+^{{p}_{1}}_{s_{1}} \, ^{\sigma_{1}}_{n_{1}}\right\rbrace , \left\lbrace 
+^{{p}_{2}}_{s_{2}} \, ^{\sigma_{2}}_{n_{2}}\right\rbrace , \cdots}  \nonumber \\
+  & \, = \,e^{ \left[ i \zeta_{\mp} \cdot \left( \slashed{p}_{1} s_{1}   \, + \, \slashed{p}_{2}s_{2}      \, + \,  \cdots   \, - \,  \slashed{\tilde{p}}_{1} \tilde{s}_{1}   \, - \,\slashed{\tilde{p}}_{2}  \tilde{s}_{2} \, - \,\cdots\right) \right] } \nonumber \\
+   &\qquad\times  \mathcal{S}_{ \,\left\lbrace 
+^{\tilde{{p}}_{1}}_{\tilde{s}_{1}+\zeta} \, ^{\tilde{\sigma}_{1}}_{\tilde{n}_{1}}\right\rbrace , \left\lbrace 
+^{\tilde{{p}}_{2}}_{\tilde{s}_{2}+\zeta} \, ^{\tilde{\sigma}_{2}}_{\tilde{n}_{2}}\right\rbrace, \dots ,\left\lbrace 
+^{{p}_{1}}_{s_{1}+\zeta} \, ^{\sigma_{1}}_{n_{1}}\right\rbrace , \left\lbrace 
+^{{p}_{2}}_{s_{2}+\zeta} \, ^{\sigma_{2}}_{n_{2}}\right\rbrace , \cdots} \ . \nonumber \\ 
+    \label{3-2-08}
+\end{IEEEeqnarray}
+Debido  a la Ec. \eqref{3-2-03}, el operador  $ \mathsf{S} $ conmuta con el operador  $ \mathsf{U}_{0}\left( \Lambda, a, \zeta\right)  $, 
+\begin{IEEEeqnarray}{rl}
+            \mathsf{U}_{0}\left( \Lambda, a, \zeta\right) \mathsf{S}\mathsf{U}_{0}\left( \Lambda, a, \zeta\right) ^{-1}  \, = \, \mathsf{S} \ .
+    \label{3-2-08-a}
+\end{IEEEeqnarray}
+\section{Teoría de Perturbaciones} 
+\label{chap3:3}
+ 	 El operador $ \mathsf{S} $, que aparece en \eqref{3-1-13},  coincide con el operador unitario
+ 	 	 \begin{IEEEeqnarray}{rl}
+            \mathsf{U}\left( t, t_{0}\right) &  \, \equiv\, \exp{\left[ i \mathsf{H}_{0}t\right] }\exp{\left[ -i \mathsf{H}\left( t \, - \,t_{0}\right) \right] }\exp{\left[- i \mathsf{H}_{0}t_{0}\right] } \ ,
+    \label{3-2-09}
+\end{IEEEeqnarray}
+ cuando $ t=-t_{0}\rightarrow\infty $, esto es,
+\begin{IEEEeqnarray}{rl}
+            \mathsf{S}  \, = \,  \mathsf{U}\left( \infty, -\infty\right) \ .
+    \label{3-2-10}
+\end{IEEEeqnarray}
+Diferenciando  $     \mathsf{U}\left( t, t_{0}\right)  $ con respecto a la primer entrada:
+\begin{IEEEeqnarray}{rl}
+            i\frac{d}{dt }\, \mathsf{U}\left( t, t_{0}\right)   \, = \, \mathsf{V}\left( t\right) \mathsf{U}\left( t, t_{0}\right) \ ,
+    \label{3-2-11}
+\end{IEEEeqnarray}
+donde
+\begin{IEEEeqnarray}{rl}
+             \mathsf{V}\left( t\right)  \, \equiv \, \exp{\left[+ i \mathsf{H}_{0}t\right] }\,\mathsf{V}\exp{\left[ -i \mathsf{H}_{0}t\right] }\ .
+    \label{3-2-12}
+\end{IEEEeqnarray}
+Puesto que $ \mathsf{U}(t_{0},t_{0}) = \mathsf{1}$, tenemos la siguiente ecuación integral:
+\begin{IEEEeqnarray}{rl}
+            \mathsf{U}\left( t, t_{0}\right)  \, = \, \mathsf{1}  \, - \,  i\int ^{t}_{t_{0}}dt\,\mathsf{V}\left( t\right)\, \mathsf{U}\left( t, t_{0}\right)  \ .
+    \label{3-2-13}
+\end{IEEEeqnarray}
+Reintroduciendo iterativamente \eqref{3-2-13} en su lado derecho,  llegamos a
+	\begin{IEEEeqnarray}{rl}
+            \mathsf{S}  \, = \, \mathsf{1}  \, + \, \sum_{n =1}^{\infty} \frac{(-i)^{n}}{n!} \int ^{\infty}_{-\infty}dt_{1}dt_{2}\dots dt_{n} T\left\lbrace \mathsf{V}(t_{1})\mathsf{V}(t_{2})\cdots \mathsf{V}(t_{n})\right\rbrace  \ ,
+    \label{3-2-14}
+\end{IEEEeqnarray}
+donde $ T\left\lbrace  \mathsf{V}(t_{1})\mathsf{V}(t_{1})\cdots \mathsf{V}(t_{n})\right\rbrace  $ representa al  \emph{producto ordenado en el tiempo}: La suma de las $ n $ permutaciones de los operadores $ \mathsf{V}(t_{1})\mathsf{V}(t_{2})\cdots \mathsf{V}(t_{n})  $, multiplicadas por productos de funciones \emph{escalón}:
+\begin{IEEEeqnarray}{rl}
+             T\left\lbrace  \mathsf{V}(t)\right\rbrace    & \, = \,  \mathsf{V}(t)\ ,  \nonumber \\
+ T\left\lbrace  \mathsf{V}(t_{1})\mathsf{V}(t_{2})\right\rbrace    & \, = \,    \omega(t_{1}-t_{2})\mathsf{V}(t_{1})\mathsf{V}(t_{2})  \, + \, \omega(t_{2}-t_{1})\mathsf{V}(t_{2})\mathsf{V}(t_{1}) \ ,\nonumber \\  
+ \vdots \qquad & \qquad\qquad \vdots \nonumber \\
+ T\left\lbrace  \mathsf{V}(t_{1})\mathsf{V}(t_{2})\cdots \mathsf{V}(t_{n})\right\rbrace    & \, = \,  \sum_{P\left\lbrace i_{1},i_{2},\dots , i _{n} \right\rbrace }  \omega(t_{i_{1}}-t_{i_{2}})\dots  \omega(t_{i_{n-1}}-t_{i_{n}}) \nonumber \\
+   &  \qquad \qquad \times \mathsf{V}(t_{i_{1}})\mathsf{V}(t_{i_{2}})\cdots \mathsf{V}(t_{i_{n}})\ . 
+    \label{3-2-15}
+\end{IEEEeqnarray}
+donde $  P\left\lbrace i_{1},i_{2},\dots , i _{n} \right\rbrace  $ representa todas las permutaciones de $ \left\lbrace 1,2,\dots , n\right\rbrace  $. 
+
+
+Para intentar satisfacer las relaciones \eqref{3-2-08-a}, escribimos  el  potencial $ \mathsf{V} $ como la integral de una densidad potencial con valores en el superespacio:
+\begin{IEEEeqnarray}{rl}
+            \mathsf{V}(t)  \, = \, \int d^{3}x d^{4}\vartheta \,\mathcal{H}\left( x,\vartheta\right) \ ,
+    \label{3-2-16}
+\end{IEEEeqnarray}
+donde $ \mathcal{H}\left( x,\vartheta\right) $  es una \textit{densidad escalar}:
+\begin{IEEEeqnarray}{rl}
+              \mathsf{U}_{0}\left( \Lambda, a, \zeta\right)  \mathcal{H}\left( x,\vartheta\right)   \mathsf{U}_{0}\left( \Lambda, a, \zeta\right) ^{-1}  \, = \, \mathcal{H}\left(x',   \vartheta'\right) \ .
+    \label{3-2-17}
+\end{IEEEeqnarray}
+Aquí, las variables transformadas $ x', \vartheta' $ vienen dadas por las transformaciones supersimétricas
+\begin{IEEEeqnarray}{rl}
+            x'^{\mu}  & \, = \,  \Lambda^{\mu}_{\,\, \nu} \,  x^{\nu}  \, + \,  a^{\mu}  \, + \,  D(\Lambda)\vartheta\cdot \gamma^{\nu} \zeta,  \quad
+            \vartheta'\, = \,  D(\Lambda)\,\vartheta \, + \, \zeta\ .
+    \label{3-2-18}
+\end{IEEEeqnarray}
+Entonces, la ecuación integral para el operador $ \mathsf{S} $ viene dada por la serie de Dyson\cite{Dyson:1949ha}:
+\begin{IEEEeqnarray}{rl}
+            \mathsf{S}  \, = \, \mathsf{1}  \, + \, \sum_{n =1}^{\infty} \frac{(-i)^{n}}{n!} \int d^{8}z_{1}d^{8}z_{2}\dots d^{8}z_{n} \,T\left\lbrace \mathsf{V}(z_{1})\mathsf{V}(z_{2})\cdots \mathsf{V}(z_{n})\right\rbrace \ .
+    \label{3-2-20}
+\end{IEEEeqnarray}
+Si los potenciales a diferentes tiempos siempre conmutan, tenemos simplemente que $ \mathsf{S}=\exp[-i \int d^{8}z \mathsf{V}(z)] $, en este caso la invariancia  de  $   \mathsf{S} $ bajo las transformaciones del grupo de super Poincar\'e es evidente. Ya que ciertamente no es el caso que los $ \mathsf{V} $'s a diferentes tiempos conmutan, el orden temporal  pone en duda la  invariancia de Lorentz y la invariancia supersimétrica. La función paso no es invariante ante las transformaciones de Lorentz para intervalos del tipo-espacial, la función $ \omega(t_{1}-t_{2}) $ puede cambiar de signo si  $ \left( x_{1}  \, - \,x_{2}\right)^{2}> 0 $. Ya que el orden temporal no tiene efecto si el potencial conmuta, recuperamos la invariancia de Lorentz si demandamos que:
+\begin{IEEEeqnarray}{rl}
+            \left[ \mathcal{H}(x),\mathcal{H}(x')\right]    \, = \,  0, \quad (x-x')^{2} \geq 0\ .
+    \label{3-2-20}
+\end{IEEEeqnarray}
+Aunque al imponer la \textit{condición de causalidad} \eqref{3-2-20} hemos podido garantizar la invariancia ante transformaciones de Lorentz, el operador $ \mathsf{S}$ no es invariante supersimétrico. Esto se ve del hecho de que la función  escalón (paso) transforma bajo una transformación supersimétrica como 
+\begin{IEEEeqnarray}{rl}
+             \omega\left( t_{1}  \, - \,t_{2}\right)    \, = \,  \omega\left( t'_{1}  \, - \,t'_{2} \, + \,  \left( \vartheta_{1}  \, - \,\vartheta_{2}\right) \cdot \gamma^{0} \zeta  \right)  \ .
+    \label{3-2-21}
+\end{IEEEeqnarray}
+
+Como cualquier extension de una función del espacio al superespacio, la función paso con valores en números fermiónicos   puede ser definida en términos de su serie de Taylor alrededor  de estos números fermiónicos. Entonces, el ansatz  de localidad del potencial en el superespacio,  junto con la relación de causalidad para la solución en la serie de Dyson, no es suficiente para la invariancia de la supermatriz $ \mathcal{S} $. 
+
+En el capítulo \eqref{chap:6}, daremos una prueba puramente diagramática de que siempre es posible escoger $ \mathsf{V}(t) $ (m\'as general al propuesto en \eqref{3-2-16}),  de tal manera que la supermatriz $ \mathsf{S} $ resultante es completamente covariante. Mientras tanto aquí solo notamos que la función paso sería invariante supersimétrica si estuviera evaluada en 
+\begin{IEEEeqnarray}{rl}
+             t_{1}  \, - \,t_{2}  \, - \, \vartheta_{1}\cdot \gamma^{0} \vartheta_{2}
+    \label{3-2-22}
+\end{IEEEeqnarray}
+o en 
+\begin{IEEEeqnarray}{rl}
+             t_{1}  \, - \,t_{2}  \, - \, \left( \vartheta_{1}  \, - \,\vartheta_{2}\right) \cdot \gamma^{0}\left( \vartheta_{2\mp}  \, - \,\vartheta_{1 \pm} \right) \ .
+    \label{3-2-23}
+\end{IEEEeqnarray}
+\section{Superpartículas Idénticas}
+\label{3:3}
+
+Hemos visto  que es lo que entendemos por un  operador bosónico y operador fermiónico con respecto a los supernúmeros. Pero esta definición no nos dice como clasificar un operador que tenemos definido en un  espacio y del cual queremos extender su definición al superespacio. Afortunadamente (y esta es la  razón de la nomenclatura  bosón-fermión introducida),  tenemos una clasificación natural de los estados y  operadores de la teoría, en términos de la estadística de \emph{Fermi-Dirac} o de \emph{Bose-Eisntein}. Primero recordamos como llegamos a esta clasificación.
+
+
+Por definición, cada especie de partícula (por ejemplo los electrones, bosónes $ W $, etc.) es idéntica. Cualquier estado de muchas partículas que difiere por el intercambio de dos  partículas idénticas es físicamente indistinguible. Estados que difieren de esta manera, pertenecen al mismo rayo en el  espacio de Hilbert; estos estados difieren por una fase $ \alpha_{n} $, donde $ n $ representa el tipo de partícula en cuestión.  En tres o más dimensiones espaciales, esta fase solo puede depender de la especie de partícula, dándonos por tanto $ \alpha^{2}_{n} =  \pm 1 $ ~\cite{Weinberg:1995mt}.  A las partículas con el  signo positivo  se les  conoce como  \emph{bosones}; a las  partículas con el signo negativo se les conoce como \emph{fermiones}. Es esta la definición matemática de partícula idéntica. 
+
+
+Toda esta discusión  es en el espacio, extendemos esta definición al superespacio. Además, por definición, \emph{los estados bosónicos(fermiónicos) con respecto a su estadística, son bosónicos(fermiónicos) con respecto a los  supernúmeros  }~\cite{Cartier:2002zp}.  
+
+Sea $ \xi $ el conjunto de variables que identifican a la superpartícula, esto es, el supermomento, la proyección $ z $ del espín y el tipo de superpartícula.  Para dos etiquetas   $ \xi $ y $ \xi' $ que  representan  la misma especie de superpartícula, tenemos que
+\begin{IEEEeqnarray}{rl}
+            \Psi_{\cdots ,\xi,\cdots ,\xi', \cdots }  \, = \,   \pm \Psi_{\cdots ,\xi',\cdots ,\xi, \cdots } \ .
+    \label{3-3-01}
+\end{IEEEeqnarray}
+El signo más define a los {bosones} y  el signo menos  a los {fermiones}.    La normalización para los estados con un número arbitrario de superpartículas, debe hacerse en consistencia con su simetría ante permutaciones de superpartículas.  Podemos escribir 
+\begin{IEEEeqnarray}{rl}           
+\left[ \tilde{\Psi}_{\xi^{*}_{1}\xi^{*}_{2}\dots  \xi^{*}_{M}} \right] ^{\,\,\dagger} {\Psi}_{\xi'_{1}\xi'_{2}\dots  \xi'_{M}}   \, = \,  \delta_{MN}\sum_{\mathcal{P}}\delta_{\mathcal{P}} \prod_{i}\delta\left(\xi'_{i}  \, - \,\xi_{\mathcal{P}i} \right)  \ ,
+    \label{3-3-02}
+\end{IEEEeqnarray}
+donde  $ \mathcal{P} $ representa la permutación de los enteros $ \left\lbrace 1,2, \dots, N \right\rbrace  $. El termino $ \delta_{\mathcal{P}} $ es un signo igual a $ -1 $ si la permutación $ \mathcal{P} $ realiza un número impar de permutaciones con fermiónes y $ +1 $ de otra manera. La función $ \delta(\xi-\xi') $ es un producto de funciones delta de Kronecker y deltas de Dirac, la función que normaliza los estados de una superpartícula. Recordamos que la delta fermiónica solo puede aparecer cuando tomamos el productor interior  de un estado  $ {\Psi} $ con su correspondiente estado 'tilde' $ \tilde{\Psi}  $,  definido por la transformada de Fourier en las variables fermiónicas del estado   $ {\Psi} $ en cuestión (ver capítulo  \ref{chap:2}).
+
+\begin{center}
+\textbf{\textit{Operadores de creación y aniquilación}}
+\end{center}
+La introducción de los  operadores de creación y aniquilación se hace de manera análoga al caso del espacio.   El {operador de creación} $ a^{\dagger}_{\xi} $ viene definido por la acción sobre el  superestado $  \Psi_{\xi_{1}\cdots \xi_{M} } $ de varias superpartículas:
+\begin{IEEEeqnarray}{rl}
+            a^{\dagger}_{\xi} \Psi_{\xi_{1}\cdots \xi_{M} }  \, \equiv \, \Psi_{\xi \,\xi_{1}\cdots \xi_{M} }\  .
+    \label{3-3-03}
+\end{IEEEeqnarray}
+Definimos al  operador de aniquilación, como el adjunto  del operador de creación  que proviene del estado $ \tilde{\Psi}_{\xi} $,  evaluado en  la variable conjugada $ \xi^{*} $:
+\begin{IEEEeqnarray}{rl}
+              \tilde{a}_{\xi}  \, \equiv \,  \left(  \tilde{a}^{\dagger}_{\xi^{*}} \right)^{\dagger}  \ ,
+     \label{3-3-04}
+ \end{IEEEeqnarray}
+este operador  aniquila el estado  $  \Psi_{\text{VAC}} $ de vacío, el estado de cero superpartículas, 
+\begin{IEEEeqnarray}{rl}
+          a_{\xi}    \Psi_{\text{VAC}}   \, = \, 0 \ .
+    \label{3-3-05}
+\end{IEEEeqnarray} 
+Debido a la normalización de los estados simetrizados respecto a su estadística, los operadores de creación satisfacen
+\begin{IEEEeqnarray}{rl}
+             \tilde{a}_{\xi'}a^{\dagger}_{\xi}\, \pm \, a^{\dagger}_{\xi}\tilde{a}_{\xi'} \, = \, \delta\left(\xi -\xi' \right) \ ,
+    \label{3-3-06}
+\end{IEEEeqnarray} 
+\begin{IEEEeqnarray}{rl}
+            % {a}^{\dagger}_{\xi'}a^{\dagger}_{\xi} \, \pm \, a^{\dagger}_{\xi} a^{\dagger}_{\xi'} & \, = \,0
+             \tilde{a}^{\dagger}_{\xi'}a^{\dagger}_{\xi} \, \pm \, a^{\dagger}_{\xi} \tilde{a}^{\dagger}_{\xi'} & \, = \,0\ ,
+    \label{3-3-07}
+\end{IEEEeqnarray}
+\begin{IEEEeqnarray}{rl}
+          %     a_{\xi'}a_{\xi} \, \pm \, a_{\xi} a_{\xi'} \, = \, 0
+                \tilde{a}_{\xi'}a_{\xi} \, \pm \, \tilde{a}_{\xi} a_{\xi'} \, = \, 0 \ .
+    \label{3-3-08}
+\end{IEEEeqnarray}
+
+La generalidad de los operadores de creación y aniquilación se expresa a través del siguiente teorema, que citamos sin demostraci\'on y el cual se extiende de manera directa para el caso del superespacio. \emph{Cualquier operador $ \mathcal{O} $ actuando en el superespacio de Hilbert  puede ser escrito como la suma de productos de operadores de creación y aniquilación~\cite{Weinberg:1995mt}:}
+\begin{IEEEeqnarray}{rl}
+            \mathcal{O}   &\, = \, \sum^{\infty}_{N=0}\sum^{\infty}_{N=0}\int d\xi_{1}'\cdots d\xi_{N}'\,d\xi_{1}\cdots d\xi_{M}\nonumber \\
+        &   \qquad  \times \, a^{\dagger}_{\xi_{1}'}\cdots a^{\dagger}_{\xi_{N}'} \, a_{\xi_{1}}\cdots a_{\xi_{M}} \nonumber \\ 
+        &   \qquad \times   \, C_{NM}\left(\xi_{1}'\cdots \xi_{N}'\,\xi_{1}\cdots \xi_{M} \right)  \ .
+    \label{3-3-09}
+\end{IEEEeqnarray}
+
+ Los estados generales de $ N $ superpartículas pueden escribirse como 
+\begin{IEEEeqnarray}{rl}
+            \Psi_{\xi_{1}\cdots \xi_{N}}    \, = \, a^{\dagger}_{\xi_{1}}  \cdots  a^{\dagger}_{\xi_{N}} \Psi_{\text{VAC	}}\ .
+    \label{3-3-10}
+\end{IEEEeqnarray}
+De la Ec. \eqref{3-2-01}, se sigue la regla de transformación de los operadores de creación bajo el grupo de Lorentz:
+\begin{IEEEeqnarray}{rl}
+               \mathsf{U}(\Lambda,b) a^{\dagger}_{\pm}\left( \textbf{p}\,s_{\pm}\, \sigma \,  n\right) &   \mathsf{U}(\Lambda,b)^{-1} \nonumber \\               
+               \, = \, &  e^{-i \Lambda b\cdot p} \sqrt{\tfrac{(\Lambda p)^{0}}{p^{0}}}\sum_{\sigma'}U_{\sigma'\sigma}[W(\Lambda,\textbf{p})]\,   a^{\dagger}_{\pm}\left( \mathbf{p}_{\Lambda}\,D(\Lambda)s_{\pm}\, \sigma'\, n\right) \ .  \nonumber \\        
+     \label{3-3-11}
+\end{IEEEeqnarray} 
+Para el caso masivo,  $  U_{\sigma'\sigma} $ es la representación $ j $ del grupo rotación, mientras que para el caso sin masa $  U_{\sigma'\sigma} $ es  la fase correspondiente a la superpartícula de helicidad $ \sigma $. El símbolo $ \mathbf{p}_{\Lambda} $ representa la parte espacial de $ \Lambda p $. 
+
+Las transformaciones bajo supersimetría de los operadores de creación se leen como [ver Ec.  \eqref{3-2-02}]
+\begin{IEEEeqnarray}{rl}
+             \mathsf{U}(\zeta)\, a^{\dagger}_{\pm}\left( \textbf{p}\, s_{\pm}\,\sigma\,n\right)  &  \,\mathsf{U}(\zeta)^{-1}  \nonumber \\
+               \, = \,  &   \exp{\left[\zeta_{\mp} \cdot (+ i\slashed{p})\left(  2 s \, + \, \zeta\right)  \right]  } a^{\dagger}_{\pm}\left( \textbf{p}\, \left( s  \, + \, \zeta\right) _{\pm}\,\sigma\,n\right) \ .  \nonumber \\         
+    \label{3-3-12}
+\end{IEEEeqnarray}
+Anteriormente, habíamos definido  a los operadores de aniquilación como  el adjunto  de los operadores de creación, evaluados en  el conjugado del 4-espinor $ s$. Redefinimos a estos operadores, evaluándolos en $ \epsilon\gamma_{5}\beta s^{*} $:~\footnote{ La diferencia  entre las dos definiciones radica en la propiedad de transformación bajo el grupo de Lorentz de la parte fermiónica del operador.}
+\begin{IEEEeqnarray}{rl}
+            a_{\pm}\left( \textbf{p} \, s_{\pm} \,\sigma \, n\right)    & \, \equiv \, \left[ a^{\dagger}_{\mp}\left( \mathbf{p} \, (\epsilon\gamma_{5}\beta s^{*})_{\mp}\, \sigma \,  n\right) \right]^{\dagger} \ .\nonumber \\
+    \label{3-3-13}
+\end{IEEEeqnarray}
+  De igual manera para los operadores de aniquilaci\'on  $  \tilde{a}_{\pm} $.  Estos nuevos operadores de creación, transforman bajo el grupo de Lorentz como 
+\begin{IEEEeqnarray}{rl}
+               \mathsf{U}(\Lambda,b)\, a_{\pm}\left( \textbf{p}\,s_{\pm}\, \sigma \,  n\right) &   \mathsf{U}(\Lambda,b)^{-1} \nonumber \\               
+               \, = \, &  e^{+i \Lambda p\cdot b}  \sqrt{\tfrac{(\Lambda p)^{0}}{p^{0}}}\sum_{\sigma'}U^{*}_{\sigma'\sigma}[W(\Lambda,\textbf{p})]\,   a_{\pm}\left( \mathbf{p}_{\Lambda}\,D(\Lambda)s_{\pm}\, \sigma'\, n\right) \ ,  \nonumber \\           
+     \label{3-3-14}
+\end{IEEEeqnarray}
+mientras que bajo una transformación supersimétrica:
+\begin{IEEEeqnarray}{rl}            
+             \mathsf{U}(\zeta) a_{\pm}\left( \textbf{p}\, s_{\pm}\,\sigma\,n\right)   & \mathsf{U}(\zeta)^{-1}    \nonumber \\
+              \, = \,  &   \exp{\left[\left( 2 {s} \, + \,  \zeta\right)\cdot (+i\slashed{p})\zeta_{\mp} \right]  }  a_{\pm}\left( \textbf{p}\, \left( s  \, + \, \zeta\right) _{\pm}\,\sigma\,n\right) \ . \nonumber \\
+    \label{3-3-15}
+\end{IEEEeqnarray}
+En esta notaci\'on explícita de las etiquetas de los operadores, las relaciones de (anti)conmutación \eqref{3-3-06}-\eqref{3-3-08} para el caso masivo, toman la forma
+\begin{IEEEeqnarray}{rl}         
+             \left[   \tilde{a}_{\pm}\left( \mathbf{p}\,s_{\pm}\, \sigma\, n\right) ,   a^{\dagger}_{\pm}\left( \mathbf{p}'\,s'_{\pm}\, \sigma'\, n'\right) \right\rbrace  & \, = \,  \pm 2m \,\delta^{2}\left[ \left(  s'- s\right)_{\pm} \right] \delta^{3}(\mathbf{p}-\mathbf{p}')\,
+       \delta_{n n'}\delta_{\sigma\sigma'}\ , \nonumber \\
+                \left[   \tilde{a}^{\dagger}_{\pm}\left( \mathbf{p}\,s_{\pm}\, \sigma\, n\right) ,   a^{\dagger}_{\pm}\left( \mathbf{p}'\,s'_{\pm}\, \sigma'\, n'\right) \right\rbrace  & \, = \, 0\ , \nonumber \\
+                                \left[   \tilde{a}_{\pm}\left( \mathbf{p}\,s_{\pm}\, \sigma\, n\right) ,   a_{\pm}\left( \mathbf{p}'\,s'_{\pm}\, \sigma'\, n'\right) \right\rbrace  & \, = \, 0\ .
+    \label{3-3-15-1}
+\end{IEEEeqnarray}
+ El resto de las relaciones de (anti)conmutación son 
+\begin{IEEEeqnarray}{rl}
+       \left[        a_{\mp}\left( \mathbf{p}\,s_{\mp}\, \sigma\, n\right)   ,   a^{\dagger}_{\pm}\left( \mathbf{p}'\,s'_{\pm}\, \sigma'\, n'\right)\right\rbrace   &\, = \, \exp{  \left[  2 {s}\cdot   \, (-i\slashed{p})\, {s'}_{\pm}\right]} \delta^{3}(\mathbf{p}-\mathbf{p}')\,
+       \delta_{n n'}\delta_{\sigma\sigma'}\ , \nonumber \\
+           \left[        a_{\mp}\left( \mathbf{p}\,s_{\mp}\, \sigma\, n\right)   ,   a_{\pm}\left( \mathbf{p}'\,s'_{\pm}\, \sigma'\, n'\right)\right\rbrace    &\, = \, 0\ , \nonumber \\
+            \left[        a^{\dagger}_{\mp}\left( \mathbf{p}\,s_{\mp}\, \sigma\, n\right)   ,   a^{\dagger}_{\pm}\left( \mathbf{p}'\,s'_{\pm}\, \sigma'\, n'\right)\right\rbrace    &\, = \, 0\ . \nonumber \\       
+    \label{3-3-16}
+\end{IEEEeqnarray} 
+ Relaciones  similares aplican para los operadores con tilde. De forma explícita,  la relación entre los operadores de creación   $ \tilde{a}^{\dagger}_{\pm} $ y $ a^{\dagger}_{\mp} $ viene dada por la siguiente transformada de Fourier fermiónica [ver la Ec.  \eqref{2-4-19}]:
+\begin{IEEEeqnarray}{l}
+        \tilde{a}^{\dagger}_{\pm}\left( \textbf{p}\,s_{\pm}\, \sigma \,  n\right) \equiv    \int    \exp{\left[  2i \,s_{\pm} \cdot \slashed{p}s'\right] }\,a^{\dagger}_{\mp}\left( \textbf{p}\,s'_{\mp}\, \sigma \,  n\right)\, d\left[p, s'_{\mp}\right] \ , 
+    \label{3-3-17}
+\end{IEEEeqnarray} 
+de aquí podemos ver que
+\begin{IEEEeqnarray}{l}
+        \tilde{a}_{\pm}\left( \textbf{p}\,s_{\pm}\, \sigma \,  n\right) =\int    d\left[p, s'_{\mp}\right]  \exp{\left[ - 2i \,s_{\pm} \cdot \slashed{p}s'\right] }\,a_{\mp}\left( \textbf{p}\,s'_{\mp}\, \sigma \,  n\right)\ .
+    \label{3-3-18}
+\end{IEEEeqnarray}
+  
+
+Es conveniente redefinir los operadores de creación   como 
+\begin{IEEEeqnarray}{rl}
+            a^{\dagger}_{\pm}\left( \mathbf{p}\, s\,\sigma\, n\right)    &   \,\equiv \, \exp{\left[- i s\cdot \slashed{p}s_{\mp}\right] } a^{\dagger}_{\pm}\left( \mathbf{p}\, s_{\pm}\,\sigma\, n\right) 
+    \label{3-3-19}
+\end{IEEEeqnarray}
+ y los respectivos operadores  aniquilación:
+\begin{IEEEeqnarray}{rl}
+                a_{\mp}\left( \textbf{p}\, s\,\sigma\, n\right)   &   \,\equiv \, \left(      a^{\dagger}_{\pm}\left( \mathbf{p}\,\left( \epsilon\gamma_{5}\beta s^{*}\right) _{\pm}\,\sigma\, n\right) \right)^{\dagger} 
+    \label{3-3-20}\\
+  & \, = \, \exp{\left[+ i s\cdot \slashed{p}s_{\pm}\right] } a_{\mp}\left( \mathbf{p}\, s_{\mp}\,\sigma\, n\right)
+    \label{3-3-21}
+\end{IEEEeqnarray}
+Las transformaciones de Lorentz retienen la misma forma 
+\begin{IEEEeqnarray}{rl}
+               \mathsf{U}(\Lambda,x) a^{\dagger}_{\pm}\left( \mathbf{p}\, s\,\sigma\, n\right) & \mathsf{U}(\Lambda,x)^{-1} \nonumber \\
+             &  \, = \, e^{-i\Lambda p\cdot x}  \sqrt{\tfrac{(\Lambda p)^{0}}{p^{0}}}\sum_{\sigma'}U^{(j)}_{\sigma'\sigma}[W(\Lambda,\textbf{p})]  a^{\dagger}_{\pm}\left( \mathbf{p}_{\Lambda}\,D(\Lambda) s\,\sigma'\, n\right) \ ,  \nonumber \\
+                \label{3-3-22}\\
+                   \mathsf{U}(\Lambda,x) a_{\pm}\left( \textbf{p}\, s\,\sigma\, n\right)  & \mathsf{U}(\Lambda,x)^{-1}\nonumber \\
+                   &\, = \, e^{+ i\Lambda p\cdot x}  \sqrt{\tfrac{(\Lambda p)^{0}}{p^{0}}}\sum_{\sigma'}U^{(j) }_{\sigma'\sigma}[W(\Lambda,\textbf{p})] ^{*} a_{\pm}\left( \mathbf{p}_{\Lambda}\,D(\Lambda) s\,\sigma'\, n\right)\ .  \nonumber \\                  
+     \label{3-3-23}
+\end{IEEEeqnarray}
+Con la nueva fase, las transformaciones supersimétricas adquieren una forma más simple 
+\begin{IEEEeqnarray}{rl}               
+                   \mathsf{U}(\zeta) a^{\dagger}_{\pm}\left( \mathbf{p}\, s\,\sigma\, n\right)  \mathsf{U}(\zeta)^{-1}  &  \, = \,    \exp{\left[+i\zeta\cdot\slashed{p} s  \right]  } a^{\dagger}_{\pm}\left( \mathbf{p}\, s  \, + \, \zeta\,\sigma\, n\right)   \ ,\nonumber \\                            
+     \label{3-3-24} \\
+         \mathsf{U}(\zeta)  a_{\pm}\left( \mathbf{p}\, s \,\sigma\, n\right)  \mathsf{U}(\zeta)^{-1}  &  \, = \,    \exp{\left[-i \zeta\cdot \slashed{p} s  \right]  }  a_{\pm}\left( \mathbf{p}\, s  \, + \, \zeta\,\sigma\, n\right)    \ .         \nonumber \\                  
+     \label{3-3-25}
+\end{IEEEeqnarray}
+
+Similarmente para los operadores de creación-aniquilación con tilde, definimos $  \tilde{a}^{\dagger}_{\mp}\left( \mathbf{p}\, s\,\sigma\, n\right)    $ y  $  \tilde{a}_{\pm}\left( \mathbf{p}\, s\,\sigma\, n\right)    $,
+\begin{IEEEeqnarray}{rl}
+ \tilde{a}^{\dagger}_{\mp}\left( \mathbf{p}\, s\,\sigma\, n\right)    &   \,\equiv \, \exp{\left[- i s\cdot \slashed{p}s_{\pm}\right] } \tilde{a}^{\dagger}_{\mp}\left( \mathbf{p}\, s_{\mp}\,\sigma\, n\right) \ , 
+          \label{3-3-26}    \\   
+      \tilde{a}_{\pm}\left( \textbf{p}\, s\,\sigma\, n\right) & \, \equiv \, \exp{\left[+ i s\cdot \slashed{p}s_{\mp}\right] } \tilde{a}_{\pm}\left( \mathbf{p}\, s_{\pm}\,\sigma\, n\right) \ .
+    \label{3-3-27}
+\end{IEEEeqnarray}
+
+
+Al final de la Sec. (\ref{chap:2-4}), hemos demostrado que para una representación completamente irreducible del grupo de supér Poincaré, podemos hacer la identificaci\'on 
+\begin{IEEEeqnarray}{rl}
+             \tilde{a}^{\dagger}_{\pm}  \, = \, a^{\dagger}_{\pm} \ .
+    \label{3-3-29}
+\end{IEEEeqnarray}
+\begin{center}
+\textbf{\textit{Las componentes de los operadores de superpartícula}}
+\end{center}
+Para el caso con masa, hemos visto que la expansiones generales de la superpartículas $ \pm $ puede escribirse como 
+ \begin{IEEEeqnarray}{rl}
+            \Psi^{\pm}_{p,s_{\pm},\sigma}   \, \equiv \, \Psi^{0,\pm}_{p,\sigma} \, \mp\, \sqrt{2m}\, \left( \Psi^{1,\pm}_{p,\sigma}\right) \cdot  \left( s_{\pm} \right)_{p} \, + \, m \,  \Psi^{2,\pm}_{p,\sigma} \left(  s\cdot s_{\pm}\right) \ ,\nonumber \\
+    \label{2-5-25}
+\end{IEEEeqnarray}
+donde $ s_{p}  \, = \, \epsilon\gamma_{5}\beta D(L(p))^{-1}s $.
+Haciendo las identificaciones
+\begin{IEEEeqnarray}{rl}
+            \Psi^{0,\pm}_{p,\sigma, n}  \, = \,\left[ a^{(0)}_{\pm}\left(p \,\sigma\, n \right)\right]^{\dagger} \Psi_{\text{VAC}} , \quad  \Psi^{2,\pm}_{p,\sigma}  \, = \, \left[ a^{(2)}_{\pm}\left(p \,\sigma\, n \right)\right]^{\dagger} \Psi_{\text{VAC}}  ,
+    \label{4-4-}
+\end{IEEEeqnarray}
+y
+\begin{IEEEeqnarray}{rl}
+            \left( \Psi^{0,\pm}_{p,\sigma} \right)_{\alpha}   \, = \, \left[ a^{(1)}_{\pm}\left(p \,\sigma\, n \right)\right]_{\alpha}^{\dagger} \Psi_{\text{VAC}} 
+    \label{4-4-}
+\end{IEEEeqnarray}
+Tenemos que los operadores de creación vienen dados en componentes de la siguiente manera:
+\begin{IEEEeqnarray}{rl}
+            a^{\dagger}_{\pm}\left( \textbf{p}\,s_{\pm}\, \sigma \,  n\right)   \, = \,   a^{(0)}_{\pm}\left(p \,\sigma\, n \right)^{\dagger} \, +\, \sqrt{2m}\, a^{(1)}_{\pm}\left(p \,\sigma\, n \right)^{\dagger} \cdot  \gamma_{5}\left( s_{\pm} \right)_{p} \, + \, m \,  a^{(2)}_{\pm}\left(p \,\sigma\, n \right)^{\dagger} \left(  s\cdot s_{\pm}\right) \ .\nonumber \\
+    \label{4-4-}
+\end{IEEEeqnarray}
+En el termino lineal en la variable fermiónica, la operación $ \dagger $  es tomada como el operación de adjunto junto con el  transpuesto en el índice espinorial $ \alpha $. Los (anti)conmutadores diferentes de cero son 
+ \begin{IEEEeqnarray}{rl}
+                \left[a^{(0)}_{ \pm}\left( \mathbf{p}\, \sigma  \, n\right) ,a^{(0)} _{\pm}\left( \mathbf{p}'\, \sigma'  \, n'\right) ^{\dagger} \right\rbrace  & \, = \, \delta^{3}(\textbf{p}-\textbf{p}')\delta_{\sigma\sigma'}\delta_{n n'}\ ,    \nonumber \\       
+                  \left[a^{(2)}_{ \pm}\left( \mathbf{p}\, \sigma  \, n\right) ,a^{(2)} _{\pm}\left( \mathbf{p}'\, \sigma'  \, n'\right) ^{\dagger} \right\rbrace  & \, = \, \delta^{3}(\textbf{p}-\textbf{p}')\delta_{\sigma\sigma'}\delta_{n n'}\ ,    \nonumber \\                                              
+    \label{4-}
+    \end{IEEEeqnarray} 
+    y
+\begin{IEEEeqnarray}{rl}
+                            \left\lbrace a^{(1)}_{\pm}\left( \mathbf{p}\, \sigma  \, \sigma_{\frac{1}{2}} \, n\right)  ,a^{(1)}_{ \pm }\left( \mathbf{p}\, \sigma'  \, \sigma'_{\frac{1}{2}}\, n'\right)^{\,\dagger}\right]   & \, = \, \delta^{3}(\textbf{p}-\textbf{p}')\delta_{\sigma_{\frac{1}{2}}\sigma'_{\frac{1}{2}}}\delta_{\sigma\sigma'} \ ,  \nonumber \\   
+    \label{4-}
+\end{IEEEeqnarray}
+  donde
+\begin{IEEEeqnarray}{rl}
+       a^{(1)}_{+}\left( \mathbf{p}\, \sigma'  \, n' \right)^{\,\dagger} \, = \, \begin{bmatrix}
+  0\\ 
+   a^{(1)}_{ +}\left( \mathbf{p}\, \sigma'  \, \sigma'_{\frac{1}{2}} \, n'\right)^{\,\dagger}
+  \end{bmatrix}   ,\quad  a^{(1)}_{-}\left( \mathbf{p}\, \sigma  \, n\right)^{\,\dagger} \, = \, \begin{bmatrix}
+   a^{(1)}_{ -}\left( \mathbf{p}\, \sigma \, \sigma_{\frac{1}{2}}  \, n\right)^{\,\dagger} \\
+   0
+   \end{bmatrix} \ .\nonumber \\
+    \label{4-4-}
+\end{IEEEeqnarray}
+    Bajo una transformación de Lorentz,
+\begin{IEEEeqnarray}{l}
+                                     \mathsf{U}(\Lambda,b)a^{(0)} _{\pm}\left( \mathbf{p}\, \sigma  \, n\right) ^{\dagger} \mathsf{U}(\Lambda,b)^{-1}\, = \, e^{-i\Lambda p\cdot b} \sqrt{\tfrac{(\Lambda p)^{0}}{p^{0}}}\sum_{\sigma'}U^{(j)}_{\sigma'\sigma}[W(\Lambda,\textbf{p})]a^{(0)} _{\pm}\left( \mathbf{p}_{\Lambda}\, \sigma'  \, n\right)^{\dagger}, \nonumber \\   
+                                      \mathsf{U}(\Lambda,b)a^{(2)} _{\pm}\left( \mathbf{p}\, \sigma  \, n\right) ^{\dagger} \mathsf{U}(\Lambda,b)^{-1}\, = \, e^{-i\Lambda p\cdot b}  \sqrt{\tfrac{(\Lambda p)^{0}}{p^{0}}}\sum_{\sigma'}U^{(j)}_{\sigma'\sigma}[W(\Lambda,\textbf{p})]a^{(2)} _{\pm}\left( \mathbf{p}_{\Lambda}\, \sigma'  \, n\right)^{\dagger}, \nonumber \\                                                              
+     \label{4-4-}
+\end{IEEEeqnarray}  
+y  
+\begin{IEEEeqnarray}{rl}
+            \mathsf{U}(\Lambda,x)\, & a^{(1)}_{ \pm }\left( \mathbf{p}\, \sigma  \, \sigma_{\frac{1}{2}}\, n\right)^{\,\dagger}  \, \mathsf{U}(\Lambda,x)^{-1}\nonumber \\
+          &   \, = \, e^{- i \Lambda p\cdot x}  \sqrt{\tfrac{(\Lambda p)^{0}}{p^{0}}}\sum_{\sigma'_{\frac{1}{2}}\sigma'} U^{(j)}_{\sigma'\sigma}[W(\Lambda,\textbf{p})]U^{({\frac{1}{2}})}_{\sigma'_{\frac{1}{2}}\sigma_{\frac{1}{2}}}\left[ W(\Lambda,\textbf{p})\right] a^{(1)}_{ \pm }\left( \mathbf{p}\, \sigma' \, \sigma'_{\frac{1}{2}} \, n\right)^{\,\dagger}\ . \nonumber \\  
+    \label{4-4}
+\end{IEEEeqnarray}
+
+
+\section{El Principio de Descomposición en Cúmulos}
+
+Una propiedad general de las Ciencias Naturales, es que cualesquiera dos experimentos que ocurran lo suficientemente separados en el espacio, nos tienen que arrojar resultados no correlacionados. Esta propiedad en la F\'isica, elevada a principio,  se le conoce como \emph{El Principio de Descomposición en Cúmulos}~\cite{PhysRev.132.2788,Weinberg:1995mt}. 
+
+Para la teoría de la supermatriz $ \mathcal{S} $, el principio de descomposición en cúmulos se implementa pidiendo que, para  $ N $ procesos físicos  $ A_{i} \rightarrow  B_{i} $, $ i=1,2,\dots, N $,  que se encuentran en lugares distantes, la supermatriz-$ \mathcal{S} $ del proceso total, factorice:
+\begin{IEEEeqnarray}{rl}
+             \mathcal{S}_{B_{1}+B_{2} \, + \, \cdots + B_{N},A_{1}+A_{2} \, + \, \cdots + A_{N},} \,  \rightarrow \, \mathcal{S}_{B_{1},A_{1}}\, \mathcal{S}_{B_{2},A_{2}}\cdots  \mathcal{S}_{B_{N}, A_{N}}\ .
+     \label{3-4-01}
+ \end{IEEEeqnarray} 
+ Esta factorización  de la supermatriz $ \mathcal{S} $, nos garantiza  probabilidades no correlacionadas.  Entonces, el asunto es el de saber  cual es la forma genérica de las interacciones que nos garantizan esta factorización.  Para indagar un poco más sobre esto, consideremos las particiones   del estado inicial de muchas superpartículas $ A $, en cúmulos  $ A_{1}A_{2}\cdots$. Para cada partición, en general  $ A \neq A_{1}A_{2}\cdots $, en estas particiones importa el orden pero los elementos son los mismos,  $  \left\lbrace A\right\rbrace = \left\lbrace A_{1},A_{2} ,\cdots\right\rbrace$. De igual manera para los estados finales, consideramos todas las particiones $ B \rightarrow B_{1}B_{2}\cdots$. Escribimos al elemento $ \mathcal{S}_{BA} $ como 
+\begin{IEEEeqnarray}{rl}
+             \mathcal{S}_{BA}   \, = \, \sum_{\text{Part.}}\left( \pm\right) \mathcal{S}^{\text{C}}_{B_{1}A_{1}} \mathcal{S}^{\text{C}}_{B_{2}A_{2}}\cdots \ ,
+     \label{3-4-02}
+ \end{IEEEeqnarray}
+ donde la suma se extiende sobre todas las particiones $ A_{1}A_{2}\cdots $ y $ B_{1}B_{2}\cdots $ de $ A $ y $ B $, respectivamente. La suma no toma en cuenta  como diferentes las combinaciones que difieren por intercambios en un mismo cúmulo ni combinaciones que permutan cúmulos completos. El signo menos se introduce cuando en la partición total de $ A $  y $ B $ se involucra un número impar de permutaciones de superpartículas con estadística de Fermi.
+ A los elementos de matriz del lado derecho, con el superíndice C, se les conocen como los ``elementos conectadas'' de $\mathcal{S}_{BA} $. La suma sobre las particiones incluye al cúmulo trivial $ {A}= A_{1}$ y $  {B}= B_{1} $. 
+ 
+ La introducción de la Ec. \eqref{3-4-02} por sí misma no impone ninguna restricción  en $      \mathcal{S}_{BA}  $ y por sí sola es vacía. Las  superamplitudes conectadas  $ \mathcal{S}^{\text{C}}_{BA} $, se obtienen de manera recursiva;   de la Ec.  \eqref{3-4-02} tenemos que
+\begin{IEEEeqnarray}{rl}
+             \mathcal{S}^{\text{C}}_{B,A} \, = \, \mathcal{S}_{B,A}   \, - \,\sum^{'}_{\text{Part.}}\left( \pm\right) \mathcal{S}^{\text{C}}_{B_{1}A_{1}} \mathcal{S}^{\text{C}}_{B_{2}A_{2}}\cdots \ ,
+    \label{3-4-03}
+\end{IEEEeqnarray}
+ donde los términos de la suma primada, la cual excluye al término $   \mathcal{S}^{\text{C}}_{B,A}  $, se obtienen por procesos de menor número de superpartículas que las que se encuentran en el conjunto $ \left\lbrace B,A \right\rbrace $.  Para cuando el número de superpartículas iniciales y finales son uno, $ A=\xi, B=\xi' $, tenemos que  $ \mathcal{S}^{\text{C}}_{\xi,\xi'} \, \equiv \, \mathcal{S}_{\xi,\xi'}   $, pero este es  un proceso físico donde no pasa nada,  la superpartícula no interacciona con ninguna otra. Estamos suponiendo que las superestados de una superpartícula no pueden transformarse en otra superpartícula (son estables bajo este tipo de decaimientos) y no pueden desaparecer completamente (transformarse en el vac\'io).  Entonces, sin perdida de generalidad, escribimos
+\begin{IEEEeqnarray}{rl}
+             \mathcal{S}_{\xi',\xi}   \, = \,   \delta\left(\xi-\xi' \right)    \  .
+    \label{3-4-04}
+\end{IEEEeqnarray} 
+
+ Habiendo fijado la  superamplitud conectada  para el proceso de menor orden, los demás términos se siguen por el procedimiento recursivo \eqref{3-4-03}. El siguiente orden en el número de superpartículas, son las transiciones de dos superpartículas iniciales a una superpartícula final, o viceversa, 
+\begin{IEEEeqnarray}{rl}
+            \mathcal{S}_{\xi'_{1},\xi_{1}\xi_{2}}   \, = \,   \mathcal{S}^{\text{C}}_{\xi'_{1}\xi'_{2},\xi_{1}} ,  \quad 
+             \mathcal{S}_{\xi'_{1}\xi'_{2},\xi_{1}}   \, = \,      \mathcal{S}_{\xi'_{1}\xi'_{2},\xi_{1}}  ^{\text{C}}.
+    \label{3-4-05}
+\end{IEEEeqnarray}
+El siguiente orden,  representa la transición entre dos estados de superpartículas:
+\begin{IEEEeqnarray}{rl}
+             \mathcal{S}_{\xi'_{1}\xi'_{2},\xi_{1}\xi_{2}}    \, = \,  \mathcal{S}_{\xi'_{1}\xi'_{2},\xi_{1}\xi_{2}} ^{\text{C}}  \, + \,  \delta\left(\xi_{1}-\xi_{1}' \right) \delta\left(\xi_{2}-\xi_{2}' \right) \, \pm \,  \delta\left(\xi_{1}-\xi_{2}' \right) \delta\left(\xi_{2}-\xi_{1}' \right)\ ,\nonumber \\
+    \label{3-4-06}
+\end{IEEEeqnarray}
+donde hemos usado  \eqref{3-4-04}. La utilidad de las supermatrices conectadas, reside en que el principio de descomposición en cúmulos se expresa de manera más clara en términos de estas superamplitudes. En la relación  \eqref{3-4-01}, hemos hecho la partición de $ (A , B)$ en términos de la suma de los subconjuntos de los $ N $ experimentos lejanos, $ (A , B)=\sum_{j}^{N}(B^{i},A^{i}) $, entonces el principio de descomposición en cúmulos se expresa requiriendo que las superamplitudes conectadas de la Ec. \eqref{3-4-03} sean cero:
+\begin{IEEEeqnarray}{rl}
+            S^{{C}}_{A',B'}  \, = \, 0 \ ,
+    \label{3-4-06-a}
+\end{IEEEeqnarray}
+para cuando los  conjuntos $ (A',B') $ contienen elementos de $ (B^{i},A^{i})  $ y $ (B^{j},A^{j})  $ con $ i \neq j $. En este caso, es evidente que  la relación \eqref{3-4-01} se satisface. Para introducir la noción de lejanía en la supermatriz $ \mathcal{S} $, escribimos $ \mathcal{S}^{\text{C}}_{BA} $ en el espacio de coordenadas, esto es,  cada variable bosónica $ \mathbf{p} $ del superespacio de momentos es reemplazada por la variable espacial $ \mathbf{x} $. Esto es, tomamos la transformada de Fourier  de $ \mathcal{S}_{BA} $
+\begin{IEEEeqnarray}{rl}
+             \mathcal{S}^{\text{C}}_{\mathbf{x}{'}_{1}\mathbf{x}{'}_{2}\cdots,\mathbf{x}_{1}\mathbf{x}_{2} }  & \, \equiv \, \int d^{3}\mathbf{p}'_{1}d^{3}\mathbf{p}'_{2}\cdots d^{3}\mathbf{p}_{1}d^{3}\mathbf{p}_{2}\cdots  \mathcal{S}^{\text{C}}_{\mathbf{p}{'}_{1}\mathbf{p}{'}_{2}\cdots,\mathbf{p}_{1}\mathbf{p}_{2} }  \nonumber \\
+ &\qquad  \times e^{i \mathbf{p}_{1}'\cdot \mathbf{x}'_{1}}e^{i \mathbf{p}'_{2}\cdot \mathbf{x}'_{2}}\cdots e^{-i \mathbf{p}_{1}\cdot \mathbf{x}_{1}}e^{-i \mathbf{p}_{2}\cdot \mathbf{x}_{2}}\ , 
+    \label{3-4-07}
+\end{IEEEeqnarray}
+donde en esta última expresión hemos escondido todos los índices fermiónicos y discretos. El lado izquierdo es cero para separaciones espaciales infinitas, si a lo m\'as $ \mathcal{S}^{\text{C}}_{\mathbf{p}^{'}_{1}\mathbf{p}^{'}_{2}\cdots,\mathbf{p}_{1}\mathbf{p}_{2} }  $ contiene una y solo una delta 4-dimensional,  que nos asegura la conservación del momento y la energía (estamos suponiendo  invariancia traslacional)\footnote{Fuera de la invariancia traslacional, el resultado no supone otra simetría\cite{PhysRev.132.2788}.}:
+\begin{IEEEeqnarray}{rl}
+            \mathcal{S}^{\text{C}}_{\mathbf{p}{'}_{1}\mathbf{p}{'}_{2}\cdots,\mathbf{p}_{1}\mathbf{p}_{2} }  &  \, = \, \delta^{3}\left(\mathbf{p}'_{1}  \, + \, \mathbf{p}'_{2}  \, + \, \cdots \, - \, \mathbf{p}_{1}  \, - \, \mathbf{p}_{2}  \, - \, \cdots \right)  \nonumber \\
+            &  \times \delta\left(E'_{1}  \, + \, E'_{2}  \, + \, \cdots \, - \, E_{1}  \,-  \,E_{2}  \, - \, \cdots \right)    \mathcal{C}_{\mathbf{p}{'}_{1}\mathbf{p}{'}_{2}\cdots,\mathbf{p}_{1}\mathbf{p}_{2} }    \nonumber \\
+    \label{3-4-08}
+\end{IEEEeqnarray}
+donde las singularidades de $  \mathcal{C}_{\mathbf{p}^{'}_{1}\mathbf{p}^{'}_{2}\cdots,\mathbf{p}_{1}\mathbf{p}_{2} }    $ pueden incluir polos y puntos de ramificación, pero no pueden ser tan severas como las deltas de Dirac~\cite{Weinberg:1995mt}.
+
+Finalmente,  la importancia de los operadores de creación y aniquilación se evidencia a través  del siguiente teorema ( extendido de manera directa al superespacio): \emph{La supermatriz $ \mathcal{S} $ satisface el principio de descomposición en cúmulos si y solo sí el Hamiltoniano de interacción se puede escribir como 
+\begin{IEEEeqnarray}{rl}
+            \mathsf{H}   &\, = \, \sum^{\infty}_{N=0}\sum^{\infty}_{N=0}\int d\xi_{1}'\cdots d\xi_{N}'\,d\xi_{1}\cdots d\xi_{M}\nonumber \\
+        &   \qquad  \times \, a^{\dagger}_{\xi_{1}'}\cdots a^{\dagger}_{\xi_{N}'} \, a_{\xi_{1}}\cdots a_{\xi_{M}} \,\times   \, h_{NM}\left(\xi_{1}'\cdots \xi_{N}'\,\xi_{1}\cdots \xi_{M} \right)  \ ,
+    \label{3-4-09}
+\end{IEEEeqnarray}
+con
+\begin{IEEEeqnarray}{rl}
+               h_{NM}\left(\xi_{1}'\cdots \xi_{N}'\,\xi_{1}\cdots \xi_{M} \right) 
+              &    \, = \, \delta^{3}\left(\mathbf{p}'_{1}    \, + \, \cdots \, + \, \mathbf{p}'_{N}\, - \, \mathbf{p}_{1}   \, - \, \cdots  \, - \, \mathbf{p}_{M}\right) \nonumber \\
+             &\qquad \times      \tilde{h}_{NM}\left(\xi_{1}'\cdots \xi_{N}'\,\xi_{1}\cdots \xi_{M} \right)
+      \label{3-4-10}
+  \end{IEEEeqnarray}  
+y donde $ \tilde{h}_{NM} $ no contiene factores que son funciones delta de Dirac (en la parte bosónica de los supermomentos).} Para una demostración (perturbativa) de este resultado, ver la referencia~\cite{Weinberg:1995mt}.  
+\begin{center}
+* \quad * \quad *
+\end{center}
+ La motivación física  para supersimetr\'ia, reside en el famoso resultado de S. Coleman y J. Mandula~\cite{Coleman:1967ad} que nos dice que  la única  \'algebra de Lie de los posibles generadores de simetrías consiste en los generadores $ \mathsf{P}^{\mu} $ y $ J^{\mu\nu} $ de las traslaciones y las  transformaciones homogéneas de Lorentz, junto con otros posibles generadores internos de la simetr\'ia, los cuales conmutan con $ \mathsf{P}^{\mu} $ y $ J^{\mu\nu} $ y act\'uan en los estados físicos multiplic\'adonlos con matrices Hermitianas que no dependen ni del esp\'in ni del momento.  Aquí con ``generadores de simetr\'ia'' nos referimos  a operadores que conmutan con el operador $ \mathsf{S} $, los cuales llevan a estados de una partícula a otros estados de una partícula. Para el caso de super\'algebras  de Lie, la única superalgebra posible, es la del \'algebra del grupo de s\'uper Poincar\'e~\cite{Haag:1974qh}, junto con  posibles simetrías internas.
+

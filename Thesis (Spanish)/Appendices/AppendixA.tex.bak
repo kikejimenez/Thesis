@@ -1,0 +1,89 @@
+\chapter{Notación y convenciones.}
+
+Durante todo el texto, hemos usado la notacion y las convenciones de la referencia \cite{Weinberg:1995mt}, las cuales escribimos en este apéndice. 
+
+Representamos los indices de Dirac por las  primeras letras del alfabeto griego, $ \alpha,\alpha',\beta,\beta' $, etcétera. Los indice de Lorentz están siendo representados por las ultimas letras del mismo alfabeto, $ \mu,\nu,\mu',\nu' $,  etcétera. Tomamos la métrica de Lorentz como 
+\begin{IEEEeqnarray}{rl}
+               \eta_{\mu\nu}  \, = \, \text{diag}\begin{pmatrix}
+1 & 1 & 1 & -1
+\end{pmatrix} \ ,
+      \label{Ap-A-01}
+  \end{IEEEeqnarray}  
+  siguiendo la costumbre de denotar la última componente con el número cero. La representación de Dirac [la representación $ \left( \frac{1}{2},0 \right)\oplus \left( 0,\frac{1}{2} \right)$] es generado 
+\begin{IEEEeqnarray}{rl}
+             D\left[ \Lambda\right]   \, = \, \exp\left[\tfrac{i}{2} w_{\mu\nu}\mathcal{J}^{\mu \nu} \right],
+    \label{Ap-A-02}
+\end{IEEEeqnarray}
+es generada por las matrices 
+\begin{IEEEeqnarray}{rl}
+             \quad     \mathcal{J}^{\mu \nu} \, = \, \tfrac{-i}{4}[\gamma^{\mu}, \gamma^{\nu}] \ .
+    \label{Ap-A-03}
+\end{IEEEeqnarray}
+Aquí, los símbolos $ \gamma^{\mu} $ son las matrices de Dirac que satisfacen las relaciones de anticonmutación con signo positivo,
+\begin{IEEEeqnarray}{rl}
+             \left\lbrace  \gamma^{\mu} ,  \gamma^{\nu}\right\rbrace   \, = \, 2\eta^{\mu\nu} 
+    \label{Ap-A-04}
+\end{IEEEeqnarray}
+ Nos apegamos al siguiente conjunto particular para las matrices $ \gamma^{\mu} $:
+\begin{equation}
+         \gamma^{0}\, = \,-i\begin{pmatrix}
+0 & I \\ 
+I & 0
+\end{pmatrix} , \quad {\gamma}_{i}\, = \,-i  \begin{pmatrix}
+0 & \sigma_{i} \\ 
+-\sigma_{i} & 0
+\end{pmatrix}\ .
+         \label{Ap-A-05}
+	\end{equation}
+donde las $ \sigma_{i} $, son las matrices de Pauli,
+\begin{IEEEeqnarray}{rl}
+            \sigma_{1}  \, = \, \begin{pmatrix}
+0 & 1 \\ 
+1 & 0
+\end{pmatrix} , \quad  \sigma_{2}  \, = \, \begin{pmatrix}
+0 & i \\ 
+-i & 0
+\end{pmatrix} , \quad  \sigma_{3}  \, = \, \begin{pmatrix}
+1 & 0 \\ 
+0 & -1
+\end{pmatrix} ,
+    \label{Ap-A-06}
+\end{IEEEeqnarray}
+La matriz $ \gamma_{5} \equiv i  \gamma^{0} \gamma^{1} \gamma^{2}\gamma^{3}  $, viene dada por 
+\begin{IEEEeqnarray}{rl}
+            \gamma_{5}  \, = \, \begin{pmatrix}
+I & 0 \\ 
+0 & -I
+\end{pmatrix} 
+    \label{Ap-A-07}
+\end{IEEEeqnarray}
+Introducimos
+\begin{IEEEeqnarray}{rl}
+         \epsilon  \, = \, \begin{pmatrix}
+ e & 0 \\ 
+ 0 & e
+ \end{pmatrix} , \quad e  \, = \, \begin{pmatrix}
+ 0 & 1 \\ 
+ -1 & 0
+ \end{pmatrix} ,
+    \label{Ap-A-08}
+\end{IEEEeqnarray}
+y
+\begin{equation}
+      \beta\, = \,\begin{pmatrix}
+0 & I \\ 
+I & 0
+\end{pmatrix}  \ .
+         \label{Ap-A-09}
+	\end{equation}
+Estas matrices nos ayudan a convertir  las representación transpuesta-inversa y transpuesta-conjugada de la representación de Dirac, ya que satisfacen las relaciones
+ \begin{IEEEeqnarray}{rl}
+               \beta \gamma^{\mu}   \, = \,  -\gamma^{\mu\dagger}\beta, \quad   \epsilon\gamma_{5} \gamma^{\mu} \, = \, -\gamma^{\mu \intercal}\epsilon\gamma_{5}\ .
+     \label{Ap-A-10}
+ \end{IEEEeqnarray}	
+ y por lo tanto 
+\begin{IEEEeqnarray}{rl}
+             D(\Lambda^{-1})^{\dagger}  \, = \, \beta D(\Lambda)\beta ^{-1}, \quad  D(\Lambda^{-1})^{\intercal}  \, = \,  \epsilon\gamma_{5} D(\Lambda)\left( \epsilon\gamma_{5}\right)  ^{-1}\ .
+    \label{Ap-A-11}
+\end{IEEEeqnarray}
+Esto nos demuestra  que las representaciones $ D(\Lambda)^{*} $  y $ D(\Lambda)^{\intercal}  $ son representaciones equivalentes  a $ D(\Lambda) $ (en el sentido de la teoría de representaciones).

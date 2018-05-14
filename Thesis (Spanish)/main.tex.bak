@@ -1,0 +1,384 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Masters/Doctoral Thesis 
+% LaTeX Template
+% Version 1.42 (19/1/14)
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original authors:
+% Steven Gunn 
+% http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/
+% and
+% Sunil Patel
+% http://www.sunilpatel.co.uk/thesis-template/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Note:
+% Make sure to edit document variables in the Thesis.cls file
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt, letter, twoside]{Thesis} % Paper size, default font size and one-sided paper
+
+\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+
+\usepackage[square, numbers, comma, sort&compress]{natbib} % Use the natbib reference package - read up on this to edit the reference style; if you want text (e.g. Smith et al., 2012) for the in-text references (instead of numbers), remove 'numbers' 
+\hypersetup{urlcolor=blue, colorlinks=true} % Colors hyperlinks in blue - change to black if annoying
+
+\usepackage[spanish,es-nodecimaldot]{babel}
+
+\usepackage{epigraph} %para incluir quotes
+
+\usepackage{nameref} %para hacer referencia a secciones
+
+\usepackage{braket} %para hacer uso de la notacion de brakets de Dirac
+
+\usepackage{empheq} %para enumerar subecuaciones en un arreglo
+
+
+%\usepackage[spanish]{babel}
+%\usepackage[latin1]{inputenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+
+
+%Colores
+\usepackage[usenames,dvipsnames]{xcolor}
+
+%Diagramas de Feynman
+%\usepackage{tikz}
+%\usepackage{pgf}
+
+
+%tablas
+%\usepackage{booktabs}
+
+%slash de feynman
+\usepackage{slashed}
+
+%rotar tablas
+%\usepackage{rotating}
+
+%color tablas
+%\usepackage{colortbl}
+
+%comentarios
+%\usepackage{verbatim}
+
+%Metemos los graficos
+%\input{Ticks}
+
+
+% inserción url's notas de pie.
+%\usepackage{url}
+
+
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+%paquete IEEE
+\usepackage[retainorgcmds]{IEEEtrantools}
+
+% Paquetes de la AMS:
+%\usepackage{amsmath, amsthm, amsfonts,amssymb}
+
+% paquete para incluir graficas.
+%\usepackage{graphicx}
+
+%paquete para los apendices
+%\usepackage{appendix}
+
+%braket
+%\usepackage{braket}
+
+%Feynman Graphs
+%\usepackage{feynmp}
+
+
+
+
+
+\title{\ttitle} % Defines the thesis title - don't touch this
+
+\begin{document}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\setstretch{1.3} % Line spacing of 1.3
+
+% Define the page headers using the FancyHdr package and set up for one-sided printing
+\fancyhead{} % Clears all page headers and footers
+\rhead{\thepage} % Sets the right side header to show the page number
+\lhead{} % Clears the left side page header
+
+\pagestyle{fancy} % Finally, use the "fancy" page style to implement the FancyHdr headers
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
+
+% PDF meta-data
+\hypersetup{pdftitle={\ttitle}}
+\hypersetup{pdfsubject=\subjectname}
+\hypersetup{pdfauthor=\authornames}
+\hypersetup{pdfkeywords=\keywordnames}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\input{Portada/portada.tex}
+\afterpage{\blankpage}
+\clearpage
+
+
+
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE
+%	Your institution may give you a different text to place here
+%----------------------------------------------------------------------------------------
+
+
+\afterpage{\blankpage}
+
+%----------------------------------------------------------------------------------------
+%	QUOTATION PAGE
+%----------------------------------------------------------------------------------------
+
+\pagestyle{empty} % No headers or footers for the following pages
+
+\null\vfill\vfill\vfill\vfill % Add some space to move the quote down the page a bit
+
+\textit{``In fact, the hardest part of research is always to find a  question that  is
+ big enough that is worth answering  but little enough that actually you can answer it."}
+
+\begin{flushright}
+Edward Witten\\
+%26 de octubre de 1929 \\
+Entrevista Medalla Newton 2010 del Institute Of Physics\footnote{\url{https://www.youtube.com/watch?v=06yXsnTFF-U}}
+\end{flushright}
+
+\vfill\vfill\vfill\vfill\null % Add some space at the bottom to position the quote just right
+
+\clearpage % Start a new page
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+\afterpage{\blankpage}
+\addtotoc{Resumen} % Add the "Abstract" page entry to the Contents
+
+\abstract{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+Presentamos las reglas de super Feynman para cualquier superespín en teorías $ \mathcal{N}=1 $ supersim\'etricas, incluyendo superpatas en la capa de masa. Lo hacemos, extendiendo del espacio al superespacio, el enfoque de Weinberg a la teoría cu\'antica de los campos.  Los supercampos cuánticos nos sirven solamente  para construir  superamplitudes covariantes bajo el  grupo de super  Poincaré, sin hacer uso del formalismo canónico ni de la integral de caminos.  Ofrecemos leyes de transformación explícitas para los estados de partículas bajo transformaciones finitas supersim\'etricas.   Las transformaciones  $ \mathit{C}, \mathit{P}, \mathit{T}, $ y $ \mathcal{R} $ también son desarrolladas.  Un aspecto clave de esta formulación es que no requiere de la introducción de los campos auxiliares, y cuando estos son introducidos, su propósito es solamente el de hacer invariantes supersim\'etricos los productos ordenados temporalmente en la serie de Dyson. El formalismo es puesto a prueba para el caso del superpotencial cúbico escalar. Encontramos que cuando una superpart\'icula es su propia antisuperpart\'icula la corrección a orden m\'as bajo en los productos ordenados temporalmente, junto con su parte covariante, corresponde al potencial del modelo de Wess-Zumino. 
+}
+
+\clearpage % Start a new page
+
+\afterpage{\blankpage}
+
+\addtotoc{Abstract} % Add the "Abstract" page entry to the Contents
+ 
+
+\resumen{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics  }
+Super Feynman rules for any superspin are given for massive $ \mathcal{N}=1 $ supersymmetric theories, including
+momentum superspace on-shell legs. This is done by extending, from space to superspace, Weinberg’s
+perturbative approach to quantum field theory. Superfields work just as a device that allow one to write
+super Poincar\'e-covariant superamplitudes for interacting theories, relying neither in path integral nor
+canonical formulations. Explicit transformation laws for particle states under finite supersymmetric
+transformations are offered.  $ \mathit{C}, \mathit{P}, \mathit{T}, $ and $ \mathcal{R} $ transformations are also worked out. A key feature of this formalism is that it does not require the introduction of auxiliary fields, and when introduced, their purpose
+is just to render supersymmetric invariant the time-ordered products in the Dyson series. The formalism is
+tested for the cubic scalar superpotential. It is found that when a superparticle is its own antisuperparticle
+the lowest-order correction of time-ordered products, together with its covariant part, corresponds to the
+Wess–Zumino model potential.
+
+\clearpage % Start a new page
+
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+
+\setstretch{1.3} % Reset the line-spacing to 1.3 for body text (if it has changed)
+
+\acknowledgements{\addtocontents{toc}{\vspace{1em}} % Add a gap in the Contents, for aesthetics
+\epigraph{\textit{`` Oh I get by with a little help from my friends\\
+Mm I get high with a little help from my friends\\
+Mm gonna try with a little help from my friends "}}{The Beatles}
+Agradezco a todas las personas que de alguna manera han contribuido a la culminación de este proyecto y proclamo  que la omisión  explícita del algún nombre en estos agradecimientos, se debe exclusivamente, a mi mala memoria.
+
+Primera y mayormente,  agradezco  a Ana Dolores, por cumplir todos los requisitos de una excelente madre. A mi hermano Ivo, por todo lo vivido y por lo que estamos viviendo ahora con su bonita familia (Ana, Eva y Teté). A  José Luis  por  la ayuda que me brindó durante todo el proceso. ¡Gracias, Familia!
+
+Le doy gracias al azar por haberme puesto a  Los tres Jesuses en mi camino: Él que se vino conmigo, Él que ya estaba y Él que llegó después. A Edel, nuestro peleador número uno. A Federico, desde un principio fungiendo como un gran hermano, dándome  siempre apoyo en momentos clave y sin nunca pedir algo a cambio. A Ulises, con el que soñar cuesta poquito (¡Y como soñamos!).
+
+ Agradecido estoy con Ale, cuya compresión y cariño siempre los he sentido presentes. Agradezco a Neto por su amistad y apoyo. A  todos los \textit{sonowachos} que he tenido la oportunidad de conocer, en especial a mis amigos de ya muchas  batallas: Cepi, Leo, Punket y Reneé.
+
+ Agradezco a  Eduardo, cuya  oportuna incorporación al \textit{Instituto} resultó para mí, en un \textit{boost} académico. A la Dra. Enriqueta Hernandez, cualquiera quisiera poder trabajar tanto como ella. A mis profesores de la UNAM y la UNISON, en especial a \textit{La Maestra}, Angelina.
+
+Agradezco al Posgrado en Ciencias Físicas y al Instituto de Física  de la UNAM. A la  Universidad de Colima,  donde  gran parte de este trabajo  fue escrito.
+
+
+Agradezco a los diferentes miembros del jurado:
+Dra. Myriam Mondragón Ceballos, Dr. Erick Leonardo Pati\~no Jaidar, Dr. Rodolfo Patricio Martínez y Romero, Dr. Luis Fernando Urrutia Ríos, Dr. Mauro Napsuciale Mendivil, Dr. Paul Artur Jens Erler  Weber y Dra. Elena Cáceres Sanchez.
+
+
+Agradezco a mis tutores,  Dra.  Myriam Mondragón,  Dr.  Jens Erler y  Dr. Alfonso Mondragón, por su disponibilidad en todo  momento y por aceptar el cambio de proyecto, a pesar de no haber sido lo que inicialmente acordamos. Deseo  la pronta  reincorporación del Profesor Mondragón al \textit{Instituto}.
+
+Agradezco al Dr. Alejandro Reyes Esqueda, por su apoyo invaluable a \textit{los estudiantes}.
+
+Agradezco al Consejo Nacional de Ciencia y Tecnología (CONACYT) por la
+beca que me permitió realizar esta meta. También agradezco y reconozco el
+apoyo financiero recibido de parte de los proyectos PAPIIT-IN113712, PAPIIT-IN111115 y CONACyT-132059.
+
+ Finalmente, pero no menos importante, agradezco  a Carlos y Fefo, quienes, como se dijo por ahí, siempre me consintieron.  Infinitamente agradecido estoy con Fefo, por brindarme en la Universidad de Colima un lugar donde sentirme pleno, pero sobre todo  por hacerme ver que, a veces, los obstáculos nos los ponemos nosotros mismos.
+ 
+\afterpage{\blankpage}
+\begin{center}
+\textit{Esta tesis fue realizada con un poco de  ayuda de mis amigos.}
+\end{center}  
+ }
+
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+
+%\pagestyle{fancy} % The page style headers have been "empty" all this time, now use the "fancy" headers as defined before to bring them back
+
+\renewcommand*\contentsname{\'Indice General}
+\lhead{\emph{\'Indice General}} % Set the left side page header to "Contents"
+\tableofcontents % Write out the Table of Contents
+%\rhead{\emph{Contenido}}
+\afterpage{\blankpage}
+
+\renewcommand*{\listfigurename}{\'Indice de Figuras}
+\lhead{\emph{\'Indice de Figuras}} % Set the left side page header to "List of Figures"
+\listoffigures % Write out the List of Figures
+
+%\lhead{\emph{\'Indice de Cuadros}} % Set the left side page header to "List of Tables"
+%\listoftables % Write out the List of Tables
+
+%----------------------------------------------------------------------------------------
+%	ABBREVIATIONS
+%----------------------------------------------------------------------------------------
+
+%\clearpage % Start a new page
+
+%\setstretch{1.5} % Set the line spacing to 1.5, this makes the following tables easier to read
+
+%\lhead{\emph{Abbreviations}} % Set the left side page header to "Abbreviations"
+%\listofsymbols{ll} % Include a list of Abbreviations (a table of two columns)
+%{ }
+
+%----------------------------------------------------------------------------------------
+%	PHYSICAL CONSTANTS/OTHER DEFINITIONS
+%----------------------------------------------------------------------------------------
+
+%\clearpage % Start a new page
+
+%\lhead{\emph{Physical Constants}} % Set the left side page header to "Physical Constants"
+
+%\listofconstants{lrcl} % Include a list of Physical Constants (a four column table)
+%{
+%Speed of Light & $c$ & $=$ & $2.997\ 924\ 58\times10^{8}\ \mbox{ms}^{-\mbox{s}}$ (exact)\\
+% Constant Name & Symbol & = & Constant Value (with units) \\
+%}
+
+%----------------------------------------------------------------------------------------
+%	SYMBOLS
+%----------------------------------------------------------------------------------------
+
+%\clearpage % Start a new page
+
+%\lhead{\emph{Symbols}} % Set the left side page header to "Symbols"
+
+%\listofnomenclature{lll} % Include a list of Symbols (a three column table)
+%{
+%$a$ & distance & m \\
+%$P$ & power & W (Js$^{-1}$) \\
+% Symbol & Name & Unit \\
+
+%& & \\ % Gap to separate the Roman symbols from the Greek
+
+%$\omega$ & angular frequency & rads$^{-1}$ \\
+% Symbol & Name & Unit \\
+%}
+
+%----------------------------------------------------------------------------------------
+%	DEDICATION
+%----------------------------------------------------------------------------------------
+
+\setstretch{1.3} % Return the line spacing back to 1.3
+
+\pagestyle{empty} % Page style needs to be empty for this page
+
+\dedicatory{A la memoria de Rita} % Dedication text
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+
+\pagestyle{fancy} % Return the page headers back to the "fancy" style
+
+% Include the chapters of the thesis as separate files from the Chapters folder
+% Uncomment the lines as you write the chapters
+
+\input{Chapters/Chapter1}
+\input{Chapters/Chapter2} 
+\input{Chapters/Chapter3}
+\input{Chapters/Chapter4} 
+\input{Chapters/Chapter5} 
+\input{Chapters/Chapter6} 
+\input{Chapters/Chapter7} 
+\input{Chapters/Chapter8}
+
+
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\appendix % Cue to tell LaTeX that the following 'chapters' are Appendices
+
+% Include the appendices of the thesis as separate files from the Appendices folder
+% Uncomment the lines as you write the Appendices
+
+\input{Appendices/AppendixA}
+\input{Appendices/AppendixB}
+%\input{Appendices/AppendixC}
+%\input{Appendices/AppendixD}
+%\input{Appendices/AppendixE}
+
+\addtocontents{toc}{\vspace{2em}} % Add a gap in the Contents, for aesthetics
+
+\backmatter
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\label{Bibliography}
+
+\lhead{\emph{Bibliograf\'ia}} % Change the page header to say "Bibliography"
+
+\bibliographystyle{unsrtnat} % Use the "unsrtnat" BibTeX style for formatting the Bibliography
+
+\bibliography{Bibliography} % The references (bibliography) information are stored in the file named "Bibliography.bib"
+
+\end{document}  

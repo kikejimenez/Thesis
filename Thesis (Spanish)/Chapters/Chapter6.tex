@@ -1,0 +1,551 @@
+\chapter{Las Simetrías $ \mathit{P} $, $ \mathit{T} $,  $ \mathit{C} $ y $ \mathcal{R} $}
+\label{chap:7}
+\epigraph{\textit{`` It would be difficult to pretend that the gravitational
+infrared divergence problem is very urgent. My reasons for now attacking this question are: (i) Because I can. "}}{S. Weinberg~\cite{Weinberg:1965nx}}
+\lhead{Cap\'itulo 6. \emph{Las simetrías $ \mathit{P} $, $ \mathit{T} $,  $ \mathit{C} $ y $ \mathcal{R} $}}
+
+En este capítulo, desarrollamos todo lo referente a las simetrías de paridad  $ \mathit{P} $, inversión temporal $ \mathit{T} $, conjugación de carga  $ \mathit{C} $ y simetrías $ \mathcal{R} $. Empezamos primero escribiendo la acción de estas simetrías en los estados de partícula, para después generalizarlos para el caso de los superestados,  además, dando expresiones explícitas para las correspondientes transformaciones de los estados componente. Después, escribimos las fórmulas generales para  las transformaciones de los  supercampos quirales bajo este conjunto de simetrías. Damos la demostración perturbativa del teorema $ CPT $ en el superespacio. En el camino, nos vemos en la necesidad de definir (por primera vez en la literatura sobre el tema) la acción de los operadores antiunitarios sobre los supernúmeros. 
+\section{Superestados Sim\'etricos}
+La existencia de las simetrías discretas de paridad y de inversión temporal supone que existen dos elementos $ \Lambda =\mathcal{P} $ y $ \Lambda =\mathcal{T} $  en el grupo general de transformaciones de Lorentz y supersimétricas, $  T(\Lambda,a,\zeta)$. Introduciendo los operadores $ \mathsf{P}   $ y $ \mathsf{T}  $ en el superespacio de Hilbert mediante la definición
+\begin{IEEEeqnarray}{rl}
+            \mathsf{P}  \,\equiv \, \mathsf{U}\left(\mathcal{P},0  \right) , \quad        \mathsf{T}  \,\equiv \, \mathsf{U}\left(\mathcal{T},0  \right) \ ,
+    \label{07-01-03}
+\end{IEEEeqnarray}
+se sigue, de la regla de composición del grupo de Lorentz,  que
+\begin{IEEEeqnarray}{rl}
+       \mathsf{P}   \, \mathsf{U}\left(\Lambda,a\right) \mathsf{P}^{-1}   \, = \, \mathsf{U}\left(\mathcal{P}\Lambda\mathcal{P}^{-1}  ,\mathcal{P}a\right) \ ,\nonumber \\    
+         \mathsf{T} \,   \mathsf{U}\left(\Lambda,a\right)\mathsf{T}^{-1}      \, = \, \mathsf{U}\left(\mathcal{T}\Lambda\mathcal{T}^{-1}  ,\mathcal{T}a\right)  \ . \nonumber \\   
+    \label{07-01-04}
+\end{IEEEeqnarray}
+Puesto que las transformaciones de paridad e inversión temporal no son continuas, pueden ser unitarias o antiunitarias. Necesitamos primero extender la noción de antiunitariedad para los supernúmeros. Si  $ \mathsf{A} $ es un operador antiunitario  y $ c $ un número complejo ordinario, entonces 
+\begin{IEEEeqnarray}{rl}
+             c\,\mathsf{A}  \, = \,  \mathsf{A}\,c^{*} \ .
+    \label{07-01-04-1}
+\end{IEEEeqnarray}
+  Ésta es la definición usual de antiunitariedad en el espacio. La cual mantenemos para el caso bosónico en el superespacio.  Para dos números $ v $ y $ v' $ fermiónicos se cumple que $ vv'\mathsf{A}  \, = \,  \mathcal{A}(v v')^{*} $, esto último porque $ vv' $ es bosónico. Es inconsistente extender la definición \eqref{07-01-04-1} para el caso de los números fermiónicos,   ya que tendríamos que $ -\mathsf{A} (v v')^{*} \, = \,  \mathsf{A}(v v')^{*} $. Entonces, nos vemos obligados  a definir 
+\begin{IEEEeqnarray}{rl}
+                v\mathsf{A}  \, \equiv \, i \mathsf{A}v^{*} \ ,
+     \label{07-01-04-2}
+ \end{IEEEeqnarray} 
+ con esto,  la operación de los supernúmeros  con los  operadores antiunitarios se vuelve consistente.\\
+
+
+\textbf{\emph{Paridad.}} Analizamos primero el resultado de aplicar la operación de paridad sobre estados       $ \Psi_{p,\sigma} $ de una misma especie. Ya que 
+\begin{IEEEeqnarray}{rl}
+     \mathsf{U}\left(I,a\right)  \, \mathsf{P}\, = \, \mathsf{P}\,\mathsf{U}\left(I  ,\mathcal
+{P}a\right) \ , 
+    \label{07-01-05}
+\end{IEEEeqnarray}
+tenemos
+   \begin{IEEEeqnarray}{rl}
+                 \mathsf{U}\left(I,a\right)\mathsf{P}    \Psi_{p,\sigma}   \, = \, \mathsf{P}\,e^{i \mathcal{P}p\cdot a}\Psi_{p,\sigma}\ .
+       \label{07-01-06}
+   \end{IEEEeqnarray}
+Si $ \mathsf{P} $  es antiunitario,  entonces tenemos un estado con momento   $- \mathcal{P}p $, el cual tiene energía negativa y por tanto inadmisible, de aquí que  \emph{el operador de paridad es unitario}.
+Escribimos el estado de momento arbitrario en términos del estado en el reposo como
+\begin{IEEEeqnarray}{rl}
+             \Psi_{p,\sigma}   \,=\, N(p) \mathsf{U}(L(p)) \Psi_{k,\sigma}\ . 
+    \label{07-01-07}
+\end{IEEEeqnarray}
+Ya que   $ \mathsf{U}\left(I,a\right)     \mathsf{P}\Psi^{\pm}_{k,0,\sigma}    \, = \, e^{i k\cdot a} \mathsf{P}\Psi^{\pm}_{k,0,\sigma'} $  y puesto que no  queremos extender el espectro de partículas, a lo más, el operador $ \mathsf{P} $ puede cambiar el espín de la partícula:
+\begin{IEEEeqnarray}{rl}
+        \mathsf{P}\Psi^{\pm}_{k,0,\sigma}    \, = \, \sum P_{\sigma'\sigma}\Psi^{\pm}_{k,0,\sigma'}\ .
+    \label{07-01-08}
+\end{IEEEeqnarray}
+Restringiendo las transformaciones de Lorentz a matrices de rotación $ \mathcal{R} $, se tiene que
+\begin{IEEEeqnarray}{rl}
+             \mathsf{U}\left(\mathcal{R}\right) \Psi_{k,\sigma}  \, = \, D^{(j)}_{\sigma'\sigma}\left( \mathcal{R}\right) \Psi^{\pm}_{k\sigma'}\ ,
+    \label{07-01-09}
+\end{IEEEeqnarray}
+donde $  D^{(j)}_{\sigma'\sigma} $ son las matrices de espín $ j $. Puesto que $ \mathsf{U}\left(\mathcal{R}\right)   \mathsf{P}\, = \,\mathsf{P}\, \mathsf{U}\left( \mathcal{R} \right)  $,  la acción del grupo de rotación sobre el estado formado por el operador de paridad, resulta en la siguiente relación entre las representaciones de las matrices de rotación y paridad:
+\begin{IEEEeqnarray}{rl}
+            D^{(j)}_{\sigma\sigma'}\left( \mathcal{R}\right)P_{\sigma'\tilde{\sigma}}   \, = \,P_{\sigma\sigma'}D^{(j)}_{\sigma'\tilde{\sigma}}\left( \mathcal{R}\right)\ .
+    \label{07-01-10}
+\end{IEEEeqnarray}
+Donde hemos usado el hecho de que los estados  $ \Psi_{k,\sigma'} $ son linealmente independientes. 
+La representación $      D^{(j)}_{\sigma\sigma'}\left( \mathcal{R}\right) $ es irreducible, por lo tanto, por el lema de Schur, $ P_{\sigma\tilde{\sigma}}    \, = \, \eta \delta_{\sigma\tilde{\sigma}}  $, donde $ \eta $ es una fase conocida como \emph{la paridad intrínseca}.  Se sigue que el estado  $ \Psi_{k,\sigma} $, bajo la acción de $ \mathsf{P} $, transforma como
+\begin{IEEEeqnarray}{rl}
+       \mathsf{P}\Psi_{k,\sigma}    \, = \,\eta\,\Psi_{k,\sigma}\ .
+    \label{07-01-11}
+\end{IEEEeqnarray}
+
+      Puesto que $  \mathcal{P} p   \, = \, L(\mathcal{P} p)\kappa  \, = \,  \mathcal{P}L( p)\mathcal{P}^{-1}\kappa $, las matrices $ L(\mathcal{P} p) $ y  $  \mathcal{P}L( p)\mathcal{P}^{-1} $ pueden diferir a lo más por una rotación $ W_{\mathcal{R}}(p) $,
+\begin{IEEEeqnarray}{rl}
+       \mathcal{P} L( p)\mathcal{P}^{-1}   \, = \,  L\left(\mathcal{P}p\right)  W_{\mathcal{R}}(p)\  .
+    \label{07-01-12}
+\end{IEEEeqnarray}
+En la parametrización que hemos escogido [Ec. \eqref{2-5-21-a}], $  W_{\mathcal{R}}(p)  =  I$. Con esto,  tenemos que el estado  $ \Psi^{\pm}_{p,0,\sigma}  $ de momento arbitrario transforma como 
+\begin{IEEEeqnarray}{rl}
+       \mathsf{P}\Psi_{p,\sigma}    \, = \,\eta\,\Psi_{\mathcal{P}p,\sigma}\ .
+    \label{07-01-13}
+\end{IEEEeqnarray}
+
+\textbf{\emph{Inversión temporal.}} De igual forma, consideramos una sola especie de partícula. Puesto que 
+\begin{IEEEeqnarray}{rl}
+      \mathsf{U}(a) \mathsf{T}\Psi_{p,\sigma}    \, = \,\mathsf{T} e^{i \left(\mathcal{T} p \right) \cdot a}\, \Psi_{p,\sigma}\ ,
+    \label{07-01-14}
+   \end{IEEEeqnarray}
+ se sigue que \emph{el operador de inversión temporal es antiunitario}, de otra forma, tendríamos un estado  con energía negativa. En el reposo
+ \begin{IEEEeqnarray}{rl}
+        \mathsf{T}\Psi^{\pm}_{k,0,\sigma}    \, = \, \sum T_{\sigma'\sigma}\Psi^{\pm}_{k,0,\sigma'} \ .
+    \label{07-01-15}
+\end{IEEEeqnarray}
+Debido a  $  \mathsf{U}\left(\mathcal{R}\right)   \mathsf{T}\, = \,\mathsf{T}\, \mathsf{U}\left( \mathcal{R} \right)  $, se sigue que 
+\begin{IEEEeqnarray}{rl}
+            D^{(j)}_{\sigma\sigma'}\left( \mathcal{R}\right)T_{\sigma'\tilde{\sigma}}   \, = \,T_{\sigma\sigma'}D^{(j)*}_{\sigma'\tilde{\sigma}}\left( \mathcal{R}\right)\ .
+    \label{07-01-16}
+\end{IEEEeqnarray}
+Notemos el signo de conjugación en el lado derecho de esta última ecuación (debido a que $ \mathsf{T} $ es antiunitario). La representación  $ D^{(j)*}_{\sigma'\tilde{\sigma}} $ es equivalente a  $ D^{(j)}_{\sigma'\tilde{\sigma}} $, esto es, existe una matriz $ C $ tal que
+\begin{IEEEeqnarray}{rl}
+           U^{(j) *}_{\sigma\sigma'} \, = \, \left[ C \, U^{(j) }\,C^{-1}\right]_{\sigma\sigma'}\ .
+    \label{07-01-17}
+\end{IEEEeqnarray}
+De hecho, esta matriz viene dada por~\cite{Weinberg:1964cn}
+\begin{IEEEeqnarray}{rl}
+            C_{\sigma\sigma'}  \, = \, (-)^{j+\sigma}\delta_{\sigma',-\sigma}\ .
+    \label{07-01-18}
+\end{IEEEeqnarray}
+Aquí, el lema de Schur aplica a la matriz  $ \left[  TC\right]_{\sigma\tilde{\sigma}}  $, esto es,   $ \left[ TC\right] _{\sigma\tilde{\sigma}}   \, = \, \xi \delta_{\sigma\tilde{\sigma}} $, o bien
+\begin{IEEEeqnarray}{rl}
+          T_{\sigma\tilde{\sigma}}   \, = \, \xi \left( -\right)^{j-\tilde{\sigma}}\delta_{\sigma\tilde{\sigma}}\ .
+    \label{07-01-19}
+\end{IEEEeqnarray}
+Con esto, obtenemos la acción de la inversión temporal sobre los estados en el reposo,
+\begin{IEEEeqnarray}{rl}
+       \mathsf{T}\Psi_{k,\sigma}    \, = \,\xi \left( -\right)^{j-{\sigma}}\,\Psi_{k,-\sigma} \ .
+    \label{07-01-20}
+\end{IEEEeqnarray} 
+Puesto que $   \mathcal{T} L( p)\mathcal{T}^{-1}    \, = \,     \mathcal{P} L( p)\mathcal{P}^{-1}   $,  la acción del operador de inversión temporal sobre el estado de momento arbitrario es
+\begin{IEEEeqnarray}{rl}
+       \mathsf{T}\Psi_{p,\sigma}    \, = \,\xi \left( -\right)^{j-{\sigma}}\,\Psi_{\mathcal{P}p,-\sigma}\ .
+    \label{07-01-21}
+\end{IEEEeqnarray}
+Volviendo a supersimetría, puesto que el  supermultiplete masivo posee dos estados degenerados,  la opción más general  posible es
+\begin{IEEEeqnarray}{rl}
+       \mathsf{P}\Psi^{(a)\pm}_{p,\sigma}    \, = \,\sum_{b}P^{a}_{\,\,b} \,\Psi^{(b)\pm}_{\mathcal{P}p,\sigma}\ , \quad
+       \mathsf{T}\Psi^{(a)}_{p,\sigma}    \, = \,\sum_{b}T^{a}_{\,\,b} \left( -\right)^{j-{\sigma}}\,\Psi^{(b)\pm}_{\mathcal{P}p,-\sigma}
+    \label{07-01-22}
+\end{IEEEeqnarray}
+con $ a,b =1,2 $. Para fijar estas matrices, investigamos las relaciones que existen entre las transformaciones supersimétricas y las transformaciones de paridad e inversión temporal. La existencia de estas transformaciones supone que  la representación de Dirac $ D(\Lambda) $ puede ser extendida para incluir las transformaciones de paridad e inversión temporal de la manera siguiente:
+\begin{IEEEeqnarray}{rl}
+            \mathsf{P} \exp\left[ i\zeta\cdot \mathcal{Q}\right]  \mathsf{P}^{-1} &\, = \, \exp\left[ i\left(D_{\mathcal{P}} \zeta\right)  \cdot \mathcal{Q}\right] \ ,\nonumber \\
+    \label{07-01-23}\\
+            \mathsf{T}\exp\left[ i\zeta \cdot \mathcal{Q}\right]\mathsf{T}^{-1} &\, = \,  \exp\left[ i\left( D_{\mathcal{T}}\zeta^{*}\right) \cdot \mathcal{Q}\right] \ . \nonumber \\  
+    \label{07-01-24}
+\end{IEEEeqnarray}
+ donde $ D_{\mathcal{P}}$ y $ D_{\mathcal{T}}  $ son matrices invertibles actuando sobre el espacio de  4-espinores fermiónicos. La última ecuación definitoria reconoce que la variable $ \zeta  $ es compleja y fermiónica, situación que no esta presente en las representaciones puramente bosónicas,  ya que  en estos casos, el espacio de parámetros es real y bosónico.   Dando su forma explícita, demostraremos que de hecho estas matrices existen\footnote{Esto no es trivial en el sentido de que no toda representación del grupo de homogéneo propio ortócrono de Lorentz las posee. Solo las   representaciones del  grupo homogéneo propio ortócrono de Lorentz  de la forma $ \left( \mathcal{A},\mathcal{A}\right)$ y $ \left( \mathcal{A},\mathcal{B}\right)\oplus  \left( \mathcal{B},\mathcal{A}\right) $ son representaciones  irreducibles del  grupo homogéneo de Lorentz, incluyendo paridad e inversión temporal. }. De las reglas de composición \eqref{2-3-5} y \eqref{07-01-04}, tenemos que las transformaciones  supersimetricas, con parámetro $ \zeta $, satisfacen 
+\begin{IEEEeqnarray}{rl}
+             \mathsf{U}\left[ D\left(\mathcal{P}\Lambda\mathcal{P}^{-1}\right)D_{\mathcal{P}} \zeta\right]  &  \, = \,  \mathsf{U}\left[ D_{\mathcal{P}}\mathcal{D}\left(\Lambda\right) \zeta\right]\ ,  \nonumber \\             
+    \label{07-01-25}\\
+    \mathsf{U}\left[ D\left(\mathcal{T}\Lambda \mathcal{T}^{-1}\right) D_{\mathcal{T}} \zeta^{*}\right]     &\, = \,  \mathsf{U}\left[ D_{\mathcal{T}}\mathcal{D}\left(\Lambda\right)^{*} \zeta^{*}\right] \ . \nonumber \\   
+    \label{07-01-26}
+\end{IEEEeqnarray}
+Estas relaciones se satisfacen si y solo sí
+\begin{IEEEeqnarray}{rl}
+          D_{\mathcal{P}} D(\Lambda)D^{-1}_{\mathcal{P}} &\, = \, D\left( \mathcal{P}\Lambda \mathcal{P}^{-1}\right)  \ ,\nonumber \\
+             \label{07-01-27} \\
+        D_{\mathcal{T}}D(\Lambda)^{*}D^{-1}_{\mathcal{T}}  &\, = \, D\left( \mathcal{P}\Lambda \mathcal{P}^{-1}\right) \ . \nonumber \\    
+    \label{07-01-28}
+\end{IEEEeqnarray}
+Del álgebra de las matrices $ \gamma^{\mu} $, sabemos que 
+\begin{IEEEeqnarray}{rl}
+                \beta\gamma^{\mu}\beta^{-1}  \, = \, \mathcal{P}^{\mu}_{\,\,\nu}\gamma^{\nu} , \quad (\epsilon\gamma_{5})\gamma^{\mu} (\epsilon\gamma_{5})^{-1} \, = \, \mathcal{P}^{\mu}_{\,\,\nu}\gamma^{\nu *}  \ .
+    \label{07-01-29}
+\end{IEEEeqnarray} 
+Entonces, los generadores  $ \mathcal{J}^{\mu\nu}=\frac{-i}{4}\left[ \gamma^{\mu},\gamma^{\nu}\right]  $ de la representación de Dirac, satisfacen
+\begin{IEEEeqnarray}{rl}
+     \beta  \mathcal{J}^{\mu\nu}\beta^{-1}  \, = \,  \mathcal{P}^{\mu}_{\,\,\rho}\mathcal{P}^{\mu}_{\,\,\sigma}  \mathcal{J}^{\rho\sigma}, \quad       (\epsilon\gamma_{5})  \mathcal{J}^{\mu\nu*} (\epsilon\gamma_{5})^{-1}   \, = \,- \mathcal{P}^{\mu}_{\,\,\rho}\mathcal{P}^{\mu}_{\,\,\sigma}  \mathcal{J}^{\rho\sigma} \ .
+    \label{07-01-30}
+\end{IEEEeqnarray}
+De aquí que  las  matrices $      D_{\mathcal{P}} $  y $     D_{\mathcal{T}}  $ se puedan expresar como 
+ \begin{IEEEeqnarray}{rl}
+                D_{\mathcal{P}}  \, = \,    D_{\mathcal{P}}'\beta , \quad    D_{\mathcal{T}} D_{\mathcal{T}}'\epsilon\gamma_{5} \ ,
+     \label{07-01-31}
+ \end{IEEEeqnarray}
+donde $  D'_{\mathcal{P}}  $ y $ D'_{\mathcal{T}} $ son matrices de la forma
+\begin{IEEEeqnarray}{rl}
+             \kappa I  \, + \, \kappa' \gamma_{5}, \quad \kappa \neq \pm \kappa' \ . 
+    \label{07-01-32}
+\end{IEEEeqnarray}
+De donde vemos,  satisfacen
+\begin{IEEEeqnarray}{rl}
+            D'_{\mathcal{P},\mathcal{T}} \,D\left( \Lambda\right)\, D_{\mathcal{P},\mathcal{T}}'^{-1} \, = \,  D\left( \Lambda\right)  \ .
+    \label{07-01-33}
+\end{IEEEeqnarray}
+Por lo pronto hacemos  $ \kappa_{\mathcal{P}}' = 0 $ y  $ \kappa'_{\mathcal{T}} = 0 $, más adelante volveremos al caso arbitrario.  Falta ver la consistencia de las transformaciones \eqref{07-01-23} y \eqref{07-01-24} con el grupo de traslaciones y supersimetría. Cuando el grupo de traslaciones incluye vectores $ a^{\mu} $ complejos, tenemos que $  \mathsf{T}\mathsf{U}\left(a \right)\mathsf{T}^{-1}    \, = \,  \mathsf{U}\left(\mathcal{T} a^{*} \right) $. De la regla de composición 
+\begin{IEEEeqnarray}{rl}
+            \mathsf{U}\left( \zeta\right)  \, = \,  \mathsf{U}\left( -\zeta_{-}\cdot\gamma^{\mu} \zeta_{+}\right)\mathsf{U}\left( \zeta_{+}\right) \mathsf{U}\left( \zeta_{-}\right) \ ,
+    \label{07-01-34}
+\end{IEEEeqnarray}
+ junto  con las relaciones \eqref{07-01-23} y  \eqref{07-01-24}, se sigue que 
+\begin{IEEEeqnarray}{rl}
+     \mathcal{P}^{\mu}_{\,\,\,\nu}\,\zeta_{-}^{\intercal} \cdot\gamma^{\nu} \zeta_{+} &\, = \, \left(D_{\mathcal{P}} \zeta\right) _{+}^{\intercal} \cdot \gamma^{\mu} \left( D_{\mathcal{P}}\zeta\right)_{-} \ ,\nonumber \\
+     \label{07-01-35}\\
+      \mathcal{P}^{\mu}_{\,\,\,\nu}\,\zeta_{-}^{\dagger} \cdot\gamma^{\nu *} \zeta^{*}_{+} &\, = \, \left(D_{\mathcal{T}} \zeta^{*}\right) _{-}^{\intercal} \cdot \gamma^{\mu} \left( D_{\mathcal{T}}\zeta^{*}\right)_{+}\ . 
+    \label{07-01-36}
+\end{IEEEeqnarray}
+En este caso, las constantes de proporcionalidad $ \kappa $ deben de ser iguales a  $ \kappa_{\mathcal{P}} = \pm i $ y $ \kappa_{\mathcal{T}} =\pm 1 $, para  los casos de paridad e inversión temporal, respectivamente. Escogiendo el signo positivo en ambos casos, obtenemos la forma final de las transformaciones de paridad e inversión temporal y que actúan sobre los parámetros fermiónicos:
+\begin{IEEEeqnarray}{rl}
+            D_{\mathcal{P}}  \, = \,  i \beta, \quad D_{\mathcal{T}}    \, = \,  \epsilon\gamma_{5}\ .
+    \label{07-01-37}
+\end{IEEEeqnarray}
+Las propiedades de transformación   de los  generadores del grupo de super Poincaré  bajo la acción de los operadores de inversión temporal y paridad son
+\begin{IEEEeqnarray}{rl}
+              \mathsf{P}\, \mathsf{J}^{\mu\nu}\, \mathsf{P}^{-1}   &  \, = \, +\mathcal{P}^{\,\, \mu}_{\rho}\mathcal{P}^{\,\, \nu}_{\sigma} \mathsf{J}^{\rho\sigma}, \quad                  \mathsf{P}\,\mathsf{P}^{\mu}\, \mathsf{P}^{-1}    \, = \, \mathcal{P}^{\,\, \mu}_{\rho}\mathsf{P}^{\rho}, \quad 
+                 \mathsf{P}\,\mathcal{Q}_{\alpha}\, \mathsf{P}^{-1}     \, = \, -i\left( \beta\mathcal{Q}\right) _{\alpha} \ ,\nonumber \\
+                  \label{07-01-38}\\
+                  \mathsf{T}\, \mathsf{J}^{\mu\nu}\, \mathsf{T}^{-1}   &  \, = \,- \mathcal{P}^{\,\, \mu}_{\rho}\mathcal{P}^{\,\, \nu}_{\sigma} \mathsf{J}^{\rho\sigma}, \quad                  \mathsf{T}\,\mathsf{P}^{\mu}\, \mathsf{T}^{-1}    \, = \, \mathcal{P}^{\,\, \mu}_{\rho}\mathsf{T}^{\rho}, \quad 
+                 \mathsf{T}\,\mathcal{Q}_{\alpha}\, \mathsf{T}^{-1}     \, = \, -i\left( \epsilon\gamma_{5}\mathcal{Q}\right) _{\alpha}\ .\nonumber \\
+    \label{07-01-39}
+\end{IEEEeqnarray}
+
+\textbf{\textit{Paridad en los estados de superpartícula.}} Los estados    $ \Psi^{0,\pm}_{p,\sigma}  $  y  $  \Psi^{2,\pm}_{p,\sigma} $ permanecen invariantes ante las transformaciones        $ \mathsf{U}(\zeta_{\mp})  $ y $ \mathsf{U}(\zeta_{\pm})  $, respectivamente. De aquí se sigue que estos estados, bajo la operación de paridad, también permanecen invariantes bajo estas transformaciones, pero con las proyecciones izquierdas-derechas intercambiadas, esto es,
+\begin{IEEEeqnarray}{rl} 
+              \mathsf{U}(\zeta_{\pm}) \mathsf{P}\Psi^{0,\pm}_{p,\sigma}  & \, = \, \mathsf{P}\Psi^{0,\pm}_{ p,\sigma}   \  ,\nonumber \\             
+              \mathsf{U}(\zeta_{\mp}) \mathsf{P}\Psi^{2,\pm}_{p,\sigma}  & \, = \, \mathsf{P}\Psi^{2,\pm}_{ p,\sigma} \ .
+    \label{07-01-40}
+\end{IEEEeqnarray}
+Puesto que los estados $ + $ y los estados $ - $ son irreducibles (cada uno por separado), a lo más, los estados $ \mathsf{P}\Psi^{0,\pm}_{p,\sigma} $ y $ \mathsf{P}\Psi^{2,\pm}_{p,\sigma} $  difieren por una fase de  los estados $ \mathsf{P}\Psi^{2,\pm}_{p,\sigma} $ y $ \mathsf{P}\Psi^{0,\pm}_{p,\sigma} $, respectivamente:
+\begin{IEEEeqnarray}{rl} 
+           \mathsf{P}\Psi^{0,\pm}_{ p,\sigma}  & \, = \, \eta^{\pm}\, \Psi^{2,\pm}_{\mathcal{P}p,\sigma}  ,\quad  \mathsf{P}\Psi^{2,\pm}_{p,\sigma}  \, = \, \tilde{\eta}^{\pm}\,\Psi^{0,\pm}_{\mathcal{P}p,\sigma} \ ,
+    \label{07-01-41}
+\end{IEEEeqnarray}
+donde $ \eta^{\pm}  $ y $ \tilde{\eta}^{\pm}  $ son fases. De esto último, obtenemos que la forma de la matriz de transformación $ P^{a}_{\,\,b} $ que aparece en  \eqref{07-01-21} es antidiagonal con entradas $ \eta^{\pm}  $ y $ \tilde{\eta}^{\pm}  $  en la  antidiagonal superior e inferior, respectivamente. Con la ayuda de \eqref{2-4-9} y \eqref{07-01-23}, vemos que  que la acción  del operador de paridad sobre los estados de superpartícula  $ \pm $, para valores arbitrarios del 4-spinor $ s_{\pm} $ es
+\begin{IEEEeqnarray}{rl} 
+          \mathsf{P}\Psi^{\pm}_{p,s_{\pm},\sigma}  & \, = \, \eta^{\pm}\,\tilde{\Psi}^{\mp}_{\mathcal{P}p,\left(i \beta s\right)_{\mp} ,\sigma} \ ,
+    \label{07-01-42}
+\end{IEEEeqnarray}
+donde $  \tilde{\Psi}^{\mp}_{p,s_{\mp} ,\sigma}  $ son los superestados definidos por  la transformada de Fourier fermiónica \eqref{2-5-35}. Esta última relación,  junto con \eqref{07-01-41}, implican que 
+\begin{IEEEeqnarray}{rl}
+              \eta^{\pm}  \, = \, \tilde{\eta}^{\pm} \ ,
+     \label{07-01-42-1}
+ \end{IEEEeqnarray}
+  también implica que la componente lineal del superestado transforma como  $ \mathsf{P}\Psi^{1,\pm}_{ p,\sigma}  \, = \, i\eta^{\pm}\beta \tilde{\Psi}^{1,\pm}_{\mathcal{P}p,\sigma} $, o bien [con la ayuda de \eqref{2-5-36}]:
+\begin{IEEEeqnarray}{rl}
+            \mathsf{P}\Psi^{1,\pm}_{ p,\sigma}  \, = \, i\eta^{\pm}\Psi^{1,\pm}_{\mathcal{P}p,\sigma}\ .
+    \label{07-01-43}
+\end{IEEEeqnarray}
+\textbf{\textit{Inversión temporal  en los estados de superpartícula.}} Los estados    $ \Psi^{0,\pm}_{p,\sigma}  $  y  $  \Psi^{2,\pm}_{p,\sigma} $, bajo la acción del operador de inversión temporal, siguen siendo invariantes ante las transformaciones        $ \mathsf{U}(\zeta_{\mp})  $ y $ \mathsf{U}(\zeta_{\pm})  $, respectivamente. Entonces la matriz  $ T^{a}_{\,\,b} $ que aparece en  \eqref{07-01-21} es diagonal  con fases (en sus entradas diferentes de cero). La acción  del operador de inversión temporal sobre los estados de superpartículas $ \pm $  resulta ser
+\begin{IEEEeqnarray}{rl} 
+          \mathsf{T}\Psi^{\pm}_{p,s_{\pm},\sigma}  & \, = \, (-)^{j-\sigma}\xi^{\pm}\,{\Psi}^{\pm}_{\mathcal{P}p,\left(\epsilon\gamma_{5} s^{*}\right)_{\pm} ,-\sigma} \ ,
+    \label{07-01-43}
+\end{IEEEeqnarray}
+lo que implica que para las componentes degeneradas:~\footnote{Al comparar una expresión de la forma $ \mathcal{T}\Psi v  \, = \, v^{*}\Psi'$, donde $ v $ es un supernúmero $ \Psi $ y $ \Psi' $  son superestados independientes de $ v $,  debemos de hacerlo siempre por la  izquierda.}
+\begin{IEEEeqnarray}{rl} 
+           \mathsf{T}\Psi^{0,\pm}_{ p,\sigma}  & \, = \, (-)^{j-\sigma}\xi^{\pm}\, \Psi^{0,\pm}_{\mathcal{P}p,-\sigma}  ,\quad  \mathsf{T}\Psi^{2,\pm}_{p,\sigma}  \, = \,(-)^{j-\sigma}{\xi}^{\pm}\,\Psi^{0,\pm}_{\mathcal{P}p,-\sigma} \ .
+    \label{07-01-44}
+\end{IEEEeqnarray}
+Mientras que para el término lineal en la expansión del superestado, tenemos
+\begin{IEEEeqnarray}{rl}
+            \mathsf{T}\Psi^{1,\pm}_{ p,\sigma}  \, = \, -i(-)^{j-\sigma}\xi^{\pm}\,\left( \epsilon\gamma_{5}{\Psi}^{1,\pm}_{ \mathcal{P} p,-\sigma}\right)  \ .
+    \label{07-01-45}
+\end{IEEEeqnarray}
+\textbf{\textit{Conjugación de carga.}} Para cada estado de partícula que tenga números cuánticos internos no triviales, debe existir otro estado (antipartícula) transformando de la misma forma con respecto a las transformaciones del  espaciotiempo, pero con el negativo de sus números cuánticos  internos. El operador $ \mathsf{C} $, definido como aquel operador que intercambia una partícula por su antipartícula, actuando sobre los estados de partícula degenerados del multiplete supersimétrico, se expresa en su forma más general  como 
+\begin{IEEEeqnarray}{rl}
+       \mathsf{C}\Psi^{(a)\pm}_{p,\sigma,n}    \, = \,\sum_{b}C^{a}_{\,\,b} \,\Psi^{(b)\pm}_{p,\sigma,n^{c}}\ , \quad    a,b \, = \, 1,2\ ,
+    \label{07-01-46}
+\end{IEEEeqnarray}
+donde $ \Psi^{(a)\pm}_{p,\sigma,n^{c}}  $ es la respectiva antipartícula de  $ \Psi^{(a)\pm}_{p,\sigma,n}  $ y  $ C^{a}_{\,\,b}  $ una  matriz unitaria de $ 2\times 2 $. El operador $ \mathsf{C} $ induce una transformación lineal  $ D_{\mathcal{C}} $ en el espacio de parámetros de las transformaciones supersimétricas $ \mathsf{C}\mathsf{U}\left(\zeta \right)\mathsf{C}^{-1} =\mathsf{U}\left(D_{\mathcal{C}} \zeta \right) $, la cual debe conmutar con las matrices de Dirac, entonces  $ D_{\mathcal{C}} $ es una combinación lineal de $ I $ y $ \gamma_{5} $. Por lo pronto, tomamos $ D_{\mathcal{C}} =I$, de esta manera la consistencia  de $ C $ con el grupo de super Poincaré esta garantizada.
+
+Que el operador de conjugación de carga conmute con el operador de transformaciones supersimétricas, nos dice que los estados    $ \mathsf{C}\Psi^{0,\pm, n}_{p,\sigma, n}  $  y  $ \mathsf{C} \Psi^{2,\pm}_{p,\sigma, n} $, son invariantes bajo    $ \mathsf{U}(\zeta_{\mp})  $ y $ \mathsf{U}(\zeta_{\pm})  $, respectivamente. Entonces la matriz $ C^{a}_{\,\,b} $ es diagonal con fases en las entradas de la diagonal y la acción de $  \mathsf{C}\ $ sobre los estados de superpartícula  $ \pm $  es
+\begin{IEEEeqnarray}{rl} 
+          \mathsf{C}\Psi^{\pm}_{p,s_{\pm},\sigma,n}  & \, = \, \varsigma^{\pm}\,{\Psi}^{\pm}_{p, s_{\pm} ,\sigma, n^{c}} \ ,
+    \label{07-01-47}
+\end{IEEEeqnarray}
+siendo las cantidades $ \varsigma^{\pm} $ unas fases. Todos los generadores del grupo de super Poincaré conmutan con  $ \mathsf{C} $, en particular los generadores de  la supersimetría
+\begin{IEEEeqnarray}{rl}
+            \mathsf{C}\mathcal{Q}_{\alpha}\mathsf{C}^{-1}  \, = \, \mathcal{Q}_{\alpha}\ .
+    \label{07-01-48}
+\end{IEEEeqnarray}
+
+\textbf{\textit{Transformaciones $ \mathcal{R} $.}} Investigamos ahora, el conjunto de matrices $ D_{\mathcal{R}} $ actuando en el espacio de los 4-espinores fermiónicos, definidas como aquellas que transforman como una constante en los subespacios quirales $ \frac{1}{2}(I-\gamma_{5}) $ y  $ \frac{1}{2}(I+\gamma_{5}) $:
+\begin{IEEEeqnarray}{rl}
+       D_{\mathcal{R}}      \, = \, \frac{\kappa_{+}}{2}\left( I +\gamma_{5}\right)  \, + \, \frac{\kappa_{-}}{2}\left( I -\gamma_{5}\right)\ .
+    \label{07-01-49}
+\end{IEEEeqnarray}
+Éstas conmutan con las matrices de la representación de Dirac:
+\begin{IEEEeqnarray}{rl}
+               D_{\mathcal{R}} D\left( \Lambda\right)     \, = \,D\left( \Lambda\right)  D_{\mathcal{R}}  \ .
+    \label{07-01-50}
+\end{IEEEeqnarray}
+Además, estas matrices surgen de las llamadas simetrías $ \mathcal{R}$, definidas  por  el conjunto de operadores  $ \mathsf{R} $ actuando en el espacio de Hilbert,  que conmutan con el grupo de Lorentz y que inducen las siguientes transformaciones lineales en el espacio de parámetros:
+\begin{IEEEeqnarray}{rl}
+             \mathsf{R}\mathsf{U}\left(\zeta \right)\mathsf{R}^{-1} =\mathsf{U}\left(D_{\mathcal{R}} \zeta \right)\ . 
+    \label{07-01-51}
+\end{IEEEeqnarray}
+Por las propiedades de grupo, la matriz $ D^{-1}_{\mathcal{R}} $ debe de existir, por lo que $ k_{+} $ y $ k_{-} $ no pueden ser cero. Evidentemente,  $ \mathsf{R} $ debe de ser unitario. La consistencia de $ \mathsf{R} $ con  el grupo de traslaciones y supersimetría, se obtiene de analizar la relación
+\begin{IEEEeqnarray}{rl}
+            \mathsf{U}\left( \zeta\right)  \, = \,  \mathsf{U}\left( -\zeta_{-}^{\intercal} \epsilon\gamma_{5}\gamma^{\mu} \zeta_{+}\right)\mathsf{U}\left( \zeta_{+}\right) \mathsf{U}\left( \zeta_{-}\right) \ ,
+    \label{07-01-52}
+\end{IEEEeqnarray}
+de donde se sigue que 
+\begin{IEEEeqnarray}{rl}
+\zeta_{-}^{\intercal} \cdot\gamma^{\nu} \zeta_{+} &\, = \, \left( D_{\mathcal{R}} \zeta\right) _{+}^{\intercal} \cdot \gamma^{\mu} \left(  D_{\mathcal{R}} \zeta\right)_{-} \ .\nonumber \\
+     \label{07-01-53}
+\end{IEEEeqnarray}
+De esto último, obtenemos que  $       k_{+}  \, = \, k^{-1}_{-} $.  Pero  para preservar la normalización de los estados, estas constantes tienen que ser fases. La forma general de la matriz de transformación nos queda
+\begin{IEEEeqnarray}{rl}
+       D\left( \theta_{\mathcal{R}} \right)      \, = \, \frac{e^{+i\theta_{{R}}}}{2}\left( I +\gamma_{5}\right)  \, + \, \frac{e^{-i\theta_{{R}}}}{2}\left( I -\gamma_{5}\right)\ .
+    \label{07-01-54}
+\end{IEEEeqnarray}
+ La composición de dos matrices satisface
+\begin{IEEEeqnarray}{rl}
+       D\left( \theta_{\mathcal{R}} \right)      \, = \,       D\left( \theta_{\mathcal{R}}   \, + \, \theta'_{\mathcal{R}} \right)  \ ,
+    \label{07-01-55}
+\end{IEEEeqnarray}
+por lo que las matrices  $ D\left( \theta_{\mathcal{R}} \right)  $ generan una  representación del grupo $ U(1) $.  Los superestados $ \pm $ generales transforman como 
+ \begin{IEEEeqnarray}{rl} 
+         \mathsf{R}\Psi^{\pm}_{p,s_{\pm},\sigma}  & \, = \, r^{\pm}\,{\Psi}^{\pm}_{p,  D_{\mathcal{R}} s_{\pm},\sigma} \ .
+    \label{07-01-56}
+\end{IEEEeqnarray}
+La única relación no trivial con las simetrías $  \mathcal{R}$  y el grupo de super Poincaré,  es con la de los generadores de la supersimetría, 
+\begin{IEEEeqnarray}{rl}
+            \mathsf{R} \mathcal{Q}_{\pm\alpha}\mathsf{R}^{-1}  \, = \,  e^{\mp i \vartheta_{R}} \mathcal{Q}_{\pm\alpha}\ .
+    \label{07-01-57}
+\end{IEEEeqnarray}
+\begin{center}
+* * *
+\end{center}
+\indent El caso más general para transformaciones $ \mathsf{P} $ sobre una superpartícula (y su respectiva anti superpartícula), consiste en una transformación    $ \mathsf{R} \mathsf{P}  $ redefinida simplemente como $ \mathsf{P} $. Los mismo para
+$\mathsf{T} $ y $\mathsf{C} $. Si tenemos supermultipletes degenerados, pueden existir transformaciones más generales que mezclan estos superestados\cite{Weinberg:1995mt}.
+\section{Supercampos Cuánticos}
+El conjunto de supercampos quirales encontrados [ver Ecs. \eqref{5-3-16} y \eqref{5-3-17}] son esencialmente únicos, independiente de si existe alguna de las  transformaciónes de simetría $ P $, $ T $, $ C $ o $ \mathcal{R} $. Entonces, la acción de estos operadores  sobre un supercampo debe ser otro supercampo de los ya considerados.  \\
+
+\textbf{\textit{Transformaciones de Paridad.}} Consideramos primero la acción de las simetría de paridad sobre los operadores de creación, estos transforman como estados de una superpartícula,
+\begin{IEEEeqnarray}{rl}
+             \mathsf{P}\,{a}^{\dagger}_{\pm}\left( \mathbf{p}\,s_{\pm}\,\sigma\right) \,\mathsf{P}^{-1}   &\, = \,\eta_{\pm}\,\tilde{a}^{\dagger}_{\mp}\left( -\mathbf{p}\, i(\beta s)_{\mp}\,\sigma\right)\ ,\nonumber \\
+               \mathsf{P}\,{a}^{c\dagger}_{\pm}\left( \mathbf{p}\,s_{\pm}\,\sigma\right) \,\mathsf{P}^{-1}   &\, = \,\eta^{c}_{\pm}\,\tilde{a}^{c\dagger}_{\mp}\left( -\mathbf{p}\, i(\beta s)_{\mp}\,\sigma\right)\ , \nonumber \\
+    \label{07-02-01}
+\end{IEEEeqnarray}
+y por lo tanto los operadores de creación tilde transforman como [ver Ec. \eqref{3-3-17}]
+\begin{IEEEeqnarray}{rl}
+             \mathsf{P}\,\tilde{a}^{\dagger}_{\mp}\left( \mathbf{p}\,s_{\mp}\,\sigma\right) \,\mathsf{P}^{-1}   &\, = \,\tilde{\eta}_{\mp}\,{a}^{\dagger}_{\pm}\left( -\mathbf{p}\, i(\beta s)_{\pm}\,\sigma\right)\ ,\nonumber \\
+               \mathsf{P}\,{a}^{c\dagger}_{\mp}\left( \mathbf{p}\,s_{\mp}\,\sigma\right) \,\mathsf{P}^{-1}   &\, = \,\tilde{\eta}^{c}_{\mp}\,{a}^{c\dagger}_{\pm}\left( -\mathbf{p}\, i(\beta s)_{\pm}\,\sigma\right)\ , \nonumber \\
+    \label{07-02-02}
+\end{IEEEeqnarray}
+con 
+\begin{IEEEeqnarray}{rl}
+            \tilde{\eta}_{\mp}  \, = \, -\eta_{\pm}, \quad  \tilde{\eta}^{c}_{\mp}  \, = \, -\eta^{c}_{\pm}\ .
+    \label{07-02-03}
+\end{IEEEeqnarray}
+
+El supercampo general  \eqref{5-3-16}, bajo la acción  de  $   \mathsf{P} $ se ve como 
+\begin{IEEEeqnarray}{rl}           
+                   \mathsf{P} \Phi^{\mathcal{A}\mathcal{B}}_{\pm ab}(x,\vartheta)  \mathsf{P}^{-1}       \, = \,       (2\pi)^{-3/2}\sum_{\sigma}  \int d^{3}\textbf{p}\, &\left\lbrace \,e^{ +i\left(  x_{\pm}\cdot p \right) }  \tilde{\eta}^{*}_{\mp}\,{a}_{\mp}\left( -\mathbf{p}\, (i\beta \vartheta)_{\mp}\,\sigma\right) {u}^{\mathcal{A}\mathcal{B}}_{ab}(\textbf{p} ,\sigma) \right.  \nonumber \\
+  &  \left.     \, + \,\left( -\right)^{2\mathcal{B}} \, e^{ -i\left(  x_{\pm}\cdot p \right) }\eta^{c}_{\pm} \,\tilde{a}^{c\,\dagger}_{\mp}\left( -\mathbf{p}\, (i\beta \vartheta)_{\mp}\,\sigma\right)   {v}^{\mathcal{A}\mathcal{B}}_{ab }\left( \mathbf{p} ,\sigma\right)   \right\rbrace \ , \nonumber \\ 
+    \label{07-02-04}
+\end{IEEEeqnarray}
+Esta expresión aún no tiene la forma explícita de otro supercampo general. Los operadores de creación y aniquilación en  \eqref{07-02-04}, están evaluados en $ -\mathbf{p} $, al hacer el cambio de variable $ \mathbf{p} \rightarrow -\mathbf{p}$ en la integral de momentos, los coeficientes $ {u}^{\mathcal{A}\mathcal{B}}_{ab } $ y $ {v}^{\mathcal{A}\mathcal{B}}_{ab } $ quedan evaluados en $ -\mathbf{p} $. De la propiedad de simetría de los coeficientes de Clebsh-Gordan~\cite{Weinberg:1995mt},
+\begin{IEEEeqnarray}{rl}
+            C_{\mathcal{A}\mathcal{B}}\left(j\sigma ; ab \right)   \, = \, (-)^{\mathcal{A}+\mathcal{B}-j}C_{\mathcal{B}\mathcal{A}}\left(j\sigma ; ba \right)  \ ,
+    \label{07-02-05}
+\end{IEEEeqnarray}
+ junto con la forma explícita de los coeficientes   $  u^{\mathcal{A}\mathcal{B}}_{ab} $, 
+\begin{IEEEeqnarray}{rl}
+             u^{\mathcal{A}\mathcal{B}}_{ab}\left( \mathbf{p} ,\sigma\right)  \, = \, \sqrt{\frac{1}{2 p^{0}} } \sum_{a'b'}\left[ \exp \left(-\hat{\mathbf{p}}\cdot \mathbb{J}^{(\mathcal{A})}  \theta\right) \right]_{a a'} \left[ \exp \left(+\hat{\mathbf{p}}\cdot \mathbb{J}^{(\mathcal{B})} \theta\right) \right]_{bb'}C_{\mathcal{A}\mathcal{B}}\left( j\sigma;a'b'\right)  \  ,\nonumber\\
+    \label{07-02-06}
+\end{IEEEeqnarray}
+obtenemos los coeficientes evaluados en el vector de momento con signo invertido:
+  \begin{IEEEeqnarray}{rl}
+              u^{\mathcal{A}\mathcal{B}}_{ab}\left( -\mathbf{p} ,\sigma\right)  &  \, = \,   (-)^{\mathcal{A}+\mathcal{B}-j} u^{\mathcal{B}\mathcal{A}}_{ab}\left( \mathbf{p} ,\sigma\right) \ , \nonumber \\
+              v^{\mathcal{A}\mathcal{B}}_{ab}\left( -\mathbf{p} ,\sigma\right)  &  \, = \,   (-)^{\mathcal{A}+\mathcal{B}-j} v^{\mathcal{B}\mathcal{A}}_{ab}\left( \mathbf{p} ,\sigma\right)  \  ,   
+      \label{07-02-07}
+  \end{IEEEeqnarray}
+  donde hemos usado $  v^{\mathcal{A}\mathcal{B}}_{ab}\left( \mathbf{p} ,\sigma\right)   \, = \, (-)^{j+\sigma} u^{\mathcal{A}\mathcal{B}}_{ab}\left( \mathbf{p} ,-\sigma\right) $ .  Con la ayuda de $ \beta \gamma^{\mu}\beta^{-1}  \, = \, \mathcal{P}^{\mu}_{\,\,\,\nu} \gamma^{\mu}$, reescribimos las fases de las exponenciales como 
+\begin{IEEEeqnarray}{rl}
+             x_{\pm} \cdot {\mathcal{P}} p   & \, = \,  \left( {\mathcal{P}} x\right) \cdot p \, -\,\left(i \beta\vartheta\right)\cdot \slashed{p}\left( i \beta\vartheta \right) _{\mp} \ . \nonumber \\               
+    \label{07-02-08}
+\end{IEEEeqnarray}
+De aquí se ve que el supercampo \eqref{07-02-04}, esta evaluado en $ (\mathcal{P}x, i\beta \vartheta) $ y transforma bajo la representación $ \left( \mathcal{B},\mathcal{A} \right) $ del grupo de Lorentz. Es necesario que las  fases   $ \tilde{\eta}_{\pm} $ y $ \eta^{c}_{\pm} $ de las superpartículas y las antispartículas satisfagan la relación 	
+\begin{IEEEeqnarray}{rl}		
+            \eta^{c}_{\pm}  \, = \, (-)^{2j}\tilde{\eta}_{\mp}^{*} \ ,
+    \label{07-02-09}
+\end{IEEEeqnarray}
+esto con el fin de poder  escribir la propiedad de transformación del  supercampo quiral general  como 
+\begin{IEEEeqnarray}{rl}
+            \mathsf{P} \Phi^{\mathcal{A}\mathcal{B}}_{\pm ab}\left( x,\vartheta\right)   \mathsf{P}^{-1}    \, = \, \tilde{\eta}_{\mp}^{*}(-)^{\mathcal{A} +\mathcal{B}+j}\,\tilde{\Phi}^{\mathcal{B}\mathcal{A}}_{\mp ba}\left(\mathcal{P} x,i\beta\vartheta\right) \ .
+    \label{07-02-10}
+\end{IEEEeqnarray}
+
+\textbf{\textit{Inversión temporal.}} Los operadores de creación, bajo el operador de inversión temporal transforman como 
+\begin{IEEEeqnarray}{rl}          
+            \mathsf{T}\,{a}^{\dagger}_{\pm}\left( \mathbf{p}\,s_{\pm}\,\sigma \right) \,\mathsf{T}^{-1}   &\, = \,\zeta_{\pm} (-)^{j-\sigma}\,{a}^{\dagger}_{\pm}\left( -\textbf{p}\,  \,\left( \epsilon\gamma_{5} s^{*}\right)_{\pm}\,  - \sigma \right)\ ,\nonumber \\
+               \mathsf{T}\,{a}^{c\dagger}_{\pm}\left( \mathbf{p}\,s_{\pm}\,\sigma\, \right) \,\mathsf{T}^{-1}   &\, = \,\zeta^{c}_{\pm} (-)^{j-\sigma}\,{a}^{c\dagger}_{\pm}\left( -\textbf{p}\,  \,\left( \epsilon\gamma_{5} s^{*}\right) _{\pm}\,  - \sigma \right)  \ ,
+    \label{07-02-11}
+\end{IEEEeqnarray}
+y por tanto
+\begin{IEEEeqnarray}{rl}          
+            \mathsf{T}\,\tilde{a}^{\dagger}_{\mp}\left( \mathbf{p}\,s_{\mp}\,\sigma \right) \,\mathsf{T}^{-1}   &\, = \,\tilde{\zeta}_{\mp} (-)^{j-\sigma}\,\tilde{a}^{\dagger}_{\mp}\left( -\textbf{p}\,  \,\left( \epsilon\gamma_{5} s^{*}\right)_{\mp}\,  - \sigma \right)\ ,\nonumber \\
+               \mathsf{T}\,\tilde{a}^{c\dagger}_{\mp}\left( \mathbf{p}\,s_{\mp}\,\sigma\, \right) \,\mathsf{T}^{-1}   &\, = \,\tilde{\zeta}^{c}_{\pm} (-)^{j-\sigma}\,\tilde{a}^{c\dagger}_{\mp}\left( -\textbf{p}\,  \,\left( \epsilon\gamma_{5} s^{*}\right) _{\mp}\,  - \sigma \right)  \ ,
+    \label{07-02-12}
+\end{IEEEeqnarray}
+con 
+\begin{IEEEeqnarray}{rl}
+            \tilde{\zeta}_{\mp}  \, = \, -{\zeta}_{\pm}  , \quad \tilde{\zeta}^{c}_{\mp}  \, = \, -{\zeta}^{c}_{\pm}\ .
+    \label{07-02-13}
+\end{IEEEeqnarray}
+Después del cambio  $ \mathbf{p} \rightarrow -\mathbf{p}$ en la integral de momentos y del cambio $ \sigma \rightarrow -\sigma $ en la suma sobre espines, debido a que el operador es antiunitario,  tenemos a los conjugados de los  coeficientes $ {u}^{\mathcal{A}\mathcal{B}}_{ab } $ y $ {v}^{\mathcal{A}\mathcal{B}}_{ab } $  evaluados en $ \left( -\mathbf{p},-\sigma \right) $. Con la ayuda de la  relación
+ \begin{IEEEeqnarray}{rl}
+            C_{\mathcal{A}\mathcal{B}}\left(j\sigma ; ab \right)   \, = \, (-)^{\mathcal{A}+\mathcal{B}-j} C_{\mathcal{A}\mathcal{B}}\left(j, -\sigma ; -a ,\,-b \right)   \ ,
+    \label{07-02-14}
+\end{IEEEeqnarray}
+junto con 
+\begin{IEEEeqnarray}{rl}
+     \left[ \exp \left(-\hat{\mathbf{p}}\cdot \mathbb{J}^{(\mathcal{A})}  \theta\right) \right]^{*}_{a a'}   \, = \, \left(- \right)^{a-a'}    \left[ \exp \left(+\hat{\mathbf{p}}\cdot \mathbb{J}^{(\mathcal{A})}  \theta\right) \right]_{-a ,-a'}\ , 
+    \label{07-02-15}
+\end{IEEEeqnarray}
+obtenemos (donde usamos también que los Clebsh-Gordan $    C_{\mathcal{A}\mathcal{B}}\left(j\sigma ; ab \right)   $ son cero a menos que $ \sigma  \, = \, a+b $)
+\begin{IEEEeqnarray}{rl}
+             u^{\mathcal{A}\mathcal{B}}_{ab}\left( -\mathbf{p} ,-\sigma\right) ^{*}   &\, = \,  (-)^{a+b+\sigma +\mathcal{A}+\mathcal{B}-j}    u^{\mathcal{A}\mathcal{B}}_{ab}\left( \mathbf{p} ,\sigma\right) \ , \nonumber \\
+                   u^{\mathcal{A}\mathcal{B}}_{ab}\left( -\mathbf{p} ,-\sigma\right) ^{*}   &\, = \,  (-)^{a+b+\sigma +\mathcal{A}+\mathcal{B}-j}    u^{\mathcal{A}\mathcal{B}}_{ab}\left( \mathbf{p} ,\sigma\right)  \ .
+    \label{07-02-16}
+\end{IEEEeqnarray}
+Las exponenciales en los supercampos  también han sido conjugadas debido al paso del operador aniunitario $ \mathsf{T} $. Escribimos
+\begin{IEEEeqnarray}{rl}          
+          \left(    x_{\pm} \cdot\mathcal{P} p\right)^{*}            & \, = \,  -{\mathcal{T}}x  \cdot p \, + \, 
+            \epsilon\gamma_{5} \vartheta^{*}\cdot  \slashed{p}\, \epsilon \gamma_{5}\vartheta ^{*}_{\pm} 
+    \label{07-02-17}
+\end{IEEEeqnarray}
+e imponemos sobre las fases de los estados de spartícula y antispartícula la relación: 
+\begin{IEEEeqnarray}{rl}
+            \xi^{c}_{\pm}  \, = \, \tilde{\xi}^{*}_{\mp}\ .
+    \label{07-02-18}
+\end{IEEEeqnarray}
+ Todo esto finalmente nos da
+\begin{IEEEeqnarray}{rl}
+            \mathsf{T} \Phi^{\mathcal{A}\mathcal{B}}_{\pm ab}\left( x,\vartheta\right)   \mathsf{T}^{-1}    \, = \, \tilde{\xi}_{\mp}^{*} (-)^{a+b+\mathcal{A}+\mathcal{B}-2j} \Phi^{\mathcal{A}\mathcal{B}}_{\pm  -a -b}\left(\mathcal{T} x,\epsilon\gamma_{5}\vartheta^{*}\right) \ .
+    \label{07-02-19}
+\end{IEEEeqnarray}
+\textbf{\textit{Conjugación de carga.}} Bajo el operador  de conjugación de carga $\mathsf{C}$, tenemos que 
+\begin{IEEEeqnarray}{rl}
+            \mathsf{C}\,{a}^{\dagger}_{\pm}\left( \mathbf{p}\,s_{\pm}\,\sigma\right) \,\mathsf{C}^{-1}   &\, = \,\varsigma_{\pm} \,{a}^{c\dagger}_{\pm}\left( \mathbf{p}\,s_{\pm}\,\sigma\, \right) \ ,\nonumber \\
+               \mathsf{C}\,{a}^{c\dagger}_{\pm}\left( \mathbf{p}\,s_{\pm}\,\sigma\, \right) \,\mathsf{C}^{-1}   &\, = \,\varsigma_{\pm}^{c}\,{a}^{\dagger}_{\pm}\left( \mathbf{p}\,s_{\pm}\,\sigma\right)\ ,\nonumber \\            
+    \label{07-02-20}
+\end{IEEEeqnarray}
+ por lo tanto,
+\begin{IEEEeqnarray}{rl}
+            \mathsf{C}\,\tilde{a}^{\dagger}_{\mp}\left( \mathbf{p}\,s_{\mp}\,\sigma\right) \,\mathsf{C}^{-1}   &\, = \,\tilde{\varsigma}_{\mp} \,\tilde{a}^{c\dagger}_{\pm}\left( \mathbf{p}\,s_{\pm}\,\sigma\, \right) \ ,\nonumber \\
+               \mathsf{C}\,\tilde{a}^{c\dagger}_{\mp}\left( \mathbf{p}\,s_{\mp}\,\sigma\, \right) \,\mathsf{C}^{-1}   &\, = \,\tilde{\varsigma}_{\mp}^{c}\,{a}^{\dagger}_{\pm}\left( \mathbf{p}\,s_{\pm}\,\sigma\right)\ ,\nonumber \\            
+    \label{07-02-21}
+\end{IEEEeqnarray}
+con 
+\begin{IEEEeqnarray}{rl}
+            \tilde{\varsigma}_{\mp}  \, = \, {\varsigma}_{\pm} , \quad \tilde{\varsigma}^{c}_{\mp}   \, = \, \varsigma^{c}_{\pm}\ .
+    \label{07-02-22}
+\end{IEEEeqnarray}
+Entonces, la acción del operador $\mathsf{C}$ sobre el supercampo general nos da
+\begin{IEEEeqnarray}{rl}           
+                \mathsf{C}\Phi^{\mathcal{A}\mathcal{B}}_{\pm ab}(x,\vartheta) \mathsf{C}^{-1}       \, = \,       (2\pi)^{-3/2}\sum_{\sigma}  \int d^{3}\textbf{p}\, &\left\lbrace \,e^{ +i\left(  x_{\pm}\cdot p \right) }  \tilde{\varsigma}^{*}_{\mp}\tilde{a}^{c}_{\pm}\left( \mathbf{p}\,{\vartheta}_{\pm}\,\sigma\right)   {u}^{\mathcal{A}\mathcal{B}}_{ab}(\textbf{p} ,\sigma) \right.  \nonumber \\
+  &  \left.          \qquad   \, + \,\left( -\right)^{2\mathcal{B}} \, e^{ -i\left(  x_{\pm}\cdot p \right) } \varsigma_{\pm}^{c}\,{a}^{\,\dagger}_{\pm}\left( \mathbf{p}\,{\vartheta}_{\pm}\,\sigma\right)    {v}^{\mathcal{A}\mathcal{B}}_{ab }\left( \mathbf{p} ,\sigma\right)   \right\rbrace \ . \nonumber \\   
+    \label{07-02-23}
+\end{IEEEeqnarray}
+Éste tiene la forma parecida al supercampo
+\begin{IEEEeqnarray}{rl}           
+   \tilde{\Phi}^{\mathcal{A}\mathcal{B}\dagger}_{\pm ab}(x,\vartheta)        \, = \,       (2\pi)^{-3/2}\sum_{\sigma}  \int d^{3}\textbf{p}\, &\left\lbrace \, \left( -\right)^{2\mathcal{B}}  e^{ +i\left(  x_{\pm}\cdot p \right) }  \tilde{a}^{c}_{\pm}\left( \mathbf{p}\,{\vartheta}_{\pm}\,\sigma \right)  \left( {v}^{\mathcal{A}\mathcal{B}}_{ab}(\textbf{p} ,\sigma) \right)^{*}  \right.  \nonumber \\
+  &  \left.          \qquad   \, + \,\, e^{ -i\left(  x_{\pm}\cdot p \right) } \,{a}^{\dagger}_{\pm}\left( \mathbf{p}\,{\vartheta}_{\pm}\, \sigma\right)     \left( {u}^{\mathcal{A}\mathcal{B}}_{ab}(\textbf{p} ,\sigma)\right)^{*}   \right\rbrace \ . \nonumber \\
+    \label{07-02-24}
+\end{IEEEeqnarray}
+Debido a la relación $ {u}^{\mathcal{A}\mathcal{B}}_{ab}(\textbf{p} ,\sigma) =(-)^{j+\sigma}{v}^{\mathcal{A}\mathcal{B}}_{ab}(\textbf{p} ,-\sigma)$, necesitamos una fórmula que nos invierta el signo de $ \sigma $ y conjugue los coeficientes  $ {u}^{\mathcal{A}\mathcal{B}}_{ab} $. De la propiedad
+ \begin{IEEEeqnarray}{rl}
+            C_{\mathcal{A}\mathcal{B}}\left(j\sigma ; ab \right)   \, = \,  C_{\mathcal{B}\mathcal{A}}\left(j, -\sigma ; -b ,\,-a \right)   \ ,
+    \label{07-02-25}
+\end{IEEEeqnarray}
+se tiene que 
+\begin{IEEEeqnarray}{rl}
+u^{\mathcal{A}\mathcal{B}}_{ab}\left( \mathbf{p} ,\sigma\right)  &  \, = \,(-)^{\sigma-a-b} u^{\mathcal{B}\mathcal{A}*}_{-b -a}\left( \mathbf{p} , -\sigma\right)    \, = \, (-)^{-j-a-b}v^{\mathcal{B}\mathcal{A}*}_{-b -a}\left( \mathbf{p} , \sigma\right) \nonumber \\
+v^{\mathcal{A}\mathcal{B}}_{ab}\left( \mathbf{p} ,\sigma\right)  & \, = \, (-)^{j-a-b}u^{\mathcal{B}\mathcal{A}*}_{-b -a}\left( \mathbf{p} , \sigma\right)\ . 
+    \label{07-02-26}
+\end{IEEEeqnarray}
+Entonces,  haciendo 
+\begin{IEEEeqnarray}{rl}
+            \varsigma_{\pm}^{c}  \, = \,   \tilde{\varsigma}_{\mp}^{*}\ ,
+    \label{07-02-27}
+\end{IEEEeqnarray}
+obtenemos  finalmente
+\begin{IEEEeqnarray}{rl}
+             \mathsf{C}\Phi^{\mathcal{A}\mathcal{B}}_{\pm ab}(x,\vartheta) \mathsf{C}^{-1}    \, = \,\tilde{\varsigma}_{\mp}^{*} (-)^{-2\mathcal{A}-a-b - j} \tilde{\Phi}^{\mathcal{B}\mathcal{A}\dagger}_{\pm -b\,-a}(x,\vartheta)  \  .
+    \label{07-02-28}
+\end{IEEEeqnarray}
+
+\textbf{\textit{Simetrías $  \mathcal{R} $.}} La última de la simetría que  analizamos es la simetría  $  \mathcal{R} $, cuya acción sobre los operadores de creación y aniquilación viene dada por las siguientes reglas de transformación:
+\begin{IEEEeqnarray}{rl}           
+          \mathsf{R}\,{a}^{\dagger}_{\pm}\left( \textbf{p}\, s_{\pm}\,\sigma\right) \,  \mathsf{R}^{-1} &\, = \,r_{\pm}\,{a}^{\dagger}_{\pm}\left( \textbf{p}\, D_{\mathcal{R}}s_{\pm}\,\sigma\right) \ ,\nonumber \\
+       \mathsf{R}\,{a}^{c\dagger}_{\pm}\left( \textbf{p}\, s_{\pm}\,\sigma\right) \,  \mathsf{R}^{-1} &\, = \,r^{c}_{\pm}\,{a}^{c\dagger}_{\pm}\left( \textbf{p}\, D_{\mathcal{R}}s_{\pm}\,\sigma\right)\ . \nonumber \\         
+    \label{07-02-29}
+\end{IEEEeqnarray} 
+Por lo tanto 
+\begin{IEEEeqnarray}{rl}           
+          \mathsf{R}\,\tilde{a}^{\dagger}_{\mp}\left( \textbf{p}\, s_{\mp}\,\sigma\right) \,  \mathsf{R}^{-1} &\, = \,\tilde{r}_{\mp}\,{a}^{\dagger}_{\mp}\left( \textbf{p}\, D_{\mathcal{R}}s_{\mp}\,\sigma\right) \ ,\nonumber \\
+       \mathsf{R}\,\tilde{a}^{c\dagger}_{\mp}\left( \textbf{p}\, s_{\mp}\,\sigma\right) \,  \mathsf{R}^{-1} &\, = \,\tilde{r}^{c}_{\mp}\,{a}^{c\dagger}_{\mp}\left( \textbf{p}\, D_{\mathcal{R}}s_{\mp}\,\sigma\right) \ .\nonumber \\
+    \label{07-02-30}
+\end{IEEEeqnarray} 
+Solo basta notar que 
+\begin{IEEEeqnarray}{rl}            
+             x^{\mu}_{\pm}              & \, = \,  \, x^{\mu} \, -\,  D_{\mathcal{R}}\vartheta \cdot \gamma^{\mu}D_{\mathcal{R}}\vartheta_{\pm} \nonumber\\                 
+    \label{07-02-31}
+\end{IEEEeqnarray}
+y hacer
+\begin{IEEEeqnarray}{rl}
+            r^{c}_{\pm}  \, = \, \tilde{r}^{*}_{\mp} \ , 
+    \label{07-02-32}
+\end{IEEEeqnarray}
+para escribir
+\begin{IEEEeqnarray}{rl}
+             \mathsf{R}\Phi^{\mathcal{A}\mathcal{B}}_{\pm ab}(x,\vartheta) \mathsf{R}^{-1}    \, = \, \tilde{r}^{*}_{\mp}\,\Phi^{\mathcal{A}\mathcal{B}}_{\pm ab}\left( x,D_{\mathcal{R}}\vartheta\right) \ .
+    \label{07-02-33}
+\end{IEEEeqnarray}\\
+
+\textbf{\textit{Transformaciones sobre los supercampos tilde.} } Podemos repetir el mismo argumento que hemos usamos para encontrar las trasformaciones $ C,P,T $ y $ \mathcal{R} $ sobre los supercampos  ${\Phi}^{\mathcal{A}\mathcal{B}}_{\pm ab} $, en el caso de los supercampos $\tilde{\Phi}^{\mathcal{A}\mathcal{B}}_{\mp ab} $.  Los supercampos que se construyen con los operadores  de creación-aniquilación con tilde satisfacen:
+\begin{IEEEeqnarray}{rl}
+             \mathsf{C}\tilde{\Phi}^{\mathcal{A}\mathcal{B}}_{\mp ab}(x,\vartheta) \mathsf{C}^{-1}   & \, = \,{\varsigma}_{\pm}^{*} (-)^{-2\mathcal{A}-a-b - j} {\Phi}^{\mathcal{B}\mathcal{A}\dagger}_{\mp -b\,-a}(x,\vartheta)  \ ,\nonumber \\
+            \mathsf{P} \tilde{\Phi}^{\mathcal{A}\mathcal{B}}_{\mp ab}\left( x,\vartheta\right)   \mathsf{P}^{-1}     &\, = \,{\eta}_{\pm}^{*}(-)^{\mathcal{A} +\mathcal{B}+j}\,{\Phi}^{\mathcal{B}\mathcal{A}}_{\pm ba}\left(\mathcal{P} x,i\beta\vartheta\right) \ , \nonumber \\
+            \mathsf{T} \tilde{\Phi}^{\mathcal{A}\mathcal{B}}_{\mp ab}\left( x,\vartheta\right)   \mathsf{T}^{-1}    & \, = \, {\xi}_{\pm}^{*} (-)^{a+b+\mathcal{A}+\mathcal{B}-2j} \tilde{\Phi}^{\mathcal{A}\mathcal{B}}_{\mp  -a -b}\left(\mathcal{T} x,\epsilon\gamma_{5}\vartheta^{*}\right) \ , \nonumber \\
+             \mathsf{R}\tilde{\Phi}^{\mathcal{A}\mathcal{B}}_{\mp ab}(x,\vartheta) \mathsf{R}^{-1}    & \, = \, {r}^{*}_{\pm}\,\tilde{\Phi}^{\mathcal{A}\mathcal{B}}_{\mp ab}\left( x,D_{\mathcal{R}}\vartheta\right) \ .
+    \label{07-02-34}
+\end{IEEEeqnarray}\\
+
+\textbf{\textit{Superpartículas que son iguales a sus antispartículas.}}
+ El  supercampo ``invertido conjugado'' $ \Phi^{(c)}_{\mp ab} $ que viene de hacer el cambio $ a_{\mp}  \longleftrightarrow a^{(c)}_{\mp} $  [ver Ec. \eqref{5-3-68}], se expresa en términos de los supercampos adjuntos como:
+\begin{IEEEeqnarray}{rl}
+            \Phi^{\mathcal{A}\mathcal{B},(c)}_{\mp ab}  \, = \, (-)^{2\mathcal{B}+j-a-b}\tilde{\Phi}^{\mathcal{B}\mathcal{A}\dagger}_{\mp -b-a} \ .
+    \label{07-02-35}
+\end{IEEEeqnarray}
+Si una superpartícula es inerte bajo todas las simetrías internas disponibles, su antispartícula puede ser ella misma, en términos de los supercampos, esta restricción nos dice que
+\begin{IEEEeqnarray}{rl}
+                  \Phi^{\mathcal{B}\mathcal{A},(c)}_{\mp ab}    \, = \,  \Phi^{\mathcal{A}\mathcal{B}}_{\mp ab}  \ .
+    \label{07-02-36}
+\end{IEEEeqnarray}
+Con la ayuda \eqref{07-02-35}, obtenemos la siguiente condición general de realidad:
+\begin{IEEEeqnarray}{rl}
+            \Phi^{\mathcal{A}\mathcal{B}}_{\mp ab}  \, = \, (-)^{2\mathcal{B}+j-a-b}\tilde{\Phi}^{\mathcal{B}\mathcal{A}\dagger}_{\mp -b-a} \ .
+    \label{07-02-37}
+\end{IEEEeqnarray}
+En este caso, las fases  $ \eta_{\pm} $, $ \zeta_{\pm} $, $ \varsigma_{\pm} $ y $ r_{\pm} $ valen $ \pm 1 $.\\
+
+\textbf{\textit{El teorema $ CPT $.}} La unión de las  simetrías  $ C$ , $P$ y  $T $, nos definen la transformación $ CPT $:
+\begin{IEEEeqnarray}{rl}	
+            \mathsf{C}  \mathsf{P}  \mathsf{T}\Phi^{\mathcal{A}\mathcal{B}}_{\pm ab}\left( x,\vartheta\right)   \left(       \mathsf{C}  \mathsf{P}  \mathsf{T} \right) ^{-1}   & \, = \,\left( {\xi}_{\pm} {\eta}_{\pm}{\varsigma}_{\pm}\right) ^{*} (-)^{2\mathcal{B}} {\Phi}^{\mathcal{A}\mathcal{B}\dagger}_{\mp a\,b}\left(- x,-i\epsilon\gamma_{5}\beta\vartheta^{*}\right)\ .   \nonumber \\
+    \label{07-02-37}
+\end{IEEEeqnarray}\\
+Las fases $ \xi_{\pm} $ que provienen de la transformación  $ T $, no tienen un carácter físico, entonces, podemos usarlas para hacer $  {\xi}_{\pm} {\eta}_{\pm}{\varsigma}_{\pm}=1 $. Los coeficientes de Clebsh-Gordan en la interacción general \eqref{5-3-18},  tienen que ser cero a menos que los acoplamientos $ \Phi^{\mathcal{A}_{1}\mathcal{B}_{1}}_{\varepsilon_{1} a_{1}b_{1}}\Phi^{\mathcal{A}_{2}\mathcal{B}_{2}}_{\varepsilon_{2} a_{2}b_{2}}\cdots $ sean tales que 
+$ \mathcal{A}_{1}  \, + \, \mathcal{A}_{2} \, + \, \cdots $ y $ \mathcal{B}_{1}  \, + \, \mathcal{B}_{2} \, + \, \cdots $
+son enteros. Pero esto implica que en \eqref{5-3-18}:
+\begin{IEEEeqnarray}{rl}
+            (-)^{2\left( \mathcal{B}_{1}  \, + \, \mathcal{B}_{2} \, + \, \cdots\right) }  \, = \, 1\ .
+    \label{07-02-38}
+\end{IEEEeqnarray}
+Con esto, vemos que la densidad Hamiltoniana $ \mathcal{H} $, transforma bajo  $    \mathsf{C}  \mathsf{P}  \mathsf{T} $ como 
+\begin{IEEEeqnarray}{rl}
+            \left(    \mathsf{C}  \mathsf{P}  \mathsf{T} \right) \mathcal{H}\left(x,\vartheta\right)    \left(       \mathsf{C}  \mathsf{P}  \mathsf{T} \right) ^{-1}   \, = \, \mathcal{H}\left(- x,-i\epsilon\gamma_{5}\beta\vartheta^{*}\right)   \ . 
+    \label{07-02-39}
+\end{IEEEeqnarray}
+Más aún, el paso del operador antiunitario  $ \mathsf{T} $ por el diferencial fermiónico de volumen $ d^{4}\vartheta $, nos da $ d^{4}\vartheta^{*} =d^{4}\left[ -i\epsilon\gamma_{5}\beta\vartheta^{*}\right]  $. Entonces, $ \mathsf{C}  \mathsf{P}  \mathsf{T} $  conmuta con el Hamiltoniano y por tanto $ CPT $ es una simetría de la teoría. \\
+
+\textbf{\textit{Representaciones completamente irreducibles.}} Hasta este punto, no hemos supuesto que existe ninguna relación  entre los supercampos $ \Psi_{+ab} $ y  $ \Psi_{-ab} $ , en este  caso, tenemos que  $ \Psi_{\pm ab}  \, = \, \tilde{\Psi}_{\pm ab} $.  Las transformaciones de $ C $, $ P$, $ T$ y $ \mathcal{R} $ para representaciones completamente irreducibles se ven de la siguiente manera: 
+\begin{IEEEeqnarray}{rl}
+            \mathsf{P} \Phi^{\mathcal{A}\mathcal{B}}_{\pm ab}\left( x,\vartheta\right)   \mathsf{P}^{-1}  &  \, = \, \pm  {\eta}^{*}(-)^{\mathcal{A} +\mathcal{B}+j}\,{\Phi}^{\mathcal{B}\mathcal{A}}_{\mp ba}\left(\mathcal{P} x,i\beta\vartheta\right)  \ ,\\
+             \mathsf{C}\Phi^{\mathcal{A}\mathcal{B}}_{\pm ab}\left( x,\vartheta\right) \mathsf{C}^{-1}  &   \, = \,     +{\varsigma}^{*} (-)^{-2\mathcal{A}-a-b - j}{\Phi}^{\mathcal{B}\mathcal{A}\dagger}_{\pm -a\,-b}(x,\vartheta)\ ,  \\
+            \mathsf{T} \Phi^{\mathcal{A}\mathcal{B}}_{\pm ab}\left( x,\vartheta\right)   \mathsf{T}^{-1}   &  \, = \, \pm {\xi}^{*} (-)^{a+b+\mathcal{A}+\mathcal{B}-2j} \Phi^{\mathcal{A}\mathcal{B}}_{\pm  -a -b}\left(\mathcal{T} x,\epsilon\gamma_{5}\vartheta\right) \ , \\    
+             \mathsf{R}\Phi^{\mathcal{A}\mathcal{B}}_{\pm ab}(x,\vartheta) \mathsf{R}^{-1}  &  \, = \, {r}^{*}_{\mp}\,\Phi^{\mathcal{A}\mathcal{B}}_{\pm ab}\left( x,D_{\mathcal{R}}\vartheta\right) \ .
+    \label{07-02-33}
+\end{IEEEeqnarray}

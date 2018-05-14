@@ -1,0 +1,1361 @@
+\chapter{Estados de Superpartícula}
+%Codigo invariante: 2
+\label{chap:2}
+\epigraph{\textit{   \qquad \qquad  \quad \, ``    Thus the simplest  mathematical objects, (irreducible representations) correspond to the simplest physical systems (single particles)."}}{Rudolf Haag~\cite{Haag:2010zz}}
+
+\lhead{Cap\'itulo 2. \emph{Estados de superpartícula}}
+
+En este  capítulo establecemos las bases de la mecánica cuántica en el superespacio. Obtenemos las representaciones  unitarias del grupo de super Poincaré, cuyos vectores estado identificamos como los estados de superpartícula (o superestados de partícula). Como veremos más adelante, al igual que los estados de partícula, las superpartículas están definidas por la masa, el momento lineal y  el espín, pero además poseen otro grado de libertad caracterizado  por la  proyección izquierda o derecha de un 4-espinor. La unión del  conjunto  de estos 4-espinores con los 4-vectores de momento,  es lo que denominamos como \emph{superespacio de momentos}. Para encontrar los superestados covariantes de Lorentz y supersimetría, nos valemos del \emph{método de las representaciones inducidas de Wigner}~\cite{Wigner:1939cj}, de tal manera que definimos a los superestados de momento arbitrario en términos de los superestados en el vector estándar. Extendiendo además esta idea para las etiquetas fermiónicas, definimos  los estados de espinores arbitrarios en términos de los estados de espinores en el origen. 
+
+
+\section{Super Mecánica Cuántica}
+\label{chap:2-2}
+La palabra superespacio, se usa para denotar varias identidades matemáticas como los  superespacios de configuración, los superespacios de momentos, los superespacios de Hilbert, etc., estas identidades comparten la propiedad  de que la multiplicación  por un supernúmero está bien definida. Un  supernúmero $ v $ se puede definir por su propiedad de poder siempre  expresarse de manera única como  la suma de otros dos supernúmeros  $ v_{c} $ y $ v_{a} $, llamados     supernúmeros \emph{puros}. Estos,  son tales que el producto con otros supernúmeros puros $ v'_{c} $ y $ v'_{a} $ conmuta o anticonmuta,
+\begin{IEEEeqnarray}{l}
+            v'_{m}v_{n}  \, = \,  (-1)^{\left( m_{v'}\right) \left( n_{v}\right) }v_{n} v'_{m} , \quad m,n = \left\lbrace a,c\right\rbrace  \ ,
+    \label{2-2-1}
+\end{IEEEeqnarray}
+donde   $  c_{v}= 0 $ y $ a_{v}= 1 $, para cualquier $ v $.  A los números $m_{v}$ se les conoce como la \emph{clasificaci\'on-$ Z_{2} $} de $ v_{m} $.  A un  supernúmero  que no es puro, se le dice \emph{impuro}. Tenemos pues, que el superespacio, ya sea de funciones, de operadores o de vectores de estado, es un espacio vectorial  en el sentido  de que:
+\begin{itemize}
+\item    Para dos elementos $ {f} $ y $ {f}' $ del superespacio, entonces $ {f} + {f}' $ también  lo es. La operación de adición es asociativa $ {f} +\left( {f}' +{f}''\right) =\left( {f} + {f}'\right) +{f}'' $ y conmutativa  $  {f} + {f}'  = {f}' + {f} .$
+\item Si $ {f} $ es un elemento del superespacio, entonces $ {v}{f} $ también lo es, donde $ {v} $ es cualquier supernúmero. La operación de multiplicación (por la izquierda) con cualquier supernúmero se toma como asociativa  y distributiva 
+\begin{IEEEeqnarray}{rl}
+              {v}\left( {v}'{f}\right)   \, = \, \left({v} {v}'\right) f,\quad {v}\left( {f} + {f}'\right)  \, = \,{v}{f}  \, + \, {v}{f}'  \quad \left( {v}+ {v}'\right) {f}  \, = \, {v}{f}  \, + \, {v}'{f},\quad  \nonumber \\
+     \label{2-2-2}
+ \end{IEEEeqnarray} 
+ \item Existe un elemento único $ \mathbf{0} $, con la propiedad de que para cualquier elemento $ f $ y cualquier supernúmero $ v $,  $   \mathbf{0}  \, + \, f  \, = \, f$, $ 0f= \mathbf{0}$ y  $ \mathbf{0}{v} = \mathbf{0}$.
+\end{itemize} 
+Para poder definir la multiplicación por derecha y por izquierda simultáneamente, dado cualquier elemento $ f $ del superespacio,  siempre debe ser posible (por construcción) descomponerlo como $ f = f_{a}   \, + \, f_{c}$,   de manera que la multiplicación  con cualquier supernúmero satisfaga
+\begin{IEEEeqnarray}{l}
+            v_{i}f_{j}  \, = \,  (-)^{\epsilon^{v}_{i}\epsilon^{f}_{j}} f_{j}v_{i} ,  \quad i = a,c
+    \label{2-2-3}
+\end{IEEEeqnarray}
+Notemos que la Ec. \eqref{2-2-3} contiene a la Ec.\eqref{2-2-1} en el caso $ f =v $. 
+En la literatura encontramos diversos nombres para $ f_{a}$,    se les conoce como de grado uno, de {tipo-$ a $}, paridad impar o de tipo fermiónico. De igual forma, a  $ f_{c}$ se le dice de grado cero, de tipo-$ c $, paridad  par o de tipo bosónico. Para el caso de los supernúmeros puros les llamamos también números bosónicos o números fermiónicos. Puesto que la mecánica cuántica se realiza sobre un espacio vectorial complejo,  para cada supernúmero $ v $ existe otro $ v^{*} $, tal que  $    \left(  v^{*} \right) ^{*}= v $ y además
+\begin{IEEEeqnarray}{rl}
+       \left(v v' \right)^{*}   \, = \, v'^{*}v^{*} , \quad     \left(v  \, + \,  v' \right)^{*}   \, = \, v^{*} \, + \, v'^{*} \ .
+    \label{2-2-4}
+\end{IEEEeqnarray}
+La operación de conjugación de un supernúmero preserva la pureza de este. Un supernúmero es real si $ v=v^{*} $. Cuando algún elemento $ f $ del superespacio posee un elemento adjunto $ f^{\dagger} $, entonces
+\begin{IEEEeqnarray}{rl}
+            \left( fv\right)^{\dagger}  \, = \, v^{*}f^{\dagger} \ .
+    \label{2-2-5}
+\end{IEEEeqnarray}
+El espacio de Hilbert,  es un \emph{espacio vectorial normado}, donde para dos vectores en este espacio existe un número complejo, el producto escalar (o producto interior), que es \emph{lineal}, \emph{simétrico} y \emph{positivo}. Para dos vectores  $ \Psi $ y $ \Psi' $ en un superespacio de Hilbert, el producto escalar   $  \left(\Psi ^{\,\dagger}\Psi' \right) $ es un supernúmero y  la propiedad de linealidad se expresa en términos de la multiplicación por la derecha como:
+\begin{IEEEeqnarray}{rl}
+            \left(\Psi''\right) ^{\,\dagger}\left(\Psi v  \, + \, \Psi'  v'\right)   \, = \,  \left(  {\Psi''}^{\,\dagger} \Psi  \right) v   \, + \, \left(  {\Psi''}^{\,\dagger} \Psi'  \right) v' \ ,
+    \label{2-2-6}
+\end{IEEEeqnarray}
+ la propiedad de  simetría se mantiene intacta,
+\begin{IEEEeqnarray}{rl}
+            \left(  {\Psi'}^{\,\dagger} \Psi  \right)^{*} \, = \, \left(  {\Psi}^{\,\dagger} \Psi'  \right)\ .
+    \label{2-2-7}
+\end{IEEEeqnarray}
+De aquí se puede apreciar que  
+\begin{IEEEeqnarray}{rl}
+            \left(\Psi v  \, + \, \Psi'  v'\right) ^{\, \dagger}\Psi''    \, = \, v^{*} \left(  {\Psi}^{\,*} \Psi''  \right)   \, + \, v'^{*}  \left(  {\Psi'}^{\,*} \Psi''  \right)\ ,
+    \label{2-2-13}
+\end{IEEEeqnarray}
+donde hemos usado que $   \left(v \Psi \right) ^{\, \dagger}\Psi''  \, = \, \Psi ^{\, \dagger} \left( v^{*}\Psi''\right)  $.
+
+Debemos decidir si para dos  vectores con pureza definida su  producto escalar es puro o impuro. Extendemos simplemente lo que sucede para el producto de dos supernúmeros, esto es,   cuando  $ \Psi $ y $ \Psi' $ son vectores puros (en el sentido del superespacio no en el sentido de la mecánica cuántica) con grados $ \epsilon_{\Psi} $ y $ \epsilon_{\Psi'} $, respectivamente, el grado  de $ \left(  {\Psi'}^{\,\dagger} \Psi  \right) $ es  $ \left( \epsilon_{\Psi}  \, + \, \epsilon_{\Psi'} \right)  $ módulo dos. 
+La  positividad del producto escalar no puede tomarse como en el caso de un espacio normado complejo, ya que en general, $ \Psi ^{\,\dagger}\Psi  $ no está en correspondencia con la recta (los números reales ordinarios).  Tampoco es en general,  invertible, porque no todos los supernúmeros poseen inversos multiplicativos. {Por ejemplo, consideremos un supernúmero $ v \neq  0$, con  $ v^{2} =0 $, si existiera un supernúmero $ v^{-1} $ tal que $\left(v^{-1} \right) v= 1$, se siguiera que $ v=0 $, lo cual es contradictorio.}
+Para ver en que casos podemos definir  el inverso multiplicativo de un supernúmero, notamos que  además de la descomposición  $ v_{a}  \, + \, v_{c} $ para cualquier supernúmero, existe otra descomposición de $ v $ en términos de su  \emph{cuerpo} $   v_{_{\text{B}}}  $ y su  \emph{alma}    $ v_{_{\text{S}}} $: \footnote{Esta definición de supernúmero, junto con mucha de la nomenclatura del análisis de los  supernúmeros, fue introducida por primera vez en la referencia \cite{dewitt1992supermanifolds}.}
+\begin{IEEEeqnarray}{rl}
+             v  \, = \,  v_{_{\text{B}}}  \, + \,   v_{_{\text{S}}} 
+     \label{2-2-8}
+ \end{IEEEeqnarray} 
+ donde $ v_{_{\text{B}}} $ es un número complejo ordinario (esto es, $ v_{_{\text{B}}} \in \mathbb{C}$). Podemos justificar esta descomposición siguiendo la definición de un supernúmero como el álgebra de Grassmann de dimensión infinita~\cite{dewitt1992supermanifolds}. Un álgebra de Grassmann de dimensión $ N $ viene definida por el conjunto de elementos $ \tau_{i} $, $ i = 1,2,3,\dots, N $ que satisfacen $ \tau_{i}\tau_{j} =-\tau_{j}\tau_{i} $. Un supernúmero, alternativamente, viene definido como el limite $ N \rightarrow \infty $ de la relación
+\begin{IEEEeqnarray}{rl}
+          v  \, = \,  \lim_{N\rightarrow\infty}  \sum^{N}_{n=0}\sum^{n}_{i_{_{1}}=0}\sum^{n}_{i_{_{2}}=0}\dots\sum^{n}_{i_{_{n}}=0}C_{i_{_{1}}i_{_{2}}\dots i_{_{n}}}\, \tau_{i_{_{1}}}\tau_{i_{_{2}}}\dots \tau_{i_{_{n}}}\ ,
+    \label{2-2-9}
+\end{IEEEeqnarray}
+con $ \tau_{0}\equiv 1 $ para $ i =0 $ y  donde  $ C_{i_{_{1}}i_{_{2}}\dots i_{_{n}}} $ son números complejos ordinarios ($ C_{i_{_{1}}i_{_{2}}\dots i_{_{n}}} \in  \mathbb{C} $). De aquí que $ C_{0}  \, = \, v_{_{\text{B}}}  $.  Entonces el inverso multiplicativo de cualquier supernúmero $ v $ existe si y solo sí $ v_{_{\text{B}}}\neq 0 $ y viene dado de manera única por 
+\begin{IEEEeqnarray}{l}	
+            v^{-1}  \, = \, v^{-1}_{_{\text{B}}}   \, + \,  v^{\text{inv.}}_{_{\text{S}}}
+    \label{2-2-10}
+\end{IEEEeqnarray}
+donde
+\begin{IEEEeqnarray}{l}
+            v^{-1}_{_{\text{B}}}v_{_{\text{B}}}  \, = \, 1, \quad  v^{\text{inv.}}_{_{\text{S}}} \, = \, v^{-1}_{_{\text{B}}} \sum^{\infty}_{n=1}\left(- v^{-1}_{_{\text{B}}} v_{_{\text{S}}}\right) ^{n} \ .
+    \label{2-2-11}
+\end{IEEEeqnarray}
+Es suficiente definir un supernúmero como  positivo  si es real  y  su cuerpo  es positivo. Escribimos  la propiedad de positividad para dos vectores en superespacio de Hilbert de la misma manera que en el espacio:
+\begin{IEEEeqnarray}{rl}
+       {\Psi}^{\,\dagger} \Psi  \, > \,0 ,   \text{  para   }   \Psi \neq \mathbf{0} \ ,
+    \label{2-2-12}
+\end{IEEEeqnarray}
+en el entendido que el signo 'mayor que cero' expresa el sentido positivo arriba expuesto. \\
+
+  Estamos pensando  al símbolo  $ ^{\dagger} $  como un símbolo de una operación binaria entre dos vectores:  $ \left(\, \cdot \, \right) ^{\,\,\dagger}\left( \, \cdot \,\right)  $. Hemos preferido usar esta nomenclatura a la notaciones 
+\begin{IEEEeqnarray}{rl}
+            \left(\Psi',\Psi \right) , \quad  \left\langle \Psi'\, \right| \left. \Psi \right\rangle\ .
+    \label{2-2-12-1}
+\end{IEEEeqnarray}
+A diferencia  de la mecánica cuántica en el espacio, donde etiquetamos los estados con los eigenvalores  reales que provienen de los  operadores hermíticos, en el superespacio, las etiquetas que usamos para caracterizar las variables fermiónicas son  en general, números fermiónicos complejos. Al introducir el  vector dual con la notación  $ \Psi^{\dagger} $, nos  recuerda que hay un proceso de conjugación en los posibles argumentos de $ \Psi $.  Así como sabemos que $ A^{\dagger} $, donde $ A $  es una matriz compleja, nos recuerda que está evaluado en el conjugado de sus entradas.  \\
+
+
+\textbf{\textit{Integración fermiónica.}} Antes de intentar establecer  una base en el superespacio de Hilbert, introducimos primero la integración con variables fermiónicas (usualmente llamada \emph{integral de Berezin}).  Para ello, considérese el vector $ v= (v_{_{1}}, v_{_{2}}, \dots , v_{_{N}}) $, donde los elementos  $ v_{i} $, $ i=1,2,3,\dots,N $ , toman  valores en los números fermiónicos. Escogemos una función $ f(v) $ de la cual hemos hecho su dependencia explícita  en $ v $. Dada una componente $ v_{i} $, debido a que $ v^{2}_{i} =0 $, podemos escribir de manera única a $ f(v) $ como 
+\begin{IEEEeqnarray}{rl}
+             f(v)      \, = \,  f_{i, 0}  \, + \,  v_{i}  \,f^{\text{izq.}}_{i,1} \ ,
+    \label{2-2-14}
+\end{IEEEeqnarray}
+donde   $  f_{0}  $ y $ f_{1} $  no dependen de $ v_{i} $. La integral de línea por lo izquierda,  $ \int dv_{i} f(v)  $, de la variable $ v_{i} $ y aplicada a la función  $ f(v) $, se define como la función $ \,f_{i,1} $:
+\begin{IEEEeqnarray}{rl}
+            \int dv_{i} \, f(v) & \, = \,   f^{\text{izq.}}_{i,1}\ .
+    \label{2-2-15}
+\end{IEEEeqnarray}
+ La integración sobre cualquier superficie viene definida por la aplicación sucesiva de integrales en una dimensión\footnote{Aquí nos estamos concentrando en supervariedades lineales, para supervariedades más generales esto no necesariamente es cierto \cite{Witten:2012bg}.},  
+\begin{IEEEeqnarray}{rl}
+           \int dv_{i_{1}}\dots  dv_{i_{\ell}}  \, = \,  \int dv_{i_{1}}\dots\int dv_{i_{\ell}} 
+     \label{2-2-16}
+ \end{IEEEeqnarray} 
+Dadas dos componentes $ v_{i} $ y $ v_{j} $, tenemos  una expansión única de la forma
+\begin{IEEEeqnarray}{rl}
+              f(v)      \, = \,  g^{\text{izq.}}_{ij, 0}   \, + \,   v_{i}  \,g^{\text{izq.}}_{i,0}  \, + \,  v_{j}  \,g^{\text{izq.}}_{j,1}  \, + \,  v_{i} v_{j}   \,g^{\text{izq.}}_{ij,1} \  ,
+    \label{2-2-17}
+\end{IEEEeqnarray}
+donde ninguna de las funciones $  g^{\text{izq.}}_{ij, 0} \dots$  depende  de $ v_{i} $ ni de  $ v_{j} $. De aquí se sigue que 
+\begin{IEEEeqnarray}{rl}
+       dv_{i}  dv_{j}   \, = \, - dv_{j}  dv_{i}  \ .
+    \label{2-2-18}
+\end{IEEEeqnarray}
+Para integrales de volumen, escribimos
+\begin{IEEEeqnarray}{rl}
+              d^{N}v   \, = \, dv_{N}\cdots  dv_{2}dv_{1}\ .
+     \label{2-2-19}
+ \end{IEEEeqnarray} 
+Debido a  que $ v_{i}v_{j}=-v_{j}v_{i} $, la expansión de  $ f(v) $  en potencias de $ v_{i} $ siempre termina a orden finito. Podemos escribir de manera única $   f(v)  $ como 
+\begin{IEEEeqnarray}{rl}
+              f(v)   \, = \, f_{0}  \, + \, \sum_{i}v_{i}f_{1,i}  \, + \,  \, + \, \sum_{ij}v_{i}v_{j}f_{2,ij}  \, + \, \dots  \, + \, v_{1}v_{2}\dots v_{N}f_{N}\ , \nonumber \\
+    \label{2-2-20}
+\end{IEEEeqnarray}
+al ser este un polinomio, no tenemos problemas de convergencia en la serie polinomial. De hecho, esta última  ecuación puede fungir como definición de $ f(v) $.  También de la Ec. \eqref{2-2-20}, podemos ver que 
+\begin{IEEEeqnarray}{rl}
+          \int d v_{i} f(v+v') & \, = \, \int dv_{i}  f(v  \, + \, v'_{\left\lbrace i\right\rbrace })\  , \quad    \label{2-2-21-1} \\
+             \int d v_{i}\left[  \alpha f(v)\right]    & \, = \, (-)^{\epsilon_{\alpha}}\,\alpha     \int d v_{i} f(v) \    \label{2-2-21-2}\\
+           \int d v_{i}\, v_{i}\,f(v)  & \, = \, f(v_{\left\lbrace i\right\rbrace })  \ ,
+    \label{2-2-21-3}
+\end{IEEEeqnarray} 
+donde   $ v_{\left\lbrace i\right\rbrace } $ representa el vector $ v $ con la componente $ i $ igual a cero. El símbolo $ \alpha $ representa un supernúmero puro. Aplicando iterativamente, $ N $ veces, las  Ecs. \eqref{2-2-21-1}-\eqref {2-2-21-1}, podemos concluir que
+\begin{IEEEeqnarray}{rl}
+          \int d^{N} v f(v+v') & \, = \, \int d^{N} v f(v) , \quad  
+          \label{2-2-21-4}\\
+             \int d^{N} v\left[  \alpha f(v)\right]    & \, = \, (-)^{\epsilon_{\alpha} N}\alpha \int d^{N} v f(v), \quad \alpha \text{ fermiónico} , \
+                   \label{2-2-21-5} \\
+          \int d^{N} v \, \delta^{N}(v)f(v)  & \, = \, f(0)  \ ,
+    \label{2-2-21-6}
+\end{IEEEeqnarray} 
+donde $  \delta^{N}(v) $ es la función delta fermiónica definida por
+\begin{IEEEeqnarray}{rl}
+             \delta^{N}(v) \, \equiv \, v_{1}v_{2}\dots v_{N}\ .
+    \label{2-2-22}
+\end{IEEEeqnarray}
+De las Ecs. \eqref{2-2-21-4} y \eqref{2-2-21-6} tenemos entonces que 
+\begin{IEEEeqnarray}{rl}
+                    \int d^{N} v \, \delta^{N}(v-v')f(v)  & \, = \, f(v')  
+    \label{2-2-23}
+\end{IEEEeqnarray}
+
+De manera similar, escribimos $ f(v) = f_{0} + f^{\text{der.}}_{i}v_{i}$  para definir  la integración por la derecha, 
+\begin{IEEEeqnarray}{rl}
+             \int f(v)d v_{i}  \, \equiv \,  f^{\text{der.}}_{i}\ .
+    \label{2-2-28}
+\end{IEEEeqnarray}
+Para $ f(v) $ puro, 
+$ f^{\text{izq}}_{i}  \, = \, -(-)^{f} f^{\text{der}}_{i} $, entonces
+\begin{IEEEeqnarray}{rl}
+             \int    f(v)d v_{i} \, = \,   -(-)^{\epsilon_{f}}  \int  dv_{i}  f(v)  \ .
+    \label{2-2-29}
+\end{IEEEeqnarray}
+
+ La integración por la derecha en un  número par  de variables fermiónicas es la misma que su integración por la izquierda\footnote{Demostración: La integral de línea de una función  $ f $ pura, tiene pureza invertida, entonces  
+\begin{IEEEeqnarray}{rl}
+     \int f(v)\, d v_{i}d v_{j}    & \, = \,   -(-)^{f}  \int\left(   \int    d v_{i} f(v) \right)d v_{j}     \, = \,   - \int d v_{j} d v_{i} f(v)  \nonumber \\
+       &   \, = \, \int  d v_{i} d v_{j} \, f(v)\ , \nonumber   
+\end{IEEEeqnarray}
+Ya que este resultado es independiente de la pureza de $ f $, se cumple para $ f $ puro o impuro. Mediante el método de inducción matemática, podemos extender fácilmente este resultado para cualquier número par de diferenciales fermiónicos.},
+\begin{IEEEeqnarray}{rl}
+           \int   f(v)d v_{i}d v_{j} \, = \,   \int  d v_{i}d v_{j}  f(v) \ ,
+    \label{2-2-29-1}
+\end{IEEEeqnarray}
+con  $ f $ puro o impuro.   Podemos consistentemente, tomar el adjunto  bajo el signo de integral de la manera siguiente:
+  \begin{IEEEeqnarray}{rl}
+                   \left( \int f(v) d{v}_{i}\right) ^{\dagger}  \, = \, \int d{v}^{*}_{i} f(v)^{\dagger}\ .
+          \label{2-2-30}
+      \end{IEEEeqnarray} 
+Notamos también que el conjugado de la función delta fermiónica  evaluada en $ v $ es igual, hasta un signo, a la función delta evaluada en $ v^{*} $,
+  \begin{IEEEeqnarray}{rl}
+               \left[ \delta^{N}(v) \right] ^{*}  \, = \, (-)^{g_{N}}\delta^{N}(v^{*})      
+      \label{2-2-30a}
+  \end{IEEEeqnarray}   
+  con 
+\begin{IEEEeqnarray}{rl}
+               g_{N} = \left\lbrace  \begin{array}{l}
+   +1, \quad   N=1,5,6,9,10,\dots\\ 
+   -1,  \quad   N=2,3,4,7,8,\dots 
+   \end{array} \right. 
+    \label{2-2-30b}
+\end{IEEEeqnarray}
+
+   Otra función importante es el mapeo mapeo exponencial de la función $ g(v) $, definido por la serie finita:
+\begin{IEEEeqnarray}{rl}
+             e^{[g(v)]} \, = \,  1+ g(v)  \, + \, \frac{1}{2!}g(v)^{2} \, + \, \frac{1}{3!}g(v)^{3}\, + \, \dots .
+    \label{2-2-24}
+\end{IEEEeqnarray}
+De manera muy importante para nosotros, es la integral de la exponencial con argumento igual a  la suma $ \sum^{m}_{i= 1} v_{i}\tilde{v}_{i} $, donde $ \tilde{v} $ es otro vector fermiónico arbitrario, 
+\begin{IEEEeqnarray}{rl}
+    f_{m}  \, \equiv \ \int \, \exp{\left[ \sum^{m}_{i= 1} v_{i}\tilde{v}_{i}\right] }  d \tilde{v}_{m}d \tilde{v}_{m-1}\dots   d \tilde{v}_{1}  \  .
+    \label{2-2-26a}
+\end{IEEEeqnarray}
+Escribimos el lado derecho de esta última ecuación como\footnote{Evidentemente para dos supernúmeros bosónicos $ a $ y $ b $, se sigue que $  e^{a}e^{b}  \, = \, e^{a+b} $.}
+\begin{IEEEeqnarray}{rl}
+   \int \, \exp{\left[ \sum^{m-1}_{i= 1} v_{i}\tilde{v}_{i}\right] } &\left(\int \left( 1  \, + \, v_{m}\tilde{v}_{m} \right)   d \tilde{v}_{m} \right)  d\tilde{v}_{m-1}\dots   d \tilde{v}_{1}  \nonumber \\
+     &   \, = \,  v_{m}    \int   \exp{\left[ \sum^{m-1}_{i= 1} v_{i}\tilde{v}_{i}\right] }d \tilde{v}_{m-1}\dots   d \tilde{v}_{1}  \ .
+    \label{2-2-26a}
+\end{IEEEeqnarray}
+Vemos que la función  $ f_{m}  $ satisface la relación de recursividad  $        f_{m} \, = \,  v_{m}f_{m-1} $, con $ m=2,3,\dots $. Debido a que  $ f_{1}= v_{1}$, se tiene que   $  f_{m}   \, = \,  v_{m}v_{m-1}\cdots v_{1} $, de donde se sigue que  
+\begin{IEEEeqnarray}{rl}
+             \int \, \exp{\left[ \sum^{N}_{i} v_{i}\tilde{v}_{i}\right] } d^{N} \tilde{v}  \, = \,  (-)^{g_{N}}\delta^{N}({v})  
+    \label{2-2-26c}
+\end{IEEEeqnarray}
+Entonces, el mapeo  exponencial $ \exp{\left[ \sum^{N}_{i} v_{i}\tilde{v}_{i}\right] }  $ nos sirve para definir la transformada Fourier fermiónica de la función $ f(v)  $,
+\begin{IEEEeqnarray}{rl}
+            \tilde{f}(\tilde{v})  \, \equiv \, (-)^{g_{N}}    \int d^{N} v \, \exp{\left[ \sum^{N}_{i} v_{i}\tilde{v}_{i}\right] } f(v) \ .
+    \label{2-2-27-1}
+\end{IEEEeqnarray}
+Debido a la Ec. \eqref{2-2-26c}, la transformada fermiónica de Fourier \eqref{2-2-27-1} es invertible. Se sigue que $ f(v) =0 $ si y solo sí  $   \tilde{f}(\tilde{v}) =0 $. 
+
+Consideremos la siguiente integral de línea en las variables fermiónicas:
+\begin{IEEEeqnarray}{rl}
+               \sum_{ij}^{n}\int d{v}_{i}v_{j}C_{ij} \, = \,  \sum_{i}C_{ii} \ ,
+     \label{2-2-27-3}
+ \end{IEEEeqnarray} 
+ las cantidades $ C_{ij} $ son constantes independientes de $ v $. Puesto que $ v $ es solo un variable integración, podemos escribir
+\begin{IEEEeqnarray}{rl}
+         \sum_{i}C_{ii}  \, = \,  \sum_{ij}^{n}\int d{(Dv)}_{i} \left( Dv \right)_{j}C_{ij}\ ,
+     \label{2-2-27-4}
+ \end{IEEEeqnarray}  
+ donde $ D_{ij} $ es un matriz bosónica invertible. Puesto que    $  \sum_{i}C_{ii}  \, = \,\sum_{i}( D^{-1}C D )_{ii}  $ ,
+tenemos:
+\begin{IEEEeqnarray}{rl}
+             d{(D v)}_{i}  \, = \,\sum_{j}d{v}_{j}  D^{-1}_{ji} \ .
+    \label{2-2-27-5}
+\end{IEEEeqnarray}
+Es directo demostrar que esta regla de transformación se mantiene para cualquier integral de superficie
+\begin{IEEEeqnarray}{rl}
+               \sum_{i_{1}j_{1}\cdots i_{N'}j_{N'} }^{N}\int d{v}_{i_{1}}\cdots d{v}_{i_{N'}}\, v_{j_{1}}\cdots v_{j_{N'}}\,C_{i_{1}j_{1}\cdots i_{N'}j_{N'}} \ ,
+     \label{2-2-27-6}
+ \end{IEEEeqnarray} 
+ donde $ N' $ es menor o igual  a la dimensión de $ v $. En particular, la regla de transformación \eqref{2-2-27-5} se satisface para la integral de volumen $ \int d^{N}v f(v) $. Puesto que $ dv_{i} dv_{i} =-dv_{j} dv_{i} $, el diferencial de volumen $ d^{N}v $ puede ser escrito como un término proporcional a 
+\begin{IEEEeqnarray}{rl}
+             \sum_{i_{1}\cdots i_{N}}\epsilon_{i_{1}\cdots i_{N}}dv_{i_{1}}\cdots dv_{i_{N}}\ ,
+    \label{2-2-27-8}
+\end{IEEEeqnarray}
+donde  $    \epsilon_{i_{1}\cdots i_{N}} $ es el tensor totalmente antisimétrico de dimensión $ N $ y   $    \epsilon_{12\cdots {N}}\equiv +1 $. Pero el tensor totalmente antisimétrico es una densidad invariante, esto es,  para cualquier transformación $ D_{ij} $:
+\begin{IEEEeqnarray}{rl}
+                \sum_{i'_{1}i_{1}}\cdots \sum_{i'_{N}i_{N}} D^{-1}_{i'_{1}i_{1}}\cdots  D^{-1}_{i'_{N}i_{N}} \epsilon_{i'_{1}\cdots i'_{N}} \, = \, \det D ^{-1}\,\epsilon_{i_{1}\cdots i_{N}} ,
+    \label{2-2-27-9}
+\end{IEEEeqnarray}
+por lo que finalmente llegamos a la regla de transformación del elemento de  volumen fermiónico:
+\begin{IEEEeqnarray}{rl}
+             d^{N}\left( Dv\right)   \, = \,  \det D ^{-1}    d^{N}v 
+    \label{2-2-28-0}
+\end{IEEEeqnarray}
+
+\textbf{\textit{Bases en el superespacio.}}                             
+ Consideremos un conjunto  de elementos $ \left\lbrace f_{\xi}\right\rbrace  $ en algún superespacio,  
+ el símbolo $ \xi $ representa un conjunto de índices que corren sobre  elementos numerables y no numerables (esto es, $ \xi $ representa  a varios índices continuos y discretos), entonces  la suma y multiplicación con  supernúmeros  generaliza a
+\begin{IEEEeqnarray}{rl}
+            \int  \, \,f_{\xi}\,\lambda_{\xi}   d\xi\ ,
+    \label{2-2-31}
+\end{IEEEeqnarray} 
+donde $ \lambda_{\xi}    $ es un función del conjunto $ {\xi}   $ a los supernúmeros. El signo $  d\xi $  representa  un diferencial de volumen en el superespacio y el signo de integral  suma sobre  todos los índices discretos y continuos. Puesto que $ \lambda_{\xi}    $  es arbitraria,  implica que cualquier coeficiente en la serie de Taylor de  $f_{\xi} $ está en el superespacio. Decimos que el conjunto $\left\lbrace f_{\xi}\right\rbrace $ es \emph{linealmente independiente} si la relación
+\begin{IEEEeqnarray}{rl}
+         \int\, \,f_{\xi}\,\lambda_{\xi}  \, d\xi    \, = \, \mathsf{0}\ ,
+    \label{2-2-32}
+\end{IEEEeqnarray}
+ implica que $ \lambda_{\xi} $ es cero\footnote{Equivalentemente, esta ecuaci\'on se puede escribir también como $   \int d\xi \, \,f_{\xi}\,\lambda_{\xi}   $.}.  El conjunto $\left\lbrace f_{\xi}\right\rbrace $  es \emph{completo} si existe un función $ \alpha_{\xi} $ en las variables $ \xi $, tal que cualquier  elemento $ \Omega $ del superespacio en cuestión pueda ser escrito como 
+\begin{IEEEeqnarray}{rl}
+            \Omega  \, = \, \int f_{\xi}  \,\alpha_{\xi}\,  d\xi  \ .
+    \label{2-2-35-a}
+\end{IEEEeqnarray} 
+ Para superespacios normados, la \emph{ortogonalidad}  entre dos vectores de estado $ \Psi_{\xi} $ y $\Psi_{\xi'} $ es:
+\begin{IEEEeqnarray}{rl}
+           \left(  \Psi_{\xi} \right) ^{\,\dagger}\Psi_{\xi'}  \, = \, 0, \quad \xi^{*} \, \neq \, \xi' \ .
+    \label{2-2-33}
+\end{IEEEeqnarray}
+ Si un conjunto es ortogonal, también es lineal independiente~\cite{ballentine1998quantum}: Al tomar el producto escalar  de $ \Psi_{\xi'} $ con la Ec. \eqref{2-2-32}, tenemos que\footnote{Para el caso de variables continuas    $    \Psi_{\xi} ^{\,\dagger}\Psi_{\xi}  $ es en general infinito,   en ese caso debemos introducir un \emph{regulador}.  }
+\begin{IEEEeqnarray}{rl}
+   \,\left(    \Psi_{\xi} ^{\,\dagger}\Psi_{\xi} \right) \lambda_{\xi}   \, = \, 0 \ , 
+     \label{2-2-35}
+ \end{IEEEeqnarray} 
+ provisto de que  $ \left(    \Psi_{\xi} ^{\,\dagger}\Psi_{\xi} \right) $ sea invertible,  esta relación implica $ \lambda_{\xi}  =0 $. \\
+ En el espacio, lo converso también es cierto, ya que, dejando de lado  cuestiones de convergencia para variables continuas, de un conjunto linealmente independiente siempre podemos formar un nuevo conjunto que es linealmente independiente y  ortogonal mediante el procedimiento de Gram-Schmidt~\cite{ballentine1998quantum}. Resulta ser que la relación de ortogonalidad \eqref{2-2-33} en el superespacio, no se realiza en el sector fermiónico.  Para indagar estas cuestiones, hacemos
+\begin{IEEEeqnarray}{rl}
+          \left(  \Psi_{\xi} \right) ^{\,\dagger}\Psi_{\xi'}   \, \equiv \, \delta_{\xi^{*},\xi'}\ .
+    \label{2-2-36}
+\end{IEEEeqnarray}
+Suponemos que  las etiquetas $ \xi $, siempre se pueden descomponer en la forma $ \xi =(a,v)  $, con $ a $ el conjunto de índices bosónicos y $ v $ el conjunto de índices fermiónicos\footnote{Este tipo de descomposición define lo que se le conoce como una supervariedad compleja(real) $ \mathbb{C}^{M,N} $($ \mathbb{R}^{M,N} $) de dimensión $ M+N $. Los índices $ M  $ y $ N $ representan las dimensiones de las subvariedades bosónicas y fermiónicas, respectivamente~\cite{dewitt1992supermanifolds}.}. Para simplificar nuestros argumentos y sin perdida de generalidad, suponemos  que el conjunto $  \left\lbrace \Psi_{\xi}\right\rbrace  $ está ortonormalizado con respecto a los índices bosónicos  (aseguramos esto si  $  \delta_{\xi,{\xi}'} $ contiene productos deltas de Dirac y de Kronecker  en las variables bosónicas), entonces al tomar el producto escalar de algún $ \Psi_{\xi} $ con la  Ec. \eqref{2-2-32}, tenemos 
+\begin{IEEEeqnarray}{rl}
+        \int \, \delta_{\xi^{*},\xi'}\,\lambda_{\xi'} \, d\xi'\,  \, = \,       \int\, \, \delta_{\xi^{*},\tilde{\xi}}\,  \lambda_{\tilde{\xi}}  \, d^{N}v'\, = \, \mathsf{0}\ ,
+    \label{2-2-37}
+\end{IEEEeqnarray}
+donde $ \tilde{\xi} $ representa las restricción de $\xi'  $  a los mismos  valores bosónicos  de $ \xi^{*} $ ?` Qué funciones  $ \delta_{\xi^{*},\tilde{\xi}}$ pueden forzarnos a que  $  \lambda_{\xi}   $ valga cero? Una función que cumple con este requerimiento es
+\begin{IEEEeqnarray}{rl}
+         \delta_{\xi^{*},\tilde{\xi}}\, = \, e_{\xi^{*}}\delta^{N}\left( v^{*} -v'\right) , \quad
+    \label{2-2-38}
+\end{IEEEeqnarray}
+donde  $  e_{\xi^{*}} $ es un supernúmero invertible. Esta elección para $   \delta_{\xi^{*},\tilde{\xi}} $ tiene la peculiaridad de tener su ``ortogonalidad invertida'': 
+\begin{IEEEeqnarray}{rl}
+            \delta_{\xi,{\xi}} \, = \, 0\ .
+    \label{2-2-38-a}
+\end{IEEEeqnarray}
+En este caso, el supernúmero   $   \Psi_{\xi'} ^{\,\dagger}\Psi_{\xi} $ no es invertible (no tiene cuerpo), por lo tanto su interpretación probabilista, por decir lo menos,  se vuelve dudosa. Dicho de otro modo, la norma de la componente cero en la expansión fermiónica del vector  de estado $  \Psi_{\xi} $ es cero,   $   \Psi_{(a,0)} ^{\,\dagger}\Psi_{(a,0)} =0$. Con esto, nos alejamos de la mecánica cuántica, porque esperamos que  los  estados $ \Psi_{(a,0)} $, al ser puramente bosónicos y de parámetros reales $ a $,  satisfagan los postulados de la mecánica cuántica en el espacio. Entonces, aunque la delta fermiónica funciona como la matriz unidad para el sector de los números fermiónicos, no puede jugar el mismo rol de aparecer en el producto interior de dos vectores con índices continuos, como s\'i lo hace  su contraparte bosónica. Por lo tanto desechamos esta propuesta.\\
+Una función que si tiene cuerpo y que también nos asegura la independencia lineal es
+\begin{IEEEeqnarray}{rl}
+         \delta_{\xi^{*},\tilde{\xi}}   \, = \,   e_{\xi^{*}}\exp{\left[ \sum^{N}_{i}  {v}^{*}_{i} \,v_{i}\right] } \ .
+    \label{2-2-39}
+\end{IEEEeqnarray}
+Aseguramos la independencia lineal porque de la  Ec. \eqref{2-2-27-1},  tenemos que $ \tilde{\lambda}(\tilde{v}) =0 $ con $\tilde{v}=- v^{*} $ y  esto a su vez implica que  $ {\lambda}_{\xi} =0 $.  Entonces \emph{un conjunto de vectores de estado $ \left\lbrace \Psi_{(a,v)}\right\rbrace  $ con normalización 
+\begin{IEEEeqnarray}{rl}
+            \Psi^{\,\,\,\dagger \,}_{(a,v)}\Psi_{(a',v')}  \, = \,  \delta(a^{*}-a') \exp\left[\sum_{k  } v_{k}^{*} v' _{k}\right] \nonumber \\
+    \label{2-2-41}
+\end{IEEEeqnarray}
+es linealmente independiente. }   Demostramos a continuación que lo converso también es cierto.   Expandimos  $ \Psi_{\xi}   $ por la derecha en la componente $ v_{1} $,
+\begin{IEEEeqnarray}{rl}
+            \Psi_{\xi}  \, = \, \Psi^{0}_{1,\xi} \, + \, \Psi^{1}_{1,\xi} \, v_{1} \ ,
+    \label{2-2-42}
+\end{IEEEeqnarray}
+donde  $\Psi^{0}_{\xi}$  y $ \Psi^{1}_{\xi}$ no dependen de  $ v_{1} $. De nuevo expandimos   $\Psi^{0}_{\xi}$ y $ \Psi^{1}_{\xi}$  en términos de otros superestados que no dependen  de  $ v_{2} $,
+\begin{IEEEeqnarray}{rl}
+             \Psi^{(0,1)}_{\xi}  \, = \, \Psi^{(0,1),0}_{\xi}    \, + \, \Psi^{(0,1),1}_{\xi}  \, v_{2}\ .
+    \label{2-2-43}
+\end{IEEEeqnarray}
+ Y así sucesivamente, expresamos las componentes $  \Psi_{\xi}  $  que no dependen de $ v_{1}, v_{2}, \cdots v_{m}$  como 
+\begin{IEEEeqnarray}{rl}
+                \Psi^{\emptyset _{_{1}}\emptyset _{_{2}}\dots \emptyset _{_{m}}}_{\xi} \ , 
+    \label{2-2-44}
+\end{IEEEeqnarray}
+con $  \left( \emptyset _{_{m}} = 0, 1 \right) $ y $\left(  m=1,2,3,\dots  N\right)  $. Estos estados, funciones del índice $ m $, están relacionados con los estados del índice $ m-1 $, mediante la relación recursiva:
+\begin{IEEEeqnarray}{rl}
+            \Psi^{\emptyset _{_{1}}\emptyset _{_{2}}\dots \emptyset _{_{m-1}}}_{\xi}  \, = \,    \Psi^{\emptyset _{_{1}}\emptyset _{_{2}}\dots \emptyset _{_{m-1}},0}_{\xi}   \, + \,    \Psi^{\emptyset _{_{1}}\emptyset _{_{2}}\dots \emptyset _{_{m-1}},1}_{\xi} \, v_{m}\ .
+    \label{2-2-45}
+\end{IEEEeqnarray}
+Evidentemente, los $ 2^{N} $ estados
+\begin{IEEEeqnarray}{rl}
+                 \Psi^{\emptyset _{_{1}}\emptyset _{_{2}}\dots \emptyset _{_{N}}}_{a} \equiv  \Psi^{\emptyset _{_{1}}\emptyset _{_{2}}\dots \emptyset _{_{N}}}_{\xi}\ ,
+    \label{2-2-46}
+\end{IEEEeqnarray}
+son independientes de $ v $ y son los estados que identificamos como las componentes de $ \Psi_{\xi} $. Podemos integrar primero las variables fermiónicas  $ v $ en la Ec. \eqref{2-2-32}, para obtener una expresión de la forma 
+\begin{IEEEeqnarray}{rl}
+           \sum_{\emptyset _{1}} \cdots  \sum_{\emptyset _{N}}\int      \lambda_{a}^{\emptyset _{_{1}}\emptyset _{_{2}}\dots \emptyset _{_{N}}}\, \Psi^{\emptyset _{_{1}}\emptyset _{_{2}}\dots \emptyset _{_{N}}}_{a} \, da  \, = \,  0 \ , \nonumber \\
+               \label{2-2-47}
+\end{IEEEeqnarray}
+donde los números $ \lambda_{a}^{\emptyset _{_{1}}\emptyset _{_{2}}\dots \emptyset _{_{N}}} $ son puramente bosónicos. Puesto que ahora estamos en el dominio de la mecánica cuántica en el espacio y estamos suponiendo que la solución a \eqref{2-2-47} es  $ \lambda_{a}^{\emptyset _{_{1}}\emptyset _{_{2}}\dots \emptyset _{_{N}}} =0$, se sigue que siempre podemos escoger  a los vectores $   \Psi^{\emptyset _{_{1}}\emptyset _{_{2}}\dots \emptyset _{_{N}}}_{a;i_{_{1}}i_{_{2}}\dots i_{_{N}}} $ de tal forma que satisfagan
+\begin{IEEEeqnarray}{rl}
+            \left(  \Psi^{\emptyset _{_{1}}\emptyset _{_{2}}\dots \emptyset _{_{N}}}_{a}\right) ^{\, \dagger} \left(  \Psi^{ \emptyset' _{_{1}}\emptyset' _{_{2}}\dots \emptyset' _{_{N}}}_{a'}\right)  & \, = \,\delta(a^{*}-a')\,\delta_{\emptyset _{{1}}\emptyset' _{{1}}} \delta_{\emptyset _{2}\emptyset' _{2}}\dots \delta_{\emptyset _{N}\emptyset' _{N}}\ ,\nonumber \\    
+    \label{2-2-48}
+\end{IEEEeqnarray} 
+donde $\delta(a^{*}-a') $ representa un producto de funciones deltas de Dirac y de Kronecker. Con la ayuda de \eqref{2-2-45}, vemos  inmediatamente que
+\begin{IEEEeqnarray}{rl}
+            \left(  \Psi^{\emptyset _{_{1}}\dots \emptyset _{_{N-1}}}_{\xi}\right) ^{\, \dagger} \left(  \Psi^{ \emptyset _{_{1}}\dots \emptyset _{_{N-1}}}_{\xi'}\right)  & \, = \,  \left(  \Psi^{\emptyset _{_{1}}\dots \emptyset _{_{N}}}_{a}\right) ^{\, \dagger} \left(  \Psi^{ \emptyset' _{_{1}}\dots \emptyset' _{_{N}}}_{a'}\right) \exp[v^{*}_{N}v'_{N}] \nonumber \\    
+    \label{2-2-49}
+\end{IEEEeqnarray}
+y mediante inducción matemática, demostramos que
+\begin{IEEEeqnarray}{rl}
+            \left(  \Psi^{\emptyset _{1}\dots \emptyset _{m-1}}_{\xi}\right) ^{\, \dagger} \left(  \Psi^{\emptyset' _{1}\dots \emptyset' _{m-1}}_{\xi'}\right)  & \, = \,    \left(  \Psi^{\emptyset _{_{1}}\dots \emptyset _{_{m}}}_{a}\right) ^{\, \dagger} \left(  \Psi^{ \emptyset' _{_{1}}\dots \emptyset' _{_{m}}}_{a'}\right) \exp\left[\sum^{m}_{k =1} v_{k}^{*} v'_{k}\right] \  .\nonumber \\    
+    \label{2-2-50}
+\end{IEEEeqnarray}
+De esta última relación,  llegamos a la Ec.  \eqref{2-2-41}. Como queriamos demostrar. 
+
+  Definimos el ``dual fermiónico'' $ \tilde{\Psi}_{a,\tilde{v}}  $ de $ {\Psi}_{a,v}  $, mediante la transformada de Fourier introducida en \eqref{2-2-27-1} (sin el factor $ (-)g^{N} $),
+\begin{IEEEeqnarray}{rl}
+            \tilde{\Psi}_{a,v}  \, =\,   \int \exp{\left[ -\sum^{N}_{i} v_{i}\tilde{v}_{i}\right] } \Psi_{a,\tilde{v}}d^{N}\tilde{v}  \ ,
+    \label{2-2-51}
+\end{IEEEeqnarray}
+o bien, la relación inversa
+\begin{IEEEeqnarray}{rl}
+          {\Psi}_{a,v}  \, = \, (-)^{{N}}  (-)^{g_{N}}    \int \exp{\left[ -\sum^{N}_{i} v_{i}\tilde{v}_{i}\right] } \tilde{\Psi}_{a,\tilde{v}}\, d^{N}\tilde{v} \ .
+    \label{2-2-52}
+\end{IEEEeqnarray}
+La normalización resultante  entre los estados  $ {\Psi}_{\xi} $  y $ \tilde{\Psi}_{\xi^{*}} $ es
+\begin{IEEEeqnarray}{rl}
+            \tilde{\Psi}_{\xi^{*}}^{\,\,\,\dagger}{\Psi}_{\xi'}     & \, = \,   \delta\left(\xi'  \, - \,\xi \right) 
+    \label{2-2-53}
+\end{IEEEeqnarray}
+con
+\begin{IEEEeqnarray}{rl}
+            \delta\left(\xi'  \, - \,\xi \right)   \, = \, \delta(a'-a) \delta^{N} \left(v' \, - \, v\right)\  .
+    \label{2-2-54}
+\end{IEEEeqnarray}
+
+  De aquí se sigue que \emph{aunque no podemos normalizar los estados con la delta fermiónica, siempre podemos introducir otro estado equivalente [debido a la relaciones \eqref{2-2-51} y \eqref{2-2-52}] que si normaliza con esta función}.
+
+Para un conjunto completo de estados  $\left\lbrace \Psi_{\xi}\right\rbrace  $, se cumple que cualquier vector de estado $ \Omega $ se puede escribir como 
+\begin{IEEEeqnarray}{rl}
+            \Omega  \, = \, \int \Psi_{\xi}  \,\alpha_{\xi}\,  d\xi \  .
+    \label{2-2-35-a}
+\end{IEEEeqnarray} 
+Tomando el producto interior de este estado con   $   \tilde{\Psi}_{\xi^{*}} $, obtenemos
+\begin{IEEEeqnarray}{rl}
+          \left(   \alpha_{\xi}\right)_{c}   & \, = \,     \left( \tilde{\Psi}_{\xi^{*}}^{\,\,\,\dagger}\Omega \right)_{c}   , \quad
+           \left(  \alpha_{\xi}\right) _{a}   \, = \,    (-)^{N} \left(\tilde{\Psi}_{\xi^{*}}^{\,\,\,\dagger}\Omega \right)_{a}   \nonumber \\
+    \label{2-2-}
+\end{IEEEeqnarray}
+donde $   \left(   \alpha_{\xi}\right)_{c} $ y   $ \left(   \alpha_{\xi}\right)_{a} $ son las partes bosónicas y fermiónicas de  $ \alpha_{\xi} $, respectivamente. De aquí se sigue que si  $ \Omega $ puede ser escrito solamente con coeficientes $ \alpha_{\xi}$  bosónicos, tenemos
+\begin{IEEEeqnarray}{rl}
+            \Omega  \, = \, \int  \Psi_{\xi}  \left( \tilde{\Psi}_{\xi^{*}}^{\,\,\,\dagger} \Omega \right)  \,  d\xi \ .
+    \label{2-2-}
+\end{IEEEeqnarray} 
+
+\section{Transformaciones Cuánticas de Super Poincaré}
+\label{chap:2-3}
+
+ De acuerdo con el \emph{teorema fundamental de las representaciones de grupos de simetría de Wigner}~\cite{wigner2012group}, cualquier transformación en el espacio de Hilbert de estados físicos se representa por operadores lineales y unitarios o por operadores antilineales y antiunitarios\footnote{Para una derivación detallada del teorema, consúltese la referencia \cite{Weinberg:1995mt}.}. En esta sección, nos restringimos a operadores unitarios $ \mathsf{U} $, esto es,
+para dos vectores de estado  $ \Psi $ y $ \Psi' $  consideramos operadores que satisfacen la propiedad
+\begin{IEEEeqnarray}{rl}
+               \Psi^{\,\dagger}  \Psi'  \, = \, \left(\mathsf{U}\Psi\right)^{\dagger} \left(\mathsf{U} \Psi'\right)\ .
+     \label{2-3-1}
+ \end{IEEEeqnarray} 
+  Estamos interesados en operadores unitarios que provienen de grupos de simetría con elementos  $ \left\lbrace T\right\rbrace    $. Estos operadores unitarios forman una representación, en el sentido de que para los elementos $ T_{1} $ y $ T_{2} $ de este grupo, se cumple que\footnote{Puesto que estamos interesados en  \emph{rayos} y no vectores en el espacio de Hilbert, las simetrías pueden formar \emph{representaciones proyectivas}. En este trabajo no consideramos este tipo de transformaciones. Para el  lector interesado en estas cuestiones, una referencia clásica es \cite{hamermesh1962group}.}
+\begin{IEEEeqnarray}{rl}
+              \mathsf{U}\left( T_{1} \right) \mathsf{U}\left( T_{2}\right)   \, = \, \mathsf{U}\left( T_{1}\,T_{2}\right)\ ,
+     \label{2-3-2}
+ \end{IEEEeqnarray} 
+ 
+ El primer asunto que nos compete, es el de discernir si  $ \mathsf{U}\left( T\right) $ es puro o impuro. Hasta donde sabemos, no existe un tratamiento general de esta cuestión. Aquí simplemente supondremos que  $ \mathsf{U}\left( T\right)  $ es bosónico.  
+
+  Consideramos ahora el caso de \emph{grupos continuos conexos}~\cite{hall2003lie}. Nos concentramos en  los elementos   $  T_{\varepsilon} $, del grupo en cuestión,  tales que  $ \varepsilon $ varia continuamente y $  T_{0} $ es la identidad. Para  valores de $ \varepsilon $ lo suficientemente pequeños, podemos escribir
+\begin{IEEEeqnarray}{rl}
+             \mathsf{U}  \left(   T_{\varepsilon}\right)  \, = \, \mathsf{I}  \, + \, i\varepsilon_{a}\mathsf{T}^{a} \, + \, \dots
+    \label{2-3-3-0}
+\end{IEEEeqnarray} 
+ donde los $ \mathsf{T}^{a} $,  los generadores de la representación unitaria del grupo, son operadores Hermíticos y el índice  $ a $ corre sobre todos los generadores linealmente independientes. El número máximo de estos  generadores, define la dimensión del grupo (y por tanto del vector  $ \varepsilon $). Para grupos de supervariedades que admiten un conjunto de coordenadas cuyas componentes son puras, aunado a la suposición de que $ \mathsf{U} $ es bosónico, \emph{los generadores $ \mathsf{T}^{a}  $ son puros}.  En este caso, los generadores satisfacen las relaciones de (anti)conmutación:
+\begin{IEEEeqnarray}{rl}
+             \left[ \mathsf{T}^{a} ,\mathsf{T}^{b}\right\rbrace   \, = \, f^{ab}_{\,\,\,c}\,\mathsf{T}^{c}\ ,
+    \label{2-3-3-1}
+\end{IEEEeqnarray}
+con 
+\begin{IEEEeqnarray}{rl}
+               \left[ \mathsf{T}^{a} ,\mathsf{T}^{b}\right\rbrace \, \equiv \, \mathsf{T}^{a} \mathsf{T}^{b}   \, - \,\left(- \right)^{\epsilon_{a}\epsilon_{b}}\mathsf{T}^{b} \mathsf{T}^{a}
+    \label{2-3-3-2}
+\end{IEEEeqnarray}
+y donde las cantidades $ f^{ab}_{\,\,\,c} $ son bosónicas, llamadas \emph{constantes de estructura}.   Estas relaciones de (anti)conmutación, encarnan una \emph{superalgebra de Lie}~\cite{Buchbinder:1995uq}. 
+
+ 
+El superespaciotiempo\footnote{El $ \mathcal{N}$-superespaciotiempo, viene definido,  por $ x^{\mu} $ y $ \mathcal{N} $  4-espinores fermiónicos, entonces en esta nomenclatura lo que nosotros llamamos simplemente como superespaciotiempo, es el $ (\mathcal{N}=1)$-superespaciotiempo.}, consiste en la unión del  4-vector bosónico  $ x_{\mu} $ con el 4-espinor fermiónico $ \vartheta_{\alpha} $. El grupo  de super Poincaré, viene definido por el  conjunto de transformaciones en el superespaciotiempo de la forma
+\begin{IEEEeqnarray}{rl}
+            x'^{\mu}  & \, = \,  \Lambda^{\mu}_{\,\, \nu} \,  x^{\nu}  \, + \,  a^{\mu}  \, + \,  D(\Lambda)\vartheta\cdot \gamma^{\nu} \zeta,  \quad
+            \vartheta'\, = \,  D(\Lambda)\,\vartheta \, + \, \zeta \ ,
+    \label{2-3-3}
+\end{IEEEeqnarray}
+donde $ \Lambda^{\mu}_{\,\, \nu} $ es una matriz del grupo homogéneo de Lorentz,  $ a^{\mu}  $ es un 4-vector bosónico y $ \zeta $ es un 4-espinor fermiónico. La matriz $ D(\Lambda) $ es un elemento  de la representación de Dirac\footnote{Estamos definiendo la contracción (denotada por $ \cdot $) de dos 4-espinores usando la matriz de $ \epsilon\gamma_{5} $ de dimensi\'on $ 4\times 4 $, para ver con m\'as  detalle nuestras  convenciones, cons\'ultese el ap\'endice \ref{ApenA}.}.  Por lo pronto sera muy conveniente dejar $ \zeta_{\alpha} $ general, sin suponer ninguna condición extra de realidad (condición de Majorana). Entonces, el grupo de super Poincaré viene  definido como el conjunto de elementos
+\begin{IEEEeqnarray}{rl}
+            T(\Lambda,a,\zeta) \ ,
+    \label{2-3-4}
+\end{IEEEeqnarray}
+cuya regla de composición
+\begin{IEEEeqnarray}{rl}
+              T\left( \Lambda_{_{1}},a_{_{1}},\zeta_{_{1}}) \circ T(\Lambda_{_{2}},a_{_{2}}, \zeta_{_{2}}\right)    & \, = \,   T\left( \Lambda_{_{12}},a_{_{12}},\zeta_{_{12}}\right)  \ ,
+    \label{2-3-5}
+\end{IEEEeqnarray}
+satisface las relaciones
+\begin{IEEEeqnarray}{rl}
+            \Lambda_{_{12}}   &\, = \,  \Lambda_{_{1}}\Lambda_{_{2}}\ , \nonumber \\
+a^{\mu}_{_{12}}   &\, = \,  \left( \Lambda_{_{1}}\right)^{\mu}_{\,\,\nu} a^{\nu}_{_{2}}  \, + \, a^{\mu}_{_{1}}  \, + \,   D(\Lambda_{_{1}})\zeta_{_{2}}\cdot\gamma^{\mu} \zeta_{_{1}}\ ,\nonumber\\
+\zeta_{_{12}} &\, = \,  D(\Lambda_{_{1}})\zeta_{_{2}}  \, + \, \zeta_{_{1}} \ .
+    \label{2-3-6}
+\end{IEEEeqnarray}
+El elemento identidad y el elemento inverso de $ T(\Lambda,a,\zeta)  $ vienen dados por
+\begin{IEEEeqnarray}{rl}
+ T(I, 0, 0),\quad   T\left( \Lambda^{-1},-\Lambda^{-1} a,-D(\Lambda^{-1})\zeta\right)  \ , \nonumber\\
+    \label{2-3-7}
+\end{IEEEeqnarray}
+respectivamente. Dos subconjuntos importantes de transformaciones de super Poincaré son:
+\begin{itemize}
+\item[-] Las transformaciones de inhomegéneas Lorentz,
+\begin{IEEEeqnarray}{rl}
+            x'^{\mu}  & \, = \,  \Lambda^{\mu}_{\,\, \nu}  x^{\mu}   \, + \,  a^{\mu},  \quad
+            \vartheta'_{\alpha} \, = \,  \left( D(\Lambda)\,\vartheta\right) _{\alpha} \ .
+    \label{2-3-8}
+\end{IEEEeqnarray}
+\item[-]  Las transformaciones  supersim\'etricas,
+\begin{IEEEeqnarray}{rl}
+            x'^{\mu}  \, = \, x^{\mu} + \vartheta\cdot\gamma^{\mu} \zeta, \quad  \vartheta_{\alpha}' \, = \, \vartheta_{\alpha}  \, + \, \zeta_{\alpha} \ .
+    \label{2-3-9}
+\end{IEEEeqnarray}
+\end{itemize}
+Para ahorrarnos notación, escribimos
+\begin{IEEEeqnarray}{rl}
+            T(\Lambda,a) \, = \,  T(\Lambda,a,0) \ , \quad     T(\zeta)  \, = \,   T(I,0,\zeta) \ .
+    \label{2-3-12-1}
+\end{IEEEeqnarray}
+Evidentemente, las transformaciones de Lorentz forman grupo. Cuando el contexto lo permita, escribimos simplemente $ T(a) = T(I,a)   $ y   $ T(\Lambda)  \, = \, T(\Lambda,0) $, para los subgrupos de traslaciones y homogéneo de Lorentz, respectivamente.  Debido a la regla de composición \eqref{2-3-5},
+\begin{IEEEeqnarray}{rl}
+            T(\Lambda,a)  \, = \, T(a) \circ T(\Lambda) \ .
+    \label{2-3-8-1}
+\end{IEEEeqnarray}
+Las transformaciones supersimétricas también forman grupo, el elemento inverso de $ T(\zeta) $ viene dado por $ T(-\zeta) $. La composición de dos transformaciones actúa como un grupo de traslaciones fermiónicas hasta una traslación bosónica, 
+ \begin{IEEEeqnarray}{rl}
+            T\left( \zeta_{_{1}}\right) \circ T\left(\zeta_{_{2}}\right) &  \, = \, T\left(I, \zeta_{_{2}}\cdot\gamma^{\mu} \zeta_{_{1}}\right)\circ T\left( \zeta_{_{1}} \, + \,  \zeta_{_{2}}\right)  \ ,\nonumber \\          
+    \label{2-3-11}
+\end{IEEEeqnarray}
+donde el primer elemento del lado derecho es un elemento del grupo de traslaciones. Entonces, la composición de dos transformaciones supersimétricas conmuta hasta una traslación,
+ \begin{IEEEeqnarray}{rl}
+                T\left( \zeta_{_{1}}\right) \circ T\left( \zeta_{_{2}}\right)   \, = \,  T\left(2\,\zeta_{_{2}}\cdot\gamma^{\mu} \zeta_{_{1}}\right)\circ    T\left( \zeta_{_{2}}\right) \circ T\left( \zeta_{_{1}}\right) \ . 
+     \label{2-3-11-a}
+ \end{IEEEeqnarray}
+ 
+La ventaja de no suponer de entrada la  condición de Majorana en la variable $ \zeta $, es que podemos descomponer al conjunto de  transformaciones  supersimétricas  en subconjuntos  que si actúan como subgrupos de traslaciones fermiónicas.  Cuando $ \zeta $ no está restringida, las  partes izquierda y derecha de $ \zeta$ son independientes. Siendo este el caso, podemos ver de la Ec. \eqref{2-3-11}  que las transformaciones  $  T\left( \zeta_{+}\right) $  y $  T\left( \zeta_{-}\right) $ forman  subgrupos abelianos (cada uno por separado),
+ \begin{IEEEeqnarray}{rl}
+          T\left( \zeta_{_{1}\pm}\right) \circ T\left( \zeta_{_{2}\pm}\right)   \, = \,       T\left[ \left( \zeta_{_{1}} \, + \,  \zeta_{_{2}}\right)_{\pm}\right] \ , 
+     \label{2-3-11-b}
+ \end{IEEEeqnarray}
+ donde  $ \zeta_{\pm}  \, = \, \frac{1}{2}\left( I\pm \gamma_{5}\right)\zeta  $.  Entonces, la transformación supersimétrica para  $ \zeta $ arbitrario, $  T(\zeta)$, puede expresarse en términos de  $  T(\zeta_{+})$ y  $  T(\zeta_{-})$, 
+\begin{IEEEeqnarray}{rl}
+            T\left( \zeta\right)  \, = \,  T\left( -\zeta_{-}\cdot\gamma^{\mu} \zeta_{+}\right)\circ T\left( \zeta_{+}\right) \circ T\left( \zeta_{-}\right)  \ .
+    \label{2-3-12}
+\end{IEEEeqnarray}
+\textbf{\textit{El álgebra del grupo de super Poincaré.}}
+Es momento de analizar a los generadores de las representaciones unitarias  $    \mathsf{U}\left( \Lambda,a,\zeta\right)  $ del grupo de super Poincaré. Tomamos en $   T(\Lambda,a,\zeta)   $ los parámetros continuos que estén conectados con la unidad $    T(I,0,0)    $ (esto es,
+nos restringimos a la parte conexa del grupo, el cual incluye  al grupo propio ortócrono de Lorentz). Para valores 
+\begin{IEEEeqnarray}{rl}
+            \Lambda^{\mu}_{\,\,\nu}   \, = \,   \delta^{\mu}_{\,\,\nu}  \, + \, \omega^{\mu}_{\,\, \nu}, \quad  a^{\mu}  \, = \, \varepsilon^{\mu}, \quad \zeta_{\alpha}  \, = \, \varpi_{\alpha}  \ ,
+    \label{2-3-13}
+\end{IEEEeqnarray}
+lo suficientemente peque\~ nos,  podemos expandir $ \mathsf{U}(I +\omega,\varepsilon,\varpi) $ en serie de Taylor alrededor del operador identidad $ \mathsf{I} $,
+\begin{IEEEeqnarray}{rl}
+                 \mathsf{U}(I +\omega,\varepsilon,\varpi)    \, = \,  \mathsf{I}  \, + \, \tfrac{i}{2}\omega_{\mu\nu}\mathsf{J}^{\mu\nu}  \, - \,i\varepsilon_{\mu}\mathsf{P}^{\mu}  \, + \, i \varpi\cdot\mathcal{Q}  \, + \, \dots
+    \label{2-3-14}
+\end{IEEEeqnarray}
+  Formamos la siguiente composición de transformaciones unitarias: 
+  \begin{IEEEeqnarray}{rl}
+                  \mathsf{U}(\Lambda,a,\zeta)     \mathsf{U}(I +\omega,\varepsilon,\varpi)\mathsf{U}^{-1}(\Lambda,a,\zeta)   \ .
+         \label{2-3-15}
+     \end{IEEEeqnarray}
+De aquí podemos ver que
+\begin{IEEEeqnarray}{rl}
+              \mathsf{U}(\Lambda,a,\zeta)\, \mathsf{J}^{\mu\nu}\,\mathsf{U}^{-1}(\Lambda,a,\zeta)   &  \, = \, \Lambda^{\,\, \mu}_{\rho}\Lambda^{\,\, \nu}_{\sigma}\left( \mathsf{J}^{\rho\sigma}  \, - \,a^{\rho}\mathsf{P^{\sigma}} \, + \, a^{\sigma}\mathsf{P^{\rho}}  \right.  \nonumber\\
+   &\qquad   \left.   \qquad    \, - \, i\left( \mathcal{J}^{\rho\sigma}\zeta\right)\cdot\left[ \mathcal{Q} \, - \,\slashed{\mathsf{P}}\zeta\right]  \right) \ , \nonumber \\
+                \mathsf{U}(\Lambda,a,\zeta) \,\mathsf{P}^{\mu}\,\mathsf{U}^{-1}(\Lambda,a,\zeta)    & \, = \, \Lambda^{\,\, \mu}_{\rho}\mathsf{P}^{\rho} \ ,\nonumber \\
+                  \mathsf{U}(\Lambda,a,\zeta) \,\mathcal{Q}_{\alpha}\,\mathsf{U}^{-1}(\Lambda,a,\zeta)    & \, = \,\left[  D\left( \Lambda^{-1}\right)\left(  \mathcal{Q}\, - \,2\slashed{\mathsf{P}}\zeta\right)\right]_{\alpha}\ ,\nonumber \\
+    \label{2-3-16}
+\end{IEEEeqnarray}
+donde $ \mathcal{J}^{\rho\sigma} $ son las matrices generadores de la representación de Dirac,
+\begin{IEEEeqnarray}{rl}
+             D(\Lambda)  \, = \, I + (i/2)\omega_{\mu\nu}\mathcal{J}^{\mu\nu}  \, + \, \dots
+    \label{2-3-16-a}
+\end{IEEEeqnarray}
+
+ Haciendo de nuevo  la identificación  $ (\Lambda,a,\zeta)\rightarrow (I +\omega,\varepsilon,\varpi)  $  en la Ec. \eqref {2-3-16}, obtenemos el super\'algebra de los generadores del grupo de super Poincaré, 
+  	\begin{IEEEeqnarray}{rl}
+ \,	i\left[ \mathsf{J}^{\mu \nu},\mathsf{J}^{\rho \sigma}\right] & \, = \, \eta^{\mu \rho}\mathsf{J}^{\sigma \nu}-\eta^{\mu \sigma}\mathsf{J}^{\rho \nu} + \eta^{\rho \nu}\mathsf{J}^{\mu \sigma} - \eta^{\sigma \nu}\mathsf{J}^{\mu \rho}, \nonumber \\
+  \, i\left[ \mathsf{P}^{\mu},\mathsf{J}^{\rho \sigma} \right] & \, = \, \eta^{\mu \rho}\mathsf{P}^{\sigma}- \eta^{\mu \sigma}\mathsf{P}^{\rho}, \nonumber \\
+   \, \left[ \mathsf{P}^{\mu},\mathsf{P}^{\nu}\right] &\, = \, 0	 \nonumber     \\
+    \left[ \mathcal{Q}_{\alpha},\mathsf{J}^{\rho \sigma}\right]  & \, = \,   \left( \mathcal{J}^{\rho\sigma}\mathcal{Q}\right)_{\alpha} \ , \nonumber \\
+   \left\lbrace \mathcal{Q}_{\alpha}, \mathcal{Q}_{\beta}\right\rbrace   & \, = \, +2i \left( \epsilon\gamma_{5}\slashed{\mathsf{P}}\right) _{\alpha\beta} \ ,\nonumber \\
+    \left[ \mathsf{P}^{\mu},\mathcal{Q}_{\alpha}\right] &\, = \, 0\ 	.
+		\label{2-3-17}
+	\end{IEEEeqnarray}
+Debido a que las constantes de estructura asociadas a $ \left[ \mathsf{P}^{\mu},\mathsf{P}^{\nu}\right]  $ y $  \left\lbrace \mathcal{Q}_{\pm\alpha}, \mathcal{Q}_{\pm\beta}\right\rbrace  $ son cero, las transformaciones  unitarias para $ a^{\mu} $ y $ \zeta_{\pm} $ finitos vienen dadas por los mapeos exponenciales
+\begin{IEEEeqnarray}{rl}
+            \mathsf{U}(a)  \, = \, \exp\left[ - i\, a_{\mu}\mathsf{P}^{\mu}\right] , \quad \mathsf{U}(\zeta_{\pm})  \, = \, \exp\left[ +i\, \zeta_{\pm} \cdot \mathcal{Q}\right] \ .
+    \label{2-3-18}
+\end{IEEEeqnarray}
+Más aún, la transformación supersimétrica general viene también dada por el mapeo exponencial
+\begin{IEEEeqnarray}{l}
+        {\mathsf{U}}(\zeta) \, = \,  \exp{\left[+i{\zeta}\cdot\mathcal{Q} \right] }   \ .
+    \label{2-3-19}
+\end{IEEEeqnarray}
+Para ver esto, usamos  la fórmula (Zassenhaus)
+\begin{IEEEeqnarray}{rl}
+            e^{t(X+Y)}= e^{tX}\,  e^{tY} \,e^{-\frac{t^2}{2} [X,Y]} \, e^{\frac{t^3}{6}(2[Y,[X,Y]]+ [X,[X,Y]] )}  \dots \ ,
+     \label{2-3-20}
+ \end{IEEEeqnarray}
+junto  con 
+ \begin{IEEEeqnarray}{rl}
+            \left[ \left\lbrace  \mathcal{Q}_{\alpha},\mathcal{Q}_{\beta} \right\rbrace , \mathcal{Q}_{\delta} \right]   \, = \,  0\ , 
+    \label{2-3-19-a}
+\end{IEEEeqnarray} 
+y
+ \begin{IEEEeqnarray}{rl}
+         {\left[+i{\zeta'}\cdot\mathcal{Q} , +i{\zeta}\cdot\mathcal{Q} \right] }    & \, = \, +2i\,  {\zeta'}\cdot  \slashed{\mathrm{P}} \zeta \ , 
+    \label{2-3-22}
+\end{IEEEeqnarray}
+para ver que 
+\begin{IEEEeqnarray}{rl}
+              \exp{\left[+i{\zeta}\cdot\mathcal{Q} \right] }  \, = \,  {\mathsf{U}}\left(- \zeta\cdot\gamma^{\mu} \zeta_{-} \right)  {\mathsf{U}}(\zeta_{+}){\mathsf{U}}(\zeta_{-}) \ .
+    \label{2-3-19-b}
+\end{IEEEeqnarray}
+
+Aunque hemos dejado $ \zeta $ sin constricciones. Los operadores $ \mathcal{Q}_{\alpha} $ satisfacen la condición de Majorana
+\begin{IEEEeqnarray}{rl}
+              \mathcal{Q}^{\dagger}_{\alpha}  \, = \,\left(  \epsilon\gamma_{5}\beta\mathcal{Q} \right) _{\alpha}\ ,
+    \label{2-3-26}
+\end{IEEEeqnarray}
+por lo que
+\begin{IEEEeqnarray}{rl}
+            \mathsf{U}\left( \zeta\right)^{\dagger}   \, = \, \mathsf{U}\left( -\epsilon\gamma_{5}\beta\zeta^{*}\right)\ .
+    \label{2-3-27}
+\end{IEEEeqnarray}
+
+
+\section{Las Superpartículas-$ (\pm) $}
+\label{chap:2-4}
+Puesto que los generadores de las traslaciones conmutan: $ \left[\mathsf{P}^{\mu} ,\mathsf{P}^{\nu}\right]  \, = \, 0  $, podemos etiquetar  a los estados de superpartícula con los eigenvalores $  p^{\mu}  $ de los operadores $ \mathsf{P}^{\mu} $.  Para cada dicho estado  $ \Psi_{p,\sigma} $, donde  $ \sigma $ representa otras posibles etiquetas del estado, construimos dos estados $ \Psi^{\pm}_{p,0,\sigma}  $  que:
+\begin{itemize}
+\item[-]  Siguen siendo eigenestados de $ \mathsf{P}^{\mu} $:
+\begin{IEEEeqnarray}{rl}
+            \mathsf{P}^{\mu}\Psi^{\pm}_{p,0,\sigma}   \, = \, p^{\mu}\Psi^{\pm}_{p,0,\sigma} \  .
+    \label{2-4-1}
+\end{IEEEeqnarray}
+\item[-]  Son aniquilados por $ \mathcal{Q}_{\mp \alpha} $:
+\begin{IEEEeqnarray}{rl}
+        \mathcal{Q}_{\mp}\Psi^{\pm}_{p,0,\sigma}   \, = \, 0 \ .
+    \label{2-4-2}
+\end{IEEEeqnarray} 
+\item[-]  Comparten con $ \Psi_{p,\sigma} $ las mismas propiedades  de transformación bajo la acción  $ \mathsf{U}(\Lambda) $ del grupo homogéneo de Lorentz.
+\end{itemize}
+
+Si $ \Psi_{p,\sigma} $ ya satisface las relaciones $   \mathcal{Q}_{+}\Psi_{p,0,\sigma} =0 $ o $   \mathcal{Q}_{-}\Psi_{p,0,\sigma} =0 $, tomamos simplemente   $   \Psi^{+}_{p,0,\sigma}=\Psi_{p,0,\sigma}  $ o $   \Psi^{-}_{p,0,\sigma}=\Psi_{p,0,\sigma} $, respectivamente. Si no (o si solo para un signo), tomando en cuenta que  $ \mathcal{Q}\cdot\gamma_{5}\mathcal{Q}_{\mp} \Psi_{p,\sigma} $ no es siempre cero\footnote{De otra manera  tendríamos que  $ \mathcal{Q}\cdot\gamma_{5}\mathcal{Q}_{\mp} $ es un operador Casimir del supergrupo. Se puede ver de las reglas de transformación supersimétricas que actúan sobre los generadores $ \mathcal{Q}_{\alpha} $, que este no es el caso.} para todo $ \Psi_{p,\sigma}  $,  tomamos
+ \begin{IEEEeqnarray}{rl}
+          \Psi^{\pm}_{p,0,\sigma}    \, \equiv \,   \left(  \mathcal{Q}\cdot\gamma_{5}\mathcal{Q}_{\mp}\right) \, \Psi_{p,\sigma}  \  ,
+    \label{2-4-3}
+\end{IEEEeqnarray}
+El primer y el tercer punto  se cumplen porque  $ \mathcal{Q}\cdot\gamma_{5}\mathcal{Q}_{\mp} $ es un invariante de Lorentz. El segundo punto se sigue de  $ \left\lbrace \mathcal{Q}_{\mp\alpha}, \mathcal{Q}_{\mp\beta}\right\rbrace  =0 $.  Aunque la notación no lo sugiere, los  estados $ \Psi^{+}_{p,0,\sigma}  $ y $ \Psi^{-}_{p,0,\sigma}  $  construidos de la manera descrita,  no tienen porque provenir del  mismo $ \Psi_{p,\sigma} $.  Puesto que estamos tomando  como bosónicas a la representaciones del grupo de super Poincar\'e, la pureza (supersimétrica) de un estado  permanece invariante ante estas transformaciones.   En suma, poniendo las cosas en términos de transformaciones finitas, tenemos que \emph{siempre podemos construir dos tipos de estados $ \Psi^{+}_{p,0,\sigma} $ y $ \Psi^{-}_{p,0,\sigma} $ con pureza definida que satisfacen}
+\begin{IEEEeqnarray}{rl}
+            \mathsf{U}(a)\Psi^{\pm}_{p,0,\sigma}  \, = \, e^{- i (a\cdot p)} \Psi^{\pm}_{p,0,\sigma}\ ,   \quad  \mathsf{U}\left( \zeta_{\mp}\right) \Psi^{\pm}_{p,0,\sigma}  \, = \, \Psi^{\pm}_{p,0,\sigma}\  .
+    \label{2-4-4}
+\end{IEEEeqnarray} 
+
+Construimos $ \Psi^{\pm}_{p,0,\sigma} $ de tal manera que transforme unitariamente bajo el grupo de Lorentz,  mediante el método de \emph{representaciones inducidas de Wigner}~\cite{Wigner:1939cj}, el cual esbozamos a continuación. Para todos los vectores $ p^{\mu} $ en la misma capa de masa, esto es, para $ p^{\mu}p_{\mu} $ fijo, podemos escoger un  vector estándar $ k^{\mu} $, tal que  $ p^{\mu}  \, \equiv \, L(p)^{\mu}_{\,\,\nu}k^{\nu} $, donde  $ L(p)^{\mu}_{\,\,\nu} $ es una matriz de Lorentz.  De esta manera, los estados   $  \Psi^{\pm}_{p,0,\sigma} $ quedan definidos en términos de los estados $  \Psi^{\pm}_{k ,0,\sigma} $ evaluados en el vector estándar $ k^{\mu} $:
+\begin{IEEEeqnarray}{rl}
+             \Psi^{\pm}_{p,0,\sigma}   \, \equiv\, N(p) \mathsf{U}(L(p)) \Psi^{\pm}_{k,0,\sigma} \ ,
+    \label{2-4-5}
+\end{IEEEeqnarray}
+donde $ N(p) $ es la constante de normalizaci\'on. Operando estos estados con una  transformación de Lorentz, obtenemos 
+\begin{IEEEeqnarray}{rl}
+            \mathsf{U}(\Lambda) \Psi^{\pm}_{p,0,\sigma}   \, = \,\frac{ N(p)}{N(\Lambda p)}\sum_{\sigma'} D_{\sigma' \sigma}\left( W\left(\Lambda, p \right) \right)\Psi^{\pm}_{\Lambda p,0,\sigma'}  \ ,
+    \label{2-4-6}
+\end{IEEEeqnarray}
+donde $ W\left(\Lambda, p \right)  \, \equiv\, L^{-1}(\Lambda p) \Lambda L(p) $ es un elemento del conjunto de transformaciones $\left\lbrace  W^{\mu}_{\,\,\nu}\right\rbrace  $  que dejan invariante  al vector $ k^{\mu} $,
+\begin{IEEEeqnarray}{rl}
+             k^{\mu}  \, = \,   W^{\mu}_{\,\,\,\nu}\, k^{\nu}\  .
+    \label{2-4-7}
+\end{IEEEeqnarray}
+Estas transformaciones forman grupo, el llamado \emph{grupo peque\~no de Wigner}~\cite{Wigner:1939cj}.\footnote{Evidentemente, la matriz unidad está en estas transformaciones. Si $ W $ y $ W' $ dejan invariante a $ k $, también lo hace $ W W' $. Por lo que de hecho estas transformaciones  forman grupo. En matemáticas o para grupos diferentes al de Lorentz, a los grupos peque\~nos se les conoce como  \emph{grupos de estabilidad}.} El conjunto de matrices $ D_{\sigma' \sigma}(W) $, forman una representación de este grupo peque\~no,
+\begin{IEEEeqnarray}{rl}
+            D(\bar{W}W)  \, = \, D(\bar{W})D(W) \ .
+    \label{2-4-8}
+\end{IEEEeqnarray}
+ Definimos a los estados generales de superpartículas-$ (\pm) $  mediante las relaciones
+ \begin{IEEEeqnarray}{rl}
+            \Psi^{\pm} _{p,s_{\pm},\sigma}  \, \equiv \,  \mathsf{U}(s_{\pm}) \Psi^{\pm}_{p,0,\sigma}\ ,
+    \label{2-4-9}
+\end{IEEEeqnarray}
+esto es, etiquetamos a los estados de  superpartículas-$(\pm) $, mediante el  4-momento $ p^{\mu} $, el espinor $ s_{\pm} $ y el grado interno de libertad interno $ \sigma $.  Podemos ver que 
+\begin{IEEEeqnarray}{rl}
+              \mathsf{U}(\zeta_{\pm}) \Psi^{\pm} _{p,s_{\pm},\sigma}  \, = \, \Psi^{\pm} _{p,(s+\zeta)_{\pm},\sigma}\ , \quad          \mathsf{U}(\zeta_{\mp}) \Psi^{\pm} _{p,s_{\pm},\sigma}  \, = \, e^{2i\left[\zeta\cdot\left( \slashed{p}s\right)_{\mp} \right] }\,\Psi^{\pm} _{p,s_{\pm},\sigma} \ ,\nonumber \\
+    \label{2-4-10}
+\end{IEEEeqnarray}
+además,  $ \mathsf{U}(\Lambda)\mathsf{U}(s_{\pm}) \mathsf{U}(\Lambda)^{-1}  \, = \, \mathsf{U}(D(\Lambda) s_{\pm}) $ y   $ \mathsf{U}(a)\mathsf{U}(s_{\pm})  \, = \, \mathsf{U}(s_{\pm})  \mathsf{U}(a)$, por lo que la acción del grupo de super Poincaré sobre los estados de superpartícula-$ (\pm) $ viene dada por 
+\begin{IEEEeqnarray}{rl}
+      \mathsf{U}(a) \Psi^{\pm}_{p,s_{\pm},\sigma}   & \, = \, e^{- i (a\cdot p)}  \Psi^{\pm}_{p,s_{\pm},\sigma} \ , \nonumber \\
+       \label{2-4-11-a}\\
+            \mathsf{U}(\Lambda) \Psi^{\pm}_{p,s_{\pm},\sigma}   & \, = \,\frac{ N(p)}{N(\Lambda p)}\sum_{\sigma'} D_{\sigma' \sigma}\left( W\left(\Lambda, p \right) \right)\Psi^{\pm}_{\Lambda p,D(\Lambda)s_{\pm},\sigma'} \  ,
+            \nonumber \\  
+               \label{2-4-11-b}\\
+            \mathsf{U}(\zeta) \Psi^{\pm}_{p,s_{\pm},\sigma}   & \, = \,   \exp{\left[ i\left( \zeta_{ \mp}\right) \cdot\,\slashed{p}\left(2 s  \, + \, \zeta \right)  \right] }    \Psi^{\pm} _{p,(s+\zeta)_{\pm},\sigma}\ . \nonumber \\
+               \label{2-4-11-c}
+\end{IEEEeqnarray}
+
+Entonces,  el producto interior entre dos vectores de estado nos queda
+\begin{IEEEeqnarray}{rl}
+            \left( \Psi^{\pm}_{p',s'_{\pm},\sigma'}\right) ^{\,\dagger} \Psi^{\pm}_{p,s_{\pm},\sigma}  \, = \,     \left( \Psi^{\pm}_{p', 0,\sigma'}\right) ^{\,\dagger} \left(  \mathsf{U}\left( s'_{\pm}\right)^{\dagger}  \mathsf{U}\left( s_{\pm}\right)\Psi^{\pm}_{p,0,\sigma} \right) \ .\nonumber \\
+    \label{2-4-12}
+\end{IEEEeqnarray}
+Con la ayuda de las  Ecs. \eqref{2-3-11-a} y \eqref{2-3-27}, pasamos $  \mathsf{U}\left( s'_{\pm}\right)^{\dagger}  $ a la derecha de $ \mathsf{U}\left( s_{\pm}\right) $,
+\begin{IEEEeqnarray}{rl}
+             \mathsf{U}\left( s'_{\pm}\right)^{\dagger}  \mathsf{U}\left( s_{\pm}\right)  \, = \,  \exp\left[-2i \overline{s'} \slashed{\mathsf{P}} s_{\pm}\right] \mathsf{U}\left( s_{\pm}\right) \mathsf{U}\left( s'_{\pm}\right)^{\dagger}  \ . 
+             \label{2-4-12-1}
+\end{IEEEeqnarray}
+De esto último, y del hecho de que $ \Psi^{\pm}_{p,0,\sigma} $ permanece invariante bajo la acción de $ \mathsf{U}\left( s'_{\pm}\right)^{\dagger}  $ [ver Ec. \eqref{2-4-4}], obtenemos el producto interior de dos estados generales, en términos de los estados en el origen de sus argumentos fermiónicos:
+\begin{IEEEeqnarray}{rl}
+            \left( \Psi^{\pm}_{p',s'_{\pm},\sigma'}\right) ^{\,\dagger} \Psi^{\pm}_{p,s_{\pm},\sigma}  \, = \,   \exp\left[-2i\left(  \overline{s'} \slashed{{p}} s_{\pm}\right) \right]  \left\lbrace   \left( \Psi^{\pm}_{p',0,\sigma'}\right) ^{\,\dagger} \Psi^{\pm}_{p,0,\sigma} \right\rbrace \ . \nonumber \\
+    \label{2-4-13}
+\end{IEEEeqnarray}
+
+La normalización de los estados $  \Psi^{\pm}_{k,0,\sigma} $, evaluados en los momentos  estándares, siempre se puede escoger como~\cite{Weinberg:1995mt}:
+\begin{IEEEeqnarray}{rl}
+       \left( \Psi^{\pm}_{k',0,\sigma'}\right) ^{\,\dagger} \Psi^{\pm}_{k,0,\sigma}   \, = \, \delta^{3}\left(\mathbf{k}' -\mathbf{k}\right) \delta_{\sigma\sigma'}\ .
+    \label{2-4-14}
+\end{IEEEeqnarray}
+Tomando la constante de normalización  como 
+\begin{IEEEeqnarray}{rl}
+            N(p)   \, = \, \sqrt{{k^{0}}/{p^{0}}} \ ,
+    \label{2-4-15}
+\end{IEEEeqnarray}
+obtenemos  la expresión para la normalización de los estados de momento arbitrario $  \Psi^{\pm}_{p,0,\sigma} $, 
+\begin{IEEEeqnarray}{rl}
+       \left( \Psi^{\pm}_{p',0,\sigma'}\right) ^{\,\dagger} \Psi^{\pm}_{p,0,\sigma}   \, = \, \delta^{3}\left(\mathbf{p}' -\mathbf{p}\right) \delta_{\sigma\sigma'} \ .
+    \label{2-4-16}
+\end{IEEEeqnarray}
+
+De la Ec. \eqref{2-4-13} se sigue que   la normalización de los vectores de superpartícula-($ \pm $) viene dada por
+\begin{IEEEeqnarray}{rl}
+            \left( \Psi^{\pm}_{p',s'_{\pm},\sigma'}\right) ^{\,\dagger} \Psi^{\pm}_{p,s_{\pm},\sigma}  \, = \,   \exp\left[-2i\left(  \overline{s'} \slashed{{p}} s_{\pm}\right) \right]  \delta^{3}\left(\mathbf{p}' -\mathbf{p}\right) \delta_{\sigma\sigma'}\ .
+    \label{2-4-17}
+\end{IEEEeqnarray}
+
+Podemos ver que la normalización de los superestados de partícula, es consistente con la Ec. \eqref{2-2-41}, hemos  visto que esta  normalización de los superestados garantiza la independencia lineal en el superespacio.  
+ 
+ ?`Qué relaci\'on existe entre los estados  $ \Psi^{+}_{p,s_{+},\sigma}  $  y  $ \Psi^{-}_{p,s_{-},\sigma}  $? Ciertamente, si ambos estados  son construidos como en la Ec. \eqref{2-4-3},  estos son independientes.   Esto porque  si  
+\begin{IEEEeqnarray}{rl}
+              \Psi^{+}_{p,s_{\pm},\sigma}   \, = \, \mathcal{Q}\cdot \gamma_{5}\mathcal{Q}_{+}\Psi_{p\sigma},\quad  \Psi^{-}_{p,0,\sigma}   \, = \, \mathcal{Q}\cdot \gamma_{5}\mathcal{Q}_{-}\Psi'_{p\sigma} \ , 
+    \label{2-4-17-a}
+\end{IEEEeqnarray}
+se sigue que
+\begin{IEEEeqnarray}{rl}
+            \left(  \Psi^{+}_{p,0,\sigma}  \right) ^{\,\dagger}\Psi^{-}_{p',0,\sigma'}   &  \, = \, \left(  \Psi_{p,\sigma}  \right) ^{\,\dagger}\left[  \left( \mathcal{Q}\cdot \gamma_{5}\mathcal{Q}_{+}\right) ^{\dagger}\mathcal{Q}\cdot \gamma_{5}\mathcal{Q}_{-}\right] \Psi'_{p',\sigma'}   \nonumber \\
+            &\, = \, 0  \ . 
+    \label{2-4-18}
+\end{IEEEeqnarray}
+La última igualdad se sigue del hecho de que el 4-espinor  $ \mathcal{Q} $ satisface la condición de Majorana y por tanto
+\begin{IEEEeqnarray}{rl}
+             \left( \mathcal{Q}\cdot \gamma_{5}\mathcal{Q}_{+}\right) ^{\dagger}  \, = \,  -   \left( \mathcal{Q}\cdot \gamma_{5}\mathcal{Q}_{-}\right)
+    \label{2-4-18-a}
+\end{IEEEeqnarray}
+ 
+ El punto clave de esta discusión,  es que para cada conjunto de vectores de superestado  $ \Psi^{+}_{p,s_{+},\sigma}(\tilde{\Psi}^{-}_{p,s_{-},\sigma} )$ siempre podemos construir otro conjunto de superestados $   \tilde{\Psi}^{-}_{p,s_{-},\sigma} (\tilde{\Psi}^{+}_{p,s_{+},\sigma})$ que tienen las mismas propiedades de transformación que los superestados $ {\Psi}^{-}_{p,s_{-},\sigma}({\Psi}^{+}_{p,s_{+},\sigma}) $. Los superestados $ \tilde{\Psi}^{\pm}_{p,s_{\pm},\sigma}  $ vienen definidos por la transformada fermiónica 
+\begin{IEEEeqnarray}{l}
+          \tilde{\Psi}^{\pm}_{p,s_{\pm},\sigma} \equiv    \int    \exp{\left[  2i \,s_{\pm} \cdot \slashed{p}s'\right] }\,\Psi^{\mp}_{p,s'_{\mp},\sigma}\, d\left[p, s'_{\mp}\right] \ , 
+    \label{2-4-19}
+\end{IEEEeqnarray}
+donde $d\left[p, s'_{\pm}\right]  $ es una integral de volumen (de la cual hablaremos un poco más adelante), en general,  dependiente del momento $ p^{\mu} $. Bajo una transformación supersimétrica,
+\begin{IEEEeqnarray}{rl}    
+            \mathsf{U}(\zeta) \tilde{\Psi}^{\pm}_{p,s_{\pm},\sigma}   & \, = \,    e^{\left[ i\left( \zeta_{ \mp}\right) \cdot\,\slashed{p}\left(2 s  \, + \, \zeta \right)  \right] }     \int    e^{\left[  2i \,(s+\zeta)_{\pm} \cdot \slashed{p}(s'+\zeta)\right] }\,\Psi^{\mp}_{p,(s'+\zeta)_{\mp},\sigma}\,  d\left[p, s'_{\mp}\right]  \ . \nonumber \\
+    \label{2-4-20}
+\end{IEEEeqnarray}
+Como cualquier otra integral de volumen, esperamos que esta sea invariante ante traslaciones, entonces
+\begin{IEEEeqnarray}{rl}    
+            \mathsf{U}(\zeta) \tilde{\Psi}^{\pm}_{p,s_{\pm},\sigma}   & \, = \,   \exp{\left[ i\left( \zeta_{ \mp}\right) \cdot\,\slashed{p}\left(2 s  \, + \, \zeta \right)  \right] }    \tilde{\Psi}^{\pm} _{p,(s+\zeta)_{\pm},\sigma}\ .
+    \label{2-4-21}
+\end{IEEEeqnarray}
+
+Cuando  $ \Psi^{+}_{p,s_{\pm},\sigma}  $  y  $ \Psi^{-}_{p,s_{\pm},\sigma}  $ son independientes, tenemos  una representación reducible del grupo de super Poincaré. 
+%Puesto que $ \tilde{\Psi}^{\pm}_{p,s_{\pm},\sigma} $ es una combinacion lineal de los $ {\Psi}^{\pm}_{p,s_{\pm},\sigma} $, estos dos conjuntos no son independientes.
+
+Cerramos esta sección exponiendo la clasificación de los grupos peque\~nos.  Para $ p^{\mu}p_{\mu} \leq 0$ , el signo de $ p^{0} $ permanece invariante ante transformaciones del grupo propio ortócrono de Lorentz. En la tabla 1, mostramos los grupos de  pequeños del grupo de Poincar\'e.
+\begin{center}
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{|l|l|c|c|}
+\hline 
+Clase de vectores.  & Vector estándar $ k^{\mu}. $ & Grupo peque\~no. \\ 
+\hline 
+$  p^{\mu}p_{\mu} < 0, \quad   p^{0}>0$ & 
+\renewcommand{\arraystretch}{1}
+$ \begin{pmatrix}
+0 & 0 & 0 & M
+\end{pmatrix}, \, M>0  $  & $ SO(3) $  \\ 
+%\hline 
+$  p^{\mu}p_{\mu} < 0, \quad   p^{0}<0$ & 
+\renewcommand{\arraystretch}{1}
+$ \begin{pmatrix}
+0 & 0 & 0 & M
+\end{pmatrix}, \, M<0  $  & $ SO(3) $  \\ 
+%\hline 
+$  p^{\mu}p_{\mu} = 0, \quad   p^{0}>0$ &
+\renewcommand{\arraystretch}{1} 
+$ \begin{pmatrix}
+0 & 0 & \kappa & \kappa
+\end{pmatrix}, \, \kappa>0  $  & $ISO(2) $  \\ 
+%\hline 
+$  p^{\mu}p_{\mu} =  0, \quad   p^{0}<0$ &
+\renewcommand{\arraystretch}{1}
+ $ \begin{pmatrix}
+0 & 0 & \kappa & -\kappa
+\end{pmatrix}, \, \kappa >0  $ & $ ISO(2)$  \\
+%\hline 
+$  p^{\mu}p_{\mu} >0,   $ &
+\renewcommand{\arraystretch}{1}
+ $ \begin{pmatrix}
+0 & 0 & N &0
+\end{pmatrix},  $ & $ SO(2,1)$  \\ 
+\hline %\label{2-4-Tabla-1}
+\end{tabular} \\
+\vspace{.5cm}
+Tabla 1. Grupos peque\~nos del grupo propio ortócrono de Lorentz.
+\end{center}
+Obviamente, de mayor utilidad para la física son las representaciones $  p^{\mu}p_{\mu} = -M^{2}, \,   p^{0}<0$ y  $  p^{\mu}p_{\mu} =  0, \,  p^{0}<0$, en este estudio, nos restringimos a estos casos. Usaremos los vectores estándar que aparecen en la Tabla 1.
+\section{Los Estados de Partícula}
+\label{sec:2-5}
+Puesto que $ s_{\pm \alpha} s_{\pm \beta} s_{\pm \gamma}=0 $, la expansión de cualquier función de la variable  $ s_{\pm}$ termina a segundo orden en ésta. Expandimos $ \Psi^{\pm}_{p,s_{\pm},\sigma}  $ en   potencias de $ s_{\pm} $ por la izquierda,  con el fin de para expresar este superestado en términos de sus \emph{estados componente}  $ \Psi^{0,\pm}_{p,\sigma} $,  $ \Psi^{0,\pm}_{p,\sigma} $ y $ \Psi^{2,\pm}_{p,\sigma} $:
+\begin{IEEEeqnarray}{rl}
+            \Psi^{\pm}_{p,s_{\pm},\sigma}   \, \equiv \, \Psi^{0,\pm}_{p,\sigma} \, +\, \kappa^{0}_{\pm} \left( \Psi^{1,\pm}_{p,\sigma}\right) \cdot  \left(s_{p} \right)_{\mp}  \, + \, \kappa^{1}_{\pm}\,  \Psi^{2,\pm}_{p,\sigma} \left(  s\cdot s_{\pm}\right) \ .\nonumber \\
+    \label{2-5-01}
+\end{IEEEeqnarray}
+El estado  $ \Psi^{1,\pm}_{p,\sigma}$ es un vector de cuatro componentes  con los mismos índices que usamos para los cuatro espinores.  El 4-espinor $ s_{p} $ viene definido como 
+\begin{IEEEeqnarray}{rl}
+             s_{p}  \, \equiv \,  \epsilon\gamma_{5}\beta\, D[L(p)]^{-1}s \ .
+    \label{2-5-02}
+\end{IEEEeqnarray}
+Puesto que $ \Psi^{1,+}_{p,\sigma} $ y $ \Psi^{1,-}_{p,\sigma} $ entran siempre como proyecciones izquierdas y derechas, respectivamente,  sin perdida de generalidad suponemos 
+\begin{IEEEeqnarray}{rl}
+         \tfrac{1}{2}\left(I \, \mp \, \gamma_{5}\right) \,  \Psi^{1,\pm}_{p,\sigma} \, = \, 0 \ .
+    \label{2-5-03}
+\end{IEEEeqnarray}
+
+A primera instancia parece criminal expandir  al coeficiente lineal no como  $  s_{\mp\alpha} $ sino como    $  \left( \epsilon\gamma_{5}\beta D[L(p)]^{-1}s_{\pm} \right)_{\alpha} $. Lo importante es que  $ \epsilon\gamma_{5}\beta D[L(p)]^{-1} $  es invertible y por tanto la expansión lineal está bien definida. Con  esta identificación, junto con la 
+Ec. \eqref{2-4-11-a}, vemos que  los estados componente transforman bajo el grupo de traslaciones como 
+\begin{IEEEeqnarray}{rl}
+         \mathsf{U}(a)   \Psi^{(0,1,2),\pm}_{p,\sigma}   \, = \,  e^{- i (a\cdot p)}   \,  \Psi^{(0,1,2),\pm}_{p,\sigma}  
+    \label{2-5-04}
+\end{IEEEeqnarray}
+Puesto que $ s\cdot s = D(\Lambda)s\cdot D(\Lambda)s $, las transformaciones de Lorentz sobre los estados $ \Psi^{0,\pm}_{p,\sigma}  $ y $ \Psi^{2,\pm}_{p,\sigma}  $  son las mismas,
+\begin{IEEEeqnarray}{rl}
+             \mathsf{U}(\Lambda)\Psi^{(0,2),\pm}_{p,\sigma}   & \, = \,\frac{ N(p)}{N(\Lambda p)}\sum_{\sigma'} D^{(j)}_{\sigma' \sigma}\left( W\left(\Lambda, p \right) \right)\Psi^{(0,2),\pm}_{p,\sigma}  \ .
+    \label{2-5-05}
+\end{IEEEeqnarray}
+El cuatro espinor $ s_{p} $ satisface la relaci\'on\footnote{Solo basta notar que  \begin{IEEEeqnarray}{rl}
+            \epsilon\gamma_{5}{\beta}\,D[L^{-1}(\Lambda p)\Lambda] s_{\pm}  \, = \, D[W(\Lambda,p)]^{-1\dagger}\, \epsilon\gamma_{5}{\beta}\,D[L^{-1}( p)] s_{\pm}\nonumber 
+    \label{2-5-Foot-1}
+\end{IEEEeqnarray} 
+ } 
+\begin{IEEEeqnarray}{rl}
+              \left( D\left( \Lambda\right)s\right) _{\Lambda p}    \, = \, D\left[ W^{-1}(\Lambda,p)\right]^{\dagger} s_{p} \ .
+    \label{2-5-06}
+\end{IEEEeqnarray}
+Entonces, la transformación de  $ \left( \Psi^{1,\pm}_{p,\sigma}\right)_{\alpha}  $ bajo el grupo de Lorentz es
+\begin{IEEEeqnarray}{rl}
+             \mathsf{U}(\Lambda)\left( \Psi^{1,\pm}_{p,\sigma}\right)_{\alpha}    & \, = \,\frac{ N(p)}{N(\Lambda p)}\sum_{\sigma'\,\beta} \left\lbrace D^{(j)}_{\sigma' \sigma}\left( W\left(\Lambda, p \right) \right)\right\rbrace_{\beta\alpha} \left( \Psi^{1,\pm}_{p,\sigma}\right)_{\beta}   \ ,
+    \label{2-5-07}
+\end{IEEEeqnarray}
+con
+\begin{IEEEeqnarray}{rl}
+        \left\lbrace D^{(j)}_{\sigma' \sigma}\left( W\left(\Lambda, p \right) \right)\right\rbrace_{\beta\alpha} \, \equiv \,  D^{(j)}_{\sigma' \sigma}\left( W\left(\Lambda, p \right) \right)\left[ D\left( W\left(\Lambda, p \right) \right)^{-1\dagger}\right]_{\beta\alpha} \ .\nonumber \\
+    \label{2-5-08}
+\end{IEEEeqnarray}
+Analizaremos más adelante las implicaciones de estas transformaciones  para los  casos masivos y sin masa por separado. 
+
+ Para encontrar los valores de los productos escalares de los estados $ \Psi^{(0,1,2),\pm}_{p,\sigma}  $, comparamos término a término en la variables fermiónicas los dos lados de la Eq. \eqref{2-4-17}. Para ello, desarrollamos en serie de Taylor el factor exponencial $   2\left(  {s'}\cdot \slashed{{p}} s_{\pm}\right) ^{2} $, 
+\begin{IEEEeqnarray}{rl}
+             \exp\left[-2i\left(  \overline{s'} \slashed{{p}} s_{\pm}\right) \right]   \, = \, 1  \, -\, 2i\left(  \overline{s'} \slashed{{p}} s_{\pm}\right)  \, -\, p^{\mu}p_{\mu}(s'^{*}\cdot s_{\pm}'^{*})(s\cdot s_{\pm})\ ,
+    \label{2-5-09}
+\end{IEEEeqnarray}
+donde hemos usado  la relación $ 2 \left(  \bar{s'} \slashed{{p}} s_{\pm}\right) ^{2}   \, = \, -m^{2}(s'^{*}\cdot s'^{*})(s\cdot s) $.  Inmediatamente se desprende que 
+\begin{IEEEeqnarray}{rl}
+            \left(  \Psi^{0,\pm}_{p,\sigma}  \right) ^{\dagger}\left( \Psi^{1,\pm}_{p',\sigma'} \right)   \, = \,   \left(  \Psi^{0,\pm}_{p,\sigma}  \right) ^{\dagger}\left( \Psi^{2,\pm}_{p',\sigma'} \right)    \, = \,   \left(  \Psi^{1,\pm}_{p,\sigma}  \right) ^{\dagger}\left( \Psi^{2,\pm}_{p',\sigma'} \right) \, = \,   0 \ .
+    \label{2-5-10}
+\end{IEEEeqnarray}
+Dicho con palabras, las componentes de los superestados de partícula son ortogonales. Más aún:
+\begin{itemize}
+\item[-] Los estados $ \Psi^{0,\pm}_{p,\sigma} $ son ortonormales:
+ \begin{IEEEeqnarray}{rl}
+        \left(    \Psi^{0,\pm}_{p',\sigma'}\right) ^{\dagger} \left( \Psi^{0,\pm}_{p,\sigma}\right)   &\, = \, \delta^{3}\left(\mathbf{p}' -\mathbf{p}\right) \delta_{\sigma\sigma'}\ . 
+    \label{2-5-11}
+\end{IEEEeqnarray} 
+\item[-] La normalización de los estados  $ \Psi^{2,\pm}_{p,\sigma} $ depende de $ \left(p^{\mu}p_{\mu} \right)  $ y la cantidad  $ \vert \kappa^{1}_{\pm}\vert^{2} $:
+ \begin{IEEEeqnarray}{rl}      
+      \vert \kappa^{1}_{\pm}\vert^{2}  \,\left(    \Psi^{2,\pm}_{p',\sigma'}\right) ^{\dagger} \left( \Psi^{2,\pm}_{p,\sigma}\right)   &\, = \, -\left(p^{\mu}p_{\mu} \right)  \delta^{3}\left(\mathbf{p}' -\mathbf{p}\right) \delta_{\sigma\sigma'}\ . 
+    \label{2-5-12}
+\end{IEEEeqnarray} 
+\item[-] La normalización de los estados $ \Psi^{2,\pm}_{p,\sigma} $ depende del vector estándar  $ k^{\mu}  $ y la cantidad  $ \vert \kappa^{0}_{\pm}\vert^{2} $:
+ \begin{IEEEeqnarray}{rl}        
+     \vert \kappa^{0}_{\pm}\vert^{2}   \left[  \left(    \Psi^{1,\pm}_{p',\sigma'}\right)_{\pm\alpha}\right] ^{\dagger}  \left( \Psi^{1,\pm}_{p,\sigma}\right) _{\pm\beta}  &\, = \, \, -\, 2i\left( \slashed{k}\beta\right)_{\pm \alpha,\pm\beta}  \delta^{3}\left(\mathbf{p}' -\mathbf{p}\right) \delta_{\sigma\sigma'} \  .\nonumber \\ 
+    \label{2-5-13}
+\end{IEEEeqnarray} 
+\end{itemize} 
+
+Para los  estados  $ \Psi^{0,\pm}_{p,\sigma} $ y $ \Psi^{2,\pm}_{p,\sigma} $, este resultado es inmediato\footnote{Para el caso $ \Psi^{2,\pm}_{p,\sigma} $, solo hay que notar que debido a  las  Ecs. \eqref{2-2-7}  y \eqref{2-2-13}:
+\begin{IEEEeqnarray}{rl}
+           \, \left[  \Psi^{2,\pm}_{p',\sigma'} \left(  s'\cdot s'_{\pm}\right) \right] ^{\dagger}\left[  \Psi^{2,\pm}_{p,\sigma} \left(  s\cdot s_{\pm}\right)\right]  \, = \, \left(  s'^{*}\cdot s'^{*}_{\pm}\right)  \left(  s\cdot s_{\pm}\right)\nonumber 
+\end{IEEEeqnarray}
+ } [ver las  Ecs. \eqref{2-4-17} y  \eqref{2-4-18}]. Mientras  que para $ \Psi^{1,\pm}_{p',\sigma'} $, notamos que el  término proporcional a $s'^{*}_{\pm\alpha} s_{\pm\alpha} $ en el lado izquierdo de   \eqref{2-4-17},   se puede expresar como  [ver Ecs. \eqref{2-2-7}  y \eqref{2-2-13}]
+\begin{IEEEeqnarray}{rl}
+           \left(    \left( \Psi^{1,\pm}_{p',\sigma'}\right) \cdot  \left(s'_{p'}\right)_{\pm}\right) ^{\dagger} &\left(  \left( \Psi^{1,\pm}_{p,\sigma}\right) \cdot \left(s_{p}\right)_{\pm}\right) \nonumber \\
+       \, = \, &\left\lbrace  \left[ \beta\, D[L(p')]^{-1}s_{\pm}'\right]^{*}_{\alpha} \left[ \beta\, D[L(p)]^{-1}s_{\pm}\right]_{\beta}\right\rbrace  \left(    \Psi^{1,\pm}_{p',\sigma'}\right)_{\alpha} ^{\dagger} \left( \Psi^{1,\pm}_{p,\sigma}\right) _{\beta}\ .\nonumber \\
+    \label{2-5-14}
+\end{IEEEeqnarray}
+Además, al comparar el lado izquierdo de \eqref{2-4-17}, obtenemos
+\begin{IEEEeqnarray}{rl}
+         2m   \left(    \Psi^{1,\pm}_{p',\sigma'}\right)_{\pm\alpha} ^{\dagger} \left( \Psi^{1,\pm}_{p,\sigma}\right) _{\pm\beta}  \, = \,\, -\, 2i\left(  D[L(p)]^{-1} \slashed{{p}} \, D[L(p)]\beta\right)_{\pm \alpha,\pm\beta}  \delta^{3}\left(\mathbf{p}' -\mathbf{p}\right) \delta_{\sigma\sigma'}\ . \nonumber \\
+    \label{2-5-15}
+\end{IEEEeqnarray}
+Finalmente,  usamos $ \slashed{p}  \, = \, D(L(p))\slashed{k} D(L(p))^{-1} $ para llegar al resultado deseado. 
+
+Analizamos ahora como transforman los estados componente bajo las transformaciones supersimétricas. Para esto hacemos uso de las  las Ecs. \eqref{2-5-01} y \eqref{2-4-11-c}. Bajo $ \mathsf{U}(\zeta_{\mp}) $, los estados componente transforman como
+  \begin{IEEEeqnarray}{rl} 
+              \mathsf{U}(\zeta_{\mp}) \Psi^{0,\pm}_{p,\sigma}  & \, = \, \Psi^{0,\pm}_{p,\sigma} \ , \nonumber \\
+             \kappa^{0}_{\pm}  \,  \mathsf{U}(\zeta_{\mp}) \Psi^{1,\pm}_{p,\sigma}  & \, = \, \kappa^{0}_{\pm}\Psi^{1,\pm}_{p,\sigma}   \, + \, 2i\,  \left(\Psi^{0,\pm}_{p,\sigma}\right)\left(\slashed{k}^{*} \zeta_{p}\right) _{ \mp}\ , \nonumber  \\
+              \kappa^{1}_{\pm}  \,  \mathsf{U}(\zeta_{\mp}) \Psi^{2,\pm}_{p,\sigma}  & \, = \, \kappa^{1}_{\pm}\Psi^{2,\pm}_{p,\sigma}   \, + \,  i  \kappa^{0}_{\pm} \, \Psi^{1,\pm}_{p,\sigma}\cdot\left(\slashed{k}^{*} \zeta_{p}\right) _{ \mp} \, + \,  p^{2}\Psi^{0,\pm}_{p,\sigma}(\zeta\cdot \zeta_{\mp})\ . \nonumber \\
+    \label{2-5-16}
+\end{IEEEeqnarray}
+Mientras que, bajo la acción de $  \mathsf{U}(\zeta_{\pm}) $ tenemos 
+ \begin{IEEEeqnarray}{rl}
+ \,  \mathsf{U}(\zeta_{\pm}) \Psi^{0,\pm}_{p,\sigma}  & \, = \, \Psi^{0,\pm}_{p,\sigma}   \, + \,       \kappa^{0}_{\pm} \, \Psi^{1,\pm}_{p,\sigma}\cdot\left( \zeta_{p}\right) _{ \mp} \, + \, \kappa^{1}_{\pm}\Psi^{2,\pm}_{p,\sigma}(\zeta\cdot \zeta_{\mp})  \nonumber  \\           
+             \kappa^{0}_{\pm}  \,  \mathsf{U}(\zeta_{\pm}) \Psi^{1,\pm}_{p,\sigma}  & \, = \, \kappa^{0}_{\pm}\Psi^{1,\pm}_{p,\sigma}   \, -\,   \kappa^{1}_{\pm} \left(\Psi^{2,\pm}_{p,\sigma}\right) \left( \zeta_{p}\right) _{ \mp} \nonumber \\
+              \mathsf{U}(\zeta_{\pm}) \Psi^{2,\pm}_{p,\sigma}  & \, = \, \Psi^{2,\pm}_{p,\sigma} 
+    \label{2-5-17}
+\end{IEEEeqnarray}
+Tomando $ \zeta $ infinitesimal, obtenemos la acción de las cargas supersimétricas   $   \mathcal{Q}_{\alpha} $ sobre los estados componente:
+\begin{IEEEeqnarray}{rl} 
+         \mathcal{Q}_{\alpha}\, \Psi^{0,\pm}_{p,\sigma}  & \, = \,    i(-)^{\Psi^{\pm}}    \kappa^{0}_{\pm} \,\left\lbrace D(L(p))^{\intercal}  \epsilon\gamma_{5}\beta\Psi^{1,\pm}_{p,\sigma}\right\rbrace _{\pm \alpha}\ , \nonumber \\
+              \,    \mathcal{Q}_{\alpha}\, \left( \Psi^{1,\pm}_{p,\sigma}\right)_{\beta}  & \, = \,\, \left(   - \tfrac{2(-)^{\Psi^{\pm}}}{ \kappa^{0}_{\pm}}\right)  \left\lbrace D(L(p)) \slashed{k}\beta \right\rbrace _{ \mp\alpha,\beta}\,  \left(\Psi^{0,\pm}_{p,\sigma}\right)  \ , \nonumber \\
+            & \qquad    \, + \,  \left( \tfrac{ 2i(-)^{\Psi^{\pm}} \kappa^{1}_{\pm}}{  \kappa^{0}_{\pm} }\right)\left\lbrace  D(L(p))\beta \right\rbrace _{\pm\alpha,\beta} \left(\Psi^{2,\pm}_{p,\sigma}\right)\nonumber \\   
+        \mathcal{Q}_{\alpha}  \Psi^{2,\pm}_{p,\sigma}  & \, = \,  + \left(   \tfrac{(-)^{\Psi^{\pm}}\kappa^{0}_{\pm}}{\kappa^{1}_{\pm} }\right)  \,\left\lbrace   D(L(p))^{\intercal}  \epsilon\gamma_{5}\beta\slashed{k}^{*}\Psi^{1,\pm}_{p,\sigma} \right\rbrace  _{ \mp\alpha}  \ .\nonumber \\
+    \label{2-5-18}
+\end{IEEEeqnarray}
+donde $ (-)^{\Psi^{\pm}} $ es positivo o negativo, dependiendo de si $ \Psi_{\pm} $ tiene pureza bosónica o fermiónica, respectivamente. Hasta aquí, es lo más lejos que podemos llegar sin  entrar en las particularidades de los grupo peque\~nos específicos. 
+
+
+Para varios propósitos,  a veces es conveniente eliminar el factor cuadrático en la fase de la transformación supersimétrica \eqref{2-4-11-c}, para ello podemos redefinir $    \Psi^{\pm}_{p,s_{\pm},\sigma}  $, para cualesquiera valores del 4-espinor $ s $, mediante la relación:
+\begin{IEEEeqnarray}{rl}
+            \Psi^{\pm}_{p, s,\sigma}  \, = \, \exp{\left[\,s\cdot (-i\slashed{p})s_{\mp}\right] }\Psi^{\pm}_{p, s_{\pm},\sigma}  
+    \label{2-5-}
+\end{IEEEeqnarray}
+En este caso, tenemos que
+\begin{IEEEeqnarray}{rl}
+               \mathsf{U}(\Lambda,a)  \Psi^{\pm}_{p, s,\sigma} &\, = \, e^{-i \Lambda p\cdot a} \sqrt{\tfrac{(\Lambda p)^{0}}{p^{0}}}\sum_{\sigma'}U_{\sigma'\sigma}[W(\Lambda,\textbf{p})] \Psi^{\pm}_{\Lambda p, D(\Lambda)s,\sigma'}   \ ,  \nonumber \\               
+                   \mathsf{U}(\zeta) \Psi^{\pm}_{p, s,\sigma}  &  \, = \,    \exp{\left[i\,\zeta\cdot\slashed{p} s  \right]  } \Psi^{\pm}_{p, s +\zeta,\sigma}  \ .\nonumber \\        
+     \label{SuperState_PoincareTrans_Extended}
+\end{IEEEeqnarray}
+
+\begin{center}
+\subsubsection*{Superpartículas Masivas}
+\end{center}
+
+Para el caso de masa positiva, el grupo peque\~no es el grupo de rotaciones $ SO(3) $, esto es, $ W  $ es  una  rotación en el espacio de tres dimensiones (incrustada en el espacio de cuatro dimensiones). Las  representaciones  irreducibles unitarias vienen dadas por las matrices $ D^{(j)}(R)_{\sigma,\sigma'} $ de dimensionalidad $ 2j+1 $ con $ j $ semientero positivo. 
+Ya que siempre podemos hacerlo~\cite{Weinberg:1965nx,Weinberg:1995mt}, escogemos:
+\begin{itemize}
+ \item[-] Al generador $  [J^{(j)}_{12} ]_{\sigma\sigma'} $ de las rotaciones alrededor del eje-$ z $, como  diagonal con eigenvalor $ \sigma $, de tal manera que la representación  de la matriz  $ R(\theta) $ que rota  el  eje-$ z $ por un ángulo $ \theta $ viene dada por 
+ \begin{IEEEeqnarray}{rl}
+            D^{(j)}(R)_{\sigma,\sigma'}   \, = \, \exp\left[ i\sigma \theta \right] \delta_{\sigma\sigma'}
+    \label{2-5-20}
+\end{IEEEeqnarray}
+con $ \sigma = -j, -j+1, \dots, j-1, j $. 
+ \item[-] La transformación de Lorentz  $ L(p) $, que manda al vector estándar $\begin{pmatrix}
+0 & 0 & 0 & M
+\end{pmatrix} $ al vector $ p^{\mu} $, de tal manera que cuando  la transformación de Lorentz $ \Lambda $ es una rotación $ \mathcal{R} $, tenemos que
+\begin{IEEEeqnarray}{rl}
+             W(\mathcal{R}, p)  \, = \, \mathcal{R} \ .
+     \label{2-5-21}
+ \end{IEEEeqnarray} 
+\end{itemize}
+Esta última relación está garantizada al escoger
+\begin{IEEEeqnarray}{rl}
+            L^{i}_{\,\,k}\left(\theta, \hat{\mathbf{p}} \right)  &  \, = \, \delta_{ik}  \, + \, \left( \sqrt{\mathbf{p}^{2}/m^{2}  \, + \, 1}-1\right) \hat{p}_{i}\hat{p}_{k}, \quad \nonumber \\
+          L^{i}_{\,\,0}\left(\theta, \hat{\mathbf{p}} \right)      &  \, = \,    L^{0}_{\,\,i}\left(\theta, \hat{\mathbf{p}} \right)  \, = \,  \hat{p}_{i} \vert \mathbf{p}\vert / m  , \quad \nonumber \\
+           L^{0}_{\,\,0}\left(\theta, \hat{\mathbf{p}} \right)     &  \, = \, \sqrt{\mathbf{p}^{2}/m^{2}  \, + \, 1}\  .
+    \label{2-5-21-a}
+\end{IEEEeqnarray}
+
+La representación de Dirac, restringida al grupo de rotaciones, es unitaria.  Es la representación reducible del grupo de rotaciones  formada por la suma directa de las representaciones unitarias de espín $ \frac{1}{2} $, 
+\begin{IEEEeqnarray}{rl}
+            D(\mathcal{R})  \, = \,  D^{\left( \frac{1}{2}\right) }(\mathcal{R}) \oplus  D^{\left( \frac{1}{2}\right)}(\mathcal{R})\ . 
+    \label{2-5-22}
+\end{IEEEeqnarray}
+Se sigue que
+\begin{IEEEeqnarray}{rl}
+     D\left( W\left(\Lambda, p \right) \right)^{-1\dagger}  \, = \,    D\left( W\left(\Lambda, p \right) \right) \ .
+    \label{2-5-23}
+\end{IEEEeqnarray}
+
+Concluimos que \emph{  para el caso masivo,  los estados $ \Psi^{(0,2),\pm}_{p,\sigma}  $ transforman como estados de partícula en la representación $ j $ del grupo de rotación, mientras  que
+ los  estados $ \Psi^{1,\pm}_{p,\sigma}  $  transforman como estados de partícula en la representación tensorial $ j\otimes \frac{1}{2} $ del grupo de rotaci\'on.} Para normalizar los estados componente, escogemos las constantes de la expansión fermiónica como 
+\begin{IEEEeqnarray}{rl}
+            \kappa^{0}_{\pm}  \, = \, \mp  \sqrt{2m}, \quad \kappa^{1}_{\pm}  \, = \, {m}\ ,
+    \label{2-5-24}
+\end{IEEEeqnarray} 
+en este caso,  el estado de superpartícula se ve como 
+ \begin{IEEEeqnarray}{rl}
+            \Psi^{\pm}_{p,s_{\pm},\sigma}   \, =\, \Psi^{0,\pm}_{p,\sigma} \, \mp\, \sqrt{2m}\, \left( \Psi^{1,\pm}_{p,\sigma}\right) \cdot  \left( s_{\pm} \right)_{p} \, + \, m \,  \Psi^{2,\pm}_{p,\sigma} \left(  s\cdot s_{\pm}\right) \ .\nonumber \\
+    \label{2-5-25}
+\end{IEEEeqnarray}
+En  el reposo, $ \slashed{p} $ es proporcional a la matriz $ \beta $:
+\begin{IEEEeqnarray}{rl}
+             \slashed{k}   \, = \, im\beta, \quad 
+    \label{2-5-26}
+\end{IEEEeqnarray}
+  Con esto vemos que efectivamente, los estados componente están normalizados:
+ \begin{IEEEeqnarray}{rl}
+        \left(    \Psi^{(0,2),\pm}_{p',\sigma'}\right) ^{\dagger} \left( \Psi^{(0,2),\pm}_{p,\sigma}\right)   &\, = \, \delta^{3}\left(\mathbf{p}' -\mathbf{p}\right) \delta_{\sigma\sigma'}\ , \nonumber \\
+       \left[  \left(    \Psi^{1,\pm}_{p',\sigma'}\right)_{\pm\alpha}\right] ^{\dagger}  \left( \Psi^{1,\pm}_{p,\sigma}\right) _{\pm\beta}  &\, = \,  \delta^{3}\left(\mathbf{p}' -\mathbf{p}\right) \delta_{\sigma\sigma'}\delta_{ \pm\alpha\pm\beta}\ . \nonumber \\
+    \label{2-5-27}
+\end{IEEEeqnarray}
+Para hacer la notación menos pesada y poder compararla con la literatura existente, denotamos a los estados componente  en el reposo como  
+\begin{IEEEeqnarray}{rl}
+            \Psi^{(0,2),\pm}_{k,\sigma}  \, = \, \ket{\sigma}^{(0,2),\pm},\quad  \Psi^{1,+}_{k,\sigma}  \, = \, \begin{pmatrix}
+            0 \\ 
+             \ket{\sigma,a}^{+}
+            \end{pmatrix} , \quad \Psi^{1,-}_{k,\sigma}  \, = \, \begin{pmatrix}
+             \ket{\sigma,a}^{-} \\ 
+            0
+            \end{pmatrix} \nonumber \\
+    \label{2-5-28}
+\end{IEEEeqnarray}
+con $ a =\frac{1}{2},-\frac{1}{2} $. En esta notación, la acción de las cargas supersimétricas viene dada (los factores $ \left(- \right)^{\Psi^{\pm}} $ representan la pureza de los superestados):
+  \begin{itemize}
+  \item[-]  Para los estados $ \Psi^{0,\pm}_{k,\sigma} $: 
+   \begin{IEEEeqnarray}{rl}
+             \mathcal{Q}^{*}_{a}\ket{\sigma}^{0+}   &\, = \, -i\sqrt{2m}\left(- \right)^{\Psi^{+}} \ket{\sigma,a}^{+} , \quad                \mathcal{Q}_{a}\ket{\sigma}^{0+}   \, = \, 0 \nonumber \\
+                \mathcal{Q}_{a}\ket{\sigma}^{0-}   &\, = \, -i\sqrt{2m}\left(- \right)^{\Psi^{-}} e_{ab}\ket{\sigma,b}^{-} , \quad          \mathcal{Q}^{*}_{a}\ket{\sigma}^{0-}   \, = \, 0 
+     \label{2-5-29}
+ \end{IEEEeqnarray}
+  \item[-]  Para los estados $ \Psi^{2,\pm}_{k,\sigma} $:
+  \begin{IEEEeqnarray}{rl}
+             \mathcal{Q}^{*}_{a}\ket{\sigma}^{2-}   &\, = \, -i\sqrt{2m}\left(- \right)^{\Psi^{-}} \ket{\sigma,a}^{-} , \quad                \mathcal{Q}_{a}\ket{\sigma}^{2-}   \, = \, 0 \nonumber \\
+                \mathcal{Q}_{a}\ket{\sigma}^{2+}   &\, = \, -i\sqrt{2m}\left(- \right)^{\Psi^{+}} e_{ab}\ket{\sigma,b}^{+} , \quad          \mathcal{Q}^{*}_{a}\ket{\sigma}^{2+}   \, = \, 0 
+     \label{2-5-30}
+ \end{IEEEeqnarray}
+  \item[-] Para los estados $ \Psi^{1,\pm}_{k,\sigma} $:
+ \begin{IEEEeqnarray}{rl}
+             \mathcal{Q}_{a}\ket{\sigma, b}^{+}  \, = \, i\sqrt{2m} (-)^{\Psi^{+}}\ket{\sigma}^{0+}\delta_{ab} , \quad   \mathcal{Q}^{*}_{a}\ket{\sigma, b}^{+}  \, = \, -i\sqrt{2m}  (-)^{\Psi^{+}}\ket{\sigma}^{2+}e_{ab} \nonumber \\
+                \mathcal{Q}_{a}\ket{\sigma, b}^{-}  \, = \, i\sqrt{2m} (-)^{\Psi^{-}}\ket{\sigma}^{2-}\delta_{ab} , \quad   \mathcal{Q}^{*}_{a}\ket{\sigma, b}^{-}  \, = \, -i\sqrt{2m}  (-)^{\Psi^{-}}\ket{\sigma}^{0-}e_{ab} \nonumber \\
+     \label{2-5-31}
+ \end{IEEEeqnarray}
+ \end{itemize}
+ 
+ Vemos explícitamente, la estructura de operadores de ascenso y descenso con pasos $ \pm 1/2 $ en el espín, que  los generadores $ \mathcal{Q}_{a} $ y $ \mathcal{Q}^{*}_{a} $ poseen.  Esta forma, es la  que se presenta en los tratamientos usuales de supersimetría. 
+
+
+\textbf{\textit{Medida invariante.}} La dimensión de los elementos independientes de los 4-espinores quirales, $ s_{+} $ y $ s_{-} $, es dos en cada caso.  Entonces, los elementos fermiónicos de volumen son dos dimensionales:
+\begin{IEEEeqnarray}{rl}
+              d^{2}s_{+}\equiv ds_{2+}ds_{1+},\quad  d^{2}s_{-}\equiv ds_{4+}ds_{3+} \ .
+    \label{2-5-32}
+\end{IEEEeqnarray}
+Estas medidas fermiónicas son invariantes de Lorentz, esto lo vemos notando que:
+\begin{IEEEeqnarray}{rl}	            
+d^{2}s_{\pm}  \, = \, -\tfrac{1}{2} ds \cdot \gamma_{5} ds_{\pm}  
+    \label{2-5-33}
+\end{IEEEeqnarray}
+donde  $ ds =\begin{pmatrix} ds_{1} & ds_{2} & ds_{3} & ds_{4} \end{pmatrix}  $. Tomando el diferencial fermiónico en la relación definitoria de los estados $   \tilde{\Psi}^{\pm}_{p,s_{\pm},\sigma} $ [Ec. \eqref{2-4-19}] como 
+\begin{IEEEeqnarray}{rl}
+            d\left[p, s_{\mp}\right]    \, = \, \mp (2m)^{-1}d^{2}s_{\mp}\ ,
+    \label{2-5-34}
+\end{IEEEeqnarray}
+llegamos a:
+\begin{IEEEeqnarray}{l}
+          \tilde{\Psi}^{\pm}_{p,s_{\pm},\sigma} =  \mp (2m)^{-1}\int    \exp{\left[  2i \,s_{\pm} \cdot \slashed{p}s'\right] }\,\Psi^{\mp}_{p,s'_{\mp},\sigma}\,  d^{2}s'_{\mp} \ .
+    \label{2-5-35}
+\end{IEEEeqnarray}
+El haber tomado a  $ (2m)^{-1} $ como constante de proporcional nos permite  normalizar a estos superestados de la misma forma que los superestados     $      {\Psi}^{\pm}_{p,s_{\pm},\sigma}  $. También  hemos elegido  las relaciones  $\eqref {2-5-24} $ de las constantes de la expansión fermiónica del superestado general, para que la relación entre los estados componente de   $  \tilde{\Psi}^{\pm}_{p,s_{\pm},\sigma} $ y  $      {\Psi}^{\mp}_{p,s_{\mp},\sigma}  $ sean de lo más simple posible,
+\begin{IEEEeqnarray}{rl}
+            \tilde{\Psi}^{0 \pm}_{p,\sigma}  \, = \, \Psi^{2\mp}_{p,\sigma} ,\quad     \tilde{\Psi}^{2 \pm}_{p,\sigma}  \, = \, \Psi^{0 \mp}_{p,\sigma} ,\quad  \left( \beta\tilde{\Psi}^{1\pm}_{p,\sigma}\right)_{\alpha}   \, = \,\left( \Psi^{1\mp}_{p,\sigma} \right)_{\alpha}\ .
+    \label{2-5-36}
+\end{IEEEeqnarray}
+  La expresión del  superestado $        {\Psi}^{\pm}_{p,s_{\pm},\sigma}  $ en términos de $  \tilde{\Psi}^{\mp}_{p,s_{\mp},\sigma}  $ es simétrica a la Ec. \eqref{2-5-35}, esto es
+\begin{IEEEeqnarray}{l}
+         {\Psi}^{\pm}_{p,s_{\pm},\sigma} =  \mp (2m)^{-1}\int    \exp{\left[  2i \,s_{\pm} \cdot \slashed{p}s'\right] }\, \tilde{\Psi}^{\mp}_{p,s'_{\mp},\sigma}\,  d^{2}s'_{\mp} \ .
+    \label{2-5-36-1}
+\end{IEEEeqnarray}
+
+Tomamos el producto escalar de  $ \Psi^{\mp}_{p,s'_{\mp},\sigma} $ con $  \tilde{\Psi}^{ \pm}_{p,\sigma}  $:
+\begin{IEEEeqnarray}{rl}
+            \left(  {\Psi}^{\mp}_{p',s'_{\mp},\sigma'}\right) ^{\dagger}\left( \tilde{\Psi}^{\pm}_{p,s_{\pm},\sigma}\right)   \, = \, \mp (2m)^{-1}\int    e^{\left[  2i \,s \cdot \slashed{p}s''_{\mp}\right] }e^{\left[ - 2i \,\bar{s'}  \slashed{p}s''_{\mp}\right] } d^{2}s''_{\mp}\, \delta^{3}\left(\mathbf{p}' -\mathbf{p}\right) \delta_{\sigma\sigma'} \ , \nonumber \\
+    \label{2-5-37}
+\end{IEEEeqnarray}
+ hacemos el cambio de variable     $ s'' \, \rightarrow \,(-\slashed{p}/m^{2})s'' $  e integramos  en la variable fermiónica $ s''_{\mp} $ (con la ayuda de   $  \int    e^{\left[  2i \,s\cdot s'_{\pm} \right] } \,  d^{2}s'_{\pm}  \, = \, - 4\delta^{2}(s_{\pm})  $). Obtenemos
+ \begin{IEEEeqnarray}{rl}
+            \left(  {\Psi}^{\mp}_{p',s'_{\mp},\sigma'}\right) ^{\dagger}\left( \tilde{\Psi}^{\pm}_{p,s_{\pm},\sigma}\right)       &  \, = \, \pm 2m  \,\delta^{2}\left[ \left( s-\epsilon\gamma_{5}\beta{s'}^{*}\right)_{\pm}\right]  \delta^{3}\left(\mathbf{p}' -\mathbf{p}\right) \delta_{\sigma\sigma'} \ , \nonumber \\
+    \label{2-5-38}
+\end{IEEEeqnarray}
+donde $ \delta^{2}(s_{\pm}) \, = \,\tfrac{1}{2} s \cdot \gamma_{5} s_{\pm}  $. Reescribimos esta última ecuación como 
+\begin{IEEEeqnarray}{rl}
+            \left(  {\Psi}^{\mp}_{p',\epsilon\gamma_{5}\beta s'^{*}_{\mp},\sigma'}\right) ^{\dagger}\left( \tilde{\Psi}^{\pm}_{p,s_{\pm},\sigma}\right)       &  \, = \, \pm 2m  \,\delta^{2}\left[ \left( s-{s'}\right)_{\pm}\right]  \delta^{3}\left(\mathbf{p}' -\mathbf{p}\right) \delta_{\sigma\sigma'}  \ , \nonumber \\
+    \label{2-5-38}
+\end{IEEEeqnarray}
+para ver que  \emph{los superestados $ \tilde{\Psi}^{\pm}_{p,s_{\pm},\sigma} $, son aquellos superestados que normalizan con los  superestados $ {\Psi}^{\mp}_{p,s_{\mp},\sigma} $ con la función delta fermiónica. }
+\begin{center}
+\subsubsection*{Superpartículas sin Masa}
+\end{center}
+
+Para el caso de masa cero, el grupo peque\~no es el grupo $ ISO(2) $, el grupo de rotaciones y traslaciones en el plano de dos dimensiones. Cualquier matriz de Lorentz que pertenezca a este grupo peque\~no, puede ser parametrizada como\footnote{Cuando $ W $ es funci\'on de $ (\Lambda, p) $ tenemos que
+\begin{IEEEeqnarray}{rl}
+            \theta  \, = \, \theta(\Lambda, p) , \quad w_{1} \, = \,  w_{1}(\Lambda, p) ,\quad w_{2} \, = \,  w_{2}(\Lambda, p) \ . \nonumber 
+\end{IEEEeqnarray}
+ } 
+\begin{IEEEeqnarray}{rl}
+            W(\theta, w_{1},w_{2})  \, = \, \mathcal{R}(\vartheta)\mathcal{S}(w_{1},w_{2}) \ ,
+    \label{2-5-39}
+\end{IEEEeqnarray}
+donde  $ \mathcal{R}(\vartheta) $ y  $\mathcal{S}(w_{1},w_{2})  $ satisfacen las siguientes reglas de composición:
+\begin{IEEEeqnarray}{rl}
+             \mathcal{R}(\bar{\vartheta})\mathcal{R}(\vartheta)  & \, = \, \mathcal{R}(\bar{\vartheta}+\vartheta)\ ,  \nonumber \\
+         \mathcal{S}(w_{1},w_{2})  \mathcal{S}(\bar{w}_{1},\bar{w}_{2})  & \, = \,     \mathcal{S}(w_{1}+\bar{w}_{1},w_{2}+\bar{w}_{2})\ . \nonumber \\
+    \label{2-5-40}
+\end{IEEEeqnarray}
+Vemos que   $  \mathcal{R} $ y $  \mathcal{S}  $ forman subgrupos  \emph{abelianos}, el de rotaciones  y  traslaciones en el plano, respectivamente. El número mayor de generadores que conmutan mutuamente, es el que proviene de los generadores de $ \mathcal{S} $ (dos generadores). Tentativamente, identificamos a los  estados de superpartícula con las etiquetas $ \sigma =  (a_{1},a_{2})$, de tal manera que la representación del grupo peque\~no actúa como el mapeo exponencial,
+\begin{IEEEeqnarray}{rl}
+                D_{\sigma,\sigma'} [\mathcal{S}(\Lambda,p)] \, = \, \delta(a_{1}-a'_{1})\delta(a_{2}-a'_{2})\exp[i a_{1}\omega_{1} +i a_{2}\omega_{2} ]  \ .  
+      \label{2-5-41}
+  \end{IEEEeqnarray}  
+ El grupo de traslaciones no es compacto, entonces los $  a_{1}  $ y  $  a_{2}  $ pueden tomar todos los valores en el plano. La transformación $   \mathcal{R}(\bar{\vartheta})  \mathcal{S}(w_{1},w_{2})  \mathcal{R}(\vartheta) ^{-1}$ es un elemento de $ \mathcal{S} $, es una rotación por un ángulo $ \theta $ en el plano  $ (w_{1},w_{2}) $, la cual podemos escribir como $ R(\theta) (w_{1},w_{2})$, con $ R(\theta)  $ un elemento de $ SO(2) $.\footnote{ En la terminología de teoría grupos, se dice que $ \mathcal{S} $ es  un subgrupo \emph{invariante}. Por lo tanto $ ISO(2) $ no es \emph{semi-simple}. Las representaciones de grupos continuos que no son semi-simples, tienen esta característica de tener un número infinito de eigenestados.} Esto implica que para cada conjunto fijo de eigenvalores $ (a_{1},a_{2}) $ de nuestros estados existe otro conjunto infinito de eigenvalores con valor $  R(\theta)(a_{1},a_{2}) $. 
+ 
+ A la fecha no existen construcciones teóricas satisfactorias ni hay evidencia física de la existencia de partículas sin masa con grados internos de libertad continuos. Escogeremos el origen $  (a_{1},a_{2})  =(0,0)$, donde esta infinita degeneración no ocurre y donde podemos etiquetar los estados con el generador de las rotaciones $  \mathcal{R}(\theta) $. De esta forma, el elemento general de grupo peque\~no para el caso sin masa, queda expresado en términos de  un factor exponencial,
+ \begin{IEEEeqnarray}{rl}
+            D[W(\Lambda,\sigma)]_{\sigma,\sigma'}   \, = \, \exp\left[ i\sigma \theta(\Lambda,p) \right] \delta_{\sigma\sigma'} \ ,
+    \label{2-5-42}
+\end{IEEEeqnarray}
+donde $ \sigma $ es la  \emph{helicidad} del estado.   Ya que siempre podemos hacerlo~\cite{Weinberg:1964ev}, escogemos al generador de la rotación  del grupo peque\~no, como la rotación alrededor del eje en la tercera dirección del espacio. En términos de los generadores del grupo de Lorentz, los generadores del grupo peque\~no vienen dados por 
+\begin{equation}
+           {A}_{1}\, = \, -{J}^{13}\, + \,{J}^{10} , \quad  {A}_{2}\, = \,  -{J}^{23}\, + \,{J}^{10}, \quad  {J}_{3}\, = \, {J}^{12} \ . 
+         \label{2-5-43}
+	\end{equation}
+Al asociar el generador de las rotaciones alrededor  del eje-$ z $ con la rotación $   \mathcal{R}(\theta)  $,  los estados están etiquetados respecto al operador unitario  $\mathsf{J}_{3}= \mathsf{J}_{12} $, con  $ \mathsf{J}_{3}\Psi^{\pm}_{p,\sigma}  \, = \, \sigma\Psi^{\pm}_{p,\sigma}  $.  Por argumentos topológicos~\cite{Weinberg:1995mt}, sabemos que $ \sigma $ tiene que ser semientero. 
+
+Aunque la restricción al grupo de rotaciones  de la representación de Dirac  $ D[\Lambda] $ es unitaria, no es así cuando $ \Lambda $ se restringe al subgrupo de traslación $ \mathcal{S} $ del grupo $ ISO(2) $. Esto pone en riesgo la unitariedad de los estados $  \left( \Psi^{1,\pm}_{p,\sigma}\right)_{\alpha}   $ bajo la acción del  grupo homogéneo de Lorentz. Para evitar esta catástrofe,  condicionamos a los estados que vienen  de la componente lineal en la Ec. \eqref{2-5-01} a que permanezcan invariantes ante la acción del  subgrupo de traslaciones del grupo $ ISO(2) $:
+\begin{IEEEeqnarray}{rl}
+             \left[ D\left[ \mathcal{S}\left(\Lambda, p \right) \right]^{-1*}\left( \Psi^{1,\pm}_{p,\sigma}\right)\right] _{\alpha}    \, = \, \left( \Psi^{1,\pm}_{p,\sigma}\right)_{\alpha} \ .
+    \label{2-4-44}
+\end{IEEEeqnarray}
+Esta condición se satisface si y solo s\'i~\footnote{Los generadores  $ \mathcal{A}_{1}  $ y  $ \mathcal{A}_{2} $ de las traslaciones del subgrupo $ ISO(2) $ en la representación de Dirac se ven como 
+\begin{IEEEeqnarray}{l}
+         \mathcal{A}_{1} \, = \, \begin{bmatrix}
+\sigma_{+} & 0 \\ 
+0 & \sigma_{-}
+\end{bmatrix} , \quad 
+    \mathcal{A}_{2}\, = \, { i}\begin{bmatrix}
+\sigma_{+} & 0 \\ 
+0 & -\sigma_{-} \nonumber 
+\end{bmatrix}  	\ ,
+         \label{2-4-Foot-5}
+	\end{IEEEeqnarray}
+	donde $ \sigma_{\pm}\, \equiv \, \frac{1}{2}\left( \sigma_{2}\, \pm \, i\sigma_{1}\right)  $. Puesto que $  \mathcal{A}^{2}_{\pm} = 0$, tenemos que $ D[\mathcal{S}(w_{1},w_{2})] \, = \, I + iw_{1}\mathcal{A}_{1}   \, + \, iw_{2}\mathcal{A}_{2}$. Por lo que 
+	\begin{IEEEeqnarray}{rl}
+	            D[\mathcal{S}(w_{1},w_{2})]^{-1*}  \, = \, I + (w_{1}+ iw_{2})\mathcal{A}_{+}  \, + \, (w_{1}- iw_{2})\mathcal{A}_{-}  \ ,\nonumber 
+	    \label{2-4-Foot-6}
+	\end{IEEEeqnarray}
+	con $ [\mathcal{A}_{+}]_{\alpha\beta}  \, = \, 0  $ excepto para  el elemento $ [\mathcal{A}_{+}]_{21}   $ el cual  vale $ 1 $ y  $ [\mathcal{A}_{-}]_{\alpha\beta}  \, = \, 0  $ excepto para  el elemento   $ [\mathcal{A}_{-}]_{34}   $ el cual vale $ -1 $. 
+} 
+\begin{IEEEeqnarray}{rl}
+            \left( \Psi^{1,-}_{p,\sigma}\right)_{1}  \, = \, \left( \Psi^{1,+}_{p,\sigma}\right)_{4}   \, = \, 0\ .
+    \label{2-5-45}
+\end{IEEEeqnarray}
+
+Entonces, ahora tenemos que demostrar que esta imposición es invariante de Lorentz y de supersimetría. Cuando \eqref{2-5-45} se satisface, el subgrupo de rotaciones  de $ ISO(2) $ actúa simplemente como una fase\footnote{En la representación de Dirac el generador de las rotaciones alrededor del eje $ z $ es 
+\begin{IEEEeqnarray}{l}        
+ {\mathcal{J}}_{3} \, = \, \frac{1}{2}\begin{bmatrix}
+\sigma_{3} & 0 \\ 
+0 & \sigma_{3}
+\end{bmatrix}\ .\nonumber 
+	\end{IEEEeqnarray}
+	}
+ \begin{IEEEeqnarray}{rl}
+          \left\lbrace  D\left[ \mathcal{R}\left(\theta\right) \right]^{\intercal} \, \Psi^{1,\pm}_{p,\sigma}\,\right\rbrace _{\mp \alpha}  \, = \,  \exp\left[ \pm \,\left(i/{2}\right)   \theta \right]  \left( \Psi^{1,\pm}_{p,\sigma}\right)_{\mp \alpha} \ .
+    \label{2-5-46}
+\end{IEEEeqnarray}
+Entonces efectivamente la condici\'on  \eqref{2-5-45}   se mantiene  para cualquier  transformación de Lorentz. Un poco más adelante, veremos que también esta condición se mantiene para el caso de transformaciones supersimétricas. 
+
+ Puesto que la normalización de los estados componente  $ \Psi^{2,\pm}_{p,\sigma} $ llevan un factor proporcional a $ p^{\mu}p_{\mu} $ [ver Ec. \eqref{2-5-12}],  tenemos que para el caso de masa cero, su normalización es cero,
+  \begin{IEEEeqnarray}{rl}      
+     \,\left(    \Psi^{2,\pm}_{p',\sigma'}\right) ^{\dagger} \left( \Psi^{2,\pm}_{p,\sigma}\right)   &\, = \, 0\ ,
+    \label{2-5-47}
+\end{IEEEeqnarray} 
+pero en cualquier espacio vectorial normado,  la norma de un estado es cero  si y solo sí el estado es el vector cero, entonces
+\begin{IEEEeqnarray}{rl}
+            \Psi^{2,\pm}_{p,\sigma}  \, = \, 0\ .
+    \label{2-5-48}
+\end{IEEEeqnarray}
+Evidentemente, esta condición es preservada por cualquier trasnformaci\'on de Lorentz.
+De la forma del  vector estándar $ k^{\mu}  \, = \, \kappa\begin{pmatrix} 0 & 0 & 1 & 1
+\end{pmatrix}  $,  se sigue que
+ \begin{IEEEeqnarray}{rl}
+             \slashed{k}   \, = \,  \kappa \left( \gamma^{3} \, - \, \gamma^{0}\right) , \quad   \slashed{k}^{*}  \, = \, - \slashed{k} \ ,
+    \label{2-5-49}
+\end{IEEEeqnarray}
+ esto es, $  \slashed{k} $ es cero en todas la entradas excepto 
+\begin{IEEEeqnarray}{rl}
+                  \slashed{k}_{31}=  \slashed{k}_{24}  \, = \, 2i \kappa  \ .
+     \label{2-5-50}
+ \end{IEEEeqnarray} 
+ De aquí también se sigue que  $ \slashed{k}\beta $ es cero excepto por los elementos de la diagonal 
+\begin{IEEEeqnarray}{rl}
+              \left(  \slashed{k}\beta\right) _{22} \, = \,     \left(  \slashed{k}\beta\right) _{33}  \, = \, 2i \kappa \ .
+    \label{2-5-51}
+\end{IEEEeqnarray} 
+De esto último, se concluye que las restricciones \eqref{2-5-45} son consistentes con la normalizacion \eqref{2-5-13}.\\
+  
+Para poner la notación más acorde a lo que hemos encontrado para el caso de masa cero, hacemos las redefiniciones
+\begin{IEEEeqnarray}{rl}
+     \Psi^{\pm}_{p,\sigma}    \, = \,      \Psi^{0,\pm}_{p,\sigma}  , \quad        \Psi^{+({1}/{2})}_{p,\sigma}  \, \equiv \, \left(    \Psi^{1,+}_{p,\sigma}\right)_{3}, \quad       \Psi^{-({1}/{2})}_{p,\sigma}  \, \equiv \, \left(    \Psi^{1,-}_{p,\sigma}\right)_{2} .
+    \label{2-5-52}
+\end{IEEEeqnarray}
+Tomamos además
+\begin{IEEEeqnarray}{rl}
+            \kappa^{0}_{\pm}   \, = \, \pm 2\sqrt{\kappa}\ . 
+    \label{2-5-53}
+\end{IEEEeqnarray}
+Entonces la normalización de los estados componente sin masa queda:
+ \begin{IEEEeqnarray}{rl}        
+  \left(    \Psi^{\pm}_{p',\sigma'}\right) ^{\dagger}   \Psi^{\pm}_{p,\sigma}  &  \, = \,      \delta^{3}\left(\mathbf{p}' -\mathbf{p}\right) \delta_{\sigma\sigma'} , \\
+     \left(    \Psi^{\pm({1}/{2})}_{p',\sigma'}\right) ^{\dagger}  \Psi^{\pm({1}/{2})}_{p,\sigma}   &  \, = \,     \delta^{3}\left(\mathbf{p}' -\mathbf{p}\right) \delta_{\left( \sigma\pm\frac{1}{2}\right) ,\left( \sigma'\pm\frac{1}{2}\right) }  \ .
+    \label{2-5-54}
+\end{IEEEeqnarray} 
+Donde en la última ecuación, hemos usado la igualdad $ \delta_{\sigma\pm\frac{1}{2}, \sigma'\pm\frac{1}{2}}  = \delta_{\sigma\sigma'} $.  Puesto que $ \slashed{k}^{*}  \, = \, - \slashed{k} \ , $ y en vista de \eqref{2-5-50}, la condición \eqref{2-5-45} puede ser reescrita como 
+\begin{IEEEeqnarray}{rl}
+              \slashed{k}^{*}\Psi^{1,\pm}_{p,\sigma} =0 \ .
+    \label{2-5-55}
+\end{IEEEeqnarray}
+De las Ecs. \eqref{2-5-16} y \eqref{2-5-17} se sigue que 
+\begin{IEEEeqnarray}{rl}
+             \mathsf{U}(\zeta) \Psi^{2,\pm}_{p,\sigma}  \, = \, 0, \quad    \mathsf{U}(\zeta) \sum_{\beta}\left( \slashed{k}^{*} \right)_{\alpha\beta}  \left(\Psi^{1,\pm}_{p,\sigma} \right)_{\alpha}   \, = \, 0\  ,
+    \label{2-5-56}
+\end{IEEEeqnarray}
+entonces las condiciones  \eqref{2-5-45} y \eqref{2-5-48} son preservadas también por las transformaciones supersimétricas. La transformación bajo el grupo de Lorentz de los superestados de masa cero se ve como [ver Ec. \eqref{2-4-11-b}]
+\begin{IEEEeqnarray}{rl}    
+            \mathsf{U}(\Lambda) \Psi^{\pm}_{p,s_{\pm},\sigma}   & \, = \,\tfrac{ N(p)}{N(\Lambda p)}\, e^{ i\sigma\, \theta(\Lambda,p) }\Psi^{\pm}_{\Lambda p,D(\Lambda)s_{\pm},\sigma'}  \ . \nonumber \\
+    \label{2-5-56-1}
+\end{IEEEeqnarray}
+
+Podemos resumir lo encontrado diciendo que \emph{  para el caso de masa cero,  los superestados $ \Psi^{+}_{p,s_{+},\sigma}  $  tienen como componentes, a dos estados ortonormalizados  $ \Psi^{+}_{p,\sigma} $  y  $ \Psi^{+(1/2)}_{p,\sigma} $  con helicidad $ \sigma $  y $ \sigma +\frac{1}{2}$ , respectivamente. Mientras que los superestados $ \Psi^{-}_{p,s_{-},\sigma}  $  tienen como componentes a dos estados ortonormalizados $ \Psi^{-}_{p,\sigma} $  y  $ \Psi^{-(1/2)}_{p,\sigma} $  con helicidad $ \sigma $  y $ \sigma -\frac{1}{2}$ , respectivamente. }\\
+
+ Escribimos a los estados componente en el vector estándar $ k^{\mu} $:
+\begin{IEEEeqnarray}{rl}
+            \ket{\sigma}^{\pm}   \, \equiv \,   \Psi^{\pm}_{k,\sigma} , \quad   \ket{\sigma\pm 1/2}^{\pm}    \, \equiv \, \Psi^{\pm(1/2)}_{k,\sigma}  \  . 
+    \label{2-5-57}
+\end{IEEEeqnarray}
+Tomamos en cuenta las condiciones \eqref{2-5-45}, \eqref{2-5-48} y \eqref{2-5-53}, para escribir la acción de las cargas supersimétricas  \eqref{2-5-18}  en la notación  de kets \eqref{2-5-57}:
+  \begin{itemize}
+  \item[-]  Para los estados $  \ket{\sigma}^{+}  $:
+\begin{IEEEeqnarray}{rl}
+            \mathcal{Q}_{+\frac{1}{2}}  \ket{\sigma}^{+}  &\, = \, -2i\sqrt{\kappa}(-)^{\Psi^{+}}\ket{\sigma + 1/2}^{+} , \nonumber \\         
+             \mathcal{Q}_{-\frac{1}{2}}  \ket{\sigma}^{+}  &  \, = \,  \mathcal{Q}^{*}_{+\frac{1}{2}}  \ket{\sigma}^{+}   \, = \,  \mathcal{Q}^{*}_{-\frac{1}{2}}  \ket{\sigma}^{+}   \, = \, 0 \ .
+           % \mathcal{Q}_{\frac{1}{2}}  \ket{\sigma}^{\pm}  \, = \, 2i\kappa(-)^{\Psi^{\pm}}\ket{\sigma\pm 1/2}^{\pm} ,
+    \label{2-5-58}
+\end{IEEEeqnarray}
+\item[-]  Para los  estados $  \ket{\sigma}^{-}  $:
+\begin{IEEEeqnarray}{rl}
+            \mathcal{Q}_{+\frac{1}{2}}  \ket{\sigma}^{-}  &\, = \, -2i\sqrt{\kappa}(-)^{\Psi^{-}}\ket{\sigma - 1/2}^{-} , \nonumber \\         
+             \mathcal{Q}^{*}_{-\frac{1}{2}}  \ket{\sigma}^{-}  &  \, = \,  \mathcal{Q}_{+\frac{1}{2}}  \ket{\sigma}^{-}   \, = \,  \mathcal{Q}_{-\frac{1}{2}}  \ket{\sigma}^{-}   \, = \, 0 \ .
+           % \mathcal{Q}_{\frac{1}{2}}  \ket{\sigma}^{\pm}  \, = \, 2i\kappa(-)^{\Psi^{\pm}}\ket{\sigma\pm 1/2}^{\pm} ,
+    \label{2-5-59}
+\end{IEEEeqnarray}
+\item[-]  Para los estados  $ \ket{\sigma+1/2}^{+}  $:
+\begin{IEEEeqnarray}{rl}
+            \mathcal{Q}_{+\frac{1}{2}}  \ket{\sigma+ 1/2}^{+}  &\, = \, -2i\sqrt{\kappa}(-)^{\Psi^{+}}\ket{\sigma }^{+} , \nonumber \\         
+             \mathcal{Q}_{-\frac{1}{2}}   \ket{\sigma+ 1/2}^{+}  &  \, = \,  \mathcal{Q}^{*}_{+\frac{1}{2}}   \ket{\sigma+ 1/2}^{+}  \, = \,  \mathcal{Q}^{*}_{-\frac{1}{2}} \ket{\sigma+ 1/2}^{+}   \, = \, 0 \ .\nonumber \\
+           % \mathcal{Q}_{\frac{1}{2}}  \ket{\sigma}^{\pm}  \, = \, 2i\kappa(-)^{\Psi^{\pm}}\ket{\sigma\pm 1/2}^{\pm} ,
+    \label{2-5-60}
+\end{IEEEeqnarray}
+\item[-] Para los estados  $ \ket{\sigma-1/2}^{-} $:
+\begin{IEEEeqnarray}{rl}
+            \mathcal{Q}^{*}_{+\frac{1}{2}}  \ket{\sigma- 1/2}^{-}  &\, = \, -2i\sqrt{\kappa}(-)^{\Psi^{-}}\ket{\sigma }^{-} , \nonumber \\         
+             \mathcal{Q}^{*}_{-\frac{1}{2}}   \ket{\sigma - 1/2}^{-}  &  \, = \,  \mathcal{Q}_{+\frac{1}{2}}   \ket{\sigma -1/2}^{-}  \, = \,  \mathcal{Q}_{-\frac{1}{2}} \ket{\sigma -1/2}^{- }   \, = \, 0\ .\nonumber \\
+           % \mathcal{Q}_{\frac{1}{2}}  \ket{\sigma}^{\pm}  \, = \, 2i\kappa(-)^{\Psi^{\pm}}\ket{\sigma\pm 1/2}^{\pm} ,
+    \label{2-5-61}
+\end{IEEEeqnarray}
+\end{itemize}
+
+ Vemos  de nuevo, para el caso sin masa,  la estructura de operadores de ascenso y descenso que los generadores $ \mathcal{Q}_{a} $ y $ \mathcal{Q}^{*}_{a} $ poseen.  
+
+Antes de adentrarnos en construir integrales en el superespacio de momentos para el caso de masa cero, hacemos ver una de las conclusiones  hasta aquí obtenidas:   El superestado general es lineal en $ s_{\pm} $ y por tanto, el volumen fermiónico para este caso, debe de ser una integral de línea (y no de superficie como en el caso masivo). Este diferencial debe transformar covariantemente bajo el grupo de Lorentz, entonces no puede ser solo función de $ d s_{\pm\alpha} $ puesto que $ s_{\pm\alpha} $ y por tanto $ ds_{\pm\alpha} $  es irreducible bajo el grupo de Lorentz.
+
+Para encontrar la forma de la integral de línea, tenemos que pasar a una notación que haga más justicia al caso sin masa.  Puesto que  la matriz $( -i\slashed{k}\beta)/\sqrt{\kappa} $ es diagonal con entradas igual a $ 2\sqrt{\kappa} $, es evidente que sus  eigenvectores, con eigenvalores diferentes cero, se pueden expresar como las proyecciones izquierda y derecha del vector  $   u(k)_{\alpha}  $, dado por 
+\begin{IEEEeqnarray}{rl}
+             u(k)_{\alpha}  \, = \, \begin{bmatrix}    0 & 2\sqrt{\kappa} & 2\sqrt{\kappa} & 0   \end{bmatrix}_{\alpha}\ .
+    \label{2-5-62}
+\end{IEEEeqnarray} 
+De la descomposición general de una matriz general en términos de los  eigenvectores por la derecha y de los eigenvectores por la izquierda,  tenemos que 
+\begin{IEEEeqnarray}{rl}
+             2\kappa (-i\slashed{k}\beta) \, = \, u(k)_{+}u(k)_{+}^{\dagger}  \, + \,  u(k)_{-}u(k)_{-}^{\dagger}  \ ,
+    \label{2-5-62-b}
+\end{IEEEeqnarray}
+  debido a que  $ \slashed{k}\beta$  es simétrica, los eigenvectores derechos e izquierdos coinciden. Definimos el 4-spinor $ u(p) $ para valores arbitrarios $ p $ en la capa de masa cero, $ p^{2}=0 $:
+\begin{IEEEeqnarray}{rl}
+             u(p)  \, \equiv \, D(L(p))u(k) \ .
+    \label{2-5-64}
+\end{IEEEeqnarray}  
+Entonces  la matriz  $ \slashed{p} $, en términos de sus eigenvectores viene dada por:
+\begin{IEEEeqnarray}{rl}
+          2(  -i\slashed{p} )\, = \,    u(p)_{+}\bar{u}(p)_{-}  \, + \,  u(p)_{-}\bar{u}(p)_{+} \ .
+    \label{2-5-63}
+\end{IEEEeqnarray}
+ 
+
+ El vector $ u(p) $ satisface la condición de Majorana (con fase -1):
+\begin{IEEEeqnarray}{rl}
+            u(p)^{*}  \, = \, -\epsilon\gamma_{5}\beta u(p)\ .
+    \label{2-5-65}
+\end{IEEEeqnarray} 
+
+Esto se sigue de   $ u(k)^{*} \, = \, -\epsilon\gamma_{5}\beta u(k) $ y del hecho de que la condición de Majorana es preservada bajo las transformaciones de Dirac. 
+
+
+ Este  espinor $ u(p) $, es importante para nosotros porque $  \Psi^{1,\pm}_{p,\sigma} $  puede escribirse como
+  \begin{IEEEeqnarray}{rl}
+                        \Psi^{1,\pm}_{p,\sigma}  \, = \,   \frac{1}{2\sqrt{\kappa}}\, \Psi^{\pm(1/2)}_{p,\sigma} \  u(k)_{\mp}  \ , %\quad     \Psi^{1,-}_{p,\sigma}  \, = \,    \Psi^{-(1/2)}_{p,\sigma}\, u(k)_{+}/(2\sqrt{\kappa}), 
+    \label{2-5-66}
+\end{IEEEeqnarray}
+
+El segundo término en \eqref{2-5-01}, como función de  $ u(p) $,  se expresa de la siguiente manera:
+\begin{IEEEeqnarray}{rl}
+          2\sqrt{\kappa}  \left( \Psi^{1,\pm}_{p,\sigma}\right) \cdot  \left(s_{p} \right)_{\mp}   \, = \,\Psi^{\pm(1/2)}_{p,\sigma}\,  u(p)\cdot s_{\pm}\ ,
+    \label{2-5-67}
+\end{IEEEeqnarray}
+y entonces, el estado  general de masa cero adquiere una forma más transparente,
+\begin{IEEEeqnarray}{rl}
+            \Psi^{\pm}_{p,s_{\pm},\sigma}   \, = \, \Psi^{\pm}_{p,\sigma} \, +\, \Psi^{\pm(1/2)}_{p,\sigma}\, \left(  u(p)\cdot \gamma_{5} s_{\pm}\right)  \ . \nonumber \\
+    \label{2-5-68}
+\end{IEEEeqnarray}
+
+\textbf{\textit{Medidas invariantes.}} Hemos identificado  como la supersimetría se  ha encargado a sí misma, en suprimir el término cuadrático en la expansión fermiónica $ s_{\pm}  $. La dependencia  de los estados de masa cero en la variable fermiónica $ s_{\pm}  $  entra a traves de la proyección de  $   s_{\pm}   $ con $ u(p) $ [mediante el producto $ \left(  u(p)\cdot \gamma_{5} s_{\pm}\right)  $, el cual es nilpotente\footnote{ El factor $  \left(  u(p)\cdot \gamma_{5} s_{\pm}\right) ^{2}$ es igual a   $\frac{1}{2}\left( u(p)\cdot \gamma_{5} u(p)_{\pm}\right) (s\cdot \gamma_{5}s_{\pm}) $ y $  u(p)\cdot \gamma_{5} u(p)_{\pm} $ es cero.}],
+\begin{IEEEeqnarray}{rl}
+            \left(  u(p)\cdot \gamma_{5} s_{\pm}\right)^{2}  \, = \, 0 \ .
+    \label{2-5-}
+\end{IEEEeqnarray}
+ El elemento de volumen para el caso de masa cero es unidimensional. Escogemos este elemento de línea, que aparece  en la Ec. \eqref{2-4-19}, como 
+\begin{IEEEeqnarray}{rl}
+            d\left[p, s_{\mp}\right]    \, = \,      d\left(  u(p)\cdot \gamma_{5} s_{\mp}\right) \ .
+    \label{2-5-34}
+\end{IEEEeqnarray}
+No es difícil comprobar que
+\begin{IEEEeqnarray}{rl}
+              D(\Lambda)u\left( p\right)   \, = \, e^{ - i \gamma_{5}\, \phi(\Lambda, p)} \, u\left(\Lambda p \right) \ ,
+    \label{2-5-69}
+\end{IEEEeqnarray}
+por lo que el diferencial de volumen es invariante de Lorentz hasta una fase, 
+\begin{IEEEeqnarray}{rl}
+            d\left(  u(p)\cdot \gamma_{5} s_{\pm}\right)   \, = \,  e^{ + i \gamma_{5}\, \phi(\Lambda, p)} d\left(  u(\Lambda p)\cdot \gamma_{5} D[\Lambda]s_{\pm}\right)  \ . 
+    \label{Propiedad}
+\end{IEEEeqnarray}
+
+Esta última expresión, nos permite ver que los estados      $      \tilde{\Psi}^{\pm}_{p,s_{\pm},\sigma}  $, expresados de forma explícita en términos de     ${\Psi}^{\mp}_{p,s_{\mp},\sigma} $ como 
+\begin{IEEEeqnarray}{l}
+          \tilde{\Psi}^{\pm}_{p,s_{\pm},\sigma}  \, = \, \int    \exp{\left[  2i \,s_{\pm} \cdot \slashed{p}s'\right] }\,\Psi^{\mp}_{p,s'_{\mp},\sigma}\,  d\left(  u(p)\cdot \gamma_{5} s'_{\mp}\right) \ , 
+    \label{2-5-}
+\end{IEEEeqnarray}
+transforman bajo la acción del grupo homogéneo de Lorentz  de la siguiente manera:
+\begin{IEEEeqnarray}{rl}    
+            \mathsf{U}(\Lambda) \Psi^{\pm}_{p,s_{\pm},\sigma}   & \, = \,\tfrac{ N(p)}{N(\Lambda p)}\, e^{ i\left( \sigma \mp {1}/{2}\right) \, \theta(\Lambda,p) }\Psi^{\pm}_{\Lambda p,D(\Lambda)s_{\pm},\sigma}  \ .
+    \label{2-5-56-1}
+\end{IEEEeqnarray}
+
+Las relaciones entre los estados  componente  de $ \tilde{\Psi}^{\pm}_{p,s_{\pm},\sigma} $ y  $ {\Psi}^{\mp}_{p,s_{\mp},\sigma} $ son\footnote{Para $ p^{2} =0 $, la exponencial $ e^{ 2i \,s_{\pm} \cdot \slashed{p}s' }$ termina a primer orden en  $ s_{\pm}  $,
+\begin{IEEEeqnarray}{rl}
+            \exp\left[  2i \,s_{\pm} \cdot \slashed{p}s'\right]   &\, = \,I  \, + \,  \left( u(p)\cdot \gamma_{5} s_{\pm}\right) \left(   {u}(p)\cdot \gamma_{5} s'_{\pm} \right) \nonumber
+\end{IEEEeqnarray}
+}
+\begin{IEEEeqnarray}{rl}
+            \tilde{\Psi}^{ \pm}_{p,\sigma}  \, = \, \Psi^{\mp(1/2)}_{p,\sigma} ,\quad     \tilde{\Psi}^{\pm(1/2)}_{p,\sigma} \, = \, \Psi^{ \mp}_{p,\sigma} ,
+    \label{2-5-}
+\end{IEEEeqnarray}
+Mientras que la normalización con la delta fermiónica queda:
+\begin{IEEEeqnarray}{rl}
+              \left( \Psi^{\pm}_{p',\epsilon\gamma_{5}\beta s'^{*}_{\mp},\sigma'}\right) ^{\,\dagger}  	  \tilde{\Psi}^{\mp}_{p,s_{\mp},\sigma}   \, = \,  \delta\left[ \left( s'-  {s}\right)_{\mp}  \cdot\gamma_{5} u(p)\right] \delta^{3}\left(\mathbf{p}' -\mathbf{p}\right) \delta_{\sigma\sigma'}\ .\nonumber \\
+    \label{Ea}
+\end{IEEEeqnarray}
+\subsubsection*{\begin{center}
+* \quad  * \quad *
+\end{center}}
+
+
+En los tratamientos usuales de supersimetría,  la obtención del espectro supersimétrico se realiza a nivel de los generadores  fermiónicos del álgebra de super Poincaré, los cuales actúan  sobre los estados componente  evaluados  en el vector estándar. Puesto que  los $ \mathcal{Q}_{\alpha} $ funcionan como operadores de ascenso y descenso en el espacio de espines (con pasos $ \pm 1/2$), al requerir que la representación de los estados sea finita en el espacio de los espines, llegamos a las Ecs. \eqref{2-5-29}-\eqref{2-5-31} para el caso masivo y  a \eqref{2-5-59}-\eqref{2-5-61} para el caso sin masa. Nuestro enfoque ha sido el de construir estados  supersimétricos que están definidos bajo trasformaciones supersimétricas arbitrarias. Esto ha rendido frutos, porque hemos dado un tratamiento unificado de los estados de superpartícula, independiente de los grupos peque\~nos en específico. Las particularidades de los grupos peque\~nos solo introducen restricciones adicionales en los estados componente de los superestados. 
+También el trabajar con transformaciones unitarias finitas, nos ha permitido decir de manera natural que entendemos por el superespacio de momentos $ (p, s_{\pm}) $. Su propiedad de transformación bajo el grupo de super Poincaré es relativamente simple:
+\begin{IEEEeqnarray}{rl}
+             (p, s) \, \rightarrow \,(\Lambda p, D[\Lambda]s +\xi)\  .
+    \label{2-6-}
+\end{IEEEeqnarray}
+Hemos identificado que para el caso de masa cero, el supermomento  $  (p, s_{\pm}) $  siempre se presenta de la forma $  (p, u(p)\cdot s_{\pm})  $.  \emph{La dimensión del superespacio de momentos  para el caso de masa cero es menor que  la del caso masivo}.
+
+Notemos también que la presentación natural de los estados lineales en los 4-espinores fermiónicos, vienen en estados  que  forman la representación tensorial $ j \otimes \frac{1}{2}$ del grupo de rotación. Usando la descomposición de Clebsh-Gordan, podemos  expresar de manera equivalente al estado $ j \otimes \frac{1}{2}$ en términos de los  estados con momento angular  $ j + \frac{1}{2} $ y $ j - \frac{1}{2} $, a expensas de hacer la notación un poco más engorrosa.

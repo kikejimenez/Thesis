@@ -1,0 +1,45 @@
+\chapter{Conclusiones}
+\label{sec:Conclusiones}
+
+
+En esta tesis hemos resuelto el problema de encontrar funciones de onda en el superespacio, para superparticulas  masivas de cualquier superespin. La sustentacion de este trabajo  y el desarrollo del mismo, descansan en el articulo~\cite{Jimenez:2014gfa}.\\
+
+Ha sido posible desarrollar la teoria cuantica de los campos en el superespacio, usando puramente el formalismo de operadores y sin recurrir a ninguna regla de cuantizacion. Nuestro punto de partida ha sido el de promover  el enfoque de Weinberg a la teoria del campo , del espacio al superespacio.   Hemos logrado
+\begin{itemize}
+\item[-] Construir bases para el superespacio de Hilbert. A diferencia del caso en el espacio, los superestados encontrados normalizan con el mapeo exponencial fermionico. 
+\item[-] Construir superestados completamente covariantes bajo transformaciones arbitrarias del grupo de super Poincare. Hemos demostrado que estos supermultipletes son equivalentes a los estados encontrados usando los metodos usuales en componentes.
+\item[-] Establecer que es lo que entendemos por una supermatriz S covariante. 
+\item[-] Obtener superamplitudes perturbativas en forma de  diagramas de super Feynman. Esto se ha hecho introduciendo interacciones usando supercampos dos supercampos quirales $ \Phi_{+n} $ y  $ \Phi_{-n} $ y sus adjuntos, para cualquier representacion del grupo de Lorentz.
+\item[-] Dar formulas explicitas de las transformaciones de los supercampos, bajo transformaciones de paridad, carga, inversion temporal y simetrias $ \mathcal{R} $.
+\item[-] Establecer una equivalencia explicita entre nuestro metodo y el formalismo canonico para el caso del supercampo quiral masivo (el afamado modelo de Wess-Zumino).
+\item[-] Demostrar la convenenencia de nuestra formulacion mediante el calculo a orden mas bajo  en teoria de perturbacion de una superparticula escalar con su respectiva antisuperparticula.
+\end{itemize}
+\begin{center}
+\textbf{\textit{Perspectivas futuras.}}
+\end{center}
+Somos de la opinion que nuestros descubrimientos pueden abrir varias puertas para seguir avanzando en el entendimiento de las teorias supersimetricas. Nos pertimos citar algunas lineas de investigacion que creemos son asequibles en el mediano plazo y de interes para la comunidad que trabaja en supersimetria:
+\begin{itemize}
+\item[-] Las  generalizacion del formalismo para supersimetrias $ \mathcal{N} $-extendidas se puede realizar de manera directa, puesto que los estados generales de superparticula en  el superespacio de supermomento $ \mathcal{N} $-extendido pueden ser definidos en terminos de los estados  en  el superespacio de supermomento $ (\mathcal{N} -1)$-extendido. Esto es, los superestados presentados en la   secci\'on \eqref{chap:2-4} admiten una generalizacion recursiva.
+\item[-] Nuestra propuesta podria encontrar aplicaciones mas all\'a de la teor\'ias con espin arbitrario, por ejemplo extendiendo resultados en formulaciones de la teoria cuantica de los campos del espacio basadas en el formalismo de operadores, del espacio al superespacio. La obtencion de los superestados de muchas superparticulas (ver seccion ), $ \left| \mathcal{A} \right\rangle $ que transforman una manera completamente covariante bajo transformaciones de super Poincar\'e ha hecho posible que los elementos de matriz  (generales),
+\begin{IEEEeqnarray}{rl}
+             \left\langle  \mathcal{M}\left| \mathcal{O}(z_{_{1}},\dots, z_{_{n}})\right|\mathcal{N}\right\rangle \ ,
+    \label{8--}
+\end{IEEEeqnarray}
+(para operadores  $ \mathcal{O} $  en el superesapcio, formados con supercampos en el esquema de Heisenberg, evaluados en  $ (z_{_{1}},\dots, z_{_{n}}) $ y posiblemente ordenados temporalmente), sean expreados  como otros elementos de matrize evaluados en los puntos $ z_{_{1}}-z,\dots,  z_{_{n}}-z  $, con $ z $ arbitrario. Estas traslaciones son usadas en elementos de matriz intemediarios que se encuentran en trabajos basados en el formalismo de operadores, como por ejemplo
+\begin{itemize}
+\item[-] Las repsentaciones espectrales~\cite{Kallen:1952zz,Lehmann:1954}. Hasta el momento, solamente resultados  obtenidos en el contexto de los metodos funcionales y limitados al caso del supercampo escalar son conocidos Refs.~\cite{Leroy:1986ve,Constantinescu:2003vn}).
+\item[-] La expansion en productos de operadores (OPE)~\cite{Wilson:1969zs}.  Al igual que el caso de la representacion espectreal , solamente el caso escalar es conocido~\cite{Leroy:1986ve,Constantinescu:2003vn}).
+\item[-] Simetrias rotas espontaneamente~\cite{Goldstone:1962es}.
+\end{itemize}
+\item[-] Escribir de una manera completamente covariante resutlados que normalmente son presentados en componentes, tales  como las restricciones cinematicas en supergravedad~\cite{Grisaru:1976vm} y las amplitudes a nivel arbol en QCD que se obtienen usando amplitudes supersimetricas from ~\cite{Dixon:1996wi}.  
+\item[-] Siguiendo la misma linea que se encuentra entre las formulaciones Lagrangianas y puramente de la matriz S, podriamos extender los resultados de 
+\begin{itemize}
+\item[-] La formulacion las reglas de Feynman para particulas sin masa~\cite{Weinberg:1964ev}, cuya establicimiento debe ser directo, pero el comparativo con el limite de masa cero de  nuestros resultados sera util. 
+\item[-] El enfoque de Weinberg para dimensiones extra~\cite{Weinberg:1984vb}.
+\item[-] Teorias del campo  con invariancia de escala y conforme.~\cite{Chan:1973iq,Weinberg:2012cd}.
+\end{itemize}
+\item[-] Extensiones para obtener superfunciones de onda  para el caso de teorias de norma. Vemos como  asequible investigar en las lineas de las referencias lines of Refs. \cite{Weinberg:1965rz,Weinberg:1965nx,Grisaru:1976vm} (de las cuales  evidencia de nuevos teoremas suaves y nuevas relaciones de Ward han sido recientemente encontradas~\cite{Cachazo:2014fwa,He:2014laa}).
+\item[-] Pertubativemente, la mayoria de las teorias supersimetricas rotas (mediante algun mecanismo) preservan el numero exacto particulas de las teorias exactas. Entonces, el formalismo aqui presentado puede  ser en principio ser extendido para calcular amplitudes en teorias supersimetricas rotas. Esto podria realizarse extendiendo las super reglas de Feynman para incluir terminos explicitos de rompimiento de supersimetrica que se originan como constantes de acoplamiento locales en las variables fermionicas (llamados usualmente campos externos espurios). Estas ideas han sido explotadas usando metodos funcionales, en teorias rotas espontaneamente, para encontrar relaciones explicitas entre contraterminos ultravioletas de los terminos de rompimiento espoantaneo y teorias supersimetricas puramente rigidas (simetria global)~\cite{Avdeev:1997vx,Kobayashi:1998jq}.
+\item[-]
+{\color{red}Incluir lo de mauro.}\\
+\end{itemize}

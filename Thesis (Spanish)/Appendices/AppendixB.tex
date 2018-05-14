@@ -1,0 +1,273 @@
+\chapter{Superfunciones, Derivadas e Integrales Fermiónicas}
+\label{ApenB}
+\lhead{Apéndice B. \emph{Superfunciones, derivadas e integrales}}
+En este apéndice damos fórmulas para la expansión general de las superfunciones en el superespacio.  Para ello, consideremos el vector  $ (u, s) $ de dimensión $ d_{c} + d_{a} $, formado por la unión del vector bosónico $ u^{\mu} $  ($ \mu =1,2,\dots,  d_{c} $) y el vector fermiónico  $ s_{\alpha} $  ($ \alpha =1,2,\dots,  d_{a} $)\footnote{Un supervector, es un elemento de un espacio vectorial en el campo de los supernúmeros. Los vectores bosónicos(fermiónicos) son elementos del espacio vectorial en el campo de los números bosónicos(fermiónicos). }. Tomamos una función arbitraria  en  $ S (u, s) $,   la cual puede tomar valores en los supernúmeros o en operadores.  Expandimos esta función  en serie de Taylor alrededor del cero en potencias de $ s$:
+\begin{IEEEeqnarray}{rl}
+             S(u, s)   \, = \, \sum_{n}\sum_{\alpha_{_{1}}\dots \alpha_{_{n}}}\,s_{\alpha_{_{1}}}\cdots s_{\alpha_{_{n}}}\,\left[  C(u)\right] _{\alpha_{_{1}}\dots \alpha_{_{n}}} \ .
+    \label{Ap-B-01}
+\end{IEEEeqnarray}
+ Debido a que $ \left\lbrace s_{\alpha}, s_{\beta}\right\rbrace  = 0$,   para un superespacio cuya dimensión fermiónica es finita, la serie de Taylor en las variables fermiónicas siempre es polinomial y no tenemos problemas de convergencia, entonces la  expresión \eqref{Ap-B-01} es una buena definición de  $  S(u, s)   $.
+ 
+ Para el caso en que $ (u,s) $   y $ S $  transforman bajo una  representación de algún grupo de simetría (entonces $ S $ debería escribirse $ S_{\ell} $ donde el índice  $ \ell $ corre de uno a la dimensión de la representación bajo la cual transforma $ S $), los coeficientes $ C(u)^{\alpha_{_{1}}\dots \alpha_{_{n}}} $ transforman tensorialmente y por lo tanto en general reduciblemente. Siempre es deseable descomponer $ C(u)^{\alpha_{_{1}}\dots \alpha_{_{n}}} $ en sus partes reducibles.
+ 
+ Nuestro caso de interés, es cuando la variable fermiónica es de dimensión $ d_{a} =4\mathcal{N} $ con $ (\mathcal{N} =1,2,3,\dots )$, y $ s_{\alpha} $  es entonces un vector fermiónico de dimensión $ 4\mathcal{N}  $.  La base covariante de matrices de $ 4\times 4 $,  $ \left\lbrace  I,\gamma_{5} ,\gamma^{\mu},\gamma_{5} \gamma^{\mu}, \left[\gamma^{\mu},\gamma^{\nu} \right]  \right\rbrace  $,  es conveniente cuando  $ s_{\alpha} $ transforma bajo  la suma directa    $ \mathcal{N} $ representaciones de Dirac. Tomemos  el caso $ \mathcal{N}=1 $, donde $ \alpha=1,2,3,4 $.  Descomponemos $    s_{\alpha}s_{\beta}  $ en sus partes irreducibles:
+      \begin{IEEEeqnarray}{rl}
+                       s_{\alpha}s_{\beta} \, = \,  \tfrac{1}{4}(\epsilon\gamma_{5})_{\alpha\beta}(s^{\intercal}\epsilon\gamma_{5}s) \, + \, \tfrac{1}{4}(\gamma_{\mu}\epsilon)_{\alpha\beta}(s^{\intercal}\epsilon\gamma^{\mu}s) \, + \, \tfrac{1}{4}\epsilon_{\alpha\beta}(s^{\intercal}\epsilon s)\ ,
+         \label{Ap-B-02}
+     \end{IEEEeqnarray}
+ con la ayuda de las relaciones 
+\begin{IEEEeqnarray}{rl}
+              s_{\alpha}(s^{\intercal}\epsilon\gamma^{\mu}s)   \, = \,  -\left( \gamma_{\mu}{s}\right) _{\alpha} ({s}^{\intercal}\epsilon {s}) , \quad {s}_{\alpha}\left({s}^{\intercal}\epsilon\gamma_{5}{s} \right)   \, = \, -\left( \gamma_{5}{s}\right) _{\alpha}\left({s}^{\intercal}\epsilon{s} \right)  \ ,
+    \label{Ap-B-03}
+\end{IEEEeqnarray}
+tenemos que 
+\begin{IEEEeqnarray}{rl}
+                        s_{\alpha}s_{\beta}s_{\gamma}  \, = \,& \frac{1}{4}\left({s}^{\intercal}\epsilon\gamma_{5}{s} \right)    \left[ \epsilon_{\alpha\beta}\, s_{\gamma}  \, - \,\left(\epsilon \gamma_{5} \right)_{\alpha\beta} \left(\gamma_{5}s \right)_{\gamma}  \, - \,\epsilon_{\alpha\gamma}\, s_{\beta}  \, + \,\left(\epsilon \gamma_{5} \right)_{\alpha\gamma} \left(\gamma_{5}s \right)_{\beta} \right. \nonumber \\
+                     &\qquad\qquad  \left.   \, + \, \epsilon_{\beta\gamma}\, s_{\alpha}  \, - \,\left(\epsilon \gamma_{5} \right)_{\beta\gamma} \left(\gamma_{5}s \right)_{\alpha} \right] \ . 
+    \label{Ap-B-04}
+\end{IEEEeqnarray}
+Similarmente:
+\begin{IEEEeqnarray}{rl}
+                        s_{\alpha}s_{\beta}s_{\gamma}s_{\delta}  &\, = \, \tfrac{1}{16}\left({s}^{\intercal}\epsilon{s} \right)^{2}    \left[ \epsilon_{\alpha\beta}\,\epsilon_{\gamma\delta} \, - \,\left(\epsilon \gamma_{5} \right)_{\alpha\beta} \left(\epsilon \gamma_{5} \right)_{\gamma\delta} \, - \,\epsilon_{\alpha\gamma}\,\epsilon_{\beta\delta} \right.  \nonumber \\
+        &  \left. \qquad   \, + \,\left(\epsilon \gamma_{5} \right)_{\alpha\gamma} \left(\epsilon \gamma_{5} \right)_{\beta\delta}  \, + \,  \epsilon_{\beta\gamma}\,\epsilon_{\alpha\delta} \, - \,\left(\epsilon \gamma_{5} \right)_{\beta\gamma} \left(\epsilon \gamma_{5} \right)_{\alpha\delta}          \right] \ . \nonumber \\
+    \label{Ap-B-05}
+\end{IEEEeqnarray}
+Identificando
+\begin{IEEEeqnarray}{rl}
+            C_{\alpha\beta} (u)  &\, = \, -\frac{i}{2}\,\epsilon_{\alpha\beta}\,M(u)  \, - \,  \frac{1}{2}\,\left( \epsilon\gamma_{5}\right)_{\alpha\beta}  N(u)    \, + \,\frac{i}{2} \,\left(\epsilon\gamma_{\mu} \right)_{\alpha\beta} V^{\mu}(u) \ , \nonumber \\
+               C_{\alpha\beta\gamma} (u)  &\, = \,\frac{1}{12}\left[ \epsilon_{\alpha\beta}\, \lambda'(u)_{\gamma}  \, - \,\left(\epsilon \gamma_{5} \right)_{\alpha\beta} \left(\gamma_{5}\lambda' (u)\right)_{\gamma}  \, - \,\epsilon_{\alpha\gamma}\, \lambda'(u)_{\beta} \right.  \nonumber \\
+        &  \left. \qquad               \, + \,\left(\epsilon \gamma_{5} \right)_{\alpha\gamma} \left(\gamma_{5}\lambda'(u) \right)_{\beta}  \, + \, \epsilon_{\beta\gamma}\, \lambda'(u)_{\alpha}  \, - \,\left(\epsilon \gamma_{5} \right)_{\beta\gamma} \left(\gamma_{5}\lambda' (u)\right)_{\alpha} \right] \ ,\nonumber \\
+          C_{\alpha\beta\gamma\delta} (u)   & \, = \,  -\frac{1}{24} \left[ \epsilon_{\alpha\beta}\,\epsilon_{\gamma\delta} \, - \,\left(\epsilon \gamma_{5} \right)_{\alpha\beta} \left(\epsilon \gamma_{5} \right)_{\gamma\delta} \, - \,\epsilon_{\alpha\gamma}\,\epsilon_{\beta\delta} \right.  \nonumber \\
+        &  \left. \qquad   \, + \,\left(\epsilon \gamma_{5} \right)_{\alpha\gamma} \left(\epsilon \gamma_{5} \right)_{\beta\delta}  \, + \,  \epsilon_{\beta\gamma}\,\epsilon_{\alpha\delta} \, - \,\left(\epsilon \gamma_{5} \right)_{\beta\gamma} \left(\epsilon \gamma_{5} \right)_{\alpha\delta}          \right] \, D (u) \ ,
+    \label{Ap-B-06}
+\end{IEEEeqnarray}
+ la expansión general para $ \mathcal{N}=1 $ queda
+\begin{IEEEeqnarray}{ll}        
+S(u,s)& \,	 = \, C(u) \, - \,i\,{s}^{\intercal} \epsilon w(u) \, - \,\frac{i}{2}{s}^{\intercal} \epsilon{s}\,  M(u)\, - \, \frac{1}{2} {s}^{\intercal} \epsilon\gamma_{5}{s} N(u)  \nonumber \\ 
+  & \quad  \, + \, \frac{i}{2}\left({{s}}^{\intercal}\epsilon\gamma_{\mu}{s}\right)V^{\mu}(u)-i\left( {s}^{\intercal} \epsilon{s}\right) {s}^{\intercal} \epsilon\gamma_{5}\lambda(u)    \nonumber \\
+  & \quad \, - \,  \frac{1}{4}\left( {s}^{\intercal} \epsilon{s}\right)^{2}D(u)   \ ,
+    \label{Ap-B-07}
+\end{IEEEeqnarray}
+donde hemos hecho $ \lambda'  \, = \, -i\epsilon\gamma_{5}\lambda $. La expansión para el caso $ \mathcal{N} $ general, se realiza de manera recursiva. Sea $ s_{\left\lbrace {\mathcal{N}}\right\rbrace } = \left(s_{1}, \dots, s_{\mathcal{N}} \right)  $, donde $ s_{1}, \dots, s_{\mathcal{N}}$ son 4-espinores. Expandiendo   $ S\left( u,s_{\left\lbrace {\mathcal{N}}\right\rbrace } \right) $ en la variable $ s_{\mathcal{N}} $:
+\begin{IEEEeqnarray}{ll}        
+S\left( u,s_{\left\lbrace {\mathcal{N}}\right\rbrace } \right) & \,	 = \, C\left( u,s_{\left\lbrace {\mathcal{N}-1}\right\rbrace } \right) \, - \,i\,{s}_{\mathcal{N}}^{\intercal} \epsilon \, w\left( u,s_{\left\lbrace {\mathcal{N}}\right\rbrace } \right) \, - \,\frac{i}{2}{s}_{\mathcal{N}}^{\intercal} \epsilon{s}_{\mathcal{N}}\,  M\left( u,s_{\left\lbrace {\mathcal{N}-1}\right\rbrace } \right)  \nonumber \\ 
+  & \quad \, - \, \frac{1}{2} {s}_{\mathcal{N}}^{\intercal} \epsilon\gamma_{5}{s}_{\mathcal{N}-1} \,N\left( u,s_{\left\lbrace {\mathcal{N}-1}\right\rbrace } \right)\, + \, \frac{i}{2}\left({{s}}_{\mathcal{N}}^{\intercal}\epsilon\gamma_{\mu}{s}_{\mathcal{N}}\right)V^{\mu}\left( u,s_{\left\lbrace {\mathcal{N}-1}\right\rbrace } \right)   \nonumber \\
+  & \quad \, - \,i\left( {s}_{\mathcal{N}}^{\intercal} \epsilon{s}_{\mathcal{N}}\right) {s}_{\mathcal{N}}^{\intercal} \epsilon\gamma_{5}\,\lambda\left( u,s_{\left\lbrace {\mathcal{N}-1}\right\rbrace } \right) \, - \,  \frac{1}{4}\left( {s}_{\mathcal{N}}^{\intercal} \epsilon{s}_{\mathcal{N}}\right)^{2}D\left( u,s_{\left\lbrace {\mathcal{N}-1}\right\rbrace } \right)  \ . \nonumber \\
+    \label{Ap-B-08}
+\end{IEEEeqnarray}
+Podemos entonces expandir $  C\left( u,s_{\left\lbrace {\mathcal{N}-1}\right\rbrace } \right) , w\left( u,s_{\left\lbrace {\mathcal{N}}\right\rbrace } \right) \dots, D\left( u,s_{\left\lbrace {\mathcal{N}-1}\right\rbrace } \right)  $, en términos de $ s_{\mathcal{N}-1} $ y así sucesivamente.
+
+El producto  $ S_{1} S_{2} $  de dos funciones  $ S_{1} $  y  $ S_{2} $ que dependen del 4-espinor $ s $, es de la forma:
+\begin{IEEEeqnarray}{ll}        
+S_{_{1}}S_{_{2}}& \,	 = \, C_{_{12}} \, - \,i\,s^{\intercal} \epsilon w_{_{12}} \, - \,\tfrac{i}{2}\vartheta^{\intercal} \epsilon\vartheta\,  M_{_{12}}\, - \, \frac{1}{2} \vartheta^{\intercal} \epsilon\gamma_{5}\vartheta N_{_{12}}  \nonumber \\ 
+  & \quad  \, + \, \frac{i}{2}\left(s^{\intercal}\epsilon\gamma_{\mu}s\right)V^{\mu}_{_{12}} \, - \,i\left( s^{\intercal} \epsilon s\right) s^{\intercal} \epsilon\gamma_{5}\lambda_{_{12}}    \nonumber \\
+  & \quad \, - \,  \frac{1}{4}\left( s^{\intercal} \epsilon s\right)^{2}D_{_{12}} \ ,
+    \label{Ap-B-09}
+\end{IEEEeqnarray} 
+con
+    \begin{IEEEeqnarray}{rl}            
+          C_{_{12}}  &  \, = \,  C_{_{1}}C_{2}, \nonumber \\
+       \omega_{_{12}} &  \, = \,   (-)^{S_{_{1}}}C_{_{1}}\omega_{2} \, + \,\omega_{_{1}} C_{2},\, \nonumber \\
+      M_{_{12}}   &  \, = \,     C_{_{1}}M_{2} \, + \, M_{_{1}}C_{2}\, +\,\tfrac{i}{2}(-)^{{S_{_{1}}}} \left( {\omega}^{\intercal}_{_{1}}\epsilon\omega_{2}\right),\, \nonumber \\            
+N_{_{12}} &  \, = \, C_{_{1}}N_{2} \, + \, N_{_{1}}C_{2} \, +\, \tfrac{1}{2}(-)^{{S_{_{1}}}+1} \left( {\omega}^{\intercal}_{_{1}}\epsilon\gamma_{5}\omega_{2}\right),\, \nonumber \\
+V^{\mu}_{_{12}} &  \, = \, C_{_{1}}V^{\mu}_{2} \, + \, V^{\mu}_{_{1}}C_{2}\, +\, \tfrac{i}{2}(-)^{{S}_{_{1}}+1}\left( {\omega}^{\intercal}_{_{1}}\epsilon\gamma^{\mu}\omega_{2}\right), \nonumber \\ 
+\lambda_{_{12}}  &  \, = \, (-)^{S_{_{1}}} C_{_{1}}\lambda_{2} \, + \, \lambda_{_{1}}C_{2} \, + \, \tfrac{i}{2}\gamma_{\mu}\gamma_{5}\omega_{_{1}}V_{2}^{\mu} \, + \,\tfrac{i}{2}(-)^{S_{_{1}}}\slashed{V}_{_{1}}\gamma_{5}\omega_{2} \nonumber \\
+   & \qquad \, - \,\tfrac{_{1}}{2}(i\gamma_{5}\omega_{_{1}}M_{2}\, - \, \omega_{_{1}}N_{2}) \, - \,(-)^{{S}_{_{1}}}\tfrac{_{1}}{2}(iM_{_{1}}\gamma_{5}\omega_{2}-N_{_{1}}\omega_{2}) , \,\nonumber \\
+D_{_{12}}   &  \, = \, C_{_{1}}D_{2} \, + \, D_{_{1}}C_{2} \, + \, M_{_{1}}M_{2} \, + \,  N_{_{1}}N_{2} \nonumber \\
+ &  \qquad \, - \,(-)^{S_{_{1}}}({\omega}_{_{1}}^{\intercal}\epsilon\gamma_{5}\lambda_{2}\, + \lambda_{_{1}}^{\intercal}\epsilon\gamma_{5}{\omega}_{2}) \, - \, V_{_{1}\mu}V_{2}^{\mu},
+    \label{Ap-B-10}
+\end{IEEEeqnarray}
+donde hemos supuesto que $ S_{_{1}} $ y $ S_{_{2}} $ tienen una clasificaci\'on-$ Z_{2} $ definida, $ (-)^{S_{_{1}}} $ y  $ (-)^{S_{_{2}}} $, respectivamente. \\
+
+\textit{ \textbf{El conjugado del supercampo general.}}
+El conjugado de cualquier supercampo se define a trav\'es de la relación 
+\begin{IEEEeqnarray}{rl}
+            S^{*}(x, \theta)   \, = \, \left[ S(x, \epsilon\gamma_{5}\beta\theta^{*})\right] ^{*}\ ,
+    \label{Ap-B-11}
+\end{IEEEeqnarray}
+lo que nos arroja, en términos de los campos componente, la siguiente expresión:
+ \begin{IEEEeqnarray}{ll}        
+S(x, \theta)& \,	 = \, C(x)^{*} \, - \,i\,\vartheta^{\intercal} \epsilon\left[ \left(- \right)^{S}\epsilon\gamma_{5}\beta  w(x)^{*}\right]  \, - \,\frac{i}{2}\vartheta^{\intercal} \epsilon\vartheta\,  M(x)^{*}\, - \, \frac{1}{2} \vartheta^{\intercal} \epsilon\gamma_{5}\vartheta N(x)^{*}  \nonumber \\ 
+  & \quad  \, + \, \frac{i}{2}\left({\vartheta}^{\intercal}\epsilon\gamma_{\mu}\vartheta\right)V^{\mu}(x)^{*} \, - \,i\left( \vartheta^{\intercal} \epsilon\vartheta\right) \vartheta^{\intercal} \epsilon\gamma_{5}\left[ \left( -\right)^{S}\epsilon\gamma_{5}\beta \lambda(x)^{*}\right]     \nonumber \\
+  & \quad \, - \,  \frac{1}{4}\left( \vartheta^{\intercal} \epsilon\vartheta\right)^{2}D(x)^{*} \ . \nonumber \\    
+    \label{Ap-B-12}
+\end{IEEEeqnarray}
+El término $ D $ del producto del conjugado de un supercampo con otro es   
+\begin{IEEEeqnarray}{rl}	
+             \left[ S^{*}_{_{1}}S_{_{2}}\right]_{D}     &  \, = \, C^{*}_{_{1}}D_{2} \, + \, D^{*}_{_{1}}C_{2} \, + \, M^{*}_{_{1}}M_{2} \, + \,  N^{*}_{_{1}}N_{2} \nonumber \\
+ &  \qquad \, - \,\bar{\omega}_{_{1}}\lambda_{_{2}}\, - \, \bar{\lambda}_{_{1}}{\omega}_{_{2}} \, - \, V^{*}_{_{1}\mu}V_{_{2}}^{\mu}\ .
+     \label{Ap-B-13}
+ \end{IEEEeqnarray} 
+\begin{center}
+\textit{\textbf{Diferenciación e Integración}}
+\end{center}
+Considérese una función $ f(v) $ en el espacio fermiónico $ v $ de dimensión arbitraria. Dada una componente $ v_{i} $, debido a que $ v^{2}_{i} =0 $, podemos escribir de manera única $ f(v) $ como 
+\begin{IEEEeqnarray}{rl}
+             f(v)      \, = \,  f_{i, 0}  \, + \,  v_{i}  \,f_{i,1}\ ,
+    \label{Ap-B-14}
+\end{IEEEeqnarray}
+donde   $  f_{0}  $ y $ f_{1} $ que no dependen de $ v_{i} $. La operación de diferenciación por lo izquierda  $ \frac{\partial}{\partial v_{i}} $, de la variable $ v_{i} $ aplicada a la función $ f(v) $, se define como la función $ \,f_{i,1} $, esto es
+\begin{IEEEeqnarray}{rl}
+            \frac{\partial   f(v)}{\partial v_{i}}   \, = \, f_{i,1} \ .
+    \label{Ap-B-15}
+\end{IEEEeqnarray}
+
+Para dos componentes $ v_{i} $ y $ v_{j} $, también tenemos  una expansión única de la forma
+\begin{IEEEeqnarray}{rl}
+              f(v)      \, = \,  g_{ij, 0}   \, + \,   v_{i}  \,g_{i,0}  \, + \,  v_{j}  \,g_{j,1}  \, + \,  v_{i} v_{j}   \,g_{ij,1} \ ,
+    \label{Ap-B-16}
+\end{IEEEeqnarray}
+donde ninguna de las funciones $  g_{ij, 0} \dots$, depende  de $ v_{i} $ ni de  $ v_{j} $. De aqui se sigue que 
+\begin{IEEEeqnarray}{rl}
+            \frac{\partial^{2}}{\partial v_{i}\partial  v_{j}}   \, = \, -\frac{\partial^{2}}{\partial v_{j}\partial  v_{i} }\ .
+    \label{Ap-B-16}
+\end{IEEEeqnarray}
+De la ecuación definitoria se sigue que para dos funciones $ f(v) $ y $ g(v) $ con pureza $ \epsilon_{f} $ y $ \epsilon_{g} $, respectivamente, tenemos que  \begin{IEEEeqnarray}{rl}
+            (f(v)g(v))_{i,1}  & \, = \,   f_{i,1}\, g_{i, 0}  \, + \,   (-)^{\epsilon_{f}} f_{i, 0} \,g_{i,1}  \, = \,   f_{i,1}\, g(v)  \, + \,   (-)^{\epsilon_{f}} f(v)\,g_{i,1}  
+                \label{Ap-B-17}
+\end{IEEEeqnarray}
+esto es
+\begin{IEEEeqnarray}{rl}
+             \frac{\partial f(v)g(v)}{\partial v_{i}}  \, = \, \frac{\partial f(v)}{\partial v_{i}} \,g(v)  \, + \,  (-)^{\epsilon_{f}}f(v)\frac{\partial g(v)}{\partial v_{i}}  
+    \label{Ap-B-18}
+\end{IEEEeqnarray}
+Consideremos una transformación lineal homogeneizada de coordenadas 
+\begin{IEEEeqnarray}{rl}
+              v' = Dv  \, + \, a  \ ,
+    \label{Ap-B-19}
+\end{IEEEeqnarray}
+ donde $ D $ es una matriz bosónica invertible y $ a $  un vector constante, puesto que  
+$ f(v(v'))  \, = \,   f_{i, 0}  \, + \, a_{i}\,f_{i,1}  \, + \, \left( D^{-1}v'\right) _{i}  \,f_{i,1}$,  tenemos que 
+\begin{IEEEeqnarray}{rl}
+            \frac{\partial }{\partial v'_{i}} \, = \,\frac{\partial v_{j}}{\partial v'_{i}} \frac{\partial }{\partial v_{j}} 
+    \label{Ap-B-20}
+\end{IEEEeqnarray}
+La integración fermiónica esta definida de manera similar a la diferenciación, la integral sobre la variable  $ v_{i} $ es
+\begin{IEEEeqnarray}{rl}
+            \int dv_{i} \, f(v) & \, = \,   f_{i,1}
+    \label{Ap-B-21}
+\end{IEEEeqnarray}
+al igual que la enésima derivada parcial mixta, la integración sobre cualquier superficie viene definida por la aplicación sucesiva de integrales en una dimensión  
+\begin{IEEEeqnarray}{rl}
+           \int dv_{i_{1}}\dots  dv_{i_{\ell}}  \, = \,  \int dv_{i_{1}}\dots\int dv_{i_{\ell}} 
+     \label{Ap-B-22}
+ \end{IEEEeqnarray} 
+al igual que para la diferenciación, se sigue que
+\begin{IEEEeqnarray}{rl}
+             dv_{i}dv_{j}  \, = \, - dv_{j}dv_{i}  , \quad dv'_{i}  \, = \,  \frac{\partial v_{j}}{\partial v'_{i}} dv_{j}
+     \label{Ap-B-23}
+ \end{IEEEeqnarray} 
+Definimos el integral de  volumen en orden ascendente en las componentes $ dv_{i} $:
+\begin{IEEEeqnarray}{rl}
+              d^{N}v   \, = \, dv_{N}\cdots  dv_{2}dv_{1},
+     \label{Ap-B-24}
+ \end{IEEEeqnarray} 
+ donde $ N $ es la dimensión del espacio fermiónico en cuestión.  Es evidente que 
+\begin{IEEEeqnarray}{rl}
+            \int dv_{i}  \,  \frac{\partial}{\partial v_{i}}\, f(v) \, = \, \frac{\partial}{\partial v_{i}} \,\int dv_{i}  \, f(v) \, = \,  0
+    \label{Ap-B-25}
+\end{IEEEeqnarray}
+\textit{\textbf{Transformaciones lineales inhomog\'eneas.}} Hemos introducido ya transformaciones lineales entre vectores fermiónicos, podemos ir más lejos y considerar para cualquier vector $ (u,s) $,  las transformaciones de la forma
+\begin{IEEEeqnarray}{rl}
+            u'   & \, = \, \left[ D_{00}\right]  u   \, + \, \left[  D_{01}\right] s  \, + \,  t_{0}, \\
+            s'   & \, = \, \left[ D_{10} \right] u   \, + \, \left[  D_{11}\right] s  \, + \,  t_{1}, 
+    \label{Ap-B-26}
+\end{IEEEeqnarray}
+donde las matrices $ \left[ D_{00}\right]  $ y $ \left[  D_{11}\right] $ y el vector $ t_{0} $ toman valores en los números bosónicos, mientras que  $ \left[ D_{10}\right]  $ y $ \left[  D_{11}\right] $ y el vector $ t_{1} $ toman valores en los números fermiónicos. Vemos que 
+\begin{IEEEeqnarray}{rl}
+            \frac{\partial }{\partial u'^{\nu}}  & \, = \, \frac{\partial u^{\rho} }{\partial u'^{\nu} }\frac{\partial }{\partial u^{\rho}}   \, + \,  \frac{\partial s_{\beta} }{\partial u'^{\nu} }\frac{\partial }{\partial s_{\beta}} , \quad 
+             \frac{\partial }{\partial s'_{\alpha}}   \, = \, \frac{\partial u^{\rho} }{\partial s'_{\alpha}}\frac{\partial }{\partial u^{\rho}}   \, + \,  \frac{\partial s_{\beta} }{\partial s'_{\alpha}}\frac{\partial }{\partial s_{\beta}}  
+    \label{Ap-B-27}
+\end{IEEEeqnarray}
+Siempre que realicemos la integración  $ d^{N_{c}}u $  sobre la variable bosónica supondremos que cualquier contribución en la hipersuperficie a distancia infinita es cero. Puesto que para cualquier función
+\begin{IEEEeqnarray}{rl}
+              f(u' ) =   f( D_{00}u ) \, + \, \left(   D_{01} s  \, + \,  t_{0}\right)^{\mu} \frac{\partial}{\partial x^{\mu}}\tilde{f}( D_{00}u )  \, + \, \dots \ ,
+    \label{Ap-B-28}
+\end{IEEEeqnarray}
+bajo el signo de integral todas las contribuciones que tengan derivadas bosónicas totales son cero. Esto, junto con la relación entre diferenciales fermiónicos, tenemos que 
+\begin{IEEEeqnarray}{rl}
+            \int d^{n_{c}}u \,d^{n_{a}}s \, f(u', s') \, = \, \vert \det D_{00}\vert \vert \det D_{11}\vert^{-1} \int  d^{n_{c}}u \,d^{n_{a}}s\, f(u, s)
+    \label{Ap-B-29}
+\end{IEEEeqnarray}
+Llamamos transformaciones supersimétricas al conjunto de transformaciones de coordenadas
+\begin{IEEEeqnarray}{rl}
+            u'^{\nu}  \, = \, u^{\nu} + s^{\intercal}\epsilon\gamma_{5}\gamma^{\nu} \xi, \quad  s' \, = \, s  \, + \, \xi
+    \label{Ap-B-30}
+\end{IEEEeqnarray}
+donde  $ \xi $, es un 4-espinor arbitrario.  Podemos ver que 
+\begin{IEEEeqnarray}{rl}
+            \frac{\partial }{\partial x'^{\nu}}  \, = \, \frac{\partial }{\partial x^{\nu}} ,\quad \frac{\partial}{\partial \vartheta'_{\alpha}}  \, = \, -\left( \epsilon\gamma_{5}\gamma^{\nu} \xi\right)_{\alpha} \frac{\partial }{\partial x^{\nu}}   \, + \, \frac{\partial }{\partial \vartheta_{\alpha}}\ .
+    \label{Ap-B-31}
+\end{IEEEeqnarray}
+Entonces la derivada covariante ordinaria (bosónica) $ \partial_{\mu} $ es invariante supersim\'etrica pero la derivada fermiónica  $ \frac{\partial}{\partial \vartheta_{\alpha}} $ no lo es. La superderivada  (o derivada fermiónica covariante) definida  por
+\begin{IEEEeqnarray}{rl}
+            \mathcal{D}_{\alpha}  \, \equiv\,  \epsilon\gamma_{5}\frac{\partial }{\partial \vartheta_{\alpha}}  \, - \, \gamma^{\mu}\vartheta\frac{\partial}{\partial x^{\mu}}
+    \label{Ap-B-32}
+\end{IEEEeqnarray}
+es invariante supersimetríca.  Para cualquiera dos superfunciones puras (en el sentido supersim\'etrico):
+\begin{IEEEeqnarray}{rl}
+            \mathcal{D}_{\alpha} \left(f\, g \right)  \, = \, \left( \mathcal{D}_{\alpha} f \right) \, g  \, + \, (-)^{f} f\,\left( \mathcal{D}_{\alpha} g \right) \, 
+    \label{Ap-B-33}
+\end{IEEEeqnarray}
+La integración de volumen invariante supersimétrico, esto es
+\begin{IEEEeqnarray}{rl}
+         \int    d^{4}x \, d^{4}\vartheta\,  S(x',\vartheta') \, = \, \int d^{4}x \, d^{4}\vartheta \,  S(x,\vartheta) 
+    \label{Ap-B-34}
+\end{IEEEeqnarray}
+Esto debido a que  $   \left[ D_{oo}\right] ^{\mu}_{\,\,\nu}  \, = \,  \delta^{\mu}_{\,\,\nu} $  y   $ \left[ D_{11}\right] _{\alpha\beta}  \, = \, \delta_{\alpha\beta} $, y por tanto sus determinantes son la unidad.
+
+Introducimos las proyecciones izquierdas y derechas de los 4-espinores de las formas diferenciales fermiónica $ d\vartheta $:
+\begin{IEEEeqnarray}{rl}
+              d\vartheta_{-}  \, = \, \frac{1}{2}\left( I  \, - \, \gamma_{5} \right)d\vartheta, \quad       d\vartheta_{+}  \, = \, \frac{1}{2}\left( I  \, + \, \gamma_{5} \right)d\vartheta,
+    \label{Ap-B-35}
+\end{IEEEeqnarray}
+para después definir $ d^{2}\vartheta_{\pm }  \, \equiv \, \tfrac{1}{2} d\vartheta^{\intercal}\epsilon d\vartheta_{\pm } $, entonces
+\begin{IEEEeqnarray}{rl}
+            d^{4}\vartheta  \, = \, d^{2}\vartheta_{+} d^{2}\vartheta_{-}  
+    \label{Ap-B-36}
+\end{IEEEeqnarray}
+Hemos visto que la derivación y la integración fermiónica son equivalentes, entonces
+\begin{IEEEeqnarray}{rl}
+         \int    d^{4}x \, d^{4}\vartheta\,  S(x,\vartheta) &\, = \, \int d^{4}x \,d^{2}\vartheta_{\pm} d^{2}\vartheta_{\mp}  \,  S(x,\vartheta)  \nonumber \\
+          & \, = \,  \int d^{4}x \,d^{2}\vartheta_{\mp} \,\frac{\partial^{2}}{\partial \vartheta^{2}_{\pm}}  \,  S(x,\vartheta)   
+    \label{Ap-B-37}
+\end{IEEEeqnarray}
+con  $ \frac{\partial^{2}}{\partial \vartheta^{2}_{\pm } } \, \equiv \, \tfrac{1}{2}  \frac{\partial}{\partial \vartheta_{\pm } }^{\intercal}\epsilon \frac{\partial}{\partial \vartheta_{\pm } }$. La última relación suena inconsistente por que  el lado izquierdo es invariante supersimétrico mientras que la derivada fermiónica no lo es. Introduciendo
+\begin{IEEEeqnarray}{rl}
+     \mathcal{D}^{2}_{\pm}    & \, = \,       \frac{1}{2} \mathcal{D}_{\pm}^{\intercal}\epsilon\mathcal{D}_{\pm}     \, = \,  \frac{\partial^{2}}{\partial \vartheta^{2}_{\pm}}   \, + \, \delta^{2}\left(  \vartheta_{\mp}\right) \square   \, - \, \vartheta^{\intercal}_{\mp}\epsilon\gamma^{\mu}\epsilon\gamma_{5}\frac{\partial}{\partial\vartheta_{\pm}}\frac{\partial}{\partial x^{\mu}}, \nonumber\\ 
+    \label{Ap-B-38}
+\end{IEEEeqnarray} 
+podemos escribir
+\begin{IEEEeqnarray}{rl}
+         \int    d^{4}x \, d^{4}\vartheta\,  S(x,\vartheta)
+          & \, = \,  \int d^{4}x \,d^{2}\vartheta_{\pm} \,   \mathcal{D}^{2}_{\mp}   \,  S(x,\vartheta)   
+    \label{Ap-B-39}
+\end{IEEEeqnarray}
+ya  que la diferencia entre los dos términos es una derivada de superficie que hemos supuesto es cero. Esta última expresión es invariante supersimétrica.
+
+Existe una clase de funciones que aparecen en las formulaciones del superespacio, son las funciones $ \mathcal{W}_{\pm} $ que satisfacen la condición de quiralidad:
+\begin{IEEEeqnarray}{rl}
+            \mathcal{D}_{\mp\alpha} \,\mathcal{W}_{\pm}(x,\vartheta)  = 0 \  ,
+    \label{Ap-B-40}
+\end{IEEEeqnarray} 
+Cuando  $  S   \, = \,\mathcal{W}_{\pm} $, la integral en el superespacio siempre es cero. La utilidad de las funciones quirales reside en que admiten una clase más general de funciones de locales, los cuales no forman densidades covariantes supersim\'etricas, pero bajo el signo de integral permanecen invariantes. Estas superfunciones son de la forma
+\begin{IEEEeqnarray}{rl}
+             \tilde{S}(x,\vartheta) \, = \, \delta^{2}(\vartheta_{\pm})\mathcal{W}_{\pm}(x, \vartheta) \  , 
+    \label{Ap-B-41}
+\end{IEEEeqnarray}
+el término local $ \delta^{2}(\vartheta_{\pm}) $ no es invariante supersimétrico.  Las transformaciones supersim\'etricas  son inducidas por operadores unitarios cuando consideramos el caso de operadores de supercampo, o por cambios de variable en el integral funcional en el caso de supercampos que aparecen en la integral de caminos. En cualquier caso, bajo el signo de integral debemos  no considerar    $  \tilde{S}(x',\vartheta') $ sino 
+\begin{IEEEeqnarray}{rl}
+              \tilde{S}(x,\vartheta)  \, \rightarrow \, \delta^{2}\left[ \left( \vartheta' -\xi\right)_{\pm}\right] \mathcal{W}_{\pm}(x', \vartheta') \ .
+    \label{Ap-B-42}
+\end{IEEEeqnarray}
+Entonces la integral de la superfunción transformada es
+\begin{IEEEeqnarray}{rl}
+            \int    d^{4}x \, d^{4}\vartheta \delta^{2}\,\left[ \left( \vartheta' -\xi\right)_{\pm}\right] \mathcal{W}_{\pm}(x', \vartheta')   \, = \,  \int    d^{4}x \, d^{4} \vartheta\left\lbrace \tilde{S}(x,\vartheta)   \, + \,\left[ \delta^{2}(\xi_{\pm})   \, + \, \xi^{\intercal}\epsilon\vartheta_{\pm}\right]\mathcal{W}_{\pm} (x, \vartheta) \right\rbrace  \nonumber
+    \label{Ap-B-43}
+\end{IEEEeqnarray}
+El segundo y el tercer término son cero.  
+%Este ultimo término se puede escribir como:
+%\begin{IEEEeqnarray}{rl}
+%             \int d^{4}x \,d^{2}\vartheta_{\mp} \,\frac{\partial^{2}}{\partial \vartheta^{2}_{\pm}}  \left( \xi^{\intercal}\epsilon\vartheta_{\pm}\right) \mathcal{W}_{\pm} (x, \vartheta) \, = \,  0\ .
+%    \label{Ap-B-44}
+%\end{IEEEeqnarray}

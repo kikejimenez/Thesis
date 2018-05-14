@@ -1,0 +1,608 @@
+\chapter{Las Reglas de Super Feynman}
+
+\epigraph{``\textit{Readers whose intellectual curiosity is not excited by this are advised to put this book aside permanently  and watch television instead of reading it.}"}{D. Freedman and\\ A. Van Proeyen~\cite{freedman2012supergravity}}
+\label{chap:6}
+\lhead{Cap\'itulo 5. \emph{Las  reglas de super Feynman}}
+El conocimiento total  sobre las teorías cuánticas de los campos en el régimen  perturbativo, se expresa a través de las reglas de Feynman. En el superespacio esto no es la excepción. De la fórmula de Dyson  y las reglas de anti(conmutación) de los operadores, usamos el algoritmo de Wick~\cite{Wick:1950ee} para escribir  explícitamente los elementos de la supermatriz $ \mathcal{S} $ en términos de cantidades que toman valores en los supernúmeros. Pero antes de escribir las fórmulas explícitas, toca  dar una definición de la supermatriz $ \mathcal{S} $, de tal forma que sea completamente invariante de Lorentz e invariante supersimétrica.
+
+\section{Reglas de Apareamiento}
+\label{chap:6-1}
+Hemos obtenido la  fórmula general para la supermatriz $ \mathcal{S} $, en términos de los valores de expectación del operador de Dyson entre los estados de muchas superpartículas no interactuantes,
+\begin{IEEEeqnarray}{rl}
+            \mathcal{S}_{\xi'_{1},\xi'_{2},\cdots \xi_{1},\xi_{2},\cdots} & \, = \, \sum^{\infty}_{N=0}\frac{(-i)^{N}}{N!} \int d^{8}z_{1}d^{8}z_{2}\cdots d^{8}z_{N}\left( \Psi_{0} , \cdots a_{\xi'_{2}} a_{\xi'_{1}}\right. \nonumber \\
+          & \qquad \times  \left. {T} \left\lbrace \mathcal{H}\left(z_{1} \right) \cdots \mathcal{H}\left(z_{N} \right) \right\rbrace  a^{\dagger}_{\xi_{2}} a^{\dagger}_{\xi_{1}}  \cdots\Psi_{0} \right) \ ,
+    \label{6-1-00}
+\end{IEEEeqnarray}
+donde $  \xi $ representa la etiqueta de supermomento $\left(  \mathbf{p} , s_{\pm}\right) $, la especie $ n $ y el superespín $ \sigma $. Los operadores $ a_{\xi} $  son de la forma $ a_{\pm}\left( \mathbf{p} \,s_{\pm}\, n\,\sigma\right)  $, similarmente, los operadores $ a^{\dagger}_{\xi} $ representan a los operadores $ a^{\dagger}_{\pm}\left( \mathbf{p} \,s_{\pm}\, n\,\sigma\right)  $. La variable $ z $ representa el superespacio de configuración $ \left( x,\vartheta\right)  $ y $ d^{8}z=d^{4}xd^{4}\vartheta$. $ T $ nos indica el orden temporal: Los $ \mathcal{H}\left(z \right) $ van en orden decreciente con respecto a $ x^{0} $ de izquierda a derecha.  La densidad de interacción Hamiltoniana $ \mathcal{H}\left(z \right) $, se toma como polinomial en los supercampos y sus adjuntos:
+\begin{IEEEeqnarray}{rl}
+            \mathcal{H}\left(z \right)   \, = \, \sum_{i}g_{i}\, \mathcal{H}_{i}\left(z \right) \ ,
+    \label{6-1-01}
+\end{IEEEeqnarray}
+cada término  $ \mathcal{H}_{i} $, siendo un producto definido de supercampos y adjuntos de supercampos de cada tipo. El supercampo  de una spartícula de especie $ n $, que transforma bajo una representación particular del grupo  homogéneo de Lorentz, viene dado por 
+\begin{IEEEeqnarray}{rl}           
+                \Phi_{\pm \ell}(x,\vartheta)        \, = \,      \chi^{+}_{\pm \ell}(x,\vartheta)   \, + \,     \chi^{-}_{\pm \ell}(x,\vartheta)   \ , \nonumber \\  
+    \label{6-1-02}
+\end{IEEEeqnarray}
+donde $ \chi^{+}_{\pm \ell}$ y $ \chi^{-}_{\pm \ell}  $ son las partes  de  $ \Phi_{\pm \ell} $ que destruyen spartículas y crean antispartículas, respectivamente:
+\begin{IEEEeqnarray}{rl}           
+                \chi^{+}_{\pm \ell}(x,\vartheta)      &   \, = \,       (2\pi)^{-3/2}\sum_{\sigma}  \int d^{3}\textbf{p}\,  \,e^{ +i\left(  x_{\pm}\cdot p \right) }  {a}_{\pm}\left( \mathbf{p}\,{\vartheta}_{\pm}\,\sigma\,n\right)   {u}_{\ell}(\textbf{p} ,\sigma,n)   \ , \nonumber \\  
+   \chi^{-}_{\pm \ell}(x,\vartheta)      &   \, = \,       (2\pi)^{-3/2}\sum_{\sigma}  \int d^{3}\textbf{p}\,  \left( -\right)^{2\mathcal{B}} \, e^{ -i\left(  x_{\pm}\cdot p \right) } \,{a}^{\dagger}_{\pm}\left( \mathbf{p}\,{\vartheta}_{\pm}\,\sigma\, n^{c}\right)    {v}_{\ell }\left( \mathbf{p} ,\sigma,n\right) \ . \nonumber \\    
+    \label{6-1-03}
+\end{IEEEeqnarray}
+El respectivo supercampo adjunto se escribe como 
+\begin{IEEEeqnarray}{rl}           
+   \Phi^{\dagger}_{\pm \ell}(x,\vartheta)        \, = \,  \chi^{+\dagger}_{\pm \ell}(x,\vartheta)   \, + \,     \chi^{-\dagger}_{\pm \ell}(x,\vartheta)  \ , \nonumber \\
+    \label{6-1-04}
+\end{IEEEeqnarray}
+donde $ \chi^{+\dagger}_{\pm \ell}$ y $ \chi^{-\dagger}_{\pm \ell}  $ son las partes  de  $ \Phi^{\dagger}_{\pm \ell} $ que destruyen antispartículas y crean  spartículas, respectivamente:
+\begin{IEEEeqnarray}{rl}           
+                \chi^{+\dagger}_{\pm \ell}(x,\vartheta)      &   \, = \,       (2\pi)^{-3/2}\sum_{\sigma}  \int d^{3}\textbf{p}\,  \,e^{ +i\left(  x_{\pm}\cdot p \right) }  {a}^{\dagger}_{\pm}\left( \mathbf{p}\,{\vartheta}_{\pm}\,\sigma\,n\right)   {u}_{\ell}(\textbf{p} ,\sigma,n) ^{*}  \ , \nonumber \\  
+   \chi^{-\dagger}_{\pm \ell}(x,\vartheta)      &   \, = \,       (2\pi)^{-3/2}\sum_{\sigma}  \int d^{3}\textbf{p}\,  \left( -\right)^{2\mathcal{B}} \, e^{ -i\left(  x_{\pm}\cdot p \right) } \,{a}_{\pm}\left( \mathbf{p}\,{\vartheta}_{\pm}\,\sigma\, n^{c}\right)    {v}_{\ell }\left( \mathbf{p} ,\sigma,n\right)^{*} \ , \nonumber \\    
+    \label{6-1-05}
+\end{IEEEeqnarray}
+Aquí, $ n^{c} $ denota la antispartícula asociada a la especie $ n $, el momento $ p $ se encuentra en la capa de masa, $ p^{0}=\sqrt{ \vert \mathbf{p}\vert^{2}   \, + \, m_{n}^{2}} $ . Los coeficientes   $ u_{\ell} $ y    $v_{\ell}$ dependen de las propiedades de las transformaciones de Lorentz del supercampo y del superespín de la partícula que describe. El índice $ \ell $ en el supercampo  indica el tipo de spartícula  y la representación del grupo de Lorentz de la cual el supercampo transforma, además de incluir el índice que corre sobre los componentes en esta representación. Hemos aislado un conjunto  de operadores que identificamos como las ``spartículas'' y al correspondiente conjunto de operadores que tienen los números cuánticos invertidos con respecto a estas superpartículas, sus  antispartículas (Así por ejemplo, siempre podemos decir que el positrón es la partícula en cuestión y el electrón su antipartícula). Operadores de supercampos que destruyen spartículas y crean antispartículas, les llamamos simplemente supercampos, sus adjuntos, los cuales destruyen antispartículas y crean spartículas, les decimos simplemente supercampos adjuntos.
+
+La relación entre los supercampos y sus adjuntos viene dada por la relación [ver Ecs. \eqref{3-3-07}]:
+ \begin{IEEEeqnarray}{rl}
+              \Phi^{\dagger}_{\pm \ell}(x,\vartheta)    \, = \,   \left[ \Phi_{\mp\ell}(x,\epsilon\gamma_{5}\beta\vartheta^{*})  \right] ^{\dagger}
+     \label{6-1-06}
+ \end{IEEEeqnarray}
+
+\textit{\textbf{Las reglas de apareamiento de Wick.}} Para dar un valor numérico explícito de la supermatriz $ \mathcal{S} $, pasamos todos los operadores de creación a la izquierda de los operadores de aniquilación, por lo que usamos (El signo menos en  $ \pm $, surge cuando las especies de spartículas son ambas fermiones)
+\begin{IEEEeqnarray}{rl}
+            a_{\xi}a^{\dagger}_{\xi'}   &\, = \, \pm a^{\dagger}_{\xi'}  a_{\xi}   \, + \, \delta_{\xi,\xi'} \ ,\nonumber \\
+             a_{\xi}a_{\xi'}   &\, = \, \pm a_{\xi'}  a_{\xi} \ , \nonumber \\
+              a^{\dagger}_{\xi}a^{\dagger}_{\xi'}   &\, = \, \pm a^{\dagger}_{\xi'}  a^{\dagger}_{\xi}  \ , 
+    \label{6-1-07}
+\end{IEEEeqnarray}
+donde $ \delta_{\xi,\xi'} $ es igual a [ver Ec. \eqref{3-3-16}]
+\begin{IEEEeqnarray}{rl}           \exp{  \left[  2 {s}\cdot   \, (-i\slashed{p})\, {s'}_{\pm}\right]} \delta^{3}(\mathbf{p}-\mathbf{p}')\,
+       \delta_{n n'}\delta_{\sigma\sigma'}\ , \nonumber \\             
+    \label{6-1-08}
+\end{IEEEeqnarray}
+para cuando $ \xi = \left( p,s_{\mp}, \sigma, n\right) $ y $ \xi' = \left( p',s'_{\pm}, \sigma', n'\right) $, mientras que, cuando   $ \xi = \left( p,s_{\pm}, \sigma, n\right) $ y $ \xi' = \left( p',s'_{\pm}, \sigma', n'\right) $ la cantidad $ \delta_{\xi,\xi'} $ es igual a [ver Ec. \eqref{3-3-15-1}]
+\begin{IEEEeqnarray}{rl}                                   
+             \, \pm  \,2m \,\delta^{2}\left[ \left(  s'- s\right)_{\pm} \right] \delta^{3}(\mathbf{p}-\mathbf{p}')\,
+       \delta_{n n'}\delta_{\sigma\sigma'}\ . \nonumber \\             
+    \label{6-1-09}
+\end{IEEEeqnarray}
+ Debido a que
+\begin{IEEEeqnarray}{rl}
+               a_{\xi}\,\Psi_{0} =0 , \quad \Psi^{\dagger}_{0}\, a^{\dagger}_{\xi}  \, = \, 0\ ,
+    \label{6-1-10}
+\end{IEEEeqnarray}
+cada que aparezca un operador de creación a la extrema izquierda (o de aniquilación a la  extrema derecha) la contribución a la supermatriz $ \mathcal{S} $ es nula. Las contribuciones que no son nulas, son las que resultan de los factores $ \delta_{\xi,\xi'} $ que se originan de aparear (o emparejar) todos y cada uno de los operadores de creación y aniquilación con operadores de aniquilación y creación, respectivamente, los cuales se encuentran en los estados iniciales, los estados finales y en la densidad Hamiltoniano de interacción~\cite{Wick:1950ee}.
+
+Entonces, la tarea es buscar todos los posibles apareamientos que se forman con las interacciones  $ \mathcal{H}_{i} $ en cada término en la fórmula de Dyson. Tendremos sumas de integrales de productos de factores que se originan de los apareamientos de la siguiente manera:
+\begin{itemize}   
+\item[(a)] El apareamiento de una spartícula final con  números cuánticos $ \mathbf{p}'\,s'\, \sigma'\, n' $  con el supercampo adjunto $ \Phi^{\dagger}_{\pm\ell}\left(x,\vartheta \right)  $ en $ \mathcal{H}_{i}(x,\vartheta) $ nos da un factor:
+     \begin{itemize}
+ \item[-]      cuando la spartícula es del tipo $ (\pm) $: 
+  \begin{IEEEeqnarray}{ll}
+              \left[        a_{\pm}\left( \mathbf{p}'\,s'_{\pm}\, \sigma'\, n'\right)   ,  \Phi^{\dagger}_{\pm \ell}(x,\vartheta)  \right\rbrace  \, = \, \nonumber \\
+             \qquad    \pm 2m_{n} (2\pi)^{-3/2} e^{ -i\left(  x_{\pm}\cdot p' \right) } \,\delta^{2}\left[ \left(  \vartheta-s \right)_{\pm} \right] \left( {u}_{\ell}(\textbf{p}' ,\sigma',n')\right)^{*}   \ , \nonumber \\
+     \label{6-1-11}
+ \end{IEEEeqnarray}
+ \item[-]      cuando la spartícula es del tipo $ (\mp) $: 
+ \begin{IEEEeqnarray}{ll}
+               \left[        a_{\mp}\left( \mathbf{p}'\,s'_{\mp}\, \sigma'\, n'\right)   ,  \Phi^{\dagger}_{\pm \ell}(x,\vartheta)  \right\rbrace    \, = \, 
+                \nonumber \\
+                \qquad  \,(2\pi)^{-3/2} e^{ -i\left(  x_{\pm}\cdot p' \right) }e^{  \left[  2 {s}'\cdot   \, (-i\slashed{p}')\, {\vartheta}_{\pm}\right]}   \left( {u}_{\ell}(\textbf{p}' ,\sigma',n')\right)^{*}   \ . \nonumber \\
+     \label{6-1-12}
+ \end{IEEEeqnarray}
+ \end{itemize}      
+           \item[(b)] El apareamiento de una antispartícula final con  números cuánticos $ \mathbf{p}'\,s'\, \sigma'\, n'^{c} $  con el supercampo adjunto $ \Phi_{\pm\ell}\left(x,\vartheta \right)  $ en $ \mathcal{H}_{i}(x,\vartheta) $ nos da un factor:
+\begin{itemize}
+ \item[-]     cuando la antispartícula es del tipo $ (\pm) $:        
+     \begin{IEEEeqnarray}{ll}
+                     \left[        a_{\pm}\left( \mathbf{p}'\,s'_{\pm}\, \sigma'\, n'^{c}\right) , \Phi_{\pm \ell}(x,\vartheta)  \right\rbrace       \, = \,   \nonumber \\
+                         \qquad   \pm 2m_{n}    (2\pi)^{-3/2}\left( -\right)^{2\mathcal{B}} \, e^{ -i\left(  x_{\pm}\cdot p' \right) } \,   \,\delta^{2}\left[ \left(  s'- \vartheta\right)_{\pm} \right]  {v}_{\ell }\left( \mathbf{p} ',\sigma',n'\right)  \ , \nonumber \\
+          \label{6-1-12}
+      \end{IEEEeqnarray}
+ \item[-]    cuando la antispartícula es del tipo $ (\mp) $:     
+       \begin{IEEEeqnarray}{ll}
+                      \left[                  a_{\mp}\left( \mathbf{p}'\,s'_{\mp}\, \sigma'\, n'^{c}\right) ,  \Phi_{\pm \ell}(x,\vartheta)    \right\rbrace      \, = \,    \nonumber \\
+                       \qquad           (2\pi)^{-3/2}\left( -\right)^{2\mathcal{B}} \, e^{ -i\left(  x_{\pm}\cdot p' \right) } \,\exp{  \left[  2 s'\cdot   \, (-i\slashed{p}')\, \vartheta_{\pm}\right]}   {v}_{\ell }\left( \mathbf{p}' ,\sigma',n'\right)  \ . \nonumber \\
+           \label{6-1-13}
+       \end{IEEEeqnarray}
+ \end{itemize}   
+          \item[(c)] El apareamiento de una spartícula inicial con  números cuánticos $ \mathbf{p}\,s\, \sigma\, n $  con el supercampo adjunto $ \Phi_{\pm\ell}\left(x,\vartheta \right)  $ en $ \mathcal{H}_{i}(x,\vartheta) $ nos da un factor:
+\begin{itemize}
+ \item[-]     cuando la antispartícula es del tipo $ (\pm) $:        
+           \begin{IEEEeqnarray}{ll}
+                            \left[ \Phi_{\pm \ell}(x,\vartheta)     ,   a^{\dagger}_{\pm}\left( \mathbf{p}\,s_{\pm}\, \sigma'\, n\right)\right\rbrace      \, = \,  \nonumber \\
+                            \qquad  \pm 2m_{n}    (2\pi)^{-3/2} \,e^{ +i\left(  x_{\pm}\cdot p \right) }   \,\delta^{2}\left[ \left(  s- \vartheta\right)_{\pm} \right] {u}_{\ell}(\textbf{p} ,\sigma,n)\ ,\nonumber \\
+                    \label{6-1-14}
+                \end{IEEEeqnarray}
+\item[-]     cuando la antispartícula es del tipo $ (\mp) $:          
+                 \begin{IEEEeqnarray}{ll}
+                              \left[ \Phi_{\pm \ell}(x,\vartheta)     ,   a^{\dagger}_{\mp}\left( \mathbf{p}\,s_{\mp}\, \sigma\, n\right)\right\rbrace      \, = \,  \nonumber \\
+                         \qquad          (2\pi)^{-3/2} \,e^{ +i\left(  x_{\pm}\cdot p\right) } \exp{  \left[  2 {\vartheta}\cdot   \, (-i\slashed{p})\, {s}_{\mp}\right]}     {u}_{\ell}(\textbf{p} ,\sigma,n)\ .\nonumber \\
+                     \label{6-1-15}
+                 \end{IEEEeqnarray}  
+\end{itemize}   
+     \item[(d)] El apareamiento de una antispartícula inicial con  números cuánticos $ \mathbf{p}\,s\, \sigma\, n^{c} $  con el supercampo adjunto $ \Phi_{\pm\ell}\left(x,\vartheta \right)  $ en $ \mathcal{H}_{i}(x,\vartheta) $ nos da un factor:
+\begin{itemize}
+ \item[-]     cuando la antispartícula es del tipo $ (\pm) $:       
+ \begin{IEEEeqnarray}{ll}
+               \left[    \Phi^{\dagger}_{\pm \ell}(x,\vartheta)  ,  a^{\dagger}_{\pm}\left( \mathbf{p}\,s_{\pm}\, \sigma\, n^{c}\right)  \right\rbrace    \, = \,   \nonumber \\
+               \qquad  \pm 2m_{n}(2\pi)^{-3/2}    \left( -\right)^{2\mathcal{B}}  e^{ +i\left(  x_{\pm}\cdot p \right) }  \,\delta^{2}\left[ \left(  s- \vartheta\right)_{\pm} \right]  \left( {v}_{\ell}(\textbf{p} ,\sigma,n) \right)^{*}  \ , \nonumber \\
+     \label{6-1-16}
+ \end{IEEEeqnarray}
+  \item[-]    cuando la antispartícula es del tipo $ (\mp) $:      
+  \begin{IEEEeqnarray}{ll}
+                \left[    \Phi^{\dagger}_{\pm \ell}(x,\vartheta)  ,  a^{\dagger}_{\mp}\left( \mathbf{p}\,s_{\mp}\, \sigma\, n^{c}\right)   \right\rbrace      \, = \,   \nonumber \\
+                \qquad     (2\pi)^{-3/2} \left( -\right)^{2\mathcal{B}}  e^{ +i\left(  x_{\pm}\cdot p \right) }  e^{  \left[  2 \vartheta\cdot   \, (-i\slashed{p})\, {s}_{\mp}\right]}   \left( {v}_{\ell}(\textbf{p} ,\sigma,n) \right)^{*}\ .   \nonumber \\
+      \label{6-1-17}
+  \end{IEEEeqnarray}
+ \end{itemize}
+ \item[(e)] El apareamiento  de una spartícula (o antispartícula) final que lleva números cuánticos $ \mathbf{p}'\,s'\, \sigma'\, n'$ con una spartícula (o antispartícula) inicial que lleva números $ \mathbf{p}\,s\, \sigma\, n$
+ \begin{itemize}
+ \item[-]   cuando son del tipo $ (\mp) $ y $ (\pm) $, respectivamente:      
+ \begin{IEEEeqnarray}{rl}       
+  \left[        a_{\mp}\left( \mathbf{p}\,s_{\mp}\, \sigma\, n\right)   ,   a^{\dagger}_{\pm}\left( \mathbf{p}'\,s'_{\pm}\, \sigma'\, n'\right)\right\rbrace   &\, = \, \exp{  \left[  2 {s}\cdot   \, (-i\slashed{p})\, {s'}_{\pm}\right]} \delta^{3}(\mathbf{p}-\mathbf{p}')\,
+       \delta_{n n'}\delta_{\sigma\sigma'}\ , \nonumber \\                            
+    \label{6-1-18}
+\end{IEEEeqnarray}	  
+   \item[-]   cuando son del tipo $ (\pm) $ y $ (\pm) $, respectivamente: 
+  \begin{IEEEeqnarray}{rl}        
+             \left[   {a}_{\pm}\left( \mathbf{p}\,s_{\pm}\, \sigma\, n\right) ,   a^{\dagger}_{\pm}\left( \mathbf{p}'\,s'_{\pm}\, \sigma'\, n'\right) \right\rbrace  & \, = \,  \pm 2m \,\delta^{2}\left[ \left(  s'- s\right)_{\pm} \right] \delta^{3}(\mathbf{p}-\mathbf{p}')\,
+       \delta_{n n'}\delta_{\sigma\sigma'}\ . \nonumber \\             
+    \label{6-1-19}
+\end{IEEEeqnarray}
+\end{itemize}	 
+\item[(f)] El apareamiento  de  un supercampo $ \Phi_{\pm\ell}\left( x, \vartheta\right)  $ en $ \mathcal{H}_{i}\left(x,\vartheta \right)  $  con el supercampo
+  \begin{itemize}
+ \item[-]    $ \Phi_{\mp\ell}\left( x', \vartheta'\right)  $ en   $ \mathcal{H}_{j}\left(x',\vartheta' \right)  $ :      
+ \begin{IEEEeqnarray}{rl}       
+ \Delta_{\ell\ell'}^{\pm,\mp}\left( z,z'\right)  &  \, = \, \omega\left(x-x' \right)\left[\chi^{+}_{\pm \ell}\left(z \right) , \chi^{+ \dagger}_{\mp \ell'}\left(z' \right) \right\rbrace   , \nonumber \\    
+                          & \qquad   \, + \, (-)^{2 j_{n}}  \,  \omega\left(x'-x \right)\left[\chi^{-\dagger}_{\mp \ell'}\left(z' \right) , \chi^{-}_{\pm \ell}\left(z \right) \right\rbrace \ , \nonumber \\
+    \label{6-1-20}
+\end{IEEEeqnarray}	  
+   \item[-]    $ \Phi_{\pm\ell}\left( x', \vartheta'\right)  $ en   $ \mathcal{H}_{j}\left(x',\vartheta' \right)  $ :      
+ \begin{IEEEeqnarray}{rl}       
+ \Delta_{\ell\ell'}^{\pm,\pm}\left( z,z'\right)  &  \, = \, \omega\left(x-x' \right)\left[\chi^{+}_{\pm \ell}\left(z \right) , \chi^{+ \dagger}_{\pm m}\left(z' \right) \right\rbrace   , \nonumber \\    
+                          & \qquad   \, + \, (-)^{2 j_{n}} \,  \omega\left(x'-x \right)\left[\chi^{-\dagger}_{\pm \ell'}\left(z' \right) , \chi^{-}_{\pm \ell}\left(z \right) \right\rbrace  \ , \nonumber \\
+    \label{6-1-21}
+\end{IEEEeqnarray}
+\end{itemize}
+ donde $ \omega\left( x\right)  $ es la función paso, igual a $ +1 $ para $ x^{0}>0 $ y cero $ x^{0}<0 $. El símbolo $ j_{n} $ representa al superespín de la superpartícula en cuestión, $ (-)^{2 j_{n}}  $  es positivo si los supercampos son bosónicos y negativo si son fermiónicos.
+ \end{itemize}
+ Estamos  a casi nada de poder formular las reglas de  super Feynman, como veremos a continuación, lo que nos detiene es el  hecho de que las cantidades \eqref{6-1-20} y \eqref{6-1-21} no son covariantes de Lorentz ni supersimétricas.
+\section{El Superpropagador No-covariante}
+\label{chap:6-2}
+Por inspección directa, vemos que los conmutadores con el superíndice  $ + $  en las Ecs. \eqref{6-1-20} y \eqref{6-1-21} vienen dados por ($ \varepsilon  =+,-$):
+\begin{IEEEeqnarray}{rl}
+               \left[\chi^{+}_{\varepsilon \ell_{1}}\left(x_{1},\vartheta_{1} \right) , \chi^{+\dagger}_{\varepsilon \ell_{2}}\left(x_{2},\vartheta_{2} \right)  \right\rbrace & \, = \,   \Delta_{\ell_{1}\ell_{2}}\left( x^{\varepsilon}_{_{12}}\right)\ ,   \nonumber \\  
+                               \label{6-2-01} \\
+                   \left[\chi^{+}_{\varepsilon \ell_{1}}\left(x_{1},\vartheta_{1} \right) , \chi^{+\dagger}_{(-\varepsilon) \ell_{2}}\left(x_{2},\vartheta_{2} \right)  \right\rbrace & \, = \,  \pm 2m_{n}\,\delta^{2}\left[ \left(\vartheta_{2} \, - \,\vartheta_{1} \right)_{\varepsilon}\right] \Delta_{\ell_{1}\ell_{2}}\left( x^{\varepsilon}_{_{12}}\right)  \ , \nonumber \\
+    \label{6-2-02}
+\end{IEEEeqnarray}
+donde
+\begin{IEEEeqnarray}{rl}
+           \Delta_{\ell_{1}\ell_{2}}(x)  \, \equiv \, (2\pi)^{-3}\int d^{3}\mathbf{p}\left(2 p^{0} \right)^{-1}   {P}_{\ell_{1}\ell_{2}}\left( \mathbf{p}, p^{0}\right) e^{i p\cdot x}\ ,
+     \label{6-2-03}
+ \end{IEEEeqnarray}
+ y 
+ \begin{IEEEeqnarray}{rl}
+            \left(  x^{\pm }_{_{12}}\right)^{\mu}   \, = \, x^{\mu}_{_{1}}-x^{\mu}_{_{2}}  \, + \, (\vartheta_{_{2}}-\vartheta_{_{1}})\cdot\gamma^{\mu}(\vartheta_{_{2}\mp} +\vartheta_{_{1}\pm})   \, = \, -\left(  x^{\mp }_{_{21}}\right)^{\mu} \ . \nonumber \\
+    \label{6-2-04}    
+\end{IEEEeqnarray}
+La función $ {P}_{\ell_{1}\ell_{2}} $ viene dada por
+\begin{IEEEeqnarray}{rl}
+         {P}_{\ell_{1}\ell_{2}} \left(\mathbf{p}, p^{0} \right)  &\, = \,    (2p^{0})\sum_{\sigma} {u}_{\ell_{1}} (\textbf{p},\sigma)\,{u}^{*}_{\ell_{2}} (\textbf{p},\sigma,n)  \, = \,    (2p^{0}) \sum_{\sigma} {v}_{\ell_{1}} (\textbf{p},\sigma,n)\,{v}^{*}_{\ell_{2}} (\textbf{p},\sigma,n) \ .\nonumber \\
+    \label{6-2-05}
+\end{IEEEeqnarray}
+con $ p^{0} \, = \, \sqrt{\mathbf{p}  \, + \,  m^{2}_{n}} $. Como quedó demostrado en la sección \ref{chap5:5}, esta funci\'on:
+\begin{itemize}
+\item[-]  Es polinomial  en $ \mathbf{p} $ y $ p^{0} $, por lo tanto puede ser escrita como
+\begin{IEEEeqnarray}{rl}
+           {P}_{\ell_{1}\ell_{2}}   \left(\mathbf{p}, p^{0} \right)  \, = \, {P}_{\ell_{1}\ell_{2}}   \left(  \mathbf{p}\right)    \, +\, p^{0} \, Q_{\ell_{1}\ell_{2}}  \left(\mathbf{p} \right)   \ ,
+    \label{6-2-06}
+\end{IEEEeqnarray}
+donde $ {P}_{\ell_{1}\ell_{2}}   \left(  \mathbf{p}\right) $ y $ {Q}_{\ell_{1}\ell_{2}}   \left(  \mathbf{p}\right)  $ son  polinomios  en el 3-vector $ \mathbf{p} $.
+\item[-] Posee la propiedad de reflexión
+\begin{IEEEeqnarray}{rl}
+             {P}_{\ell_{1}\ell_{2}}   \left(-\mathbf{p},- p^{0} \right)    \, = \, (-)^{2j_{n}} {P}_{\ell_{1}\ell_{2}} \left(\mathbf{p}, p^{0} \right)\ ,
+     \label{6-2-07}
+ \end{IEEEeqnarray}
+con $ j_{n} $ representando el superesp\'in de la superpart\'icula.
+\end{itemize}
+
+Los  conmutadores con el superíndice  $ - $  en las Ecs. \eqref{6-1-20} y \eqref{6-1-21}, pueden ser escritos como los  conmutadores  \eqref{6-2-01}  y \eqref{6-2-01} (que tienen superíndice $ + $) pero cambiando los subíndices  $ \ell_{1} \longleftrightarrow \ell_{2} $:
+\begin{IEEEeqnarray}{rl}
+               \left[\chi^{-\dagger}_{\varepsilon_{2} \ell_{2}}\left(x_{2},\vartheta_{2} \right) , \chi^{-}_{\varepsilon_{1} \ell_{1}}\left(x_{1},\vartheta_{1} \right)  \right\rbrace & \, = \,  \left[\chi^{+}_{\varepsilon_{2} \ell_{1}}\left(x_{2},\vartheta_{2} \right) , \chi^{+\dagger}_{\varepsilon_{1} \ell_{2}}\left(x_{1},\vartheta_{1} \right)  \right\rbrace \ .  \nonumber \\  
+                               \label{6-2-08}          
+\end{IEEEeqnarray}
+ Con el fin de escribir  \eqref{6-2-01} y \eqref{6-2-02} en una sola expresi\'on, expandimos $ \Delta_{\ell_{1}\ell_{2}}\left( x_{12}^{\pm}\right)  $ alrededor de $ x_{1}-x_{2} $,
+\begin{IEEEeqnarray}{rl}
+            \left[\chi^{+}_{\varepsilon_{1}\ell_{1}}\left(x_{1},\vartheta_{1} \right) , \chi^{+\dagger}_{\varepsilon_{2} \ell_{2}}\left(x_{2},\vartheta_{2} \right)  \right\rbrace   \, = \, {P}^{\varepsilon_{1}\varepsilon_{2}}_{ \ell_{1},\ell_{2}} \left( -i\partial_{_{1}},\vartheta_{_{1}},\vartheta_{_{2}}\right)\Delta_{+}\left(x_{_{1}}- x_{_{2}}\right)  \ , \nonumber \\
+    \label{6-2-09}
+\end{IEEEeqnarray}
+donde
+\begin{IEEEeqnarray}{rl}
+                {P}^{\pm\mp}_{ \ell_{1},\ell_{2}} \left(p,\vartheta_{_{1}},\vartheta_{_{2}}\right) &  \, =\,  {P}_{ \ell_{1},\ell_{2}}    \left( p \right) \exp\left[ i (\vartheta_{_{2}}-\vartheta_{_{1}})\cdot\slashed{p}(\vartheta_{_{2}\mp} +\vartheta_{_{1}\pm})\right] \ ,   \nonumber \\
+    \label{6-2-10-a} \\
+               {P}^{\pm\pm}_{ \ell_{1},\ell_{2}} \left(p,\vartheta_{_{1}},\vartheta_{_{2}}\right) &  \, =\, \pm 2m\,\delta^{2}\left[ \left(\vartheta_{2} \, - \,\vartheta_{1} \right)_{\pm}\right]  {P}_{ \ell_{1},\ell_{2}}   \left( p \right)e^{i\vartheta_{2}\cdot \slashed{p}\vartheta_{1}}  \ .  \nonumber \\
+    \label{6-2-10-b}
+\end{IEEEeqnarray}
+La función $ \Delta_{+}\left(x\right)  $ representa la restricción de la función   $  \Delta_{\ell_{1}\ell_{2}}\left(x\right) $ que aparece en la Ec. \eqref{6-2-03}, para el caso en que $ {P}_{\ell_{1}\ell_{2}}=1 $. De las Ecs. \eqref{6-2-07}, \eqref{6-2-10-a} y \eqref{6-2-10-b}, notamos que
+\begin{IEEEeqnarray}{rl}
+            {P}^{\varepsilon_{1}\varepsilon_{2}}_{ \ell_{1},\ell_{2}} \left( p,\vartheta_{_{1}},\vartheta_{_{2}}\right)  \, = \, (-)^{2j_{n}}{P}^{\varepsilon_{2}\varepsilon_{1}}_{ \ell_{1},\ell_{2}} \left(- p,\vartheta_{_{2}},\vartheta_{_{1}}\right),  \quad 
+            \nonumber \\
+    \label{6-2-11}
+\end{IEEEeqnarray}
+esto nos sirve para escribir a los \emph{superpropagadores}  \eqref{6-1-20} y \eqref{6-1-21} de la siguiente manera:
+ \begin{IEEEeqnarray}{ll}
+   -i{\Delta}^{\varepsilon_{1}\varepsilon_{2}}_{\ell_{1}\ell_{2}}\left( x_{_{1}},\vartheta_{_{1}},x_{_{2}},\vartheta_{_{2}}\right)        
+       &\, = \,  \omega(x_{_{12}}^{0})\,  {P}^{\varepsilon_{1}\varepsilon_{2}}_{\ell_{1}\ell_{2}}\left( -i\partial_{_{1}},\vartheta_{_{1}},\vartheta_{_{2}}\right)\Delta_{+}\left(x_{_{1}}- x_{_{2}}\right)    \nonumber \\
+   &  \, + \, \omega(x_{_{21}}^{0}) {P}^{\varepsilon_{1}\varepsilon_{2}}_{\ell_{1}\ell_{2}}\left( -i\partial_{_{1}},\vartheta_{_{1}},\vartheta_{_{2}}\right)\Delta_{+}\left(x_{_{2}}- x_{_{1}}\right)   \ .\nonumber \\
+    \label{6-2-12}
+\end{IEEEeqnarray} 
+
+Las funciones  $  {P}^{\varepsilon_{1}\varepsilon_{2}}_{\ell_{1}\ell_{2}}\left( p,\vartheta_{_{1}},\vartheta_{_{2}}\right) $ representan la generalización del Polinomio de Weinberg al caso del superespacio. Evidentemente, esta función también es polinomial  en $ p $ y por lo tanto posee una expansión lineal en $ p^{0} $.  
+La acción de las derivadas  \eqref{6-2-12} está definida para momentos en la capa de masa. 
+Ampliamos el dominio de definición  del polinomio de Weinberg en el superespacio para valores de momento  $ q^{\mu} $ fuera de la capa de masa. Para ello, extendemos $ {P}^{\varepsilon_{1}\varepsilon_{2}}_{\ell_{1}\ell_{2}}\left( p,\vartheta_{_{1}},\vartheta_{_{2}}\right) $  linealmente en $  p^{0}  $  para valores $ q^{0} $ arbitrarios:
+\begin{IEEEeqnarray}{rl}
+      {P}^{\varepsilon_{1}\varepsilon_{2},L}_{\ell_{1}\ell_{2}}\left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right) \, \equiv \, {P}^{\varepsilon_{1}\varepsilon_{2}}_{\ell_{1}\ell_{2}} \left(  \mathbf{q},\vartheta_{_{1}},\vartheta_{_{2}}\right)    \, +\, q^{0} \, Q^{\varepsilon_{1}\varepsilon_{2}}_{\ell_{1}\ell_{2}} \left(\mathbf{q},\vartheta_{_{1}},\vartheta_{_{2}} \right)   \ .\nonumber \\
+    \label{6-2-13}
+\end{IEEEeqnarray}
+De esta manera, cuando $ q^{\mu} $  se encuentra en la  capa de masa,  $ {P}^{\varepsilon_{1}\varepsilon_{2},L}_{\ell_{1}\ell_{2}} $ y   $ {P}^{\varepsilon_{1}\varepsilon_{2}}_{\ell_{1}\ell_{2}} $ coinciden. El operador
+\begin{IEEEeqnarray}{rl}
+            {P}^{\varepsilon_{1}\varepsilon_{2},L}_{\ell_{1}\ell_{2}} \left(  -i\tfrac{\partial}{\partial x} ,\vartheta_{_{1}},\vartheta_{_{2}}\right) \, = \, {P}^{\varepsilon_{1}\varepsilon_{2},L}_{\ell_{1}\ell_{2}}  \left(  -i\nabla,\vartheta_{_{1}},\vartheta_{_{2}}\right)   \, - \, i\,Q^{\varepsilon_{1}\varepsilon_{2},L}_{\ell_{1}\ell_{2}}  \left(  -i\nabla,\vartheta_{_{1}},\vartheta_{_{2}}\right)\frac{\partial}{\partial x^{0}}  \ , \nonumber \\
+    \label{6-2-14}
+\end{IEEEeqnarray}
+ actúa sobre funciones arbitrarias. De la propiedad de la función paso
+\begin{IEEEeqnarray}{rl}
+            \frac{\partial}{\partial x^{0}} \omega\left( x^{0}\right)  \, = \, -\frac{\partial }{\partial x^{0}}\omega\left( -x^{0}\right)   \, = \, \delta\left( x^{0}\right) \ ,
+    \label{6-2-15}
+\end{IEEEeqnarray}
+podemos ver que los superpropagadores \eqref{6-2-12} adquieren la forma
+ \begin{IEEEeqnarray}{ll}
+   {\Delta}^{\varepsilon_{1}\varepsilon_{2}}_{\ell_{1}\ell_{2}}\left( x_{_{1}},\vartheta_{_{1}},x_{_{2}},\vartheta_{_{2}}\right)        
+       &\, = \,   \,  {P}^{\varepsilon_{1}\varepsilon_{2},L}_{\ell_{1}\ell_{2}} \left( -i\partial_{_{1}},\vartheta_{_{1}},\vartheta_{_{2}}\right)\Delta_{F}\left(x_{_{1}}- x_{_{2}}\right)    \ , \nonumber \\
+    \label{6-2-16}
+\end{IEEEeqnarray}
+donde $ \Delta_{F}(x)  $ es el propagador de Feynman
+\begin{IEEEeqnarray}{rl}
+            -i\Delta_{F}(x)  \,\equiv \,  \,\omega(x)\Delta_{+}(x)  \, + \,  \omega(-x)\Delta_{+}(-x) \ .\nonumber \\
+    \label{6-2-17}
+\end{IEEEeqnarray}
+Para llegar a la Ec. \eqref{6-2-16} usando la Ec. \eqref{6-2-13}, hemos omitido el término 
+\begin{IEEEeqnarray}{rl}
+            \delta\left(x^{0}_{_{12}} \right) Q^{\varepsilon_{1}\varepsilon_{2}}_{\ell_{1}\ell_{2}} \left(  -i\nabla_{_{1}},\vartheta_{_{1}},\vartheta_{_{2}}\right)\left(\Delta_{+}(x_{_{1}}-x_{_{2}})   \, - \,  \Delta_{+}(x_{_{2}}-x_{_{1}}) \right) \ , \nonumber \\
+    \label{6-2-18}
+\end{IEEEeqnarray}
+ ya que cuando $ x^{0}= 0$, la función $ \Delta_{+}(x)   $ es par y por lo tanto este término es cero. El propagador de Feynman tiene la siguiente representación integral en la variable $ q^{\mu} $:
+\begin{IEEEeqnarray}{rl}
+             \Delta_{F}(x)  \, = \, \left( 2\pi\right)^{-4}\int d^{4}q\frac{\exp\left[i q\cdot x \right]  }{q^{2}  \, + \, m^{2}  \, - \, i\epsilon}\ ,
+    \label{6-2-19}
+\end{IEEEeqnarray}
+con $ \epsilon >0$.  Por lo tanto, el superpropagador \eqref{6-2-12} se escribe en el espacio de momentos como 
+\begin{IEEEeqnarray}{ll}
+   {\Delta}^{\varepsilon_{1}\varepsilon_{2}}_{\ell_{1}\ell_{2}}\left( x_{_{1}},\vartheta_{_{1}},x_{_{2}},\vartheta_{_{2}}\right)        
+       &\, = \,   \,  \left( 2\pi\right)^{-4}\int d^{4}q\,\frac{{P}^{\varepsilon_{1}\varepsilon_{2}L}_{\ell_{1}\ell_{2}} \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)e^{i q\cdot \left( x_{{1}}-x_{{2}} \right) } }{q^{2}  \, + \, m^{2}  \, - \, i\epsilon}   \ . \nonumber \\
+    \label{6-2-20}
+\end{IEEEeqnarray}
+
+En toda esta discusión, hemos supuesto que las interacciones no incluyen supercampos $ \mathcal{D}_{\pm\alpha}\Phi_{\pm \ell} $ y sus adjuntos. La extensión para estos  casos  es directa.
+\section{La Supermatriz $ \mathcal{S} $ Covariante}
+\label{chap:6-3}
+En este punto debe de ser claro que la fuente de violación de Lorentz y de supersimetría proviene de los superpropagadores, porque los apareamientos \eqref{6-1-11}-\eqref{6-1-19} son explícitamente covariantes.
+Esperamos que un buen  superpropagador, denotado por  $ {\Delta}^{\text{cov}}_{\ell_{1}, \ell_{2}} $, se comporte como una densidad covariante:
+%Para tener una supermatriz $ \mathcal{S} $ es indispensable que el propagador transforme bajo una transformacion de Lorentz, 
+\begin{itemize}
+\item[-] Bajo una transformación de Lorentz inhomogénea $ (\Lambda, a) $:
+\begin{IEEEeqnarray}{ll}
+            {\Delta}^{\text{cov}}_{\ell_{1}\ell_{2}}\left( \Lambda x_{_{1}}  \, + \, a ,D(\Lambda)\vartheta_{_{1}}, \Lambda x _{_{2}}\, + \, a,D(\Lambda)\vartheta_{_{2}}\right) \nonumber\\ 
+           \qquad  \, = \,\sum_{\ell'_{1}\ell'_{2}}S\left( \Lambda\right)_{\ell_{1}\ell'_{1}}  \tilde{S}\left( \Lambda\right)^{*}_{\ell_{2}\ell'_{2}} {\Delta}^{\text{(cov)}}_{\ell'_{1}\ell'_{2}}  \left( x_{_{1}},\vartheta_{_{1}},x_{_{2}},\vartheta_{_{2}}\right) \ , \nonumber \\
+    \label{6-3-01}
+\end{IEEEeqnarray}
+\item[-] Bajo una transformación supersimétrica $ \xi $:
+\begin{IEEEeqnarray}{ll}
+            {\Delta}^{\text{\text{cov}}}_{\ell_{1}\ell_{2}}\left( x_{_{1}},\vartheta_{_{1}},x_{_{2}},\vartheta_{_{2}}\right)  \nonumber\\ 
+           \qquad  \, = \ {\Delta}^{\text{cov}}_{\ell_{1}\ell_{2}}\left( x_{_{1}}  \, + \, \vartheta_{_{1}}\cdot \gamma^{\mu}\xi,\vartheta_{_{1}}  \, + \, \xi,x_{_{2}} \, + \, \vartheta_{_{2}}\cdot \gamma^{\mu}\xi,\vartheta_{_{2}} \, + \, \xi\right)  \ . \nonumber \\
+    \label{6-3-02}
+\end{IEEEeqnarray}
+\end{itemize}
+La invariancia ante traslaciones, implica que este superpropagador  tiene que ser función de $ \left( x_{1}-x_{2}\right)  $. Al definir la transformada de Fourier 
+\begin{IEEEeqnarray}{ll}
+   {\Delta}^{\text{(cov)}}_{\ell_{1}, \ell_{2}}\left( x_{_{1}},\vartheta_{_{1}},x_{_{2}},\vartheta_{_{2}}\right)        
+       &\, = \,   \,  \left( 2\pi\right)^{-4}\int d^{4}q\,\frac{Q_{\ell_{1}, \ell_{2}}\left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)e^{i q\cdot \left( x_{{1}}-x_{{2}} \right) } }{q^{2}  \, + \, m^{2}  \, - \, i\epsilon}   \ , \nonumber \\
+    \label{6-3-03}
+\end{IEEEeqnarray}
+se tiene para $ Q_{\ell_{1}, \ell_{2}}\left( q,\vartheta_{_{1}},\vartheta_{_{2}} \right) $ las siguientes dos condiciones:
+ \begin{IEEEeqnarray}{rl}
+            {Q}_{\ell_{1}\ell_{2}}\left(
+\Lambda q,D(\Lambda)\vartheta_{_{1}},D(\Lambda)\vartheta_{_{2}}\right)  \nonumber\\ 
+           \qquad & \, = \,\sum_{\ell'_{1}\ell'_{2}}S\left( \Lambda\right)_{\ell_{1}\ell'_{1}}  \tilde{S}\left( \Lambda\right)^{*}_{\ell_{2}\ell'_{2}} {Q}_{\ell'_{1}\ell'_{2}}  \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right) \nonumber \\
+           {Q}_{\ell_{1}, \ell_{2}} \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)  &\, = \  {Q}_{\ell_{1}, \ell_{2}}\left( q, \vartheta_{_{1}}  \, + \, \xi,\vartheta_{_{2}} \, + \, \xi\right) e^{ i \left( \vartheta_{{1}}\, - \,\vartheta_{{2}} \right)\cdot\slashed{q}\xi}\ .  \nonumber \\
+    \label{6-3-04}
+\end{IEEEeqnarray}
+De esta última relación, se sigue que 
+\begin{IEEEeqnarray}{rl}
+             {Q}_{\ell_{1}, \ell_{2}} \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)  \, = \,   {Q}_{\ell_{1}, \ell_{2}}\left( q,\vartheta_{_{2}}-\vartheta_{_{1}}\right) e^{ i \vartheta_{{2}}\cdot\slashed{q}\vartheta_{{1}}} \ .\nonumber \\
+    \label{6-3-05}
+\end{IEEEeqnarray} 
+Buscamos en los superpropagadores covariantes $ \Delta^{\text{(cov)}} $, los superpropagadores
+$  \left[ \Delta^{\text{(c)}}\right]^{\epsilon_{1}\epsilon_{2}}  $ que  además satisfacen las condiciones quirales
+\begin{IEEEeqnarray}{rl}
+        \left( \epsilon\gamma_{5}\frac{\partial}{\partial \vartheta_{1}}  \, - \,\slashed{\partial}_{1}\vartheta_{1}    \right)_{-\varepsilon_{1} \alpha} \Delta^{\text{(c)}}_{\ell_{1}\ell_{2}}\left( z_{_{1}}, z_{_{2}}\right) ^{\varepsilon_{1}\varepsilon_{2}} &\,\, = \ 0, \nonumber \\
+        \label{6-3-06}\\
+        \left( \epsilon\gamma_{5}\frac{\partial}{\partial \vartheta_{2}}  \, - \,\slashed{\partial}_{2}\vartheta_{2}    \right)_{-\varepsilon_{2}\alpha} \Delta^{\text{(c)}}_{\ell_{1} \ell_{2}}\left( z_{_{1}}, z_{_{2}}\right) ^{\varepsilon_{1}\varepsilon_{2}} & \,\, = \ 0\ , \nonumber \\
+    \label{6-3-07}
+\end{IEEEeqnarray}
+donde $ \varepsilon_{1},\varepsilon_{2}= +,- $. Esto se traduce en las siguientes  ecuaciones diferenciales para las transformadas  bosónicas de Fourier $  {Q}^{\varepsilon_{1}\varepsilon_{2}}_{\ell_{1}\ell_{2}} \left( q,\vartheta_{_{2}}-\vartheta_{_{1}}\right) $ [Ec.\eqref{6-3-05}]:
+\begin{IEEEeqnarray}{rl}
+     \left(   \epsilon\gamma_{5}\frac{\partial}{\partial \vartheta_{1}} \, +\,i\slashed{q}\left(\vartheta_{2} \, - \, \vartheta_{1}\right) \right)_{-\varepsilon_{1}}  {Q}^{\varepsilon_{1}\varepsilon_{2}}_{\ell_{1}\ell_{2}} \left( q,\vartheta_{{2}}-\vartheta_{{1}}\right)\, = \,  0,  \nonumber \\
+\label{6-3-08}\\     
+\left( \epsilon\gamma_{5}\frac{\partial}{\partial \vartheta_{2}}  \, + \,i\slashed{q}\left( \vartheta_{2}-\vartheta_{1}\right)\right)_{-\varepsilon_{2}} {Q}^{\varepsilon_{1}\varepsilon_{2}}_{\ell_{1}\ell_{2}} \left( q,\vartheta_{_{2}}-\vartheta_{_{1}}\right)\, = \,  0 \ . \nonumber \\     
+    \label{6-3-09}
+\end{IEEEeqnarray}
+ Haciendo la identificación  $ \delta\vartheta_{{21}}  =\vartheta_{2}-\vartheta_{1} $,  podemos ver que estas ecuaciones son de la forma
+\begin{IEEEeqnarray}{rl}
+     \left(   \pm \epsilon\gamma_{5}\frac{\partial}{\partial \vartheta} \, +\,i\slashed{q}\vartheta \right)_{-\varepsilon}  f\left( q,\vartheta\right)\, = \,  0,  \quad \varepsilon = +, -\  , \nonumber \\   
+    \label{6-3-10}
+\end{IEEEeqnarray} 
+cuyas soluciones  son
+\begin{IEEEeqnarray}{rl}
+            f \left( q,\vartheta\right)  \, = \, g(q)\delta^{2}\left[ \vartheta_{\varepsilon}\right]   \, + \, h\left(q,\vartheta_{\varepsilon} \right)\exp\left[\mp i\vartheta\cdot \left(\slashed{q} \vartheta\right) _{-\varepsilon} \right]  \ .
+    \label{6-3-11}
+\end{IEEEeqnarray}
+Cuando $ \varepsilon_{1}$ es diferente a $\varepsilon_{2} $ en las Ecs. \eqref{6-3-08} y \eqref{6-3-09}, las soluciones \eqref{6-3-11} nos dicen que
+\begin{IEEEeqnarray}{rl}
+            {Q}^{\pm\mp}_{ \ell_{1}\ell_{2}} \left( q,\vartheta_{2}-\vartheta_{1} \right)  & \, = \,         Q^{\pm\mp}_{ \ell_{1}\ell_{2}}  \left( q\right)e^{i\left(\vartheta_{2}-\vartheta_{1}  \right)\cdot  \slashed{q}\left(\vartheta_{2}-\vartheta_{1} \right)_{\mp}} \ ,\nonumber \\
+    \label{6-3-10} 
+ \end{IEEEeqnarray}
+ mientras que cuando  $ \varepsilon_{1}$ y   $\varepsilon_{2} $ son iguales,  obtenemos
+\begin{IEEEeqnarray}{rl}            
+           {Q}^{\pm\pm}_{ \ell_{1}\ell_{2}} \left( q,\vartheta_{2}-\vartheta_{1} \right)   & \, = \, \pm 2m\,   Q^{\pm\pm}_{ \ell_{1}\ell_{2}} \left( q\right)\delta^{2}\left[ \left( \vartheta_{2}-\vartheta_{1} \right)_{\pm} \right] \ .\nonumber \\
+     \label{6-3-12}
+ \end{IEEEeqnarray}
+Las cantidades $  Q^{\varepsilon_{1}\varepsilon_{2}}_{ \ell_{1}\ell_{2}} \left( q\right)   $ son densidades covariantes de Lorentz,
+  \begin{IEEEeqnarray}{rl}
+        Q^{\varepsilon_{1}\varepsilon_{2}}_{ \ell_{1}\ell_{2}} \left( \Lambda q\right)  & \, = \, \sum_{ \ell_{2}\ell'_{2}} S\left( \Lambda\right)_{ \ell_{1}\ell'_{1}}  {S}\left( \Lambda\right)^{*}_{ \ell_{2}\ell'_{2}}  {Q}^{\varepsilon_{1}\varepsilon_{2}}_{ \ell'_{1}\ell'_{2}}\left(  q\right) \nonumber \\
+    \label{6-3-11}
+\end{IEEEeqnarray}
+Con todo esto,  los superpropagadores quirales \eqref{6-3-05} adquieren  la forma
+ \begin{IEEEeqnarray}{rl}
+             {Q}^{\pm\mp}_{ \ell_{1}\ell_{2}}  \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)   &\, = \,  Q^{\pm\mp}_{ \ell_{1}\ell_{2}}  \left( q\right)e^{ i\left(\vartheta_{2}-\vartheta_{1}\right)\cdot  \slashed{q}\left(\vartheta_{1\pm}  \, + \, \vartheta_{2\mp} \right)}\ ,\nonumber \\
+             \label{6-3-12} \\
+            {Q}^{\pm\pm}_{ \ell_{1}\ell_{2}}\left(q,\vartheta_{_{1}},\vartheta_{_{2}}\right)  & \, = \, \pm 2m\,{Q}^{\pm\pm}_{ \ell_{1}\ell_{2}}  \left( q \right)\,\delta^{2}\left[ \left(\vartheta_{2} \, - \,\vartheta_{1} \right)_{\pm}\right]  e^{i\vartheta_{2}\cdot \slashed{q}\vartheta_{1}}\ .    \nonumber \\
+     \label{6-3-13}
+ \end{IEEEeqnarray}
+
+El punto medular de esta discusión es que $ P^{\varepsilon_{1}\varepsilon_{2},L}_{ \ell_{1}\ell_{2}}\left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)   $ solo satisface las condiciones de covariancia bajo transformaciones de Lorentz y supersimétricas, cuando $ q^{\mu} $  esta restringida a la capa de masa. Al ser $ P^{\varepsilon_{1}\varepsilon_{2},L}_{ \ell_{1}\ell_{2}}\left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)   $ una extension lineal en la variable $ p^{0} $, no esperamos que este sea covariante al menos que $ P^{\varepsilon_{1}\varepsilon_{2},L}_{ \ell_{1}\ell_{2}}\left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)   $ dependa a lo más linealmente en $ \mathbf{p}_{i} $. Esto definitivamente en general no es el caso. Dicho de otro modo, $ P^{\varepsilon_{1}\varepsilon_{2},L}_{ \ell_{1}\ell_{2}}\left( p,\vartheta_{_{1}},\vartheta_{_{2}}\right)   $ solo es de la forma \eqref{6-3-12} y \eqref{6-3-13} cuando $ p^{2}= -m^{2} $ [ver las Ecs. \eqref{6-2-10-a} y\eqref{6-2-10-b}].
+
+
+Más adelante, demostraremos que siempre existen funciones $ Q^{\varepsilon_{1}\varepsilon_{2}}_{ \ell_{1}\ell_{2}}\left( q\right)   $ que satisfacen  las Ecs.\eqref{6-3-11} y que en  la capa de masa coinciden con el polinomio de Weinberg [Ec. \eqref{6-2-05}]:
+\begin{IEEEeqnarray}{rl}
+            Q^{\varepsilon_{1}\varepsilon_{2}}_{ \ell_{1}\ell_{2}}\left( p\right)     \, = \, P_{ \ell_{1}\ell_{2}}\left( p\right),\, \text{ para } \, p^{2}= -m^{2}  \ .
+    \label{6-3-14}
+\end{IEEEeqnarray}
+ Por lo pronto,  supongamos que este el caso. La diferencia entre dos funciones en la variable $ q^{\mu}$ que coinciden en la capa de masa, debe de ser otra función multiplicada  por el factor $( q^{2}+m^{2} ) $, entonces podemos escribir  $  P^{\varepsilon_{1}\varepsilon_{2},L}_{ \ell_{1}\ell_{2}} \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right) $ en términos de  $   Q^{\varepsilon_{1}\varepsilon_{2}}_{ \ell_{1}\ell_{2}} \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)  $,
+\begin{IEEEeqnarray}{rl}
+                P^{\varepsilon_{1}\varepsilon_{2},L}_{ \ell_{1}\ell_{2}} \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)  & \, = \,       Q^{\varepsilon_{1}\varepsilon_{2}}_{ \ell_{1}\ell_{2}} \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)  \nonumber \\
+              &   \qquad  \, + \, \left( q^{2}+m^{2}  \right) P^{\varepsilon_{1}\varepsilon_{2}(\text{no})}_{ \ell_{1}\ell_{2}} \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right) \ . \nonumber \\
+    \label{6-3-15}
+\end{IEEEeqnarray}   
+Puesto que  $  P^{\varepsilon_{1}\varepsilon_{2},L}_{ \ell_{1}\ell_{2}}  $ no es covariante, el polinomio $ P^{\varepsilon_{1}\varepsilon_{2}(\text{no})}_{ \ell_{1}\ell_{2}} $ tampoco. Evidentemente, esta descomposición no es única, porque la redefinición
+\begin{IEEEeqnarray}{rl}
+                Q^{\varepsilon_{1}\varepsilon_{2}}_{ \ell_{1}\ell_{2}} \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)    &  \, \longrightarrow \,     Q^{\varepsilon_{1}\varepsilon_{2}}_{ \ell_{1}\ell_{2}}  \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)   \, + \,  \left( q^{2}+m^{2}  \right)     F^{\varepsilon_{1}\varepsilon_{2}}_{ \ell_{1}\ell_{2}} \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right) \ , \nonumber \\
+                     \label{6-} \\ 
+     P^{\varepsilon_{1}\varepsilon_{2}(\text{no})}_{ \ell_{1}\ell_{2}} \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)  & \, \longrightarrow \,P^{\varepsilon_{1}\varepsilon_{2}(\text{no})}_{ \ell_{1}\ell_{2}}  \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)  \, - \,  F^{\varepsilon_{1}\varepsilon_{2}}_{ \ell_{1}\ell_{2}} \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)\ ,\nonumber \\
+    \label{6-3-16}
+\end{IEEEeqnarray}
+no altera al polinomio $        P^{\varepsilon_{1}\varepsilon_{2}L}_{ \ell_{1}\ell_{2}} $ y la nueva función  $     Q^{\varepsilon_{1}\varepsilon_{2}}_{ \ell_{1}\ell_{2}} $ retiene sus propiedades, provisto de que  $  
+F^{\varepsilon_{1}\varepsilon_{2}}_{ \ell_{1}\ell_{2}}  \left( q\right) $ también sea una densidad tensorial de Lorentz.\\
+
+\textbf{\textit{Redefinición de la supermatriz $ \mathcal{S} $.}} Entendemos por una supermatriz $ \mathcal{S} $ covariante como aquella cuya forma de las interacciones  en el potencial $ \mathsf{V} $ causan que efectivamente
+\begin{IEEEeqnarray}{rl}
+            P^{\varepsilon_{1}\varepsilon_{2}(\text{no})}_{ \ell_{1}\ell_{2}} \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)=0\ ,
+    \label{6-3-17}
+\end{IEEEeqnarray}
+de tal manera que la forma general de los superpropagadores covariantes  viene dada por 
+\begin{IEEEeqnarray}{ll}
+   {\Delta}^{\pm \mp}_{\ell_{1}\ell_{2}}\left( x_{_{1}},\vartheta_{_{1}},x_{_{2}},\vartheta_{_{2}}\right)        
+       &\, = \,   \,  {P}^{\pm}_{\ell_{1}\ell_{2}} \left( -i\partial_{_{1}}\right)\Delta_{F}\left(x^{\pm}_{_{12}}\right)     \nonumber \\
+    \label{6-3-18}
+\end{IEEEeqnarray}
+y
+\begin{IEEEeqnarray}{ll}
+   {\Delta}^{\pm \pm}_{\ell_{1}\ell_{2}}\left( x_{_{1}},\vartheta_{_{1}},x_{_{2}},\vartheta_{_{2}}\right)         
+       \, = \,   \delta^{2}\left[ \left(\vartheta_{_{1}}  \, - \,\vartheta_{_{2}} \right)_{\pm}\right] &\left\lbrace \left(  \pm 2m  \right) {P}^{\pm}_{\ell_{1}\ell_{2}} \left( -i\partial_{_{1}}\right)\Delta_{F}\left(x^{\pm}_{_{12}}\right)       \right.  \nonumber \\
+    &\qquad   \left.  \, + \,   F^{\pm}_{\ell_{1}\ell_{2}}\left(-i\partial_{_{1}} \right)\delta^{4}\left(x^{\pm}_{_{12}}\right)  \right\rbrace  \ .
+         \nonumber \\  
+    \label{6-3-19}
+\end{IEEEeqnarray}
+Aquí, hemos definido
+\begin{IEEEeqnarray}{rl}
+ {P}^{\pm}_{\ell_{1}\ell_{2}}(q)  \, \equiv \, Q^{\pm \mp}_{\ell_{1}\ell_{2}}(q), \quad        \left(q^{2} +m^{2}_{n} \right)     F^{\pm}_{\ell_{1}\ell_{2}}\left(q\right)  \, \equiv\, Q^{\pm \pm}_{\ell_{1}\ell_{2}}(q)  \, - \, Q^{\pm \mp}_{\ell_{1}\ell_{2}}(q)\ .\nonumber \\
+    \label{6-3-20}
+\end{IEEEeqnarray}
+También hemos usado 
+\begin{IEEEeqnarray}{rl}
+            \left( \square  \, - \,m^{2}_{n}\right) \Delta_{F}\left( x\right)   \, = \, -\delta^{4}\left( x\right) \ .
+    \label{6-3-21}
+\end{IEEEeqnarray}
+
+Que los superpropagadores $  P^{\varepsilon_{1}\varepsilon_{2},L}_{ \ell_{1}\ell_{2}} \left( q,\vartheta_{_{1}},\vartheta_{_{2}}\right)   $ no sean completamente covariantes de Lorentz y supersimetría,  no es de ninguna manera reflejo del método que hemos usado para demostrarlo. En vez de haber definido una extension lineal $ P^{\varepsilon_{1}\varepsilon_{2},L}_{ \ell_{1}\ell_{2}}  $, podríamos haber introducido otro tipo de extension (quizás cuadrática) para llegar al mismo resultado. Los términos no covariantes en los superpropagadores \eqref{6-2-16}, son de la forma
+\begin{IEEEeqnarray}{rl}
+           {P}^{\varepsilon_{1}\varepsilon_{2}(\text{no})}_{ \ell_{1}\ell_{2}} \left( -i\partial_{_{1}},\vartheta_{_{1}},\vartheta_{_{2}}\right)\delta^{4}\left(x_{_{1}}- x_{_{2}}\right) \ .
+     \label{6-3-22}
+ \end{IEEEeqnarray} 
+La contribución  no covariante surge cuando los puntos  $ x_{_{1}} $ y  $ x_{_{2}} $ se encuentran, esto es, el rompimiento de la simetría de Lorentz y supersimétrica se debe a la naturaleza no conmutativa de los operadores de supercampos, cuyos conmutadores se vuelven  \emph{muy singulares} en el ápice del cono de luz\cite{Weinberg:1964ev,Weinberg:1969di}.\\
+
+Nuestra hipótesis de trabajo, ha sido la de localidad en el tiempo. En particular, la existencia del esquema de la interacción a traves del operador local temporal  $ \mathsf{V}(t)$. Debido a la función  $ \delta^{4}\left(x_{_{1}}- x_{_{2}}\right)  $ en la parte no covariante del superpropagador [Ec. \eqref{6-3-22}], esta contribución no solo es local en el tiempo sino también en el espaciotiempo (bosónico).  Entonces puede ser cancelada por contra-términos locales pero no covariantes. Bosquejamos a continuación como podemos llegar a esta conclusión. Supongamos que integramos todos los grados de libertad fermiónicos en la serie de Dyson, entonces obtenemos algo de la forma
+\begin{IEEEeqnarray}{rl}
+            \mathcal{S}_{\xi'_{1},\xi'_{2},\cdots \xi_{1},\xi_{2},\cdots} & \, = \, \sum^{\infty}_{N=0}\frac{(-i)^{N}}{N!} \int d^{4}x_{1}d^{4}x_{2}\cdots d^{4}x_{N}\left( \Psi_{0} , \cdots a_{\xi'_{2}} a_{\xi'_{1}}\right. \nonumber \\
+          & \qquad \times  \left. {T} \left\lbrace \mathcal{H}\left(x_{1} \right) \cdots \mathcal{H}\left(x_{N} \right) \right\rbrace  a^{\dagger}_{\xi_{2}} a^{\dagger}_{\xi_{1}}  \cdots\Psi_{0} \right) \ ,
+    \label{6-3-23}
+\end{IEEEeqnarray}
+donde $ \mathcal{H}\left(x \right) $ representa la densidad Hamiltoniana de interacción que resulta de integrar las variables fermiónicas.
+Para un $ N $ dado, nos fijamos en el término no covariante   que surge  de aparear un supercampo en  $ \mathcal{H}_{i} $ con otro  $ \mathcal{H}_{j} $, éste es de la forma (sin escribir de manera explícita todos los estados finales):
+\begin{IEEEeqnarray}{rl}
+          \frac{  g_{j}g_{i}(-i)^{N}}{N!} \int  d^{4}x_{1} \cdots d^{4}x_{N}\,\Delta_{\ell,m}\left(x_{M},x_{M'} \right)\,{T}\left\lbrace \cdots \, \mathcal{H}_{i}^{\ell}\left(x_{M} \right)
+\mathcal{H}^{m}_{j}\left(x_{M'} \right)\cdots\right\rbrace \ ,\nonumber \\
+    \label{6-3-24}
+\end{IEEEeqnarray}
+la integral y su argumento están definidos en el volumen del espacio $ \left( x_{1},\cdots, x_{N}\right)  $. Los índices  $ M $ y $ M' $ están fijos, y pueden valer de uno hasta $ N $. La cantidad $ \Delta^{(n)}_{\ell,m}\left(x_{M},x_{M'} \right) $ es un número-$ c $, cuya forma específica dependerá de la interacción en cuestión, pero la cual tenemos  garantía es de la forma $ {P}_{ \ell,m} \left(- i\partial_{M}\right)\delta^{4}\left(x_{M}- x_{M'}\right) $. Debido a esta última función delta, al hacer la integración por partes en la variable $ x_{M'} $, la ecuación \eqref{6-3-24} se reescribe como una función en el subespacio de configuración $ \left( x_{1},\cdots, x_{N-1}\right)  $:
+\begin{IEEEeqnarray}{rl}
+            \frac{  g_{j}g_{i}(-i)^{N}}{N!}\int  d^{4}x_{1} \cdots d^{4}x_{N-1}  {P}_{ \ell,m} \left( i\partial_{M}\right){T}\left\lbrace \cdots  \mathcal{H}_{i}^{\ell}\left(x_{M} \right)
+\mathcal{H}^{m}_{j}\left(x_{M} \right)\cdots\right\rbrace \ , \nonumber \\
+    \label{6-3-25}
+\end{IEEEeqnarray}
+donde ahora $ M $ vale hasta $ N-1 $.
+Integramos en las coordenadas, obteniendo una función de la forma
+\begin{IEEEeqnarray}{rl}
+        \frac{  g_{j}g_{i}(-i)^{N}}{N!}\int  dt_{1} \cdots dt_{N-1}\,  {C}^{}_{ \ell,m} \left( \frac{d}{dt_{M}}\right){T}\left\lbrace \mathsf{V}(t_{1})\cdots  \mathsf{V}_{ij}^{\ell,m }\left(t_{M} \right)
+\cdots \mathsf{V}(t_{N-1})\right\rbrace \ .\nonumber \\
+    \label{6-3-26}
+\end{IEEEeqnarray}
+La formas explícitas de $ {C}^{}_{ \ell,m} \left( \frac{d}{dt_{M}}\right) $ y  $ \mathsf{V}_{ij}^{\ell,m } $ no son fundamentales para nuestra discusión y éstas dependen enteramente del tipo de interacción. Cada derivada actuando en las funciones paso del operador temporal nos dará más funciones delta que reducirán la dimensión de la integral aún más y cada pareja $ M $ y $ M' $ nos darán una contribución no covariante de esto tipo,  por lo que  la contribución total no covariante al diagrama en cuestión, será de la forma:
+\begin{IEEEeqnarray}{rl}
+        \frac{  g_{j}g_{i}(-i)^{N}}{N!}  \sum^{N-1}_{n=1}\int  dt_{1} \cdots dt_{n}{T}\left\lbrace \mathsf{V}\left( t_{1}\right) \dots     \mathsf{V}\left( t_{n-1}\right)\,\mathsf{A}_{n,N}^{ij}\left( t_{n}\right) \right\rbrace \ . \nonumber \\
+    \label{6-3-27}
+\end{IEEEeqnarray}
+Entonces, orden a orden en teoría de perturbaciones, podemos cancelar las contribuciones no covariantes de las interacciones, redefiniendo nuestro  potencial  de interacción $ \mathsf{V}(t) $ como
+\begin{IEEEeqnarray}{rl}
+            \mathsf{V}(t) \, \rightarrow\,\mathsf{V}(t)  \, + \, \mathsf{V}^{\text{n.c.}}(t) \ ,
+    \label{6-3-28}
+\end{IEEEeqnarray}
+donde
+\begin{IEEEeqnarray}{rl}
+             \mathsf{V}^{\text{n.c.}}(t)   \, = \,   \sum^{\infty}_{N}\sum^{N}_{n} \,g_{i}g_{j} \left( \mathsf{A}^{ij}_{n,N}\left(t \right)   \, + \,  g_{k}\left( \mathsf{A}^{ijk}_{n,N}\left(t \right)   \, + \, \cdots\right)  \right)\ . \nonumber \\
+    \label{6-3-29}
+\end{IEEEeqnarray}
+
+Hasta el día de hoy, nadie a realizado una investigación sistemática de la forma de los contra-términos no covariantes.  Nos hemos de conformar con haber demostrado que tal procedimiento siempre es posible y  suponer tácitamente que tal corrección ha  sido hecha.\\
+
+
+\textbf{\textit{El polinomio de Weinberg fuera de la capa de masa.}} En la sección \ref{chap5:4}   hemos dado una expresión explícita  para el polinomio general $    P_{\ell_{1}\ell_{1}}\left( \mathbf{p}\right)  $ [Ec. \eqref{6-2-05}], en términos de los polinomios
+ \begin{IEEEeqnarray}{rl}
+    \pi^{(n)}_{\lambda\,\lambda'}\left( \mathbf{p}\right)   \, = \, t_{\lambda\lambda'}^{(n)\,\mu_{1}\mu_{2}\cdots \mu_{2j}}p_{\mu_{1}}p_{\mu_{2}}\cdots p_{\mu_{2j}}\ ,
+    \label{6-3-31}
+\end{IEEEeqnarray}
+donde  $  t_{\lambda\lambda'}^{(n)\,\mu_{1}\mu_{2}\cdots \mu_{2j}} $ son tensores totalmente simétricos y sin traza  en los índices de Lorentz y donde los índices $ \lambda_{1}(n),\lambda_{2}(n)   $ corren sobre los índices de la representación del grupo de rotación $ n $, esto es, $ \lambda_{1}(n),\lambda_{2}(n)  \, = \, -2n,-2n+1,\cdots, 2n-1, 2n $. La fórmula explícita del polinomio general en términos  \eqref{6-3-31} es:
+\begin{IEEEeqnarray}{rl}
+             P_{\ell_{1}\ell_{1}}\left( \mathbf{p}\right)  & \, = \, \sum_{n}\sum_{\lambda_{1}\lambda_{2}}F_{n,\ell_{1}\ell_{1}} ^{\,\lambda_{1}\,\lambda_{2}}\,\,\pi^{(n)}_{\lambda_{1}\lambda_{2}}\left( \mathbf{p}\right)\ ,
+    \label{6-3-30}
+\end{IEEEeqnarray}
+ donde los coeficientes $ F_{n,\ell_{1}\ell_{1}} ^{\,\lambda_{1}\,\lambda_{2}} $ vienen dados por la Ec. \eqref{5-3-77}.
+
+Es evidente que la función \eqref{6-3-31} sigue siendo covariante cuando  extendemos su dominio de validez para momentos $ q $ fuera de la capa de masa y por  lo tanto  \eqref{6-3-30} también es covariante fuera de la capa de masa.  Entonces, hemos  construido explicitamente funciones  en el espacio de momentos que son completamente covariantes de Lorentz y  que satisfacen la condición  \eqref{6-3-14}.
+
+
+\section{Formulación de las Reglas}
+\label{chap:6-4}
+
+
+Habiendo corregido el superpropagador, estamos en una posición de formular las reglas de super Feynman. Notamos que cada vértice es identificado por el tipo de supercampo $(+)$ o $(-)$, el índice de Lorentz $\ell$, el punto $ \left( x, \vartheta \right) $ en el superespacio y posiblemente el índice $\alpha$ si tenemos una superderivada de campo.\\
+
+Para interacciones polinomiales de la forma
+\begin{IEEEeqnarray}{rl}
+            \mathcal{H}\left(x,\vartheta \right)   \, = \, \sum_{i}g_{i}\, \mathcal{H}_{i}\left(x,\vartheta \right) \ ,
+    \label{6-4-01}
+\end{IEEEeqnarray}
+las reglas de super Feynman nos dicen que:
+\begin{enumerate}
+\item[(a)] Para cada vértice incluir un factor  $ -i g_{\ell}$. Este factor puede depender de $\delta^2 (\vartheta_{\pm})$ si  $\mathcal{H}_{i}\left( x, \vartheta \right) $ es quiral-$ (\pm) $.
+\item[(b)] Para cada línea interna que va desde un vértice que tiene las etiquetas  $(\pm)$,  $\ell_{_{1}}$ y  $ \left(x_{_{1}},\vartheta_{_{1}} \right)  $,   a  otro vértice con etiquetas    $(\mp)$,  $\ell_{_{2}}$ y  $ \left(x_{_{2}},\vartheta_{_{2}} \right)  $,  incluir el superpropagador
+ \begin{IEEEeqnarray}{rl}                                                        
+                   \left( -i \right) {P}_{\ell_{_{1}},\ell_{_{2}}}  & \left(-i\partial _{_{1}}\right) \Delta_{F}(  x^{\pm}_{_{12}})   \ .          
+    \label{6-4-02}
+\end{IEEEeqnarray}
+\item[(c)]  Para cada línea interna que va desde un vértice  que tiene las etiquetas  $(\pm)$,  $\ell_{_{1}}$ y  $ \left(x_{_{1}},\vartheta_{_{1}} \right)  $,   a  otro vértice con etiquetas    $(\pm)$,  $\ell_{_{2}}$ y  $ \left(x_{_{2}},\vartheta_{_{2}} \right)  $,  incluir el superpropagador
+\begin{IEEEeqnarray}{rl}                                                         
+                 \pm 2(-i)\, \delta^{2}\left(\vartheta_{_{1}} \, - \, \vartheta_{_{2}} \right)_{\pm}\, \left[m\, {P}_{\ell_{_{1}},\ell_{_{2}}} \right. &\left.  \left(-i\partial   _{_{1}}\right)  \Delta_{F}(  x^{\pm}_{_{12}})   \, + \,   Q_{\ell_{_{1}},\ell_{_{2}}}\left(-i\partial   _{_{1}}\right)  \delta^{4}(  x^{\pm}_{_{12}})     \right]      \ .    \nonumber \\
+    \label{6-4-03}
+\end{IEEEeqnarray}
+\item[(d)] Para cada línea externa correspondiente a un superpartícula de superespín $ j $, proyección $z$ del superespín y supermomento $(p,s)$,  incluir:
+  \begin{itemize}    
+ \item[-]  Para una $(\mp)$-spartícula creada en el vértice $(\pm)$, $\ell_{_{1}}$ y  $ \left(x_{_{1}},\vartheta_{_{1}} \right)  $: 
+    \begin{IEEEeqnarray}{rl}                          
+      (2\pi)^{-3/2}e^{-i x\cdot p  } \, e^{   \left(   \vartheta-{2s}\right)\cdot\, (+i\slashed{p})\,\vartheta_{\pm}}u^{*}_{\ell}(\textbf{p},\sigma) \ . 
+             \label{6-4-04}
+     \end{IEEEeqnarray}
+    \item[-]  Para una   $ \left( \pm \right) $-spartícula creada en el vértice $ \left( \pm \right)  $, $\ell_{_{1}}$ y  $ \left(x_{_{1}},\vartheta_{_{1}} \right)  $:
+    \begin{IEEEeqnarray}{rl}      
+                  \pm 2m  (2\pi)^{-3/2} e^{-i x_{\pm}\cdot p  }\, \delta^{2}\left[ \left(   \vartheta-s \right)_{\pm} \right] u^{*}_{\ell}(\textbf{p},\sigma)  \ .
+                  \label{6-4-05}   
+       \end{IEEEeqnarray}
+    \item[-]   Para una        $\left(  \mp \right)  $-spartícula destruida en el vértice  $ \left( \pm \right)  $, $\ell_{_{1}}$ y  $ \left(x_{_{1}},\vartheta_{_{1}} \right)  $ :   \begin{IEEEeqnarray}{rl}     
+            (2\pi)^{-3/2}e^{+i x\cdot p  }\,    e^{ -\left[ \vartheta - 2{s}\right]\cdot \, (+i\slashed{p})\,{\vartheta}_{\pm}}u_{\ell}(\textbf{p},\sigma) \ .
+         \label{6-4-06}   
+       \end{IEEEeqnarray}
+        \item[-]  Para una     $\left(  \pm \right)  $-spartícula destruida en el vértice $ \left( \pm \right)  $, $\ell_{_{1}}$ y  $ \left(x_{_{1}},\vartheta_{_{1}} \right)  $:  
+        \begin{IEEEeqnarray}{rl} 
+                     \pm 2m(2\pi)^{-3/2} e^{i\, x_{\pm}\cdot p }\,\delta^{2}\left[ \left(  s- \vartheta \right)_{\pm} \right] u_{\ell}(\textbf{p},\sigma)  \ . 
+                \label{6-4-07}   
+       \end{IEEEeqnarray}     
+    \end{itemize} 
+    \item[(e)] Para cada línea externa correspondiente a un  antispartícula de superespín $ j $, proyección $z$ del superespín y supermomento $(p,s)$,  incluir: 
+      \begin{itemize}    
+ \item[-]  Para una $(\mp)$-antispartícula creada en el vértice $(\pm)$, $\ell_{_{1}}$ y  $ \left(x_{_{1}},\vartheta_{_{1}} \right)  $: 
+    \begin{IEEEeqnarray}{rl}                          
+      (-)^{\mathcal{B}} (2\pi)^{-3/2}e^{-i x\cdot p  }\, e^{  +\left( \vartheta- 2 s\right)^{\intercal} \epsilon\gamma_{5} \, (+i\slashed{p})\, {\vartheta}_{\pm}}\,v_{\ell}(\textbf{p},\sigma)\ .
+             \label{6-4-08}
+     \end{IEEEeqnarray}
+    \item[-]   Para una  $ \left( \pm \right) $-antispartícula creada en el vértice $ \left( \pm \right)  $, $\ell_{_{1}}$ y  $ \left(x_{_{1}},\vartheta_{_{1}} \right)  $:
+    \begin{IEEEeqnarray}{rl}      
+                 \pm 2m(-)^{\mathcal{B}} (2\pi)^{-3/2}e^{-i x_{\pm}\cdot p  }\, \delta^{2}\left[ \left(  \vartheta-s \right)_{\pm} \right] \,v_{\ell}(\textbf{p},\sigma)  \ .
+                  \label{6-4-09}   
+       \end{IEEEeqnarray}
+    \item[-]     Para una      $\left(  \mp \right)  $-antispartícula destruida en el vértice  $ \left( \pm \right)  $, $\ell_{_{1}}$ y  $ \left(x_{_{1}},\vartheta_{_{1}} \right)  $ :   \begin{IEEEeqnarray}{rl}     
+       (-)^{\mathcal{B}} (2\pi)^{-3/2}e^{+i x\cdot p  }\, e^{  -\left( \vartheta -2{s}\right)  ^{\intercal} \epsilon\gamma_{5} \, (+i\slashed{p})\, { \vartheta}_{\pm}}\,v^{*}_{\ell}(\textbf{p},\sigma)   \ .
+         \label{6-4-10}   
+       \end{IEEEeqnarray}
+        \item[-]   Para una    $\left(  \pm \right)  $-antispartícula destruida en el vértice $ \left( \pm \right)  $, $\ell_{_{1}}$ y  $ \left(x_{_{1}},\vartheta_{_{1}} \right)  $:  
+        \begin{IEEEeqnarray}{rl} 
+                    \pm 2m(-)^{\mathcal{B}} (2\pi)^{-3/2}e^{+i x_{\pm}\cdot p  }\,  \delta^{2}\left[ \left(  s-\vartheta \right)_{\pm} \right] \,v^{*}_{\ell}(\textbf{p},\sigma)    \ . 
+                \label{6-4-11}   
+       \end{IEEEeqnarray}     
+    \end{itemize}    
+     \item[(f)] 
+     Integra todos los índices de superespaciotiempo que provienen de los vértices $ \left( x,\vartheta \right) $, etc., y suma todos los índices discretos      $ n,n' $, etc. (que provienen de los productos tensoriales de Lorentz de los supercampos en  $ \mathcal{H}_{\ell} $). 
+     \item[(g)] Suminstra los signos menos que aparecen en teorías con supercampos fermiónicos.
+ \end{enumerate}  
+
+\textit{\textbf{Superpotenciales.}} En el inciso (a) de las reglas, hemos incluido  interacciones locales  $\delta^2 (\vartheta_{\pm})$, para cuando alguno de los Hamiltonianos  $\mathcal{H}_{i}\left( x, \vartheta \right) $ son  quirales-$ (\pm) $, respectivamente. A continuación justificamos  porque esto es válido. \\
+Hemos visto que nuestros ingredientes irreducibles son supercampos  $ \Phi_{\pm \ell} $ que satisfacen la condición de quiralidad  $ \mathcal{D}_{\mp} \Phi_{\pm \ell} $. Interacciones $ \mathcal{W}_{\pm}(x,\vartheta) $ formadas por supercampos de la misma quiralidad también serán quirales:
+\begin{IEEEeqnarray}{rl}
+            \mathcal{D}_{\mp\alpha} \,\mathcal{W}_{\pm}(x,\vartheta)  = 0 \  ,
+    \label{6-4-12}
+\end{IEEEeqnarray} 
+A este tipo de interacciones se les conoce como \textit{superpotenciales}. 
+Estos operadores son funciones de  los argumentos $ (x_{\pm},\vartheta_{\mp}) $, donde $ x^{\mu}_{\pm}   \, = \,  x^{\mu}  \, - \, \vartheta\cdot \gamma^{\mu}\vartheta_{\pm} $, esto es 
+\begin{IEEEeqnarray}{rl}
+            \mathcal{W}_{\pm}(x,\vartheta)  \, = \,           \mathcal{W}_{\pm}(x_{\pm},\vartheta_{\pm})\ .
+    \label{6-4-13}
+\end{IEEEeqnarray}
+Consideremos la siguiente interacción de la forma
+\begin{IEEEeqnarray}{rl}
+            \int d^{4}x d^{4}\vartheta\,\left( a   \, + \,b^{\alpha}\vartheta_{\alpha} \right)        \mathcal{W}_{\pm}(x_{\pm},\vartheta_{\pm}) , \quad a,b^{\alpha}  \, = \, \text{const.}
+    \label{6-4-14}
+\end{IEEEeqnarray}
+   Ya que el elemento de volumen $ d^{4}x $ es invariante bajo traslaciones, esta integral puede ser evaluada en $  (x,\vartheta_{\pm}) $. En estas nueva región de integración, vemos que el integrando es a lo más  lineal en  $ \vartheta_{\pm\alpha} $ y por lo tanto la integral vale cero. 
+ Las interacciones  con $ \mathcal{\vartheta}_{\pm} $ cuadrático pueden ser escritas de manera genérica como
+\begin{IEEEeqnarray}{rl}
+         \delta^{2}(\vartheta_{\pm})\mathcal{W}_{\pm}(x, \vartheta) \  , 
+    \label{6-4-15}
+\end{IEEEeqnarray}
+estas no son cero bajo el signo de integral:
+\begin{IEEEeqnarray}{rl}
+            \int d^{4}x d^{4}\vartheta\delta^{2}(\vartheta_{\pm})\mathcal{W}_{\pm}(x, \vartheta)  \, = \,     \int d^{4}x d^{2}\vartheta_{\pm}\,\mathcal{W}_{\pm}(x, \vartheta_{\pm}) \ .
+    \label{6-4-16}
+\end{IEEEeqnarray}
+  Aunque el ``acoplamiento local ''  $ \delta^{2}(\vartheta_{\pm}) $  es invariante de Lorentz, no es invariante supersimétrico.   Las transformacion supersimétrica parametrizada por $ \zeta $  es inducida por operadores unitarias actuando sobre los  operadores de supercampo, por lo tanto, bajo el signo de integral, esta transformacion nos da el cambio
+\begin{IEEEeqnarray}{rl}
+          \int d^{4}x d^{4}\vartheta\delta^{2}(\vartheta_{\pm})\mathcal{W}_{\pm}(x, \vartheta) \, \rightarrow \,   \int d^{4}x d^{4}\vartheta\delta^{2}\left[ \left( \vartheta -\zeta\right)_{\pm}\right] \mathcal{W}_{\pm}(x, \vartheta) \ . \nonumber \\
+    \label{6-4-17}
+\end{IEEEeqnarray}
+El término de la derecha en la última ecuación se puede escribir como 
+\begin{IEEEeqnarray}{rl}
+            \int    d^{4}x \, d^{4}\vartheta \delta^{2}\,\left[ \left( \vartheta -\zeta\right)_{\pm}\right]\mathcal{W}_{\pm}(x, \vartheta) & \nonumber \\ 
+               \, = \,  \int    d^{4}x \, d^{4} \vartheta\left\lbrace \delta^{2}(\vartheta_{\pm})  \, + \, \delta^{2}(\zeta_{\pm})   \, + \, \zeta^{\intercal}\epsilon\vartheta_{\pm} \right\rbrace \mathcal{W}_{\pm} (x, \vartheta)\ . \nonumber \\
+    \label{6-4-18}
+\end{IEEEeqnarray}
+Hemos visto que el segundo y el tercer término son cero. Entonces, las interacciones \eqref{6-4-15} nos dan un potencial de interacción covariante supersimétrico. % Como hemos Las super reglas de Feynman presentadas con anterioridad,  incluyen a los superpotenciales (provisto que hagamos antes el cambio  $ g_{\ell}  \rightarrow \delta^{2}(\vartheta_{\pm})g_{\ell} $ en el acoplo).

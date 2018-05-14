@@ -1,0 +1,419 @@
+\begin{thebibliography}{62}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Weinberg(1995)]{Weinberg:1995mt}
+S.~Weinberg.
+\newblock {The Quantum Theory of Fields. Vol. 1: Foundations}.
+\newblock \emph{Cambridge University Press}, 1995.
+
+\bibitem[Grisaru et~al.(1979)Grisaru, Siegel, and Rocek]{Grisaru:1979wc}
+M.T. Grisaru, W.~Siegel, and M.~Rocek.
+\newblock {Improved Methods for Supergraphs}.
+\newblock \emph{Nucl.Phys.}, B159:\penalty0 429, 1979.
+\newblock \doi{10.1016/0550-3213(79)90344-4}.
+
+\bibitem[Seiberg and Witten(1994)]{Seiberg:1994rs}
+N.~Seiberg and Edward Witten.
+\newblock {Electric - magnetic duality, monopole condensation, and confinement
+  in N=2 supersymmetric Yang-Mills theory}.
+\newblock \emph{Nucl. Phys.}, B426:\penalty0 19--52, 1994.
+\newblock \doi{10.1016/0550-3213(94)90124-4}.
+\newblock [Erratum: Nucl. Phys.B430,485(1994)].
+
+\bibitem[DeWitt(1992)]{dewitt1992supermanifolds}
+B.~DeWitt.
+\newblock \emph{Supermanifolds}.
+\newblock Cambridge Monographs on Mathematical Physics. Cambridge University
+  Press, 1992.
+\newblock ISBN 9780521423779.
+\newblock URL \url{https://books.google.com.mx/books?id=0NinYnTQa-gC}.
+
+\bibitem[Rogers(2007)]{rogers2007supermanifolds}
+F.A. Rogers.
+\newblock \emph{Supermanifolds: Theory and Applications}.
+\newblock World Scientific Publishing Company Pte Limited, 2007.
+\newblock ISBN 9789812708854.
+\newblock URL \url{https://books.google.com.mx/books?id=itmfZTZCm\_MC}.
+
+\bibitem['t~Hooft(1971)]{'tHooft:1971rn}
+Gerard 't~Hooft.
+\newblock {Renormalizable Lagrangians for Massive Yang-Mills Fields}.
+\newblock \emph{Nucl. Phys.}, B35:\penalty0 167--188, 1971.
+\newblock \doi{10.1016/0550-3213(71)90139-8}.
+
+\bibitem[Dirac(2001)]{dirac2001lectures}
+P.A.M. Dirac.
+\newblock \emph{Lectures on Quantum Mechanics}.
+\newblock Belfer Graduate School of Science, monograph series. Dover
+  Publications, 2001.
+\newblock ISBN 9780486417134.
+\newblock URL \url{https://books.google.com.mx/books?id=GVwzb1rZW9kC}.
+
+\bibitem[Weinberg(1996{\natexlab{a}})]{weinberg1996quantum}
+S.~Weinberg.
+\newblock \emph{The Quantum Theory of Fields}.
+\newblock Number v. 2 in The Quantum Theory of Fields 3 Volume Hardback Set.
+  Cambridge University Press, 1996{\natexlab{a}}.
+\newblock ISBN 9780521550024.
+\newblock URL \url{https://books.google.com.mx/books?id=sn9QvU5dmBQC}.
+
+\bibitem[Wess and Zumino(1974)]{Wess:1973kz}
+J.~Wess and B.~Zumino.
+\newblock {A Lagrangian Model Invariant Under Supergauge Transformations}.
+\newblock \emph{Phys.Lett.}, B49:\penalty0 52, 1974.
+\newblock \doi{10.1016/0370-2693(74)90578-4}.
+
+\bibitem[Salam and Strathdee(1975{\natexlab{a}})]{Salam:1974jj}
+A.~Salam and J.A. Strathdee.
+\newblock {On Superfields and Fermi-Bose Symmetry}.
+\newblock \emph{Phys.Rev.}, D11:\penalty0 1521--1535, 1975{\natexlab{a}}.
+\newblock \doi{10.1103/PhysRevD.11.1521}.
+
+\bibitem[Salam and Strathdee(1975{\natexlab{b}})]{Salam:1974pp}
+A.~Salam and J.A. Strathdee.
+\newblock {Feynman Rules for Superfields}.
+\newblock \emph{Nucl.Phys.}, B86:\penalty0 142--152, 1975{\natexlab{b}}.
+\newblock \doi{10.1016/0550-3213(75)90078-4}.
+
+\bibitem[Salam and Strathdee(1974)]{Salam:1974yz}
+A.~Salam and J.A. Strathdee.
+\newblock {Supergauge Transformations}.
+\newblock \emph{Nucl.Phys.}, B76:\penalty0 477--482, 1974.
+\newblock \doi{10.1016/0550-3213(74)90537-9}.
+
+\bibitem[Grisaru et~al.(1977)Grisaru, Pendleton, and van
+  Nieuwenhuizen]{Grisaru:1976vm}
+Marcus~T. Grisaru, H.~N. Pendleton, and P.~van Nieuwenhuizen.
+\newblock {Supergravity and the S Matrix}.
+\newblock \emph{Phys. Rev.}, D15:\penalty0 996, 1977.
+\newblock \doi{10.1103/PhysRevD.15.996}.
+
+\bibitem[Batalin and Vilkovisky(1981)]{Batalin:1981jr}
+I.~A. Batalin and G.~A. Vilkovisky.
+\newblock {Gauge Algebra and Quantization}.
+\newblock \emph{Phys. Lett.}, B102:\penalty0 27--31, 1981.
+\newblock \doi{10.1016/0370-2693(81)90205-7}.
+
+\bibitem[Dimopoulos and Georgi(1981)]{Dimopoulos:1981zb}
+S.~Dimopoulos and H.~Georgi.
+\newblock {Softly Broken Supersymmetry and SU(5)}.
+\newblock \emph{Nucl.Phys.}, B193:\penalty0 150, 1981.
+\newblock \doi{10.1016/0550-3213(81)90522-8}.
+
+\bibitem[Weinberg(1964{\natexlab{a}})]{Weinberg:1964cn}
+S.~Weinberg.
+\newblock {Feynman Rules for Any Spin}.
+\newblock \emph{Phys.Rev.}, 133:\penalty0 B1318--B1332, 1964{\natexlab{a}}.
+\newblock \doi{10.1103/PhysRev.133.B1318}.
+
+\bibitem[Weinberg(1969)]{Weinberg:1969di}
+S.~Weinberg.
+\newblock {Feynman Rules for Any Spin. III}.
+\newblock \emph{Phys.Rev.}, 181:\penalty0 1893--1899, 1969.
+\newblock \doi{10.1103/PhysRev.181.1893}.
+
+\bibitem[Wess and Bagger(1992)]{julius1992supersymmetry}
+Julius Wess and J.~Bagger.
+\newblock \emph{Supersymmetry and Supergravity}.
+\newblock Princeton series in physics. Princeton University Press, 1992.
+\newblock ISBN 9780691025308.
+\newblock URL \url{https://books.google.com/books?id=4QrQZ\_Rjq4UC}.
+
+\bibitem[Weinberg(2000)]{Weinberg:2000cr}
+S.~Weinberg.
+\newblock {The Quantum Theory of Fields. Vol. 3: Supersymmetry}.
+\newblock \emph{Cambridge University Press}, 2000.
+
+\bibitem[Buchbinder et~al.(2002{\natexlab{a}})Buchbinder, Gates, Linch, and
+  Phillips]{Buchbinder:2002gh}
+I.L. Buchbinder, Jr. Gates, S.~James, III Linch, William~Divine, and
+  J.~Phillips.
+\newblock {New 4-D, N=1 superfield theory: Model of free massive superspin 3/2
+  multiplet}.
+\newblock \emph{Phys.Lett.}, B535:\penalty0 280--288, 2002{\natexlab{a}}.
+\newblock \doi{10.1016/S0370-2693(02)01772-0}.
+
+\bibitem[Buchbinder et~al.(2002{\natexlab{b}})Buchbinder, Gates, Linch, and
+  Phillips]{Buchbinder:2002tt}
+I.L. Buchbinder, Jr. Gates, S.~James, III Linch, William~Divine, and
+  J.~Phillips.
+\newblock {Dynamical superfield theory of free massive superspin-1 multiplet}.
+\newblock \emph{Phys.Lett.}, B549:\penalty0 229--236, 2002{\natexlab{b}}.
+\newblock \doi{10.1016/S0370-2693(02)02860-5}.
+
+\bibitem[Gregoire et~al.(2004)Gregoire, Schwartz, and Shadmi]{Gregoire:2004ic}
+Thomas Gregoire, Matthew~D. Schwartz, and Yael Shadmi.
+\newblock {Massive supergravity and deconstruction}.
+\newblock \emph{JHEP}, 0407:\penalty0 029, 2004.
+\newblock \doi{10.1088/1126-6708/2004/07/029}.
+
+\bibitem[Gates and Koutrolikos(2014)]{Gates:2013tka}
+Jr. Gates, S.~James. and Konstantinos Koutrolikos.
+\newblock {A dynamical theory for linearized massive superspin 3/2}.
+\newblock \emph{JHEP}, 1403:\penalty0 030, 2014.
+\newblock \doi{10.1007/JHEP03(2014)030}.
+
+\bibitem[Haag(2010)]{Haag:2010zz}
+Rudolf Haag.
+\newblock {Some people and some problems met in half a century of commitment to
+  mathematical physics}.
+\newblock \emph{Eur. Phys. J.}, H35:\penalty0 263--307, 2010.
+\newblock \doi{10.1140/epjh/e2010-10032-4}.
+
+\bibitem[Wigner(1939)]{Wigner:1939cj}
+Eugene~P. Wigner.
+\newblock {On Unitary Representations of the Inhomogeneous Lorentz Group}.
+\newblock \emph{Annals Math.}, 40:\penalty0 149--204, 1939.
+\newblock \doi{10.2307/1968551}.
+\newblock [Reprint: Nucl. Phys. Proc. Suppl.6,9(1989)].
+
+\bibitem[Witten(2012)]{Witten:2012bg}
+Edward Witten.
+\newblock {Notes On Supermanifolds and Integration}.
+\newblock 2012.
+
+\bibitem[Ballentine(1998)]{ballentine1998quantum}
+L.E. Ballentine.
+\newblock \emph{Quantum Mechanics: A Modern Development}.
+\newblock World Scientific, 1998.
+\newblock ISBN 9789810241056.
+\newblock URL \url{https://books.google.com.mx/books?id=sHJRFHz1rYsC}.
+
+\bibitem[Wigner(2012)]{wigner2012group}
+E.~Wigner.
+\newblock \emph{Group Theory: And its Application to the Quantum Mechanics of
+  Atomic Spectra}.
+\newblock Pure and Applied Physics. Elsevier Science, 2012.
+\newblock ISBN 9780323152785.
+\newblock URL \url{https://books.google.com.mx/books?id=ENZzI49uZMcC}.
+
+\bibitem[Hamermesh(1962)]{hamermesh1962group}
+M.~Hamermesh.
+\newblock \emph{Group Theory and Its Application to Physical Problems}.
+\newblock Addison Wesley Series in Physics. Dover Publications, 1962.
+\newblock ISBN 9780486661810.
+\newblock URL \url{https://books.google.com.mx/books?id=c0o9\_wlCzgcC}.
+
+\bibitem[Hall(2003)]{hall2003lie}
+B.~Hall.
+\newblock \emph{Lie Groups, Lie Algebras, and Representations: An Elementary
+  Introduction}.
+\newblock Graduate Texts in Mathematics. Springer, 2003.
+\newblock ISBN 9780387401225.
+\newblock URL \url{https://books.google.com.mx/books?id=m1VQi8HmEwcC}.
+
+\bibitem[Buchbinder and Kuzenko(1995)]{Buchbinder:1995uq}
+I.L. Buchbinder and S.M. Kuzenko.
+\newblock {Ideas and Methods of Supersymmetry and Supergravity: Or a Walk
+  Through Superspace}.
+\newblock \emph{CRC Press}, 1995.
+
+\bibitem[Weinberg(1965{\natexlab{a}})]{Weinberg:1965nx}
+Steven Weinberg.
+\newblock {Infrared photons and gravitons}.
+\newblock \emph{Phys. Rev.}, 140:\penalty0 B516--B524, 1965{\natexlab{a}}.
+\newblock \doi{10.1103/PhysRev.140.B516}.
+
+\bibitem[Weinberg(1964{\natexlab{b}})]{Weinberg:1964ev}
+S.~Weinberg.
+\newblock {Feynman Rules for Any Spin. 2. Massless Particles}.
+\newblock \emph{Phys.Rev.}, 134:\penalty0 B882--B896, 1964{\natexlab{b}}.
+\newblock \doi{10.1103/PhysRev.134.B882}.
+
+\bibitem[Coleman and Mandula(1967)]{Coleman:1967ad}
+Sidney~R. Coleman and J.~Mandula.
+\newblock {All Possible Symmetries of the S Matrix}.
+\newblock \emph{Phys. Rev.}, 159:\penalty0 1251--1256, 1967.
+\newblock \doi{10.1103/PhysRev.159.1251}.
+
+\bibitem[Dirac(1949)]{RevModPhys.21.392}
+P.~A.~M. Dirac.
+\newblock Forms of relativistic dynamics.
+\newblock \emph{Rev. Mod. Phys.}, 21:\penalty0 392--399, Jul 1949.
+\newblock \doi{10.1103/RevModPhys.21.392}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/RevModPhys.21.392}.
+
+\bibitem[Dyson(1949)]{Dyson:1949ha}
+F.~J. Dyson.
+\newblock {The S matrix in quantum electrodynamics}.
+\newblock \emph{Phys. Rev.}, 75:\penalty0 1736--1755, 1949.
+\newblock \doi{10.1103/PhysRev.75.1736}.
+
+\bibitem[Cartier et~al.(2002)Cartier, DeWitt-Morette, Ihl, and
+  Saemann]{Cartier:2002zp}
+Pierre Cartier, Cecile DeWitt-Morette, Matthias Ihl, and Christian Saemann.
+\newblock {Supermanifolds: Application to supersymmetry}.
+\newblock 2002.
+
+\bibitem[Wichmann and Crichton(1963)]{PhysRev.132.2788}
+Eyvind~H. Wichmann and James~H. Crichton.
+\newblock Cluster decomposition properties of the $s$ matrix.
+\newblock \emph{Phys. Rev.}, 132:\penalty0 2788--2799, Dec 1963.
+\newblock \doi{10.1103/PhysRev.132.2788}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRev.132.2788}.
+
+\bibitem[Haag et~al.(1975)Haag, Lopuszanski, and Sohnius]{Haag:1974qh}
+Rudolf Haag, Jan~T. Lopuszanski, and Martin Sohnius.
+\newblock {All Possible Generators of Supersymmetries of the s Matrix}.
+\newblock \emph{Nucl. Phys.}, B88:\penalty0 257, 1975.
+\newblock \doi{10.1016/0550-3213(75)90279-5}.
+
+\bibitem[Weinberg(1996{\natexlab{b}})]{Weinberg:1996kw}
+Steven Weinberg.
+\newblock {What is quantum field theory, and what did we think it is?}
+\newblock In \emph{{Conceptual foundations of quantum field theory.
+  Proceedings, Symposium and Workshop, Boston, USA, March 1-3, 1996}},
+  1996{\natexlab{b}}.
+
+\bibitem[Jim\'enez(2015)]{Jimenez:2014gfa}
+Enrique Jim\'enez.
+\newblock {$\mathcal N=1$ super Feynman rules for any superspin: Noncanonical
+  SUSY}.
+\newblock \emph{Phys. Rev.}, D92\penalty0 (8):\penalty0 085013, 2015.
+\newblock \doi{10.1103/PhysRevD.92.085013}.
+
+\bibitem[Weinberg(2012{\natexlab{a}})]{weinberg2012lectures}
+S.~Weinberg.
+\newblock \emph{Lectures on Quantum Mechanics}.
+\newblock Cambridge University Press, 2012{\natexlab{a}}.
+\newblock ISBN 9781107028722.
+\newblock URL \url{https://books.google.com.mx/books?id=WfTq2W\_LBlEC}.
+
+\bibitem[Joos(1962)]{joos1962darstellungstheorie}
+Hans Joos.
+\newblock Zur darstellungstheorie der inhomogenen lorentzgruppe als grundlage
+  quantenmechanischer kinematik.
+\newblock \emph{Fortschritte der Physik}, 10\penalty0 (3):\penalty0 65--146,
+  1962.
+
+\bibitem[Barut et~al.(1963)Barut, Muzinich, and Williams]{PhysRev.130.442}
+Asim~O. Barut, Ivan Muzinich, and David~N. Williams.
+\newblock Construction of invariant scattering amplitudes for arbitrary spins
+  and analytic continuation in total angular momentum.
+\newblock \emph{Phys. Rev.}, 130:\penalty0 442--457, Apr 1963.
+\newblock \doi{10.1103/PhysRev.130.442}.
+\newblock URL \url{http://link.aps.org/doi/10.1103/PhysRev.130.442}.
+
+\bibitem[Freedman and Van~Proeyen(2012)]{freedman2012supergravity}
+Daniel~Z Freedman and Antoine Van~Proeyen.
+\newblock \emph{Supergravity}.
+\newblock Cambridge University Press, 2012.
+
+\bibitem[Wick(1950)]{Wick:1950ee}
+G.~C. Wick.
+\newblock {The Evaluation of the Collision Matrix}.
+\newblock \emph{Phys. Rev.}, 80:\penalty0 268--272, 1950.
+\newblock \doi{10.1103/PhysRev.80.268}.
+
+\bibitem[Francis(2012)]{FrancisOnCsakaWeb2012}
+Matthew Francis.
+\newblock The state of particle physics—a report from pheno 2012, 2012.
+\newblock URL
+  \url{http://arstechnica.com/science/2012/05/the-state-of-particle-physics-a-report-from-pheno-2012/}.
+
+\bibitem[Kallen(1952)]{Kallen:1952zz}
+Gunnar Kallen.
+\newblock {On the definition of the Renormalization Constants in Quantum
+  Electrodynamics}.
+\newblock \emph{Helv. Phys. Acta}, 25\penalty0 (4):\penalty0 417, 1952.
+\newblock \doi{10.1007/978-3-319-00627-7_90}.
+\newblock [,509(1952)].
+
+\bibitem[Lehmann(1954)]{Lehmann:1954}
+H.~Lehmann.
+\newblock Über eigenschaften von ausbreitungsfunktionen und
+  renormierungskonstanten quantisierter felder.
+\newblock \emph{Il Nuovo Cimento}, 11\penalty0 (4):\penalty0 342--357, 1954.
+\newblock ISSN 0029-6341.
+\newblock \doi{10.1007/BF02783624}.
+\newblock URL \url{http://dx.doi.org/10.1007/BF02783624}.
+
+\bibitem[Constantinescu(2006)]{Constantinescu:2003vn}
+Florin Constantinescu.
+\newblock {Supersymmetric Kallen-Lehmann representation}.
+\newblock \emph{Annalen Phys.}, 15:\penalty0 861--867, 2006.
+\newblock \doi{10.1002/andp.200510213}.
+
+\bibitem[Wilson(1969)]{Wilson:1969zs}
+Kenneth~G. Wilson.
+\newblock {Nonlagrangian models of current algebra}.
+\newblock \emph{Phys. Rev.}, 179:\penalty0 1499--1512, 1969.
+\newblock \doi{10.1103/PhysRev.179.1499}.
+
+\bibitem[Leroy(1987)]{Leroy:1986ve}
+L.~Leroy.
+\newblock {OPE IN SUPERSYMMETRIC SCALAR FIELD THEORIES}.
+\newblock \emph{Phys. Lett.}, B187:\penalty0 97, 1987.
+\newblock \doi{10.1016/0370-2693(87)90079-7}.
+
+\bibitem[Goldstone et~al.(1962)Goldstone, Salam, and
+  Weinberg]{Goldstone:1962es}
+Jeffrey Goldstone, Abdus Salam, and Steven Weinberg.
+\newblock {Broken Symmetries}.
+\newblock \emph{Phys. Rev.}, 127:\penalty0 965--970, 1962.
+\newblock \doi{10.1103/PhysRev.127.965}.
+
+\bibitem[Dixon(1996)]{Dixon:1996wi}
+Lance~J. Dixon.
+\newblock {Calculating scattering amplitudes efficiently}.
+\newblock In \emph{{QCD and beyond. Proceedings, Theoretical Advanced Study
+  Institute in Elementary Particle Physics, TASI-95, Boulder, USA, June 4-30,
+  1995}}, 1996.
+\newblock URL
+  \url{http://www-public.slac.stanford.edu/sciDoc/docMeta.aspx?slacPubNumber=SLAC-PUB-7106}.
+
+\bibitem[Weinberg(1984)]{Weinberg:1984vb}
+Steven Weinberg.
+\newblock {Causality, Anti-particles and the Spin Statistics Connection in
+  Higher Dimensions}.
+\newblock \emph{Phys. Lett.}, B143:\penalty0 97, 1984.
+\newblock \doi{10.1016/0370-2693(84)90812-8}.
+
+\bibitem[Chan and Jones(1974)]{Chan:1973iq}
+F.~Chan and H.~F. Jones.
+\newblock {CONFORMAL INVARIANCE AND HELICITY CONSERVATION}.
+\newblock \emph{Phys. Rev.}, D10:\penalty0 1321, 1974.
+\newblock \doi{10.1103/PhysRevD.10.1321}.
+
+\bibitem[Weinberg(2012{\natexlab{b}})]{Weinberg:2012cd}
+Steven Weinberg.
+\newblock {Minimal fields of canonical dimensionality are free}.
+\newblock \emph{Phys. Rev.}, D86:\penalty0 105015, 2012{\natexlab{b}}.
+\newblock \doi{10.1103/PhysRevD.86.105015}.
+
+\bibitem[Weinberg(1965{\natexlab{b}})]{Weinberg:1965rz}
+Steven Weinberg.
+\newblock {Photons and gravitons in perturbation theory: Derivation of
+  Maxwell's and Einstein's equations}.
+\newblock \emph{Phys. Rev.}, 138:\penalty0 B988--B1002, 1965{\natexlab{b}}.
+\newblock \doi{10.1103/PhysRev.138.B988}.
+
+\bibitem[Cachazo and Strominger(2014)]{Cachazo:2014fwa}
+Freddy Cachazo and Andrew Strominger.
+\newblock {Evidence for a New Soft Graviton Theorem}.
+\newblock 2014.
+
+\bibitem[He et~al.(2015)He, Lysov, Mitra, and Strominger]{He:2014laa}
+Temple He, Vyacheslav Lysov, Prahar Mitra, and Andrew Strominger.
+\newblock {BMS supertranslations and Weinberg’s soft graviton theorem}.
+\newblock \emph{JHEP}, 05:\penalty0 151, 2015.
+\newblock \doi{10.1007/JHEP05(2015)151}.
+
+\bibitem[Avdeev et~al.(1998)Avdeev, Kazakov, and Kondrashuk]{Avdeev:1997vx}
+L.~V. Avdeev, D.~I. Kazakov, and I.~N. Kondrashuk.
+\newblock {Renormalizations in softly broken SUSY gauge theories}.
+\newblock \emph{Nucl. Phys.}, B510:\penalty0 289--312, 1998.
+\newblock \doi{10.1016/S0550-3213(98)81015-8, 10.1016/S0550-3213(97)00706-2}.
+
+\bibitem[Kobayashi et~al.(1998)Kobayashi, Kubo, and Zoupanos]{Kobayashi:1998jq}
+Tatsuo Kobayashi, Jisuke Kubo, and George Zoupanos.
+\newblock {Further all loop results in softly broken supersymmetric gauge
+  theories}.
+\newblock \emph{Phys. Lett.}, B427:\penalty0 291--299, 1998.
+\newblock \doi{10.1016/S0370-2693(98)00343-8}.
+
+\end{thebibliography}
